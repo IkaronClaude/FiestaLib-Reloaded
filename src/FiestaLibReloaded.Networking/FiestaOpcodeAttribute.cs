@@ -11,7 +11,7 @@ public class FiestaOpcodeAttribute : Attribute
 {
     public ProtocolCommand Department { get; }
     public ushort Command { get; }
-    public ushort Opcode => (ushort)(((byte)Department << 8) | Command);
+    public ushort Opcode => (ushort)(((byte)Department << 10) | (Command & 0x3FF));
 
     public FiestaOpcodeAttribute(ProtocolCommand department, ushort command)
     {

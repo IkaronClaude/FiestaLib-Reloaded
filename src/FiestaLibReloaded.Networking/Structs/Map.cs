@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 43 | Full: 0x062B
+/// Department: Map (0x06) | Opcode: 43 | Full: 0x182B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 43)]
@@ -25,7 +25,7 @@ public class PROTO_NC_MAP_CAN_USE_REVIVEITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 16 | Full: 0x0610
+/// Department: Map (0x06) | Opcode: 16 | Full: 0x1810
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 16)]
@@ -48,7 +48,7 @@ public class PROTO_NC_MAP_EXPBONUS_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 39 | Full: 0x0627
+/// Department: Map (0x06) | Opcode: 39 | Full: 0x1827
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 39)]
@@ -66,7 +66,7 @@ public class PROTO_NC_MAP_FIELD_ATTRIBUTE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 44 | Full: 0x062C
+/// Department: Map (0x06) | Opcode: 44 | Full: 0x182C
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 44)]
@@ -84,7 +84,7 @@ public class PROTO_NC_MAP_INDUN_LEVEL_VIEW_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 17 | Full: 0x0611
+/// Department: Map (0x06) | Opcode: 17 | Full: 0x1811
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 17)]
@@ -107,7 +107,7 @@ public class PROTO_NC_MAP_ITEMBONUS_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 12 | Full: 0x060C
+/// Department: Map (0x06) | Opcode: 12 | Full: 0x180C
 /// sizeof = 47
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 12)]
@@ -154,7 +154,7 @@ public class PROTO_NC_MAP_LINKEND_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 14 | Full: 0x060E
+/// Department: Map (0x06) | Opcode: 14 | Full: 0x180E
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 14)]
@@ -199,7 +199,7 @@ public class PROTO_NC_MAP_LINKRESERVE_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 13 | Full: 0x060D
+/// Department: Map (0x06) | Opcode: 13 | Full: 0x180D
 /// sizeof = 59
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 13)]
@@ -231,7 +231,7 @@ public class PROTO_NC_MAP_LINKRESERVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 11 | Full: 0x060B
+/// Department: Map (0x06) | Opcode: 11 | Full: 0x180B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 11)]
@@ -254,7 +254,7 @@ public class PROTO_NC_MAP_LINKSTART_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 1 | Full: 0x0601
+/// Department: Map (0x06) | Opcode: 1 | Full: 0x1801
 /// sizeof = 1590
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 1)]
@@ -282,7 +282,7 @@ public class PROTO_NC_MAP_LOGIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 4 | Full: 0x0604
+/// Department: Map (0x06) | Opcode: 4 | Full: 0x1804
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 4)]
@@ -305,7 +305,7 @@ public class PROTO_NC_MAP_LOGINFAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 5 | Full: 0x0605
+/// Department: Map (0x06) | Opcode: 5 | Full: 0x1805
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 5)]
@@ -325,7 +325,7 @@ public class PROTO_NC_MAP_LOGOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 31 | Full: 0x061F
+/// Department: Map (0x06) | Opcode: 31 | Full: 0x181F
 /// sizeof = 73
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 31)]
@@ -362,7 +362,7 @@ public class PROTO_NC_MAP_MULTY_LINK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 32 | Full: 0x0620
+/// Department: Map (0x06) | Opcode: 32 | Full: 0x1820
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 32)]
@@ -382,7 +382,7 @@ public class PROTO_NC_MAP_MULTY_LINK_SELECT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 31 | Full: 0x061F
+/// Department: Map (0x06) | Opcode: 31 | Full: 0x181F
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 31)]
@@ -402,7 +402,7 @@ public class PROTO_NC_MAP_MULTY_LINK_SELECT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 15 | Full: 0x060F
+/// Department: Map (0x06) | Opcode: 15 | Full: 0x180F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 15)]
@@ -423,7 +423,7 @@ public class PROTO_NC_MAP_REGIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 26 | Full: 0x061A
+/// Department: Map (0x06) | Opcode: 26 | Full: 0x181A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 26)]
@@ -443,7 +443,7 @@ public class PROTO_NC_MAP_TOWNPORTAL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 22 | Full: 0x0616
+/// Department: Map (0x06) | Opcode: 22 | Full: 0x1816
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 22)]
@@ -463,7 +463,7 @@ public class PROTO_NC_MAP_WING_FLY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Map (0x06) | Opcode: 20 | Full: 0x0614
+/// Department: Map (0x06) | Opcode: 20 | Full: 0x1814
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Map, 20)]

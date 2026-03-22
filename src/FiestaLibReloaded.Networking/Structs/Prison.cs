@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 2 | Full: 0x1F02
+/// Department: Prison (0x1F) | Opcode: 2 | Full: 0x7C02
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 2)]
@@ -28,7 +28,7 @@ public class PROTO_NC_PRISON_ADD_GM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 1 | Full: 0x1F01
+/// Department: Prison (0x1F) | Opcode: 1 | Full: 0x7C01
 /// sizeof = 102
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 1)]
@@ -61,7 +61,7 @@ public class PROTO_NC_PRISON_ADD_GM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 10 | Full: 0x1F0A
+/// Department: Prison (0x1F) | Opcode: 10 | Full: 0x7C0A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 10)]
@@ -84,7 +84,7 @@ public class PROTO_NC_PRISON_ALTER_GM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 9 | Full: 0x1F09
+/// Department: Prison (0x1F) | Opcode: 9 | Full: 0x7C09
 /// sizeof = 102
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 9)]
@@ -117,7 +117,7 @@ public class PROTO_NC_PRISON_ALTER_GM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 5 | Full: 0x1F05
+/// Department: Prison (0x1F) | Opcode: 5 | Full: 0x7C05
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 5)]
@@ -140,7 +140,7 @@ public class PROTO_NC_PRISON_END_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 4 | Full: 0x1F04
+/// Department: Prison (0x1F) | Opcode: 4 | Full: 0x7C04
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 4)]
@@ -157,7 +157,7 @@ public class PROTO_NC_PRISON_END_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 7 | Full: 0x1F07
+/// Department: Prison (0x1F) | Opcode: 7 | Full: 0x7C07
 /// sizeof = 84
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 7)]
@@ -190,7 +190,7 @@ public class PROTO_NC_PRISON_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Prison (0x1F) | Opcode: 3 | Full: 0x1F03
+/// Department: Prison (0x1F) | Opcode: 3 | Full: 0x7C03
 /// sizeof = 82
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Prison, 3)]

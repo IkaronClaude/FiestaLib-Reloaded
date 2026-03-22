@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 85 | Full: 0x0955
+/// Department: Bat (0x09) | Opcode: 85 | Full: 0x2455
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 85)]
@@ -25,7 +25,7 @@ public class PROTO_NC_BAT_ABSTATE_ERASE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 84 | Full: 0x0954
+/// Department: Bat (0x09) | Opcode: 84 | Full: 0x2454
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 84)]
@@ -45,7 +45,7 @@ public class PROTO_NC_BAT_ABSTATE_ERASE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 41 | Full: 0x0929
+/// Department: Bat (0x09) | Opcode: 41 | Full: 0x2429
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 41)]
@@ -66,7 +66,7 @@ public class PROTO_NC_BAT_ABSTATEINFORM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 40 | Full: 0x0928
+/// Department: Bat (0x09) | Opcode: 40 | Full: 0x2428
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 40)]
@@ -87,7 +87,7 @@ public class PROTO_NC_BAT_ABSTATERESET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 39 | Full: 0x0927
+/// Department: Bat (0x09) | Opcode: 39 | Full: 0x2427
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 39)]
@@ -108,7 +108,7 @@ public class PROTO_NC_BAT_ABSTATESET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 90 | Full: 0x095A
+/// Department: Bat (0x09) | Opcode: 90 | Full: 0x245A
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 90)]
@@ -135,7 +135,7 @@ public class PROTO_NC_BAT_AREADOTDAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 63 | Full: 0x093F
+/// Department: Bat (0x09) | Opcode: 63 | Full: 0x243F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 63)]
@@ -155,7 +155,7 @@ public class PROTO_NC_BAT_ASSIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 62 | Full: 0x093E
+/// Department: Bat (0x09) | Opcode: 62 | Full: 0x243E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 62)]
@@ -175,7 +175,7 @@ public class PROTO_NC_BAT_ASSIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 44 | Full: 0x092C
+/// Department: Bat (0x09) | Opcode: 44 | Full: 0x242C
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 44)]
@@ -210,7 +210,7 @@ public class PROTO_NC_BAT_BASH_HIT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 45 | Full: 0x092D
+/// Department: Bat (0x09) | Opcode: 45 | Full: 0x242D
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 45)]
@@ -245,7 +245,7 @@ public class PROTO_NC_BAT_BASH_HITTED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 47 | Full: 0x092F
+/// Department: Bat (0x09) | Opcode: 47 | Full: 0x242F
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 47)]
@@ -271,7 +271,7 @@ public class PROTO_NC_BAT_BASH_MISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 48 | Full: 0x0930
+/// Department: Bat (0x09) | Opcode: 48 | Full: 0x2430
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 48)]
@@ -297,7 +297,7 @@ public class PROTO_NC_BAT_BASH_MISSED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 61 | Full: 0x093D
+/// Department: Bat (0x09) | Opcode: 61 | Full: 0x243D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 61)]
@@ -317,7 +317,7 @@ public class PROTO_NC_BAT_CEASE_FIRE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 89 | Full: 0x0959
+/// Department: Bat (0x09) | Opcode: 89 | Full: 0x2459
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 89)]
@@ -335,7 +335,7 @@ public class PROTO_NC_BAT_CLIENT_MOB_KILL_ANNOUNCE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 60 | Full: 0x093C
+/// Department: Bat (0x09) | Opcode: 60 | Full: 0x243C
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 60)]
@@ -370,7 +370,7 @@ public class PROTO_NC_BAT_DOTDAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 11 | Full: 0x090B
+/// Department: Bat (0x09) | Opcode: 11 | Full: 0x240B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 11)]
@@ -393,7 +393,7 @@ public class PROTO_NC_BAT_EXPGAIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 17 | Full: 0x0911
+/// Department: Bat (0x09) | Opcode: 17 | Full: 0x2411
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 17)]
@@ -413,7 +413,7 @@ public class PROTO_NC_BAT_EXPLOST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 70 | Full: 0x0946
+/// Department: Bat (0x09) | Opcode: 70 | Full: 0x2446
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 70)]
@@ -433,7 +433,7 @@ public class PROTO_NC_BAT_FAMEGAIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 14 | Full: 0x090E
+/// Department: Bat (0x09) | Opcode: 14 | Full: 0x240E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 14)]
@@ -456,7 +456,7 @@ public class PROTO_NC_BAT_HPCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 12 | Full: 0x090C
+/// Department: Bat (0x09) | Opcode: 12 | Full: 0x240C
 /// sizeof = 235
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 12)]
@@ -482,7 +482,7 @@ public class PROTO_NC_BAT_LEVELUP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 95 | Full: 0x095F
+/// Department: Bat (0x09) | Opcode: 95 | Full: 0x245F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 95)]
@@ -502,7 +502,7 @@ public class PROTO_NC_BAT_LPCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 76 | Full: 0x094C
+/// Department: Bat (0x09) | Opcode: 76 | Full: 0x244C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 76)]
@@ -531,7 +531,7 @@ public class PROTO_NC_BAT_MOBSLAYER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 75 | Full: 0x094B
+/// Department: Bat (0x09) | Opcode: 75 | Full: 0x244B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 75)]
@@ -557,7 +557,7 @@ public class PROTO_NC_BAT_PKINPKFIELD_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 74 | Full: 0x094A
+/// Department: Bat (0x09) | Opcode: 74 | Full: 0x244A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 74)]
@@ -583,7 +583,7 @@ public class PROTO_NC_BAT_PKINPKFIELD_WMS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 74 | Full: 0x094A
+/// Department: Bat (0x09) | Opcode: 74 | Full: 0x244A
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 74)]
@@ -606,7 +606,7 @@ public class PROTO_NC_BAT_REALLYKILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 91 | Full: 0x095B
+/// Department: Bat (0x09) | Opcode: 91 | Full: 0x245B
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 91)]
@@ -641,7 +641,7 @@ public class PROTO_NC_BAT_REFLECTIONDAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 65 | Full: 0x0941
+/// Department: Bat (0x09) | Opcode: 65 | Full: 0x2441
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 65)]
@@ -664,7 +664,7 @@ public class PROTO_NC_BAT_SKILLBASH_FLD_CAST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 87 | Full: 0x0957
+/// Department: Bat (0x09) | Opcode: 87 | Full: 0x2457
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 87)]
@@ -690,7 +690,7 @@ public class PROTO_NC_BAT_SKILLBASH_HIT_BLAST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 82 | Full: 0x0952
+/// Department: Bat (0x09) | Opcode: 82 | Full: 0x2452
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 82)]
@@ -717,7 +717,7 @@ public class PROTO_NC_BAT_SKILLBASH_HIT_DAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 80 | Full: 0x0950
+/// Department: Bat (0x09) | Opcode: 80 | Full: 0x2450
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 80)]
@@ -743,7 +743,7 @@ public class PROTO_NC_BAT_SKILLBASH_HIT_FLD_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 78 | Full: 0x094E
+/// Department: Bat (0x09) | Opcode: 78 | Full: 0x244E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 78)]
@@ -769,7 +769,7 @@ public class PROTO_NC_BAT_SKILLBASH_HIT_OBJ_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 64 | Full: 0x0940
+/// Department: Bat (0x09) | Opcode: 64 | Full: 0x2440
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 64)]
@@ -792,7 +792,7 @@ public class PROTO_NC_BAT_SKILLBASH_OBJ_CAST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 94 | Full: 0x095E
+/// Department: Bat (0x09) | Opcode: 94 | Full: 0x245E
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 94)]
@@ -821,7 +821,7 @@ public class PROTO_NC_BAT_SKILLBLAST_LIGHTNINGWAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 9 | Full: 0x0909
+/// Department: Bat (0x09) | Opcode: 9 | Full: 0x2409
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 9)]
@@ -844,7 +844,7 @@ public class PROTO_NC_BAT_SKILLENCHANT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 31 | Full: 0x091F
+/// Department: Bat (0x09) | Opcode: 31 | Full: 0x241F
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 31)]
@@ -870,7 +870,7 @@ public class PROTO_NC_BAT_SKILLSMASH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 32 | Full: 0x0920
+/// Department: Bat (0x09) | Opcode: 32 | Full: 0x2420
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 32)]
@@ -899,7 +899,7 @@ public class PROTO_NC_BAT_SKILLSMASH_HIT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 33 | Full: 0x0921
+/// Department: Bat (0x09) | Opcode: 33 | Full: 0x2421
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 33)]
@@ -922,7 +922,7 @@ public class PROTO_NC_BAT_SKILLSMASH_HITTED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 34 | Full: 0x0922
+/// Department: Bat (0x09) | Opcode: 34 | Full: 0x2422
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 34)]
@@ -945,7 +945,7 @@ public class PROTO_NC_BAT_SKILLSMASH_MISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 19 | Full: 0x0913
+/// Department: Bat (0x09) | Opcode: 19 | Full: 0x2413
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 19)]
@@ -971,7 +971,7 @@ public class PROTO_NC_BAT_SMASH_HIT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 20 | Full: 0x0914
+/// Department: Bat (0x09) | Opcode: 20 | Full: 0x2414
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 20)]
@@ -994,7 +994,7 @@ public class PROTO_NC_BAT_SMASH_HITTED_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 21 | Full: 0x0915
+/// Department: Bat (0x09) | Opcode: 21 | Full: 0x2415
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 21)]
@@ -1017,7 +1017,7 @@ public class PROTO_NC_BAT_SMASH_MISS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 46 | Full: 0x092E
+/// Department: Bat (0x09) | Opcode: 46 | Full: 0x242E
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 46)]
@@ -1052,7 +1052,7 @@ public class PROTO_NC_BAT_SOMEONEBASH_HIT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 49 | Full: 0x0931
+/// Department: Bat (0x09) | Opcode: 49 | Full: 0x2431
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 49)]
@@ -1081,7 +1081,7 @@ public class PROTO_NC_BAT_SOMEONEBASH_MISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 5 | Full: 0x0905
+/// Department: Bat (0x09) | Opcode: 5 | Full: 0x2405
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 5)]
@@ -1110,7 +1110,7 @@ public class PROTO_NC_BAT_SOMEONEDAMAGED_LARGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 4 | Full: 0x0904
+/// Department: Bat (0x09) | Opcode: 4 | Full: 0x2404
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 4)]
@@ -1139,7 +1139,7 @@ public class PROTO_NC_BAT_SOMEONEDAMAGED_SMALL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 56 | Full: 0x0938
+/// Department: Bat (0x09) | Opcode: 56 | Full: 0x2438
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 56)]
@@ -1159,7 +1159,7 @@ public class PROTO_NC_BAT_SOMEONESKILLBASH_CASTCUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 67 | Full: 0x0943
+/// Department: Bat (0x09) | Opcode: 67 | Full: 0x2443
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 67)]
@@ -1185,7 +1185,7 @@ public class PROTO_NC_BAT_SOMEONESKILLBASH_FLD_CAST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 81 | Full: 0x0951
+/// Department: Bat (0x09) | Opcode: 81 | Full: 0x2451
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 81)]
@@ -1208,7 +1208,7 @@ public class PROTO_NC_BAT_SOMEONESKILLBASH_HIT_FLD_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 79 | Full: 0x094F
+/// Department: Bat (0x09) | Opcode: 79 | Full: 0x244F
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 79)]
@@ -1231,7 +1231,7 @@ public class PROTO_NC_BAT_SOMEONESKILLBASH_HIT_OBJ_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 66 | Full: 0x0942
+/// Department: Bat (0x09) | Opcode: 66 | Full: 0x2442
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 66)]
@@ -1257,7 +1257,7 @@ public class PROTO_NC_BAT_SOMEONESKILLBASH_OBJ_CAST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 37 | Full: 0x0925
+/// Department: Bat (0x09) | Opcode: 37 | Full: 0x2425
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 37)]
@@ -1283,7 +1283,7 @@ public class PROTO_NC_BAT_SOMEONESKILLSMASH_DEAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 22 | Full: 0x0916
+/// Department: Bat (0x09) | Opcode: 22 | Full: 0x2416
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 22)]
@@ -1309,7 +1309,7 @@ public class PROTO_NC_BAT_SOMEONESMASH_DAMAGED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 73 | Full: 0x0949
+/// Department: Bat (0x09) | Opcode: 73 | Full: 0x2449
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 73)]
@@ -1347,7 +1347,7 @@ public class PROTO_NC_BAT_SOMEONESWING_DAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 83 | Full: 0x0953
+/// Department: Bat (0x09) | Opcode: 83 | Full: 0x2453
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 83)]
@@ -1370,7 +1370,7 @@ public class PROTO_NC_BAT_SOULCOLLECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 15 | Full: 0x090F
+/// Department: Bat (0x09) | Opcode: 15 | Full: 0x240F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 15)]
@@ -1390,7 +1390,7 @@ public class PROTO_NC_BAT_SPCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 13 | Full: 0x090D
+/// Department: Bat (0x09) | Opcode: 13 | Full: 0x240D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 13)]
@@ -1413,7 +1413,7 @@ public class PROTO_NC_BAT_SUMEONELEVELUP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 86 | Full: 0x0956
+/// Department: Bat (0x09) | Opcode: 86 | Full: 0x2456
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 86)]
@@ -1433,7 +1433,7 @@ public class PROTO_NC_BAT_SUMEONESKILLCUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 72 | Full: 0x0948
+/// Department: Bat (0x09) | Opcode: 72 | Full: 0x2448
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 72)]
@@ -1474,7 +1474,7 @@ public class PROTO_NC_BAT_SWING_DAMAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 71 | Full: 0x0947
+/// Department: Bat (0x09) | Opcode: 71 | Full: 0x2447
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 71)]
@@ -1525,7 +1525,7 @@ public class PROTO_NC_BAT_TARGET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 77 | Full: 0x094D
+/// Department: Bat (0x09) | Opcode: 77 | Full: 0x244D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 77)]
@@ -1545,7 +1545,7 @@ public class PROTO_NC_BAT_TARGETCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 2 | Full: 0x0902
+/// Department: Bat (0x09) | Opcode: 2 | Full: 0x2402
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 2)]
@@ -1592,7 +1592,7 @@ public class PROTO_NC_BAT_TARGETINFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 93 | Full: 0x095D
+/// Department: Bat (0x09) | Opcode: 93 | Full: 0x245D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 93)]
@@ -1612,7 +1612,7 @@ public class PROTO_NC_BAT_TOGGLESKILL_OFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 92 | Full: 0x095C
+/// Department: Bat (0x09) | Opcode: 92 | Full: 0x245C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 92)]
@@ -1632,7 +1632,7 @@ public class PROTO_NC_BAT_TOGGLESKILL_ON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Bat (0x09) | Opcode: 88 | Full: 0x0958
+/// Department: Bat (0x09) | Opcode: 88 | Full: 0x2458
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Bat, 88)]

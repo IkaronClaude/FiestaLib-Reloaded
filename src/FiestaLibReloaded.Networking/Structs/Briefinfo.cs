@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 24 | Full: 0x0718
+/// Department: Briefinfo (0x07) | Opcode: 24 | Full: 0x1C18
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 24)]
@@ -28,7 +28,7 @@ public class PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 25 | Full: 0x0719
+/// Department: Briefinfo (0x07) | Opcode: 25 | Full: 0x1C19
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 25)]
@@ -60,7 +60,7 @@ public class PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 14 | Full: 0x070E
+/// Department: Briefinfo (0x07) | Opcode: 14 | Full: 0x1C0E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 14)]
@@ -80,7 +80,7 @@ public class PROTO_NC_BRIEFINFO_BRIEFINFODELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 15 | Full: 0x070F
+/// Department: Briefinfo (0x07) | Opcode: 15 | Full: 0x1C0F
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 15)]
@@ -115,7 +115,7 @@ public class PROTO_NC_BRIEFINFO_BUILDDOOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 2 | Full: 0x0702
+/// Department: Briefinfo (0x07) | Opcode: 2 | Full: 0x1C02
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 2)]
@@ -141,7 +141,7 @@ public class PROTO_NC_BRIEFINFO_CHANGEDECORATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 3 | Full: 0x0703
+/// Department: Briefinfo (0x07) | Opcode: 3 | Full: 0x1C03
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 3)]
@@ -170,7 +170,7 @@ public class PROTO_NC_BRIEFINFO_CHANGEUPGRADE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 5 | Full: 0x0705
+/// Department: Briefinfo (0x07) | Opcode: 5 | Full: 0x1C05
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 5)]
@@ -196,7 +196,7 @@ public class PROTO_NC_BRIEFINFO_CHANGEWEAPON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 7 | Full: 0x0707
+/// Department: Briefinfo (0x07) | Opcode: 7 | Full: 0x1C07
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 7)]
@@ -225,7 +225,7 @@ public class PROTO_NC_BRIEFINFO_CHARACTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 16 | Full: 0x0710
+/// Department: Briefinfo (0x07) | Opcode: 16 | Full: 0x1C10
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 16)]
@@ -254,7 +254,7 @@ public class PROTO_NC_BRIEFINFO_DOOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 10 | Full: 0x070A
+/// Department: Briefinfo (0x07) | Opcode: 10 | Full: 0x1C0A
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 10)]
@@ -286,7 +286,7 @@ public class PROTO_NC_BRIEFINFO_DROPEDITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 18 | Full: 0x0712
+/// Department: Briefinfo (0x07) | Opcode: 18 | Full: 0x1C12
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 18)]
@@ -315,7 +315,7 @@ public class PROTO_NC_BRIEFINFO_EFFECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 17 | Full: 0x0711
+/// Department: Briefinfo (0x07) | Opcode: 17 | Full: 0x1C11
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 17)]
@@ -350,7 +350,7 @@ public class PROTO_NC_BRIEFINFO_EFFECTBLAST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 1 | Full: 0x0701
+/// Department: Briefinfo (0x07) | Opcode: 1 | Full: 0x1C01
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 1)]
@@ -376,7 +376,7 @@ public class PROTO_NC_BRIEFINFO_INFORM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 11 | Full: 0x070B
+/// Department: Briefinfo (0x07) | Opcode: 11 | Full: 0x1C0B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 11)]
@@ -405,7 +405,7 @@ public class PROTO_NC_BRIEFINFO_ITEMONFIELD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 6 | Full: 0x0706
+/// Department: Briefinfo (0x07) | Opcode: 6 | Full: 0x1C06
 /// sizeof = 235
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 6)]
@@ -487,7 +487,7 @@ public class PROTO_NC_BRIEFINFO_LOGINCHARACTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 13 | Full: 0x070D
+/// Department: Briefinfo (0x07) | Opcode: 13 | Full: 0x1C0D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 13)]
@@ -516,7 +516,7 @@ public class PROTO_NC_BRIEFINFO_MAGICFIELDINFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 12 | Full: 0x070C
+/// Department: Briefinfo (0x07) | Opcode: 12 | Full: 0x1C0C
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 12)]
@@ -548,7 +548,7 @@ public class PROTO_NC_BRIEFINFO_MAGICFIELDSPREAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 20 | Full: 0x0714
+/// Department: Briefinfo (0x07) | Opcode: 20 | Full: 0x1C14
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 20)]
@@ -577,7 +577,7 @@ public class PROTO_NC_BRIEFINFO_MINIHOUSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 19 | Full: 0x0713
+/// Department: Briefinfo (0x07) | Opcode: 19 | Full: 0x1C13
 /// sizeof = 64
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 19)]
@@ -611,7 +611,7 @@ public class PROTO_NC_BRIEFINFO_MINIHOUSEBUILD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 9 | Full: 0x0709
+/// Department: Briefinfo (0x07) | Opcode: 9 | Full: 0x1C09
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 9)]
@@ -640,7 +640,7 @@ public class PROTO_NC_BRIEFINFO_MOB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 27 | Full: 0x071B
+/// Department: Briefinfo (0x07) | Opcode: 27 | Full: 0x1C1B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 27)]
@@ -669,7 +669,7 @@ public class PROTO_NC_BRIEFINFO_MOVER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 29 | Full: 0x071D
+/// Department: Briefinfo (0x07) | Opcode: 29 | Full: 0x1C1D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 29)]
@@ -723,7 +723,7 @@ public class PROTO_NC_BRIEFINFO_PLAYER_INFO_APPEAR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 22 | Full: 0x0716
+/// Department: Briefinfo (0x07) | Opcode: 22 | Full: 0x1C16
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 22)]
@@ -752,7 +752,7 @@ public class PROTO_NC_BRIEFINFO_PLAYER_LIST_INFO_APPEAR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 8 | Full: 0x0708
+/// Department: Briefinfo (0x07) | Opcode: 8 | Full: 0x1C08
 /// sizeof = 149
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 8)]
@@ -801,7 +801,7 @@ public class PROTO_NC_BRIEFINFO_REGENMOB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 26 | Full: 0x071A
+/// Department: Briefinfo (0x07) | Opcode: 26 | Full: 0x1C1A
 /// sizeof = 139
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 26)]
@@ -841,7 +841,7 @@ public class PROTO_NC_BRIEFINFO_REGENMOVER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 28 | Full: 0x071C
+/// Department: Briefinfo (0x07) | Opcode: 28 | Full: 0x1C1C
 /// sizeof = 63
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 28)]
@@ -875,7 +875,7 @@ public class PROTO_NC_BRIEFINFO_REGENPET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Briefinfo (0x07) | Opcode: 4 | Full: 0x0704
+/// Department: Briefinfo (0x07) | Opcode: 4 | Full: 0x1C04
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Briefinfo, 4)]

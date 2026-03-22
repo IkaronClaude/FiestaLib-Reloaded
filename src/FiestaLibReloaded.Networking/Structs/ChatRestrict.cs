@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 6 | Full: 0x2A06
+/// Department: ChatRestrict (0x2A) | Opcode: 6 | Full: 0xA806
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 6)]
@@ -28,7 +28,7 @@ public class PROTO_NC_CHAT_RESTRICT_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 3 | Full: 0x2A03
+/// Department: ChatRestrict (0x2A) | Opcode: 3 | Full: 0xA803
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 3)]
@@ -48,7 +48,7 @@ public class PROTO_NC_CHAT_RESTRICT_ADD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 5 | Full: 0x2A05
+/// Department: ChatRestrict (0x2A) | Opcode: 5 | Full: 0xA805
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 5)]
@@ -77,7 +77,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 4 | Full: 0x2A04
+/// Department: ChatRestrict (0x2A) | Opcode: 4 | Full: 0xA804
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 4)]
@@ -103,7 +103,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_ADD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 9 | Full: 0x2A09
+/// Department: ChatRestrict (0x2A) | Opcode: 9 | Full: 0xA809
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 9)]
@@ -129,7 +129,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_DEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 13 | Full: 0x2A0D
+/// Department: ChatRestrict (0x2A) | Opcode: 13 | Full: 0xA80D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 13)]
@@ -152,7 +152,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_DEL_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 12 | Full: 0x2A0C
+/// Department: ChatRestrict (0x2A) | Opcode: 12 | Full: 0xA80C
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 12)]
@@ -175,7 +175,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_DEL_ALL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 8 | Full: 0x2A08
+/// Department: ChatRestrict (0x2A) | Opcode: 8 | Full: 0xA808
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 8)]
@@ -201,7 +201,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_DEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 1 | Full: 0x2A01
+/// Department: ChatRestrict (0x2A) | Opcode: 1 | Full: 0xA801
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 1)]
@@ -230,7 +230,7 @@ public class PROTO_NC_CHAT_RESTRICT_DB_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 10 | Full: 0x2A0A
+/// Department: ChatRestrict (0x2A) | Opcode: 10 | Full: 0xA80A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 10)]
@@ -253,7 +253,7 @@ public class PROTO_NC_CHAT_RESTRICT_DEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 14 | Full: 0x2A0E
+/// Department: ChatRestrict (0x2A) | Opcode: 14 | Full: 0xA80E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 14)]
@@ -273,7 +273,7 @@ public class PROTO_NC_CHAT_RESTRICT_DEL_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 7 | Full: 0x2A07
+/// Department: ChatRestrict (0x2A) | Opcode: 7 | Full: 0xA807
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 7)]
@@ -293,7 +293,7 @@ public class PROTO_NC_CHAT_RESTRICT_DEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: ChatRestrict (0x2A) | Opcode: 2 | Full: 0x2A02
+/// Department: ChatRestrict (0x2A) | Opcode: 2 | Full: 0xA802
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.ChatRestrict, 2)]

@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Soulstone (0x14) | Opcode: 1 | Full: 0x1401
+/// Department: Soulstone (0x14) | Opcode: 1 | Full: 0x5001
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Soulstone, 1)]
@@ -25,7 +25,7 @@ public class PROTO_NC_SOULSTONE_HP_BUY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Soulstone (0x14) | Opcode: 11 | Full: 0x140B
+/// Department: Soulstone (0x14) | Opcode: 11 | Full: 0x500B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Soulstone, 11)]
@@ -45,7 +45,7 @@ public class PROTO_NC_SOULSTONE_HP_SOMEONEUSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Soulstone (0x14) | Opcode: 4 | Full: 0x1404
+/// Department: Soulstone (0x14) | Opcode: 4 | Full: 0x5004
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Soulstone, 4)]
@@ -65,7 +65,7 @@ public class PROTO_NC_SOULSTONE_SP_BUY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Soulstone (0x14) | Opcode: 2 | Full: 0x1402
+/// Department: Soulstone (0x14) | Opcode: 2 | Full: 0x5002
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Soulstone, 2)]
@@ -85,7 +85,7 @@ public class PROTO_NC_SOULSTONE_SP_BUY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Soulstone (0x14) | Opcode: 12 | Full: 0x140C
+/// Department: Soulstone (0x14) | Opcode: 12 | Full: 0x500C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Soulstone, 12)]

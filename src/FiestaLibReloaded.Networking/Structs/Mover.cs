@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 10 | Full: 0x330A
+/// Department: Mover (0x33) | Opcode: 10 | Full: 0xCC0A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 10)]
@@ -25,7 +25,7 @@ public class PROTO_NC_MOVER_HUNGRY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 13 | Full: 0x330D
+/// Department: Mover (0x33) | Opcode: 13 | Full: 0xCC0D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 13)]
@@ -51,7 +51,7 @@ public class PROTO_NC_MOVER_MOVESPEED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 2 | Full: 0x3302
+/// Department: Mover (0x33) | Opcode: 2 | Full: 0xCC02
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 2)]
@@ -77,7 +77,7 @@ public class PROTO_NC_MOVER_RIDE_ON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 1 | Full: 0x3301
+/// Department: Mover (0x33) | Opcode: 1 | Full: 0xCC01
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 1)]
@@ -100,7 +100,7 @@ public class PROTO_NC_MOVER_RIDE_ON_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 15 | Full: 0x330F
+/// Department: Mover (0x33) | Opcode: 15 | Full: 0xCC0F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 15)]
@@ -123,7 +123,7 @@ public class PROTO_NC_MOVER_SKILLBASH_FLD_CAST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 14 | Full: 0x330E
+/// Department: Mover (0x33) | Opcode: 14 | Full: 0xCC0E
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 14)]
@@ -146,7 +146,7 @@ public class PROTO_NC_MOVER_SKILLBASH_OBJ_CAST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 8 | Full: 0x3308
+/// Department: Mover (0x33) | Opcode: 8 | Full: 0xCC08
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 8)]
@@ -166,7 +166,7 @@ public class PROTO_NC_MOVER_SOMEONE_RIDE_OFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Mover (0x33) | Opcode: 4 | Full: 0x3304
+/// Department: Mover (0x33) | Opcode: 4 | Full: 0xCC04
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Mover, 4)]

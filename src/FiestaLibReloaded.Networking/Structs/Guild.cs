@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 117 | Full: 0x1D75
+/// Department: Guild (0x1D) | Opcode: 117 | Full: 0x7475
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 117)]
@@ -25,7 +25,7 @@ public class PROTO_NC_GUILD_CHAT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 116 | Full: 0x1D74
+/// Department: Guild (0x1D) | Opcode: 116 | Full: 0x7474
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 116)]
@@ -51,7 +51,7 @@ public class PROTO_NC_GUILD_CHAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 115 | Full: 0x1D73
+/// Department: Guild (0x1D) | Opcode: 115 | Full: 0x7473
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 115)]
@@ -77,7 +77,7 @@ public class PROTO_NC_GUILD_CHAT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 83 | Full: 0x1D53
+/// Department: Guild (0x1D) | Opcode: 83 | Full: 0x7453
 /// sizeof = 1091
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 83)]
@@ -106,7 +106,7 @@ public class PROTO_NC_GUILD_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 87 | Full: 0x1D57
+/// Department: Guild (0x1D) | Opcode: 87 | Full: 0x7457
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 87)]
@@ -141,7 +141,7 @@ public class PROTO_NC_GUILD_DB_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 86 | Full: 0x1D56
+/// Department: Guild (0x1D) | Opcode: 86 | Full: 0x7456
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 86)]
@@ -158,7 +158,7 @@ public class PROTO_NC_GUILD_DB_ALL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 91 | Full: 0x1D5B
+/// Department: Guild (0x1D) | Opcode: 91 | Full: 0x745B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 91)]
@@ -181,7 +181,7 @@ public class PROTO_NC_GUILD_DB_DELETE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 239 | Full: 0x1DEF
+/// Department: Guild (0x1D) | Opcode: 239 | Full: 0x74EF
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 239)]
@@ -207,7 +207,7 @@ public class PROTO_NC_GUILD_DB_DELETE_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 238 | Full: 0x1DEE
+/// Department: Guild (0x1D) | Opcode: 238 | Full: 0x74EE
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 238)]
@@ -230,7 +230,7 @@ public class PROTO_NC_GUILD_DB_DELETE_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 90 | Full: 0x1D5A
+/// Department: Guild (0x1D) | Opcode: 90 | Full: 0x745A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 90)]
@@ -253,7 +253,7 @@ public class PROTO_NC_GUILD_DB_DELETE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 93 | Full: 0x1D5D
+/// Department: Guild (0x1D) | Opcode: 93 | Full: 0x745D
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 93)]
@@ -285,7 +285,7 @@ public class PROTO_NC_GUILD_DB_DISMISS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 92 | Full: 0x1D5C
+/// Department: Guild (0x1D) | Opcode: 92 | Full: 0x745C
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 92)]
@@ -314,7 +314,7 @@ public class PROTO_NC_GUILD_DB_DISMISS_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 101 | Full: 0x1D65
+/// Department: Guild (0x1D) | Opcode: 101 | Full: 0x7465
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 101)]
@@ -343,7 +343,7 @@ public class PROTO_NC_GUILD_DB_INTRO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 89 | Full: 0x1D59
+/// Department: Guild (0x1D) | Opcode: 89 | Full: 0x7459
 /// sizeof = 45
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 89)]
@@ -378,7 +378,7 @@ public class PROTO_NC_GUILD_DB_MAKE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 88 | Full: 0x1D58
+/// Department: Guild (0x1D) | Opcode: 88 | Full: 0x7458
 /// sizeof = 55
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 88)]
@@ -407,7 +407,7 @@ public class PROTO_NC_GUILD_DB_MAKE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 85 | Full: 0x1D55
+/// Department: Guild (0x1D) | Opcode: 85 | Full: 0x7455
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 85)]
@@ -445,7 +445,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 112 | Full: 0x1D70
+/// Department: Guild (0x1D) | Opcode: 112 | Full: 0x7470
 /// sizeof = 37
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 112)]
@@ -483,7 +483,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_GRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 111 | Full: 0x1D6F
+/// Department: Guild (0x1D) | Opcode: 111 | Full: 0x746F
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 111)]
@@ -521,7 +521,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_GRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 110 | Full: 0x1D6E
+/// Department: Guild (0x1D) | Opcode: 110 | Full: 0x746E
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 110)]
@@ -550,7 +550,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_INTRO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 106 | Full: 0x1D6A
+/// Department: Guild (0x1D) | Opcode: 106 | Full: 0x746A
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 106)]
@@ -582,7 +582,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 105 | Full: 0x1D69
+/// Department: Guild (0x1D) | Opcode: 105 | Full: 0x7469
 /// sizeof = 31
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 105)]
@@ -614,7 +614,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 108 | Full: 0x1D6C
+/// Department: Guild (0x1D) | Opcode: 108 | Full: 0x746C
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 108)]
@@ -643,7 +643,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 107 | Full: 0x1D6B
+/// Department: Guild (0x1D) | Opcode: 107 | Full: 0x746B
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 107)]
@@ -672,7 +672,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_LEAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 84 | Full: 0x1D54
+/// Department: Guild (0x1D) | Opcode: 84 | Full: 0x7454
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 84)]
@@ -692,7 +692,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 114 | Full: 0x1D72
+/// Department: Guild (0x1D) | Opcode: 114 | Full: 0x7472
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 114)]
@@ -724,7 +724,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_VANISH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 113 | Full: 0x1D71
+/// Department: Guild (0x1D) | Opcode: 113 | Full: 0x7471
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 113)]
@@ -753,7 +753,7 @@ public class PROTO_NC_GUILD_DB_MEMBER_VANISH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 95 | Full: 0x1D5F
+/// Department: Guild (0x1D) | Opcode: 95 | Full: 0x745F
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 95)]
@@ -791,7 +791,7 @@ public class PROTO_NC_GUILD_DB_MONEY_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 97 | Full: 0x1D61
+/// Department: Guild (0x1D) | Opcode: 97 | Full: 0x7461
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 97)]
@@ -829,7 +829,7 @@ public class PROTO_NC_GUILD_DB_MONEY_SUB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 99 | Full: 0x1D63
+/// Department: Guild (0x1D) | Opcode: 99 | Full: 0x7463
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 99)]
@@ -870,7 +870,7 @@ public class PROTO_NC_GUILD_DB_NOTIFY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 98 | Full: 0x1D62
+/// Department: Guild (0x1D) | Opcode: 98 | Full: 0x7462
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 98)]
@@ -905,7 +905,7 @@ public class PROTO_NC_GUILD_DB_NOTIFY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 179 | Full: 0x1DB3
+/// Department: Guild (0x1D) | Opcode: 179 | Full: 0x74B3
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 179)]
@@ -934,7 +934,7 @@ public class PROTO_NC_GUILD_DB_RENAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 178 | Full: 0x1DB2
+/// Department: Guild (0x1D) | Opcode: 178 | Full: 0x74B2
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 178)]
@@ -960,7 +960,7 @@ public class PROTO_NC_GUILD_DB_RENAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 104 | Full: 0x1D68
+/// Department: Guild (0x1D) | Opcode: 104 | Full: 0x7468
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 104)]
@@ -983,7 +983,7 @@ public class PROTO_NC_GUILD_DB_RESULT_WRITE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 187 | Full: 0x1DBB
+/// Department: Guild (0x1D) | Opcode: 187 | Full: 0x74BB
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 187)]
@@ -1012,7 +1012,7 @@ public class PROTO_NC_GUILD_DB_RETYPE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 186 | Full: 0x1DBA
+/// Department: Guild (0x1D) | Opcode: 186 | Full: 0x74BA
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 186)]
@@ -1038,7 +1038,7 @@ public class PROTO_NC_GUILD_DB_RETYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 189 | Full: 0x1DBD
+/// Department: Guild (0x1D) | Opcode: 189 | Full: 0x74BD
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 189)]
@@ -1073,7 +1073,7 @@ public class PROTO_NC_GUILD_DB_TOKEN_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 188 | Full: 0x1DBC
+/// Department: Guild (0x1D) | Opcode: 188 | Full: 0x74BC
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 188)]
@@ -1090,7 +1090,7 @@ public class PROTO_NC_GUILD_DB_TOKEN_ALL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 103 | Full: 0x1D67
+/// Department: Guild (0x1D) | Opcode: 103 | Full: 0x7467
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 103)]
@@ -1113,7 +1113,7 @@ public class PROTO_NC_GUILD_DB_WAR_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 102 | Full: 0x1D66
+/// Department: Guild (0x1D) | Opcode: 102 | Full: 0x7466
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 102)]
@@ -1148,7 +1148,7 @@ public class PROTO_NC_GUILD_DB_WAR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 48 | Full: 0x1D30
+/// Department: Guild (0x1D) | Opcode: 48 | Full: 0x7430
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 48)]
@@ -1168,7 +1168,7 @@ public class PROTO_NC_GUILD_DELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 8 | Full: 0x1D08
+/// Department: Guild (0x1D) | Opcode: 8 | Full: 0x7408
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 8)]
@@ -1188,7 +1188,7 @@ public class PROTO_NC_GUILD_DISMISS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 47 | Full: 0x1D2F
+/// Department: Guild (0x1D) | Opcode: 47 | Full: 0x742F
 /// sizeof = 57
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 47)]
@@ -1217,7 +1217,7 @@ public class PROTO_NC_GUILD_DISMISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 7 | Full: 0x1D07
+/// Department: Guild (0x1D) | Opcode: 7 | Full: 0x7407
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 7)]
@@ -1240,7 +1240,7 @@ public class PROTO_NC_GUILD_DISMISS_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 258 | Full: 0x1D02
+/// Department: Guild (0x1D) | Opcode: 258 | Full: 0x7502
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 258)]
@@ -1260,7 +1260,7 @@ public class PROTO_NC_GUILD_EMBLEM_CHECK_AVAILABILITY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 266 | Full: 0x1D0A
+/// Department: Guild (0x1D) | Opcode: 266 | Full: 0x750A
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 266)]
@@ -1283,7 +1283,7 @@ public class PROTO_NC_GUILD_EMBLEM_INFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 260 | Full: 0x1D04
+/// Department: Guild (0x1D) | Opcode: 260 | Full: 0x7504
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 260)]
@@ -1315,7 +1315,7 @@ public class PROTO_NC_GUILD_EMBLEM_INFO_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 259 | Full: 0x1D03
+/// Department: Guild (0x1D) | Opcode: 259 | Full: 0x7503
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 259)]
@@ -1332,7 +1332,7 @@ public class PROTO_NC_GUILD_EMBLEM_INFO_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 267 | Full: 0x1D0B
+/// Department: Guild (0x1D) | Opcode: 267 | Full: 0x750B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 267)]
@@ -1355,7 +1355,7 @@ public class PROTO_NC_GUILD_EMBLEM_INFO_NOTICE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 268 | Full: 0x1D0C
+/// Department: Guild (0x1D) | Opcode: 268 | Full: 0x750C
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 268)]
@@ -1375,7 +1375,7 @@ public class PROTO_NC_GUILD_EMBLEM_LEVELUP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 265 | Full: 0x1D09
+/// Department: Guild (0x1D) | Opcode: 265 | Full: 0x7509
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 265)]
@@ -1398,7 +1398,7 @@ public class PROTO_NC_GUILD_EMBLEM_OFF_MSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 262 | Full: 0x1D06
+/// Department: Guild (0x1D) | Opcode: 262 | Full: 0x7506
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 262)]
@@ -1418,7 +1418,7 @@ public class PROTO_NC_GUILD_EMBLEM_SAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 264 | Full: 0x1D08
+/// Department: Guild (0x1D) | Opcode: 264 | Full: 0x7508
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 264)]
@@ -1444,7 +1444,7 @@ public class PROTO_NC_GUILD_EMBLEM_SAVE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 263 | Full: 0x1D07
+/// Department: Guild (0x1D) | Opcode: 263 | Full: 0x7507
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 263)]
@@ -1473,7 +1473,7 @@ public class PROTO_NC_GUILD_EMBLEM_SAVE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 261 | Full: 0x1D05
+/// Department: Guild (0x1D) | Opcode: 261 | Full: 0x7505
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 261)]
@@ -1493,7 +1493,7 @@ public class PROTO_NC_GUILD_EMBLEM_SAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 270 | Full: 0x1D0E
+/// Department: Guild (0x1D) | Opcode: 270 | Full: 0x750E
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 270)]
@@ -1519,7 +1519,7 @@ public class PROTO_NC_GUILD_EMBLEM_STATE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 269 | Full: 0x1D0D
+/// Department: Guild (0x1D) | Opcode: 269 | Full: 0x750D
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 269)]
@@ -1545,7 +1545,7 @@ public class PROTO_NC_GUILD_EMBLEM_STATE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 21 | Full: 0x1D15
+/// Department: Guild (0x1D) | Opcode: 21 | Full: 0x7415
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 21)]
@@ -1568,7 +1568,7 @@ public class PROTO_NC_GUILD_GRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 46 | Full: 0x1D2E
+/// Department: Guild (0x1D) | Opcode: 46 | Full: 0x742E
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 46)]
@@ -1588,7 +1588,7 @@ public class PROTO_NC_GUILD_GRADE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 121 | Full: 0x1D79
+/// Department: Guild (0x1D) | Opcode: 121 | Full: 0x7479
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 121)]
@@ -1611,7 +1611,7 @@ public class PROTO_NC_GUILD_GUILDWARCONFIRM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 120 | Full: 0x1D78
+/// Department: Guild (0x1D) | Opcode: 120 | Full: 0x7478
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 120)]
@@ -1634,7 +1634,7 @@ public class PROTO_NC_GUILD_GUILDWARCONFIRM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 150 | Full: 0x1D96
+/// Department: Guild (0x1D) | Opcode: 150 | Full: 0x7496
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 150)]
@@ -1663,7 +1663,7 @@ public class PROTO_NC_GUILD_GUILDWARSTATUS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 149 | Full: 0x1D95
+/// Department: Guild (0x1D) | Opcode: 149 | Full: 0x7495
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 149)]
@@ -1680,7 +1680,7 @@ public class PROTO_NC_GUILD_GUILDWARSTATUS_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 256 | Full: 0x1D00
+/// Department: Guild (0x1D) | Opcode: 256 | Full: 0x7500
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 256)]
@@ -1721,7 +1721,7 @@ public class PROTO_NC_GUILD_HISTORY_DB_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 255 | Full: 0x1DFF
+/// Department: Guild (0x1D) | Opcode: 255 | Full: 0x74FF
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 255)]
@@ -1744,7 +1744,7 @@ public class PROTO_NC_GUILD_HISTORY_DB_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 254 | Full: 0x1DFE
+/// Department: Guild (0x1D) | Opcode: 254 | Full: 0x74FE
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 254)]
@@ -1782,7 +1782,7 @@ public class PROTO_NC_GUILD_HISTORY_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 2 | Full: 0x1D02
+/// Department: Guild (0x1D) | Opcode: 2 | Full: 0x7402
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 2)]
@@ -1799,7 +1799,7 @@ public class PROTO_NC_GUILD_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 1 | Full: 0x1D01
+/// Department: Guild (0x1D) | Opcode: 1 | Full: 0x7401
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 1)]
@@ -1816,7 +1816,7 @@ public class PROTO_NC_GUILD_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 4 | Full: 0x1D04
+/// Department: Guild (0x1D) | Opcode: 4 | Full: 0x7404
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 4)]
@@ -1854,7 +1854,7 @@ public class PROTO_NC_GUILD_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 3 | Full: 0x1D03
+/// Department: Guild (0x1D) | Opcode: 3 | Full: 0x7403
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 3)]
@@ -1871,7 +1871,7 @@ public class PROTO_NC_GUILD_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 6 | Full: 0x1D06
+/// Department: Guild (0x1D) | Opcode: 6 | Full: 0x7406
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 6)]
@@ -1903,7 +1903,7 @@ public class PROTO_NC_GUILD_MAKE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 5 | Full: 0x1D05
+/// Department: Guild (0x1D) | Opcode: 5 | Full: 0x7405
 /// sizeof = 29
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 5)]
@@ -1929,7 +1929,7 @@ public class PROTO_NC_GUILD_MAKE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 66 | Full: 0x1D42
+/// Department: Guild (0x1D) | Opcode: 66 | Full: 0x7442
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 66)]
@@ -1952,7 +1952,7 @@ public class PROTO_NC_GUILD_MEMBER_CLASS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 59 | Full: 0x1D3B
+/// Department: Guild (0x1D) | Opcode: 59 | Full: 0x743B
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 59)]
@@ -1975,7 +1975,7 @@ public class PROTO_NC_GUILD_MEMBER_EXP_RATIO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 58 | Full: 0x1D3A
+/// Department: Guild (0x1D) | Opcode: 58 | Full: 0x743A
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 58)]
@@ -1998,7 +1998,7 @@ public class PROTO_NC_GUILD_MEMBER_FLAGS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 23 | Full: 0x1D17
+/// Department: Guild (0x1D) | Opcode: 23 | Full: 0x7417
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 23)]
@@ -2024,7 +2024,7 @@ public class PROTO_NC_GUILD_MEMBER_GRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 57 | Full: 0x1D39
+/// Department: Guild (0x1D) | Opcode: 57 | Full: 0x7439
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 57)]
@@ -2047,7 +2047,7 @@ public class PROTO_NC_GUILD_MEMBER_GRADE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 22 | Full: 0x1D16
+/// Department: Guild (0x1D) | Opcode: 22 | Full: 0x7416
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 22)]
@@ -2070,7 +2070,7 @@ public class PROTO_NC_GUILD_MEMBER_GRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 33 | Full: 0x1D21
+/// Department: Guild (0x1D) | Opcode: 33 | Full: 0x7421
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 33)]
@@ -2090,7 +2090,7 @@ public class PROTO_NC_GUILD_MEMBER_INTRO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 60 | Full: 0x1D3C
+/// Department: Guild (0x1D) | Opcode: 60 | Full: 0x743C
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 60)]
@@ -2119,7 +2119,7 @@ public class PROTO_NC_GUILD_MEMBER_INTRO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 32 | Full: 0x1D20
+/// Department: Guild (0x1D) | Opcode: 32 | Full: 0x7420
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 32)]
@@ -2145,7 +2145,7 @@ public class PROTO_NC_GUILD_MEMBER_INTRO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 10 | Full: 0x1D0A
+/// Department: Guild (0x1D) | Opcode: 10 | Full: 0x740A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 10)]
@@ -2168,7 +2168,7 @@ public class PROTO_NC_GUILD_MEMBER_INVITE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 9 | Full: 0x1D09
+/// Department: Guild (0x1D) | Opcode: 9 | Full: 0x7409
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 9)]
@@ -2188,7 +2188,7 @@ public class PROTO_NC_GUILD_MEMBER_INVITE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 12 | Full: 0x1D0C
+/// Department: Guild (0x1D) | Opcode: 12 | Full: 0x740C
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 12)]
@@ -2211,7 +2211,7 @@ public class PROTO_NC_GUILD_MEMBER_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 54 | Full: 0x1D36
+/// Department: Guild (0x1D) | Opcode: 54 | Full: 0x7436
 /// sizeof = 110
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 54)]
@@ -2231,7 +2231,7 @@ public class PROTO_NC_GUILD_MEMBER_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 13 | Full: 0x1D0D
+/// Department: Guild (0x1D) | Opcode: 13 | Full: 0x740D
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 13)]
@@ -2254,7 +2254,7 @@ public class PROTO_NC_GUILD_MEMBER_JOIN_ERR : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 11 | Full: 0x1D0B
+/// Department: Guild (0x1D) | Opcode: 11 | Full: 0x740B
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 11)]
@@ -2277,7 +2277,7 @@ public class PROTO_NC_GUILD_MEMBER_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 29 | Full: 0x1D1D
+/// Department: Guild (0x1D) | Opcode: 29 | Full: 0x741D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 29)]
@@ -2297,7 +2297,7 @@ public class PROTO_NC_GUILD_MEMBER_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 56 | Full: 0x1D38
+/// Department: Guild (0x1D) | Opcode: 56 | Full: 0x7438
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 56)]
@@ -2317,7 +2317,7 @@ public class PROTO_NC_GUILD_MEMBER_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 28 | Full: 0x1D1C
+/// Department: Guild (0x1D) | Opcode: 28 | Full: 0x741C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 28)]
@@ -2334,7 +2334,7 @@ public class PROTO_NC_GUILD_MEMBER_LEAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 64 | Full: 0x1D40
+/// Department: Guild (0x1D) | Opcode: 64 | Full: 0x7440
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 64)]
@@ -2357,7 +2357,7 @@ public class PROTO_NC_GUILD_MEMBER_LEVEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 27 | Full: 0x1D1B
+/// Department: Guild (0x1D) | Opcode: 27 | Full: 0x741B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 27)]
@@ -2392,7 +2392,7 @@ public class PROTO_NC_GUILD_MEMBER_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 26 | Full: 0x1D1A
+/// Department: Guild (0x1D) | Opcode: 26 | Full: 0x741A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 26)]
@@ -2409,7 +2409,7 @@ public class PROTO_NC_GUILD_MEMBER_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 62 | Full: 0x1D3E
+/// Department: Guild (0x1D) | Opcode: 62 | Full: 0x743E
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 62)]
@@ -2429,7 +2429,7 @@ public class PROTO_NC_GUILD_MEMBER_LOGOFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 61 | Full: 0x1D3D
+/// Department: Guild (0x1D) | Opcode: 61 | Full: 0x743D
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 61)]
@@ -2449,7 +2449,7 @@ public class PROTO_NC_GUILD_MEMBER_LOGON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 65 | Full: 0x1D41
+/// Department: Guild (0x1D) | Opcode: 65 | Full: 0x7441
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 65)]
@@ -2472,7 +2472,7 @@ public class PROTO_NC_GUILD_MEMBER_MAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 63 | Full: 0x1D3F
+/// Department: Guild (0x1D) | Opcode: 63 | Full: 0x743F
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 63)]
@@ -2495,7 +2495,7 @@ public class PROTO_NC_GUILD_MEMBER_PARTY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 15 | Full: 0x1D0F
+/// Department: Guild (0x1D) | Opcode: 15 | Full: 0x740F
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 15)]
@@ -2518,7 +2518,7 @@ public class PROTO_NC_GUILD_MEMBER_VANISH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 55 | Full: 0x1D37
+/// Department: Guild (0x1D) | Opcode: 55 | Full: 0x7437
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 55)]
@@ -2538,7 +2538,7 @@ public class PROTO_NC_GUILD_MEMBER_VANISH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 14 | Full: 0x1D0E
+/// Department: Guild (0x1D) | Opcode: 14 | Full: 0x740E
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 14)]
@@ -2558,7 +2558,7 @@ public class PROTO_NC_GUILD_MEMBER_VANISH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 141 | Full: 0x1D8D
+/// Department: Guild (0x1D) | Opcode: 141 | Full: 0x748D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 141)]
@@ -2581,7 +2581,7 @@ public class PROTO_NC_GUILD_MOBGUILD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 31 | Full: 0x1D1F
+/// Department: Guild (0x1D) | Opcode: 31 | Full: 0x741F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 31)]
@@ -2604,7 +2604,7 @@ public class PROTO_NC_GUILD_MONEY_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 43 | Full: 0x1D2B
+/// Department: Guild (0x1D) | Opcode: 43 | Full: 0x742B
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 43)]
@@ -2630,7 +2630,7 @@ public class PROTO_NC_GUILD_MONEY_ADD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 30 | Full: 0x1D1E
+/// Department: Guild (0x1D) | Opcode: 30 | Full: 0x741E
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 30)]
@@ -2650,7 +2650,7 @@ public class PROTO_NC_GUILD_MONEY_ADD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 19 | Full: 0x1D13
+/// Department: Guild (0x1D) | Opcode: 19 | Full: 0x7413
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 19)]
@@ -2673,7 +2673,7 @@ public class PROTO_NC_GUILD_MONEY_SUB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 44 | Full: 0x1D2C
+/// Department: Guild (0x1D) | Opcode: 44 | Full: 0x742C
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 44)]
@@ -2699,7 +2699,7 @@ public class PROTO_NC_GUILD_MONEY_SUB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 25 | Full: 0x1D19
+/// Department: Guild (0x1D) | Opcode: 25 | Full: 0x7419
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 25)]
@@ -2728,7 +2728,7 @@ public class PROTO_NC_GUILD_MY_GUILD_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 24 | Full: 0x1D18
+/// Department: Guild (0x1D) | Opcode: 24 | Full: 0x7418
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 24)]
@@ -2745,7 +2745,7 @@ public class PROTO_NC_GUILD_MY_GUILD_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 191 | Full: 0x1DBF
+/// Department: Guild (0x1D) | Opcode: 191 | Full: 0x74BF
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 191)]
@@ -2768,7 +2768,7 @@ public class PROTO_NC_GUILD_MY_GUILD_TOKEN_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 190 | Full: 0x1DBE
+/// Department: Guild (0x1D) | Opcode: 190 | Full: 0x74BE
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 190)]
@@ -2785,7 +2785,7 @@ public class PROTO_NC_GUILD_MY_GUILD_TOKEN_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 196 | Full: 0x1DC4
+/// Department: Guild (0x1D) | Opcode: 196 | Full: 0x74C4
 /// sizeof = 45
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 196)]
@@ -2808,7 +2808,7 @@ public class PROTO_NC_GUILD_MY_GUILD_TOURNAMENT_MATCH_TIME_ACK : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 195 | Full: 0x1DC3
+/// Department: Guild (0x1D) | Opcode: 195 | Full: 0x74C3
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 195)]
@@ -2825,7 +2825,7 @@ public class PROTO_NC_GUILD_MY_GUILD_TOURNAMENT_MATCH_TIME_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 119 | Full: 0x1D77
+/// Department: Guild (0x1D) | Opcode: 119 | Full: 0x7477
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 119)]
@@ -2851,7 +2851,7 @@ public class PROTO_NC_GUILD_NAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 118 | Full: 0x1D76
+/// Department: Guild (0x1D) | Opcode: 118 | Full: 0x7476
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 118)]
@@ -2871,7 +2871,7 @@ public class PROTO_NC_GUILD_NAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 17 | Full: 0x1D11
+/// Department: Guild (0x1D) | Opcode: 17 | Full: 0x7411
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 17)]
@@ -2891,7 +2891,7 @@ public class PROTO_NC_GUILD_NOTIFY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 45 | Full: 0x1D2D
+/// Department: Guild (0x1D) | Opcode: 45 | Full: 0x742D
 /// sizeof = 62
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 45)]
@@ -2926,7 +2926,7 @@ public class PROTO_NC_GUILD_NOTIFY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 16 | Full: 0x1D10
+/// Department: Guild (0x1D) | Opcode: 16 | Full: 0x7410
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 16)]
@@ -2952,7 +2952,7 @@ public class PROTO_NC_GUILD_NOTIFY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 174 | Full: 0x1DAE
+/// Department: Guild (0x1D) | Opcode: 174 | Full: 0x74AE
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 174)]
@@ -2997,7 +2997,7 @@ public class PROTO_NC_GUILD_RENAME_CMD_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 172 | Full: 0x1DAC
+/// Department: Guild (0x1D) | Opcode: 172 | Full: 0x74AC
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 172)]
@@ -3020,7 +3020,7 @@ public class PROTO_NC_GUILD_RENAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 182 | Full: 0x1DB6
+/// Department: Guild (0x1D) | Opcode: 182 | Full: 0x74B6
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 182)]
@@ -3043,7 +3043,7 @@ public class PROTO_NC_GUILD_RETYPE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 180 | Full: 0x1DB4
+/// Department: Guild (0x1D) | Opcode: 180 | Full: 0x74B4
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 180)]
@@ -3066,7 +3066,7 @@ public class PROTO_NC_GUILD_RETYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 159 | Full: 0x1D9F
+/// Department: Guild (0x1D) | Opcode: 159 | Full: 0x749F
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 159)]
@@ -3092,7 +3092,7 @@ public class PROTO_NC_GUILD_STORAGE_WITHDRAW_GRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 158 | Full: 0x1D9E
+/// Department: Guild (0x1D) | Opcode: 158 | Full: 0x749E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 158)]
@@ -3112,7 +3112,7 @@ public class PROTO_NC_GUILD_STORAGE_WITHDRAW_GRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 146 | Full: 0x1D92
+/// Department: Guild (0x1D) | Opcode: 146 | Full: 0x7492
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 146)]
@@ -3150,7 +3150,7 @@ public class PROTO_NC_GUILD_STORAGEOPEN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 148 | Full: 0x1D94
+/// Department: Guild (0x1D) | Opcode: 148 | Full: 0x7494
 /// sizeof = 33
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 148)]
@@ -3188,7 +3188,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 147 | Full: 0x1D93
+/// Department: Guild (0x1D) | Opcode: 147 | Full: 0x7493
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 147)]
@@ -3232,7 +3232,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 232 | Full: 0x1DE8
+/// Department: Guild (0x1D) | Opcode: 232 | Full: 0x74E8
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 232)]
@@ -3264,7 +3264,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_FINAL_SELECTION_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 231 | Full: 0x1DE7
+/// Department: Guild (0x1D) | Opcode: 231 | Full: 0x74E7
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 231)]
@@ -3290,7 +3290,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_FINAL_SELECTION_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 134 | Full: 0x1D86
+/// Department: Guild (0x1D) | Opcode: 134 | Full: 0x7486
 /// sizeof = 204
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 134)]
@@ -3335,7 +3335,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 133 | Full: 0x1D85
+/// Department: Guild (0x1D) | Opcode: 133 | Full: 0x7485
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 133)]
@@ -3355,7 +3355,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_GET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 138 | Full: 0x1D8A
+/// Department: Guild (0x1D) | Opcode: 138 | Full: 0x748A
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 138)]
@@ -3387,7 +3387,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 236 | Full: 0x1DEC
+/// Department: Guild (0x1D) | Opcode: 236 | Full: 0x74EC
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 236)]
@@ -3428,7 +3428,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_JOIN_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 235 | Full: 0x1DEB
+/// Department: Guild (0x1D) | Opcode: 235 | Full: 0x74EB
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 235)]
@@ -3451,7 +3451,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_JOIN_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 230 | Full: 0x1DE6
+/// Department: Guild (0x1D) | Opcode: 230 | Full: 0x74E6
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 230)]
@@ -3498,7 +3498,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_JOIN_NEW_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 229 | Full: 0x1DE5
+/// Department: Guild (0x1D) | Opcode: 229 | Full: 0x74E5
 /// sizeof = 33
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 229)]
@@ -3542,7 +3542,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_JOIN_NEW_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 171 | Full: 0x1DAB
+/// Department: Guild (0x1D) | Opcode: 171 | Full: 0x74AB
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 171)]
@@ -3577,7 +3577,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_REWARD_CREATE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 170 | Full: 0x1DAA
+/// Department: Guild (0x1D) | Opcode: 170 | Full: 0x74AA
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 170)]
@@ -3604,7 +3604,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_REWARD_CREATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 152 | Full: 0x1D98
+/// Department: Guild (0x1D) | Opcode: 152 | Full: 0x7498
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 152)]
@@ -3627,7 +3627,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_MATCH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 151 | Full: 0x1D97
+/// Department: Guild (0x1D) | Opcode: 151 | Full: 0x7497
 /// sizeof = 161
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 151)]
@@ -3658,7 +3658,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_MATCH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 154 | Full: 0x1D9A
+/// Department: Guild (0x1D) | Opcode: 154 | Full: 0x749A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 154)]
@@ -3681,7 +3681,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_MATCH_TIME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 153 | Full: 0x1D99
+/// Department: Guild (0x1D) | Opcode: 153 | Full: 0x7499
 /// sizeof = 42
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 153)]
@@ -3709,7 +3709,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_MATCH_TIME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 143 | Full: 0x1D8F
+/// Department: Guild (0x1D) | Opcode: 143 | Full: 0x748F
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 143)]
@@ -3738,7 +3738,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_RESULT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 142 | Full: 0x1D8E
+/// Department: Guild (0x1D) | Opcode: 142 | Full: 0x748E
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 142)]
@@ -3767,7 +3767,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_RESULT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 140 | Full: 0x1D8C
+/// Department: Guild (0x1D) | Opcode: 140 | Full: 0x748C
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 140)]
@@ -3805,7 +3805,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_TYPE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 139 | Full: 0x1D8B
+/// Department: Guild (0x1D) | Opcode: 139 | Full: 0x748B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 139)]
@@ -3834,7 +3834,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DB_SET_TYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 214 | Full: 0x1DD6
+/// Department: Guild (0x1D) | Opcode: 214 | Full: 0x74D6
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 214)]
@@ -3854,7 +3854,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DICEGAME_BEFORE_END_TIME_MSG_CMD : IFiest
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 210 | Full: 0x1DD2
+/// Department: Guild (0x1D) | Opcode: 210 | Full: 0x74D2
 /// sizeof = 52
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 210)]
@@ -3889,7 +3889,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DICEGAME_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 212 | Full: 0x1DD4
+/// Department: Guild (0x1D) | Opcode: 212 | Full: 0x74D4
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 212)]
@@ -3909,7 +3909,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DICEGAME_THROW_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 213 | Full: 0x1DD5
+/// Department: Guild (0x1D) | Opcode: 213 | Full: 0x74D5
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 213)]
@@ -3932,7 +3932,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DICEGAME_THROW_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 211 | Full: 0x1DD3
+/// Department: Guild (0x1D) | Opcode: 211 | Full: 0x74D3
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 211)]
@@ -3949,7 +3949,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_DICEGAME_THROW_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 130 | Full: 0x1D82
+/// Department: Guild (0x1D) | Opcode: 130 | Full: 0x7482
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 130)]
@@ -3981,7 +3981,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_END_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 247 | Full: 0x1DF7
+/// Department: Guild (0x1D) | Opcode: 247 | Full: 0x74F7
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 247)]
@@ -4016,7 +4016,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ENTER_LIST_DB_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 246 | Full: 0x1DF6
+/// Department: Guild (0x1D) | Opcode: 246 | Full: 0x74F6
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 246)]
@@ -4036,7 +4036,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ENTER_LIST_DB_GET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 203 | Full: 0x1DCB
+/// Department: Guild (0x1D) | Opcode: 203 | Full: 0x74CB
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 203)]
@@ -4056,7 +4056,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_FLAGCAPTURE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 204 | Full: 0x1DCC
+/// Department: Guild (0x1D) | Opcode: 204 | Full: 0x74CC
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 204)]
@@ -4079,7 +4079,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_FLAGCAPTURE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 202 | Full: 0x1DCA
+/// Department: Guild (0x1D) | Opcode: 202 | Full: 0x74CA
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 202)]
@@ -4099,7 +4099,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_FLAGCAPTURE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 205 | Full: 0x1DCD
+/// Department: Guild (0x1D) | Opcode: 205 | Full: 0x74CD
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 205)]
@@ -4128,7 +4128,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_FLAGCAPTURE_RESULT_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 244 | Full: 0x1DF4
+/// Department: Guild (0x1D) | Opcode: 244 | Full: 0x74F4
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 244)]
@@ -4160,7 +4160,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_GOLD_REFUND_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 241 | Full: 0x1DF1
+/// Department: Guild (0x1D) | Opcode: 241 | Full: 0x74F1
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 241)]
@@ -4180,7 +4180,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ITEM_EFFECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 242 | Full: 0x1DF2
+/// Department: Guild (0x1D) | Opcode: 242 | Full: 0x74F2
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 242)]
@@ -4203,7 +4203,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ITEM_FLAG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 240 | Full: 0x1DF0
+/// Department: Guild (0x1D) | Opcode: 240 | Full: 0x74F0
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 240)]
@@ -4223,7 +4223,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ITEM_PICK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 243 | Full: 0x1DF3
+/// Department: Guild (0x1D) | Opcode: 243 | Full: 0x74F3
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 243)]
@@ -4244,7 +4244,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ITEM_SCAN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 123 | Full: 0x1D7B
+/// Department: Guild (0x1D) | Opcode: 123 | Full: 0x747B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 123)]
@@ -4270,7 +4270,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 234 | Full: 0x1DEA
+/// Department: Guild (0x1D) | Opcode: 234 | Full: 0x74EA
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 234)]
@@ -4308,7 +4308,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_JOIN_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 233 | Full: 0x1DE9
+/// Department: Guild (0x1D) | Opcode: 233 | Full: 0x74E9
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 233)]
@@ -4325,7 +4325,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_JOIN_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 122 | Full: 0x1D7A
+/// Department: Guild (0x1D) | Opcode: 122 | Full: 0x747A
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 122)]
@@ -4345,7 +4345,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 197 | Full: 0x1DC5
+/// Department: Guild (0x1D) | Opcode: 197 | Full: 0x74C5
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 197)]
@@ -4368,7 +4368,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_LAST_WINNER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 127 | Full: 0x1D7F
+/// Department: Guild (0x1D) | Opcode: 127 | Full: 0x747F
 /// sizeof = 1014
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 127)]
@@ -4453,7 +4453,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 126 | Full: 0x1D7E
+/// Department: Guild (0x1D) | Opcode: 126 | Full: 0x747E
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 126)]
@@ -4470,7 +4470,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 225 | Full: 0x1DE1
+/// Department: Guild (0x1D) | Opcode: 225 | Full: 0x74E1
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 225)]
@@ -4490,7 +4490,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_MANAGERUSERMSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 237 | Full: 0x1DED
+/// Department: Guild (0x1D) | Opcode: 237 | Full: 0x74ED
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 237)]
@@ -4514,7 +4514,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_NOTIFY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 216 | Full: 0x1DD8
+/// Department: Guild (0x1D) | Opcode: 216 | Full: 0x74D8
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 216)]
@@ -4543,7 +4543,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_OBSERVER_ENTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 215 | Full: 0x1DD7
+/// Department: Guild (0x1D) | Opcode: 215 | Full: 0x74D7
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 215)]
@@ -4563,7 +4563,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_OBSERVER_ENTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 219 | Full: 0x1DDB
+/// Department: Guild (0x1D) | Opcode: 219 | Full: 0x74DB
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 219)]
@@ -4583,7 +4583,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_OBSERVER_OUT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 222 | Full: 0x1DDE
+/// Department: Guild (0x1D) | Opcode: 222 | Full: 0x74DE
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 222)]
@@ -4609,7 +4609,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_PLAYERDIEMSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 223 | Full: 0x1DDF
+/// Department: Guild (0x1D) | Opcode: 223 | Full: 0x74DF
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 223)]
@@ -4635,7 +4635,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_PLAYERKILLMSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 157 | Full: 0x1D9D
+/// Department: Guild (0x1D) | Opcode: 157 | Full: 0x749D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 157)]
@@ -4655,7 +4655,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_RECALL_ENTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 155 | Full: 0x1D9B
+/// Department: Guild (0x1D) | Opcode: 155 | Full: 0x749B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 155)]
@@ -4672,7 +4672,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_RECALL_ENTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 156 | Full: 0x1D9C
+/// Department: Guild (0x1D) | Opcode: 156 | Full: 0x749C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 156)]
@@ -4692,7 +4692,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_RECALL_ENTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 248 | Full: 0x1DF8
+/// Department: Guild (0x1D) | Opcode: 248 | Full: 0x74F8
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 248)]
@@ -4712,7 +4712,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_REFUND_NOTICE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 249 | Full: 0x1DF9
+/// Department: Guild (0x1D) | Opcode: 249 | Full: 0x74F9
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 249)]
@@ -4735,7 +4735,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_REFUND_NOTICE_DB_SET_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 144 | Full: 0x1D90
+/// Department: Guild (0x1D) | Opcode: 144 | Full: 0x7490
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 144)]
@@ -4767,7 +4767,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_RESULT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 221 | Full: 0x1DDD
+/// Department: Guild (0x1D) | Opcode: 221 | Full: 0x74DD
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 221)]
@@ -4808,7 +4808,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_SCORE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 206 | Full: 0x1DCE
+/// Department: Guild (0x1D) | Opcode: 206 | Full: 0x74CE
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 206)]
@@ -4828,7 +4828,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_SKILLPOINT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 129 | Full: 0x1D81
+/// Department: Guild (0x1D) | Opcode: 129 | Full: 0x7481
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 129)]
@@ -4866,7 +4866,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 224 | Full: 0x1DE0
+/// Department: Guild (0x1D) | Opcode: 224 | Full: 0x74E0
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 224)]
@@ -4886,7 +4886,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_STARTMSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 128 | Full: 0x1D80
+/// Department: Guild (0x1D) | Opcode: 128 | Full: 0x7480
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 128)]
@@ -4906,7 +4906,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_TYPE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 208 | Full: 0x1DD0
+/// Department: Guild (0x1D) | Opcode: 208 | Full: 0x74D0
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 208)]
@@ -4929,7 +4929,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_USESKILL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 209 | Full: 0x1DD1
+/// Department: Guild (0x1D) | Opcode: 209 | Full: 0x74D1
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 209)]
@@ -4952,7 +4952,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_USESKILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 207 | Full: 0x1DCF
+/// Department: Guild (0x1D) | Opcode: 207 | Full: 0x74CF
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 207)]
@@ -4972,7 +4972,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_USESKILL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 200 | Full: 0x1DC8
+/// Department: Guild (0x1D) | Opcode: 200 | Full: 0x74C8
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 200)]
@@ -4998,7 +4998,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_FIGHTER_ENTER_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 201 | Full: 0x1DC9
+/// Department: Guild (0x1D) | Opcode: 201 | Full: 0x74C9
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 201)]
@@ -5024,7 +5024,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_FIGHTER_OUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 228 | Full: 0x1DE4
+/// Department: Guild (0x1D) | Opcode: 228 | Full: 0x74E4
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 228)]
@@ -5065,7 +5065,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_JOIN_NEW_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 227 | Full: 0x1DE3
+/// Department: Guild (0x1D) | Opcode: 227 | Full: 0x74E3
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 227)]
@@ -5103,7 +5103,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_JOIN_NEW_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 199 | Full: 0x1DC7
+/// Department: Guild (0x1D) | Opcode: 199 | Full: 0x74C7
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 199)]
@@ -5141,7 +5141,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_MEMBERGRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 198 | Full: 0x1DC6
+/// Department: Guild (0x1D) | Opcode: 198 | Full: 0x74C6
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 198)]
@@ -5164,7 +5164,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_MEMBERGRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 218 | Full: 0x1DDA
+/// Department: Guild (0x1D) | Opcode: 218 | Full: 0x74DA
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 218)]
@@ -5190,7 +5190,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_OBSERVER_ENTER_ACK : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 217 | Full: 0x1DD9
+/// Department: Guild (0x1D) | Opcode: 217 | Full: 0x74D9
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 217)]
@@ -5213,7 +5213,7 @@ public class PROTO_NC_GUILD_TOURNAMENT_ZONE_OBSERVER_ENTER_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 131 | Full: 0x1D83
+/// Department: Guild (0x1D) | Opcode: 131 | Full: 0x7483
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 131)]
@@ -5242,7 +5242,7 @@ public class PROTO_NC_GUILD_TOURNAMENTSTART_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 226 | Full: 0x1DE2
+/// Department: Guild (0x1D) | Opcode: 226 | Full: 0x74E2
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 226)]
@@ -5277,7 +5277,7 @@ public class PROTO_NC_GUILD_TOURNAMENTSTOPMSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 37 | Full: 0x1D25
+/// Department: Guild (0x1D) | Opcode: 37 | Full: 0x7425
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 37)]
@@ -5312,7 +5312,7 @@ public class PROTO_NC_GUILD_WAR_ABLE_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 36 | Full: 0x1D24
+/// Department: Guild (0x1D) | Opcode: 36 | Full: 0x7424
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 36)]
@@ -5329,7 +5329,7 @@ public class PROTO_NC_GUILD_WAR_ABLE_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 35 | Full: 0x1D23
+/// Department: Guild (0x1D) | Opcode: 35 | Full: 0x7423
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 35)]
@@ -5349,7 +5349,7 @@ public class PROTO_NC_GUILD_WAR_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 53 | Full: 0x1D35
+/// Department: Guild (0x1D) | Opcode: 53 | Full: 0x7435
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 53)]
@@ -5366,7 +5366,7 @@ public class PROTO_NC_GUILD_WAR_COOLDOWN_DONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 52 | Full: 0x1D34
+/// Department: Guild (0x1D) | Opcode: 52 | Full: 0x7434
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 52)]
@@ -5404,7 +5404,7 @@ public class PROTO_NC_GUILD_WAR_END_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 39 | Full: 0x1D27
+/// Department: Guild (0x1D) | Opcode: 39 | Full: 0x7427
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 39)]
@@ -5439,7 +5439,7 @@ public class PROTO_NC_GUILD_WAR_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 38 | Full: 0x1D26
+/// Department: Guild (0x1D) | Opcode: 38 | Full: 0x7426
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 38)]
@@ -5456,7 +5456,7 @@ public class PROTO_NC_GUILD_WAR_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 34 | Full: 0x1D22
+/// Department: Guild (0x1D) | Opcode: 34 | Full: 0x7422
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 34)]
@@ -5476,7 +5476,7 @@ public class PROTO_NC_GUILD_WAR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 42 | Full: 0x1D2A
+/// Department: Guild (0x1D) | Opcode: 42 | Full: 0x742A
 /// sizeof = 116
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 42)]
@@ -5505,7 +5505,7 @@ public class PROTO_NC_GUILD_WAR_SCORE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 51 | Full: 0x1D33
+/// Department: Guild (0x1D) | Opcode: 51 | Full: 0x7433
 /// sizeof = 60
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 51)]
@@ -5534,7 +5534,7 @@ public class PROTO_NC_GUILD_WAR_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 50 | Full: 0x1D32
+/// Department: Guild (0x1D) | Opcode: 50 | Full: 0x7432
 /// sizeof = 234
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 50)]
@@ -5554,7 +5554,7 @@ public class PROTO_NC_GUILD_WAR_TARGET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 176 | Full: 0x1DB0
+/// Department: Guild (0x1D) | Opcode: 176 | Full: 0x74B0
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 176)]
@@ -5583,7 +5583,7 @@ public class PROTO_NC_GUILD_WORLD_RENAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 177 | Full: 0x1DB1
+/// Department: Guild (0x1D) | Opcode: 177 | Full: 0x74B1
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 177)]
@@ -5606,7 +5606,7 @@ public class PROTO_NC_GUILD_WORLD_RENAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 175 | Full: 0x1DAF
+/// Department: Guild (0x1D) | Opcode: 175 | Full: 0x74AF
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 175)]
@@ -5632,7 +5632,7 @@ public class PROTO_NC_GUILD_WORLD_RENAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 184 | Full: 0x1DB8
+/// Department: Guild (0x1D) | Opcode: 184 | Full: 0x74B8
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 184)]
@@ -5661,7 +5661,7 @@ public class PROTO_NC_GUILD_WORLD_RETYPE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 185 | Full: 0x1DB9
+/// Department: Guild (0x1D) | Opcode: 185 | Full: 0x74B9
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 185)]
@@ -5684,7 +5684,7 @@ public class PROTO_NC_GUILD_WORLD_RETYPE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 183 | Full: 0x1DB7
+/// Department: Guild (0x1D) | Opcode: 183 | Full: 0x74B7
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 183)]
@@ -5710,7 +5710,7 @@ public class PROTO_NC_GUILD_WORLD_RETYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 194 | Full: 0x1DC2
+/// Department: Guild (0x1D) | Opcode: 194 | Full: 0x74C2
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 194)]
@@ -5733,7 +5733,7 @@ public class PROTO_NC_GUILD_WORLD_SET_GUILD_TOKEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 193 | Full: 0x1DC1
+/// Department: Guild (0x1D) | Opcode: 193 | Full: 0x74C1
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 193)]
@@ -5759,7 +5759,7 @@ public class PROTO_NC_GUILD_WORLD_USE_GUILD_TOKEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 73 | Full: 0x1D49
+/// Department: Guild (0x1D) | Opcode: 73 | Full: 0x7449
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 73)]
@@ -5779,7 +5779,7 @@ public class PROTO_NC_GUILD_ZONE_DELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 71 | Full: 0x1D47
+/// Department: Guild (0x1D) | Opcode: 71 | Full: 0x7447
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 71)]
@@ -5811,7 +5811,7 @@ public class PROTO_NC_GUILD_ZONE_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 70 | Full: 0x1D46
+/// Department: Guild (0x1D) | Opcode: 70 | Full: 0x7446
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 70)]
@@ -5828,7 +5828,7 @@ public class PROTO_NC_GUILD_ZONE_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 72 | Full: 0x1D48
+/// Department: Guild (0x1D) | Opcode: 72 | Full: 0x7448
 /// sizeof = 53
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 72)]
@@ -5851,7 +5851,7 @@ public class PROTO_NC_GUILD_ZONE_MAKE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 74 | Full: 0x1D4A
+/// Department: Guild (0x1D) | Opcode: 74 | Full: 0x744A
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 74)]
@@ -5874,7 +5874,7 @@ public class PROTO_NC_GUILD_ZONE_MEMBER_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 75 | Full: 0x1D4B
+/// Department: Guild (0x1D) | Opcode: 75 | Full: 0x744B
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 75)]
@@ -5894,7 +5894,7 @@ public class PROTO_NC_GUILD_ZONE_MEMBER_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 192 | Full: 0x1DC0
+/// Department: Guild (0x1D) | Opcode: 192 | Full: 0x74C0
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 192)]
@@ -5917,7 +5917,7 @@ public class PROTO_NC_GUILD_ZONE_USE_GUILD_TOKEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 68 | Full: 0x1D44
+/// Department: Guild (0x1D) | Opcode: 68 | Full: 0x7444
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 68)]
@@ -5940,7 +5940,7 @@ public class PROTO_NC_GUILD_ZONE_WAR_END_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 69 | Full: 0x1D45
+/// Department: Guild (0x1D) | Opcode: 69 | Full: 0x7445
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 69)]
@@ -5963,7 +5963,7 @@ public class PROTO_NC_GUILD_ZONE_WAR_KILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Guild (0x1D) | Opcode: 67 | Full: 0x1D43
+/// Department: Guild (0x1D) | Opcode: 67 | Full: 0x7443
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Guild, 67)]

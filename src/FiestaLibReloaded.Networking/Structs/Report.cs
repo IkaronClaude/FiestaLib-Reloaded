@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 2 | Full: 0x2002
+/// Department: Report (0x20) | Opcode: 2 | Full: 0x8002
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 2)]
@@ -31,7 +31,7 @@ public class PROTO_NC_REPORT_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 1 | Full: 0x2001
+/// Department: Report (0x20) | Opcode: 1 | Full: 0x8001
 /// sizeof = 2342
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 1)]
@@ -63,7 +63,7 @@ public class PROTO_NC_REPORT_ADD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 4 | Full: 0x2004
+/// Department: Report (0x20) | Opcode: 4 | Full: 0x8004
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 4)]
@@ -86,7 +86,7 @@ public class PROTO_NC_REPORT_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 3 | Full: 0x2003
+/// Department: Report (0x20) | Opcode: 3 | Full: 0x8003
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 3)]
@@ -106,7 +106,7 @@ public class PROTO_NC_REPORT_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 6 | Full: 0x2006
+/// Department: Report (0x20) | Opcode: 6 | Full: 0x8006
 /// sizeof = 135
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 6)]
@@ -135,7 +135,7 @@ public class PROTO_NC_REPORT_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Report (0x20) | Opcode: 5 | Full: 0x2005
+/// Department: Report (0x20) | Opcode: 5 | Full: 0x8005
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Report, 5)]

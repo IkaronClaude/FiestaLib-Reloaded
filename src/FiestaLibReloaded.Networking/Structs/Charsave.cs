@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 17 | Full: 0x1011
+/// Department: Charsave (0x10) | Opcode: 17 | Full: 0x4011
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 17)]
@@ -28,7 +28,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_ABSTATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 14 | Full: 0x100E
+/// Department: Charsave (0x10) | Opcode: 14 | Full: 0x400E
 /// sizeof = 107
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 14)]
@@ -51,7 +51,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_ALL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 50 | Full: 0x1032
+/// Department: Charsave (0x10) | Opcode: 50 | Full: 0x4032
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 50)]
@@ -77,7 +77,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_CHAT_COLOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 20 | Full: 0x1014
+/// Department: Charsave (0x10) | Opcode: 20 | Full: 0x4014
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 20)]
@@ -100,7 +100,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_CHESTINFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 44 | Full: 0x102C
+/// Department: Charsave (0x10) | Opcode: 44 | Full: 0x402C
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 44)]
@@ -129,7 +129,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_COININFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 21 | Full: 0x1015
+/// Department: Charsave (0x10) | Opcode: 21 | Full: 0x4015
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 21)]
@@ -155,7 +155,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_GAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 19 | Full: 0x1013
+/// Department: Charsave (0x10) | Opcode: 19 | Full: 0x4013
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 19)]
@@ -187,7 +187,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_ITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 52 | Full: 0x1034
+/// Department: Charsave (0x10) | Opcode: 52 | Full: 0x4034
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 52)]
@@ -210,7 +210,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_ITEMACTIONCOOLTIME_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 25 | Full: 0x1019
+/// Department: Charsave (0x10) | Opcode: 25 | Full: 0x4019
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 25)]
@@ -233,7 +233,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_LINK_FROM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 23 | Full: 0x1017
+/// Department: Charsave (0x10) | Opcode: 23 | Full: 0x4017
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 23)]
@@ -262,7 +262,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_MISC_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 51 | Full: 0x1033
+/// Department: Charsave (0x10) | Opcode: 51 | Full: 0x4033
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 51)]
@@ -297,7 +297,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_PET_LINK_RESUMMON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 15 | Full: 0x100F
+/// Department: Charsave (0x10) | Opcode: 15 | Full: 0x400F
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 15)]
@@ -320,7 +320,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_QUEST_DOING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 16 | Full: 0x1010
+/// Department: Charsave (0x10) | Opcode: 16 | Full: 0x4010
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 16)]
@@ -343,7 +343,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_QUEST_DONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 41 | Full: 0x1029
+/// Department: Charsave (0x10) | Opcode: 41 | Full: 0x4029
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 41)]
@@ -366,7 +366,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_QUEST_READ_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 43 | Full: 0x102B
+/// Department: Charsave (0x10) | Opcode: 43 | Full: 0x402B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 43)]
@@ -389,7 +389,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_QUEST_REPEAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 42 | Full: 0x102A
+/// Department: Charsave (0x10) | Opcode: 42 | Full: 0x402A
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 42)]
@@ -427,7 +427,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_SINGLE_OPTION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 18 | Full: 0x1012
+/// Department: Charsave (0x10) | Opcode: 18 | Full: 0x4012
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 18)]
@@ -456,7 +456,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_SKILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 22 | Full: 0x1016
+/// Department: Charsave (0x10) | Opcode: 22 | Full: 0x4016
 /// sizeof = 1037
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 22)]
@@ -482,7 +482,7 @@ public class PROTO_NC_CHARSAVE_2WLDMAN_TITLE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 7 | Full: 0x1007
+/// Department: Charsave (0x10) | Opcode: 7 | Full: 0x4007
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 7)]
@@ -514,7 +514,7 @@ public class PROTO_NC_CHARSAVE_ABSTATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 2 | Full: 0x1002
+/// Department: Charsave (0x10) | Opcode: 2 | Full: 0x4002
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 2)]
@@ -537,7 +537,7 @@ public class PROTO_NC_CHARSAVE_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 1 | Full: 0x1001
+/// Department: Charsave (0x10) | Opcode: 1 | Full: 0x4001
 /// sizeof = 105
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 1)]
@@ -566,7 +566,7 @@ public class PROTO_NC_CHARSAVE_ALL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 13 | Full: 0x100D
+/// Department: Charsave (0x10) | Opcode: 13 | Full: 0x400D
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 13)]
@@ -607,7 +607,7 @@ public class PROTO_NC_CHARSAVE_CHARSTAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 49 | Full: 0x1031
+/// Department: Charsave (0x10) | Opcode: 49 | Full: 0x4031
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 49)]
@@ -633,7 +633,7 @@ public class PROTO_NC_CHARSAVE_CHAT_COLOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 40 | Full: 0x1028
+/// Department: Charsave (0x10) | Opcode: 40 | Full: 0x4028
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 40)]
@@ -656,7 +656,7 @@ public class PROTO_NC_CHARSAVE_DB_UI_STATE_SAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 39 | Full: 0x1027
+/// Department: Charsave (0x10) | Opcode: 39 | Full: 0x4027
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 39)]
@@ -679,7 +679,7 @@ public class PROTO_NC_CHARSAVE_DB_UI_STATE_SAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 36 | Full: 0x1024
+/// Department: Charsave (0x10) | Opcode: 36 | Full: 0x4024
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 36)]
@@ -708,7 +708,7 @@ public class PROTO_NC_CHARSAVE_ITEMACTIONCOOLTIME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 35 | Full: 0x1023
+/// Department: Charsave (0x10) | Opcode: 35 | Full: 0x4023
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 35)]
@@ -737,7 +737,7 @@ public class PROTO_NC_CHARSAVE_ITEMACTIONCOOLTIME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 4 | Full: 0x1004
+/// Department: Charsave (0x10) | Opcode: 4 | Full: 0x4004
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 4)]
@@ -766,7 +766,7 @@ public class PROTO_NC_CHARSAVE_LEVEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 3 | Full: 0x1003
+/// Department: Charsave (0x10) | Opcode: 3 | Full: 0x4003
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 3)]
@@ -801,7 +801,7 @@ public class PROTO_NC_CHARSAVE_LOCATION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 24 | Full: 0x1018
+/// Department: Charsave (0x10) | Opcode: 24 | Full: 0x4018
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 24)]
@@ -824,7 +824,7 @@ public class PROTO_NC_CHARSAVE_PKCOUNT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 5 | Full: 0x1005
+/// Department: Charsave (0x10) | Opcode: 5 | Full: 0x4005
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 5)]
@@ -859,7 +859,7 @@ public class PROTO_NC_CHARSAVE_QUEST_DOING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 26 | Full: 0x101A
+/// Department: Charsave (0x10) | Opcode: 26 | Full: 0x401A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 26)]
@@ -879,7 +879,7 @@ public class PROTO_NC_CHARSAVE_REST_EXP_LAST_EXEC_TIME_SAVE_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 55 | Full: 0x1037
+/// Department: Charsave (0x10) | Opcode: 55 | Full: 0x4037
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 55)]
@@ -914,7 +914,7 @@ public class PROTO_NC_CHARSAVE_SELL_ITEM_INFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 34 | Full: 0x1022
+/// Department: Charsave (0x10) | Opcode: 34 | Full: 0x4022
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 34)]
@@ -940,7 +940,7 @@ public class PROTO_NC_CHARSAVE_SET_CHAT_BLOCK_SPAMER_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 33 | Full: 0x1021
+/// Department: Charsave (0x10) | Opcode: 33 | Full: 0x4021
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 33)]
@@ -969,7 +969,7 @@ public class PROTO_NC_CHARSAVE_SET_CHAT_BLOCK_SPAMER_WM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 9 | Full: 0x1009
+/// Department: Charsave (0x10) | Opcode: 9 | Full: 0x4009
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 9)]
@@ -1001,7 +1001,7 @@ public class PROTO_NC_CHARSAVE_SKILL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 11 | Full: 0x100B
+/// Department: Charsave (0x10) | Opcode: 11 | Full: 0x400B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 11)]
@@ -1024,7 +1024,7 @@ public class PROTO_NC_CHARSAVE_TITLE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 38 | Full: 0x1026
+/// Department: Charsave (0x10) | Opcode: 38 | Full: 0x4026
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 38)]
@@ -1044,7 +1044,7 @@ public class PROTO_NC_CHARSAVE_UI_STATE_SAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 37 | Full: 0x1025
+/// Department: Charsave (0x10) | Opcode: 37 | Full: 0x4025
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 37)]
@@ -1064,7 +1064,7 @@ public class PROTO_NC_CHARSAVE_UI_STATE_SAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 53 | Full: 0x1035
+/// Department: Charsave (0x10) | Opcode: 53 | Full: 0x4035
 /// sizeof = 78
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 53)]
@@ -1093,7 +1093,7 @@ public class PROTO_NC_CHARSAVE_USEITEM_MINIMON_INFO_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charsave (0x10) | Opcode: 54 | Full: 0x1036
+/// Department: Charsave (0x10) | Opcode: 54 | Full: 0x4036
 /// sizeof = 56
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charsave, 54)]

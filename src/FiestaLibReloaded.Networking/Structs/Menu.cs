@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Menu (0x0F) | Opcode: 8 | Full: 0x0F08
+/// Department: Menu (0x0F) | Opcode: 8 | Full: 0x3C08
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Menu, 8)]
@@ -46,7 +46,7 @@ public class PROTO_NC_MENU_OPENSTORAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Menu (0x0F) | Opcode: 2 | Full: 0x0F02
+/// Department: Menu (0x0F) | Opcode: 2 | Full: 0x3C02
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Menu, 2)]
@@ -66,7 +66,7 @@ public class PROTO_NC_MENU_SERVERMENU_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Menu (0x0F) | Opcode: 1 | Full: 0x0F01
+/// Department: Menu (0x0F) | Opcode: 1 | Full: 0x3C01
 /// sizeof = 142
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Menu, 1)]
@@ -130,7 +130,7 @@ public class PROTO_NC_MENU_SHOPOPEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Menu (0x0F) | Opcode: 5 | Full: 0x0F05
+/// Department: Menu (0x0F) | Opcode: 5 | Full: 0x3C05
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Menu, 5)]

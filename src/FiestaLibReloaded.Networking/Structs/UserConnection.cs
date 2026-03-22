@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 14 | Full: 0x2D0E
+/// Department: UserConnection (0x2D) | Opcode: 14 | Full: 0xB40E
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 14)]
@@ -25,7 +25,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_ACADEMY_MASTER_CMD : IFiest
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 12 | Full: 0x2D0C
+/// Department: UserConnection (0x2D) | Opcode: 12 | Full: 0xB40C
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 12)]
@@ -51,7 +51,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 13 | Full: 0x2D0D
+/// Department: UserConnection (0x2D) | Opcode: 13 | Full: 0xB40D
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 13)]
@@ -77,7 +77,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 19 | Full: 0x2D13
+/// Department: UserConnection (0x2D) | Opcode: 19 | Full: 0xB413
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 19)]
@@ -100,7 +100,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_ITEM_USE_ACK : IFiestaPacke
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 16 | Full: 0x2D10
+/// Department: UserConnection (0x2D) | Opcode: 16 | Full: 0xB410
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 16)]
@@ -120,7 +120,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_ITEM_USE_REQ : IFiestaPacke
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 9 | Full: 0x2D09
+/// Department: UserConnection (0x2D) | Opcode: 9 | Full: 0xB409
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 9)]
@@ -143,7 +143,7 @@ public class PROTO_NC_USER_CONNECTION_CHANGE_CHAR_ID_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 11 | Full: 0x2D0B
+/// Department: UserConnection (0x2D) | Opcode: 11 | Full: 0xB40B
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 11)]
@@ -175,7 +175,7 @@ public class PROTO_NC_USER_CONNECTION_DB_CHANGE_CHAR_ID_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 18 | Full: 0x2D12
+/// Department: UserConnection (0x2D) | Opcode: 18 | Full: 0xB412
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 18)]
@@ -204,7 +204,7 @@ public class PROTO_NC_USER_CONNECTION_DB_CHANGE_CHAR_ID_ITEM_USE_ACK : IFiestaPa
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 17 | Full: 0x2D11
+/// Department: UserConnection (0x2D) | Opcode: 17 | Full: 0xB411
 /// sizeof = 38
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 17)]
@@ -239,7 +239,7 @@ public class PROTO_NC_USER_CONNECTION_DB_CHANGE_CHAR_ID_ITEM_USE_REQ : IFiestaPa
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 10 | Full: 0x2D0A
+/// Department: UserConnection (0x2D) | Opcode: 10 | Full: 0xB40A
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 10)]
@@ -274,7 +274,7 @@ public class PROTO_NC_USER_CONNECTION_DB_CHANGE_CHAR_ID_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: UserConnection (0x2D) | Opcode: 15 | Full: 0x2D0F
+/// Department: UserConnection (0x2D) | Opcode: 15 | Full: 0xB40F
 /// sizeof = 45
 /// </summary>
 [FiestaOpcode(ProtocolCommand.UserConnection, 15)]

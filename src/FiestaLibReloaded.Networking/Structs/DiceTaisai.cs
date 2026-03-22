@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 43 | Full: 0x2B2B
+/// Department: DiceTaisai (0x2B) | Opcode: 43 | Full: 0xAC2B
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 43)]
@@ -26,7 +26,7 @@ public class PROTO_NC_DICE_TAISAI_BET_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 27 | Full: 0x2B1B
+/// Department: DiceTaisai (0x2B) | Opcode: 27 | Full: 0xAC1B
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 27)]
@@ -49,7 +49,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 30 | Full: 0x2B1E
+/// Department: DiceTaisai (0x2B) | Opcode: 30 | Full: 0xAC1E
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 30)]
@@ -72,7 +72,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 31 | Full: 0x2B1F
+/// Department: DiceTaisai (0x2B) | Opcode: 31 | Full: 0xAC1F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 31)]
@@ -95,7 +95,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_CANCEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 29 | Full: 0x2B1D
+/// Department: DiceTaisai (0x2B) | Opcode: 29 | Full: 0xAC1D
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 29)]
@@ -118,7 +118,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 28 | Full: 0x2B1C
+/// Department: DiceTaisai (0x2B) | Opcode: 28 | Full: 0xAC1C
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 28)]
@@ -141,7 +141,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 26 | Full: 0x2B1A
+/// Department: DiceTaisai (0x2B) | Opcode: 26 | Full: 0xAC1A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 26)]
@@ -164,7 +164,7 @@ public class PROTO_NC_DICE_TAISAI_BETTING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 10 | Full: 0x2B0A
+/// Department: DiceTaisai (0x2B) | Opcode: 10 | Full: 0xAC0A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 10)]
@@ -181,7 +181,7 @@ public class PROTO_NC_DICE_TAISAI_BOARD_FOLD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 36 | Full: 0x2B24
+/// Department: DiceTaisai (0x2B) | Opcode: 36 | Full: 0xAC24
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 36)]
@@ -222,7 +222,7 @@ public class PROTO_NC_DICE_TAISAI_DB_DICE_ROLL_RESULT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 37 | Full: 0x2B25
+/// Department: DiceTaisai (0x2B) | Opcode: 37 | Full: 0xAC25
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 37)]
@@ -260,7 +260,7 @@ public class PROTO_NC_DICE_TAISAI_DB_DICE_ROLL_RESULT_LOG_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 35 | Full: 0x2B23
+/// Department: DiceTaisai (0x2B) | Opcode: 35 | Full: 0xAC23
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 35)]
@@ -298,7 +298,7 @@ public class PROTO_NC_DICE_TAISAI_DB_DICE_ROLL_RESULT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 13 | Full: 0x2B0D
+/// Department: DiceTaisai (0x2B) | Opcode: 13 | Full: 0xAC0D
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 13)]
@@ -333,7 +333,7 @@ public class PROTO_NC_DICE_TAISAI_DB_EXPECT_INCOME_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 12 | Full: 0x2B0C
+/// Department: DiceTaisai (0x2B) | Opcode: 12 | Full: 0xAC0C
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 12)]
@@ -365,7 +365,7 @@ public class PROTO_NC_DICE_TAISAI_DB_EXPECT_INCOME_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 45 | Full: 0x2B2D
+/// Department: DiceTaisai (0x2B) | Opcode: 45 | Full: 0xAC2D
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 45)]
@@ -406,7 +406,7 @@ public class PROTO_NC_DICE_TAISAI_DB_ITEM_ID_CHANGE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 44 | Full: 0x2B2C
+/// Department: DiceTaisai (0x2B) | Opcode: 44 | Full: 0xAC2C
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 44)]
@@ -447,7 +447,7 @@ public class PROTO_NC_DICE_TAISAI_DB_ITEM_ID_CHANGE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 24 | Full: 0x2B18
+/// Department: DiceTaisai (0x2B) | Opcode: 24 | Full: 0xAC18
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 24)]
@@ -485,7 +485,7 @@ public class PROTO_NC_DICE_TAISAI_DB_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 23 | Full: 0x2B17
+/// Department: DiceTaisai (0x2B) | Opcode: 23 | Full: 0xAC17
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 23)]
@@ -511,7 +511,7 @@ public class PROTO_NC_DICE_TAISAI_DB_RANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 17 | Full: 0x2B11
+/// Department: DiceTaisai (0x2B) | Opcode: 17 | Full: 0xAC11
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 17)]
@@ -546,7 +546,7 @@ public class PROTO_NC_DICE_TAISAI_DB_RECEIPT_INCOME_MONEY_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 16 | Full: 0x2B10
+/// Department: DiceTaisai (0x2B) | Opcode: 16 | Full: 0xAC10
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 16)]
@@ -575,7 +575,7 @@ public class PROTO_NC_DICE_TAISAI_DB_RECEIPT_INCOME_MONEY_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 33 | Full: 0x2B21
+/// Department: DiceTaisai (0x2B) | Opcode: 33 | Full: 0xAC21
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 33)]
@@ -595,7 +595,7 @@ public class PROTO_NC_DICE_TAISAI_DICE_ROLL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 34 | Full: 0x2B22
+/// Department: DiceTaisai (0x2B) | Opcode: 34 | Full: 0xAC22
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 34)]
@@ -615,7 +615,7 @@ public class PROTO_NC_DICE_TAISAI_DICE_ROLL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 38 | Full: 0x2B26
+/// Department: DiceTaisai (0x2B) | Opcode: 38 | Full: 0xAC26
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 38)]
@@ -638,7 +638,7 @@ public class PROTO_NC_DICE_TAISAI_DICE_ROLL_RESULT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 39 | Full: 0x2B27
+/// Department: DiceTaisai (0x2B) | Opcode: 39 | Full: 0xAC27
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 39)]
@@ -667,7 +667,7 @@ public class PROTO_NC_DICE_TAISAI_DICE_ROLL_RESULT_EMOTION_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 14 | Full: 0x2B0E
+/// Department: DiceTaisai (0x2B) | Opcode: 14 | Full: 0xAC0E
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 14)]
@@ -696,7 +696,7 @@ public class PROTO_NC_DICE_TAISAI_EXPECT_INCOME_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 11 | Full: 0x2B0B
+/// Department: DiceTaisai (0x2B) | Opcode: 11 | Full: 0xAC0B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 11)]
@@ -716,7 +716,7 @@ public class PROTO_NC_DICE_TAISAI_EXPECT_INCOME_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 4 | Full: 0x2B04
+/// Department: DiceTaisai (0x2B) | Opcode: 4 | Full: 0xAC04
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 4)]
@@ -748,7 +748,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_BETTING_INFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 2 | Full: 0x2B02
+/// Department: DiceTaisai (0x2B) | Opcode: 2 | Full: 0xAC02
 /// sizeof = 50
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 2)]
@@ -802,7 +802,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 3 | Full: 0x2B03
+/// Department: DiceTaisai (0x2B) | Opcode: 3 | Full: 0xAC03
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 3)]
@@ -822,7 +822,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 6 | Full: 0x2B06
+/// Department: DiceTaisai (0x2B) | Opcode: 6 | Full: 0xAC06
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 6)]
@@ -842,7 +842,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 7 | Full: 0x2B07
+/// Department: DiceTaisai (0x2B) | Opcode: 7 | Full: 0xAC07
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 7)]
@@ -865,7 +865,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 20 | Full: 0x2B14
+/// Department: DiceTaisai (0x2B) | Opcode: 20 | Full: 0xAC14
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 20)]
@@ -886,7 +886,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_MODE_CHANGE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 21 | Full: 0x2B15
+/// Department: DiceTaisai (0x2B) | Opcode: 21 | Full: 0xAC15
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 21)]
@@ -904,7 +904,7 @@ public class PROTO_NC_DICE_TAISAI_GAME_MODE_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 42 | Full: 0x2B2A
+/// Department: DiceTaisai (0x2B) | Opcode: 42 | Full: 0xAC2A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 42)]
@@ -933,7 +933,7 @@ public class PROTO_NC_DICE_TAISAI_LARGE_AMOUNT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 25 | Full: 0x2B19
+/// Department: DiceTaisai (0x2B) | Opcode: 25 | Full: 0xAC19
 /// sizeof = 484
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 25)]
@@ -976,7 +976,7 @@ public class PROTO_NC_DICE_TAISAI_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 18 | Full: 0x2B12
+/// Department: DiceTaisai (0x2B) | Opcode: 18 | Full: 0xAC12
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 18)]
@@ -1002,7 +1002,7 @@ public class PROTO_NC_DICE_TAISAI_RECEIPT_INCOME_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 15 | Full: 0x2B0F
+/// Department: DiceTaisai (0x2B) | Opcode: 15 | Full: 0xAC0F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 15)]
@@ -1022,7 +1022,7 @@ public class PROTO_NC_DICE_TAISAI_RECEIPT_INCOME_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: DiceTaisai (0x2B) | Opcode: 44 | Full: 0x2B2C
+/// Department: DiceTaisai (0x2B) | Opcode: 44 | Full: 0xAC2C
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.DiceTaisai, 44)]

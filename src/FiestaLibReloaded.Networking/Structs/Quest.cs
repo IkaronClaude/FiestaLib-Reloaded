@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 12 | Full: 0x110C
+/// Department: Quest (0x11) | Opcode: 12 | Full: 0x440C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 12)]
@@ -25,7 +25,7 @@ public class PROTO_NC_QUEST_CLIENT_SCENARIO_DONE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 11 | Full: 0x110B
+/// Department: Quest (0x11) | Opcode: 11 | Full: 0x440B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 11)]
@@ -45,7 +45,7 @@ public class PROTO_NC_QUEST_CLIENT_SCENARIO_DONE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 6 | Full: 0x1106
+/// Department: Quest (0x11) | Opcode: 6 | Full: 0x4406
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 6)]
@@ -71,7 +71,7 @@ public class PROTO_NC_QUEST_DB_CLEAR_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 5 | Full: 0x1105
+/// Department: Quest (0x11) | Opcode: 5 | Full: 0x4405
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 5)]
@@ -94,7 +94,7 @@ public class PROTO_NC_QUEST_DB_CLEAR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 27 | Full: 0x111B
+/// Department: Quest (0x11) | Opcode: 27 | Full: 0x441B
 /// sizeof = 43
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 27)]
@@ -126,7 +126,7 @@ public class PROTO_NC_QUEST_DB_DONE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 26 | Full: 0x111A
+/// Department: Quest (0x11) | Opcode: 26 | Full: 0x441A
 /// sizeof = 83
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 26)]
@@ -200,7 +200,7 @@ public class PROTO_NC_QUEST_DB_DONE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 10 | Full: 0x110A
+/// Department: Quest (0x11) | Opcode: 10 | Full: 0x440A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 10)]
@@ -226,7 +226,7 @@ public class PROTO_NC_QUEST_DB_GIVE_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 9 | Full: 0x1109
+/// Department: Quest (0x11) | Opcode: 9 | Full: 0x4409
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 9)]
@@ -249,7 +249,7 @@ public class PROTO_NC_QUEST_DB_GIVE_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 25 | Full: 0x1119
+/// Department: Quest (0x11) | Opcode: 25 | Full: 0x4419
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 25)]
@@ -275,7 +275,7 @@ public class PROTO_NC_QUEST_DB_READ_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 24 | Full: 0x1118
+/// Department: Quest (0x11) | Opcode: 24 | Full: 0x4418
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 24)]
@@ -298,7 +298,7 @@ public class PROTO_NC_QUEST_DB_READ_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 4 | Full: 0x1104
+/// Department: Quest (0x11) | Opcode: 4 | Full: 0x4404
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 4)]
@@ -327,7 +327,7 @@ public class PROTO_NC_QUEST_DB_SET_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 3 | Full: 0x1103
+/// Department: Quest (0x11) | Opcode: 3 | Full: 0x4403
 /// sizeof = 39
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 3)]
@@ -353,7 +353,7 @@ public class PROTO_NC_QUEST_DB_SET_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 8 | Full: 0x1108
+/// Department: Quest (0x11) | Opcode: 8 | Full: 0x4408
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 8)]
@@ -376,7 +376,7 @@ public class PROTO_NC_QUEST_GIVE_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 7 | Full: 0x1107
+/// Department: Quest (0x11) | Opcode: 7 | Full: 0x4407
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 7)]
@@ -396,7 +396,7 @@ public class PROTO_NC_QUEST_GIVE_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 31 | Full: 0x111F
+/// Department: Quest (0x11) | Opcode: 31 | Full: 0x441F
 /// sizeof = 115
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 31)]
@@ -437,7 +437,7 @@ public class PROTO_NC_QUEST_JOBDUNGEON_FIND_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 13 | Full: 0x110D
+/// Department: Quest (0x11) | Opcode: 13 | Full: 0x440D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 13)]
@@ -458,7 +458,7 @@ public class PROTO_NC_QUEST_NOTIFY_MOB_KILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 23 | Full: 0x1117
+/// Department: Quest (0x11) | Opcode: 23 | Full: 0x4417
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 23)]
@@ -481,7 +481,7 @@ public class PROTO_NC_QUEST_READ_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 22 | Full: 0x1116
+/// Department: Quest (0x11) | Opcode: 22 | Full: 0x4416
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 22)]
@@ -501,7 +501,7 @@ public class PROTO_NC_QUEST_READ_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 28 | Full: 0x111C
+/// Department: Quest (0x11) | Opcode: 28 | Full: 0x441C
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 28)]
@@ -530,7 +530,7 @@ public class PROTO_NC_QUEST_RESET_TIME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 29 | Full: 0x111D
+/// Department: Quest (0x11) | Opcode: 29 | Full: 0x441D
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 29)]
@@ -562,7 +562,7 @@ public class PROTO_NC_QUEST_RESET_TIME_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 18 | Full: 0x1112
+/// Department: Quest (0x11) | Opcode: 18 | Full: 0x4412
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 18)]
@@ -582,7 +582,7 @@ public class PROTO_NC_QUEST_REWARD_NEED_SELECT_ITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 17 | Full: 0x1111
+/// Department: Quest (0x11) | Opcode: 17 | Full: 0x4411
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 17)]
@@ -605,7 +605,7 @@ public class PROTO_NC_QUEST_REWARD_SELECT_ITEM_INDEX_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 14 | Full: 0x110E
+/// Department: Quest (0x11) | Opcode: 14 | Full: 0x440E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 14)]
@@ -625,7 +625,7 @@ public class PROTO_NC_QUEST_SCENARIO_RUN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 2 | Full: 0x1102
+/// Department: Quest (0x11) | Opcode: 2 | Full: 0x4402
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 2)]
@@ -651,7 +651,7 @@ public class PROTO_NC_QUEST_SCRIPT_CMD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 1 | Full: 0x1101
+/// Department: Quest (0x11) | Opcode: 1 | Full: 0x4401
 /// sizeof = 103
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 1)]
@@ -674,7 +674,7 @@ public class PROTO_NC_QUEST_SCRIPT_CMD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 16 | Full: 0x1110
+/// Department: Quest (0x11) | Opcode: 16 | Full: 0x4410
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 16)]
@@ -700,7 +700,7 @@ public class PROTO_NC_QUEST_SELECT_START_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 15 | Full: 0x110F
+/// Department: Quest (0x11) | Opcode: 15 | Full: 0x440F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 15)]
@@ -723,7 +723,7 @@ public class PROTO_NC_QUEST_SELECT_START_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 21 | Full: 0x1115
+/// Department: Quest (0x11) | Opcode: 21 | Full: 0x4415
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 21)]
@@ -743,7 +743,7 @@ public class PROTO_NC_QUEST_START_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Quest (0x11) | Opcode: 20 | Full: 0x1114
+/// Department: Quest (0x11) | Opcode: 20 | Full: 0x4414
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Quest, 20)]

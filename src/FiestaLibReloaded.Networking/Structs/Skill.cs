@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 33 | Full: 0x1221
+/// Department: Skill (0x12) | Opcode: 33 | Full: 0x4821
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 33)]
@@ -28,7 +28,7 @@ public class PROTO_NC_SKILL_COOLTIME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 11 | Full: 0x120B
+/// Department: Skill (0x12) | Opcode: 11 | Full: 0x480B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 11)]
@@ -51,7 +51,7 @@ public class PROTO_NC_SKILL_EMPOW_RESET_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 15 | Full: 0x120F
+/// Department: Skill (0x12) | Opcode: 15 | Full: 0x480F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 15)]
@@ -71,7 +71,7 @@ public class PROTO_NC_SKILL_EMPOW_RESET_SUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 20 | Full: 0x1214
+/// Department: Skill (0x12) | Opcode: 20 | Full: 0x4814
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 20)]
@@ -94,7 +94,7 @@ public class PROTO_NC_SKILL_EMPOWALLOC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 19 | Full: 0x1213
+/// Department: Skill (0x12) | Opcode: 19 | Full: 0x4813
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 19)]
@@ -129,7 +129,7 @@ public class PROTO_NC_SKILL_EMPOWALLOC_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 18 | Full: 0x1212
+/// Department: Skill (0x12) | Opcode: 18 | Full: 0x4812
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 18)]
@@ -167,7 +167,7 @@ public class PROTO_NC_SKILL_EMPOWALLOC_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 17 | Full: 0x1211
+/// Department: Skill (0x12) | Opcode: 17 | Full: 0x4811
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 17)]
@@ -193,7 +193,7 @@ public class PROTO_NC_SKILL_EMPOWALLOC_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 16 | Full: 0x1210
+/// Department: Skill (0x12) | Opcode: 16 | Full: 0x4810
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 16)]
@@ -213,7 +213,7 @@ public class PROTO_NC_SKILL_EMPOWPOINT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 38 | Full: 0x1226
+/// Department: Skill (0x12) | Opcode: 38 | Full: 0x4826
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 38)]
@@ -239,7 +239,7 @@ public class PROTO_NC_SKILL_ERASE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 37 | Full: 0x1225
+/// Department: Skill (0x12) | Opcode: 37 | Full: 0x4825
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 37)]
@@ -262,7 +262,7 @@ public class PROTO_NC_SKILL_ERASE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 45 | Full: 0x122D
+/// Department: Skill (0x12) | Opcode: 45 | Full: 0x482D
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 45)]
@@ -294,7 +294,7 @@ public class PROTO_NC_SKILL_JUMP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 32 | Full: 0x1220
+/// Department: Skill (0x12) | Opcode: 32 | Full: 0x4820
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 32)]
@@ -320,7 +320,7 @@ public class PROTO_NC_SKILL_PASSIVESKILL_LEARN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 35 | Full: 0x1223
+/// Department: Skill (0x12) | Opcode: 35 | Full: 0x4823
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 35)]
@@ -343,7 +343,7 @@ public class PROTO_NC_SKILL_PRODUCTFIELD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 34 | Full: 0x1222
+/// Department: Skill (0x12) | Opcode: 34 | Full: 0x4822
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 34)]
@@ -363,7 +363,7 @@ public class PROTO_NC_SKILL_PRODUCTFIELD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 30 | Full: 0x121E
+/// Department: Skill (0x12) | Opcode: 30 | Full: 0x481E
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 30)]
@@ -389,7 +389,7 @@ public class PROTO_NC_SKILL_REVIVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 29 | Full: 0x121D
+/// Department: Skill (0x12) | Opcode: 29 | Full: 0x481D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 29)]
@@ -412,7 +412,7 @@ public class PROTO_NC_SKILL_SKILLEXP_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 1 | Full: 0x1201
+/// Department: Skill (0x12) | Opcode: 1 | Full: 0x4801
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 1)]
@@ -441,7 +441,7 @@ public class PROTO_NC_SKILL_SKILLTEACH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 2 | Full: 0x1202
+/// Department: Skill (0x12) | Opcode: 2 | Full: 0x4802
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 2)]
@@ -464,7 +464,7 @@ public class PROTO_NC_SKILL_SKILLTEACHSUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 31 | Full: 0x121F
+/// Department: Skill (0x12) | Opcode: 31 | Full: 0x481F
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 31)]
@@ -493,7 +493,7 @@ public class PROTO_NC_SKILL_SOMEONEREVIVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 39 | Full: 0x1227
+/// Department: Skill (0x12) | Opcode: 39 | Full: 0x4827
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 39)]
@@ -516,7 +516,7 @@ public class PROTO_NC_SKILL_UNLEARN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 36 | Full: 0x1224
+/// Department: Skill (0x12) | Opcode: 36 | Full: 0x4824
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 36)]
@@ -539,7 +539,7 @@ public class PROTO_NC_SKILL_UNLEARN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Skill (0x12) | Opcode: 40 | Full: 0x1228
+/// Department: Skill (0x12) | Opcode: 40 | Full: 0x4828
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Skill, 40)]

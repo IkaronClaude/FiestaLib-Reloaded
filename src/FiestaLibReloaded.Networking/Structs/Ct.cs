@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 7 | Full: 0x1807
+/// Department: Ct (0x18) | Opcode: 7 | Full: 0x6007
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 7)]
@@ -28,7 +28,7 @@ public class PROTO_NC_CT_ADD_FRIEND_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 6 | Full: 0x1806
+/// Department: Ct (0x18) | Opcode: 6 | Full: 0x6006
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 6)]
@@ -48,7 +48,7 @@ public class PROTO_NC_CT_CHARTTING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 5 | Full: 0x1805
+/// Department: Ct (0x18) | Opcode: 5 | Full: 0x6005
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 5)]
@@ -71,7 +71,7 @@ public class PROTO_NC_CT_DB_SET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 9 | Full: 0x1809
+/// Department: Ct (0x18) | Opcode: 9 | Full: 0x6009
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 9)]
@@ -94,7 +94,7 @@ public class PROTO_NC_CT_LUASCRIPT_SET_WORLD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 10 | Full: 0x180A
+/// Department: Ct (0x18) | Opcode: 10 | Full: 0x600A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 10)]
@@ -117,7 +117,7 @@ public class PROTO_NC_CT_LUASCRIPT_SET_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 4 | Full: 0x1804
+/// Department: Ct (0x18) | Opcode: 4 | Full: 0x6004
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 4)]
@@ -137,7 +137,7 @@ public class PROTO_NC_CT_SET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 2 | Full: 0x1802
+/// Department: Ct (0x18) | Opcode: 2 | Full: 0x6002
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 2)]
@@ -166,7 +166,7 @@ public class PROTO_NC_CT_SET_CURRENT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 8 | Full: 0x1808
+/// Department: Ct (0x18) | Opcode: 8 | Full: 0x6008
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 8)]
@@ -201,7 +201,7 @@ public class PROTO_NC_CT_SET_CURRENT_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 1 | Full: 0x1801
+/// Department: Ct (0x18) | Opcode: 1 | Full: 0x6001
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 1)]
@@ -227,7 +227,7 @@ public class PROTO_NC_CT_SET_CURRENT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Ct (0x18) | Opcode: 3 | Full: 0x1803
+/// Department: Ct (0x18) | Opcode: 3 | Full: 0x6003
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Ct, 3)]

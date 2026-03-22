@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 1 | Full: 0x2301
+/// Department: Minihouse (0x23) | Opcode: 1 | Full: 0x8C01
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 1)]
@@ -25,7 +25,7 @@ public class PROTO_NC_MINIHOUSE_ACTIV_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 26 | Full: 0x231A
+/// Department: Minihouse (0x23) | Opcode: 26 | Full: 0x8C1A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 26)]
@@ -45,7 +45,7 @@ public class PROTO_NC_MINIHOUSE_ARRANGEMODE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 5 | Full: 0x2305
+/// Department: Minihouse (0x23) | Opcode: 5 | Full: 0x8C05
 /// sizeof = 66
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 5)]
@@ -68,7 +68,7 @@ public class PROTO_NC_MINIHOUSE_BUILDING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 3 | Full: 0x2303
+/// Department: Minihouse (0x23) | Opcode: 3 | Full: 0x8C03
 /// sizeof = 133
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 3)]
@@ -106,7 +106,7 @@ public class PROTO_NC_MINIHOUSE_BUILDING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 62 | Full: 0x233E
+/// Department: Minihouse (0x23) | Opcode: 62 | Full: 0x8C3E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 62)]
@@ -126,7 +126,7 @@ public class PROTO_NC_MINIHOUSE_CHAR_ACTION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 63 | Full: 0x233F
+/// Department: Minihouse (0x23) | Opcode: 63 | Full: 0x8C3F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 63)]
@@ -161,7 +161,7 @@ public class PROTO_NC_MINIHOUSE_CHAR_ACTION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 61 | Full: 0x233D
+/// Department: Minihouse (0x23) | Opcode: 61 | Full: 0x8C3D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 61)]
@@ -184,7 +184,7 @@ public class PROTO_NC_MINIHOUSE_CHAR_ACTION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 40 | Full: 0x2328
+/// Department: Minihouse (0x23) | Opcode: 40 | Full: 0x8C28
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 40)]
@@ -207,7 +207,7 @@ public class PROTO_NC_MINIHOUSE_COMPULSIONMOVETO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 36 | Full: 0x2324
+/// Department: Minihouse (0x23) | Opcode: 36 | Full: 0x8C24
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 36)]
@@ -228,7 +228,7 @@ public class PROTO_NC_MINIHOUSE_CREATE_FURNITURE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 34 | Full: 0x2322
+/// Department: Minihouse (0x23) | Opcode: 34 | Full: 0x8C22
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 34)]
@@ -249,7 +249,7 @@ public class PROTO_NC_MINIHOUSE_CREATE_FURNITURE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 94 | Full: 0x235E
+/// Department: Minihouse (0x23) | Opcode: 94 | Full: 0x8C5E
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 94)]
@@ -284,7 +284,7 @@ public class PROTO_NC_MINIHOUSE_DB_PORTAL_ADD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 93 | Full: 0x235D
+/// Department: Minihouse (0x23) | Opcode: 93 | Full: 0x8C5D
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 93)]
@@ -319,7 +319,7 @@ public class PROTO_NC_MINIHOUSE_DB_PORTAL_ADD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 96 | Full: 0x2360
+/// Department: Minihouse (0x23) | Opcode: 96 | Full: 0x8C60
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 96)]
@@ -342,7 +342,7 @@ public class PROTO_NC_MINIHOUSE_DB_PORTAL_DEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 90 | Full: 0x235A
+/// Department: Minihouse (0x23) | Opcode: 90 | Full: 0x8C5A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 90)]
@@ -377,7 +377,7 @@ public class PROTO_NC_MINIHOUSE_DB_PORTAL_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 89 | Full: 0x2359
+/// Department: Minihouse (0x23) | Opcode: 89 | Full: 0x8C59
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 89)]
@@ -397,7 +397,7 @@ public class PROTO_NC_MINIHOUSE_DB_PORTAL_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 92 | Full: 0x235C
+/// Department: Minihouse (0x23) | Opcode: 92 | Full: 0x8C5C
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 92)]
@@ -420,7 +420,7 @@ public class PROTO_NC_MINIHOUSE_DB_VISITER_COUNT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 91 | Full: 0x235B
+/// Department: Minihouse (0x23) | Opcode: 91 | Full: 0x8C5B
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 91)]
@@ -443,7 +443,7 @@ public class PROTO_NC_MINIHOUSE_DB_VISITER_COUNT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 37 | Full: 0x2325
+/// Department: Minihouse (0x23) | Opcode: 37 | Full: 0x8C25
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 37)]
@@ -469,7 +469,7 @@ public class PROTO_NC_MINIHOUSE_DELETE_FURNITURE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 9 | Full: 0x2309
+/// Department: Minihouse (0x23) | Opcode: 9 | Full: 0x8C09
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 9)]
@@ -493,7 +493,7 @@ public class PROTO_NC_MINIHOUSE_FUNICHER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 29 | Full: 0x231D
+/// Department: Minihouse (0x23) | Opcode: 29 | Full: 0x8C1D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 29)]
@@ -513,7 +513,7 @@ public class PROTO_NC_MINIHOUSE_FUNITUREINFOCOMPLETE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 65 | Full: 0x2341
+/// Department: Minihouse (0x23) | Opcode: 65 | Full: 0x8C41
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 65)]
@@ -536,7 +536,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EFFECT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 66 | Full: 0x2342
+/// Department: Minihouse (0x23) | Opcode: 66 | Full: 0x8C42
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 66)]
@@ -565,7 +565,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EFFECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 64 | Full: 0x2340
+/// Department: Minihouse (0x23) | Opcode: 64 | Full: 0x8C40
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 64)]
@@ -588,7 +588,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EFFECT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 99 | Full: 0x2363
+/// Department: Minihouse (0x23) | Opcode: 99 | Full: 0x8C63
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 99)]
@@ -617,7 +617,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 102 | Full: 0x2366
+/// Department: Minihouse (0x23) | Opcode: 102 | Full: 0x8C66
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 102)]
@@ -637,7 +637,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 103 | Full: 0x2367
+/// Department: Minihouse (0x23) | Opcode: 103 | Full: 0x8C67
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 103)]
@@ -663,7 +663,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_CANCEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 101 | Full: 0x2365
+/// Department: Minihouse (0x23) | Opcode: 101 | Full: 0x8C65
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 101)]
@@ -680,7 +680,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 100 | Full: 0x2364
+/// Department: Minihouse (0x23) | Opcode: 100 | Full: 0x8C64
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 100)]
@@ -709,7 +709,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 98 | Full: 0x2362
+/// Department: Minihouse (0x23) | Opcode: 98 | Full: 0x8C62
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 98)]
@@ -735,7 +735,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_EMOTION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 97 | Full: 0x2361
+/// Department: Minihouse (0x23) | Opcode: 97 | Full: 0x8C61
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 97)]
@@ -764,7 +764,7 @@ public class PROTO_NC_MINIHOUSE_FURNITURE_ENDURE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 20 | Full: 0x2314
+/// Department: Minihouse (0x23) | Opcode: 20 | Full: 0x8C14
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 20)]
@@ -784,7 +784,7 @@ public class PROTO_NC_MINIHOUSE_KICKOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 18 | Full: 0x2312
+/// Department: Minihouse (0x23) | Opcode: 18 | Full: 0x8C12
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 18)]
@@ -804,7 +804,7 @@ public class PROTO_NC_MINIHOUSE_KICKOUT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 11 | Full: 0x230B
+/// Department: Minihouse (0x23) | Opcode: 11 | Full: 0x8C0B
 /// sizeof = 140
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 11)]
@@ -844,7 +844,7 @@ public class PROTO_NC_MINIHOUSE_LOGINCOMPLETE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 12 | Full: 0x230C
+/// Department: Minihouse (0x23) | Opcode: 12 | Full: 0x8C0C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 12)]
@@ -867,7 +867,7 @@ public class PROTO_NC_MINIHOUSE_LOGINCOMPLETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 13 | Full: 0x230D
+/// Department: Minihouse (0x23) | Opcode: 13 | Full: 0x8C0D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 13)]
@@ -887,7 +887,7 @@ public class PROTO_NC_MINIHOUSE_LOGOUTCOMPLETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 69 | Full: 0x2345
+/// Department: Minihouse (0x23) | Opcode: 69 | Full: 0x8C45
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 69)]
@@ -907,7 +907,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_ITEM_INFO_OPEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 67 | Full: 0x2343
+/// Department: Minihouse (0x23) | Opcode: 67 | Full: 0x8C43
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 67)]
@@ -927,7 +927,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_ITEM_INFO_OPEN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 50 | Full: 0x2332
+/// Department: Minihouse (0x23) | Opcode: 50 | Full: 0x8C32
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 50)]
@@ -947,7 +947,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_MAXENTERNUM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 74 | Full: 0x234A
+/// Department: Minihouse (0x23) | Opcode: 74 | Full: 0x8C4A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 74)]
@@ -973,7 +973,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_NOTIFY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 72 | Full: 0x2348
+/// Department: Minihouse (0x23) | Opcode: 72 | Full: 0x8C48
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 72)]
@@ -999,7 +999,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_NOTIFY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 49 | Full: 0x2331
+/// Department: Minihouse (0x23) | Opcode: 49 | Full: 0x8C31
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 49)]
@@ -1024,7 +1024,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_OUTSIDE_TITLE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 45 | Full: 0x232D
+/// Department: Minihouse (0x23) | Opcode: 45 | Full: 0x8C2D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 45)]
@@ -1044,7 +1044,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_PASSWORD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 43 | Full: 0x232B
+/// Department: Minihouse (0x23) | Opcode: 43 | Full: 0x8C2B
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 43)]
@@ -1066,7 +1066,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_PASSWORD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 46 | Full: 0x232E
+/// Department: Minihouse (0x23) | Opcode: 46 | Full: 0x8C2E
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 46)]
@@ -1088,7 +1088,7 @@ public class PROTO_NC_MINIHOUSE_MODIFY_TITLE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 76 | Full: 0x234C
+/// Department: Minihouse (0x23) | Opcode: 76 | Full: 0x8C4C
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 76)]
@@ -1108,7 +1108,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_ADD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 83 | Full: 0x2353
+/// Department: Minihouse (0x23) | Opcode: 83 | Full: 0x8C53
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 83)]
@@ -1125,7 +1125,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_CLOSE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 79 | Full: 0x234F
+/// Department: Minihouse (0x23) | Opcode: 79 | Full: 0x8C4F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 79)]
@@ -1145,7 +1145,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_DEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 87 | Full: 0x2357
+/// Department: Minihouse (0x23) | Opcode: 87 | Full: 0x8C57
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 87)]
@@ -1165,7 +1165,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_EFFECT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 88 | Full: 0x2358
+/// Department: Minihouse (0x23) | Opcode: 88 | Full: 0x8C58
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 88)]
@@ -1194,7 +1194,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_EFFECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 86 | Full: 0x2356
+/// Department: Minihouse (0x23) | Opcode: 86 | Full: 0x8C56
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 86)]
@@ -1211,7 +1211,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_EFFECT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 75 | Full: 0x234B
+/// Department: Minihouse (0x23) | Opcode: 75 | Full: 0x8C4B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 75)]
@@ -1240,7 +1240,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 80 | Full: 0x2350
+/// Department: Minihouse (0x23) | Opcode: 80 | Full: 0x8C50
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 80)]
@@ -1260,7 +1260,7 @@ public class PROTO_NC_MINIHOUSE_PORTAL_OPEN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 31 | Full: 0x231F
+/// Department: Minihouse (0x23) | Opcode: 31 | Full: 0x8C1F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 31)]
@@ -1281,7 +1281,7 @@ public class PROTO_NC_MINIHOUSE_REARRANGE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 16 | Full: 0x2310
+/// Department: Minihouse (0x23) | Opcode: 16 | Full: 0x8C10
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 16)]
@@ -1306,7 +1306,7 @@ public class PROTO_NC_MINIHOUSE_VISIT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 15 | Full: 0x230F
+/// Department: Minihouse (0x23) | Opcode: 15 | Full: 0x8C0F
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 15)]
@@ -1335,7 +1335,7 @@ public class PROTO_NC_MINIHOUSE_VISITREADY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Minihouse (0x23) | Opcode: 14 | Full: 0x230E
+/// Department: Minihouse (0x23) | Opcode: 14 | Full: 0x8C0E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Minihouse, 14)]

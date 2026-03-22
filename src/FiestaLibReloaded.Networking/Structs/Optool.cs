@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 16 | Full: 0x0A10
+/// Department: Optool (0x0A) | Opcode: 16 | Full: 0x2810
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 16)]
@@ -31,7 +31,7 @@ public class PROTO_NC_OPTOOL_ACK_CLIENT_NUM_OF_USER_LIMIT : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 30 | Full: 0x0A1E
+/// Department: Optool (0x0A) | Opcode: 30 | Full: 0x281E
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 30)]
@@ -51,7 +51,7 @@ public class PROTO_NC_OPTOOL_CHARACTER_DELETE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 31 | Full: 0x0A1F
+/// Department: Optool (0x0A) | Opcode: 31 | Full: 0x281F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 31)]
@@ -71,7 +71,7 @@ public class PROTO_NC_OPTOOL_CHARACTER_DELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 29 | Full: 0x0A1D
+/// Department: Optool (0x0A) | Opcode: 29 | Full: 0x281D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 29)]
@@ -91,7 +91,7 @@ public class PROTO_NC_OPTOOL_CHARACTER_DELETE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 4 | Full: 0x0A04
+/// Department: Optool (0x0A) | Opcode: 4 | Full: 0x2804
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 4)]
@@ -111,7 +111,7 @@ public class PROTO_NC_OPTOOL_CLOSE_SERVER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 8 | Full: 0x0A08
+/// Department: Optool (0x0A) | Opcode: 8 | Full: 0x2808
 /// sizeof = 170
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 8)]
@@ -139,7 +139,7 @@ public class PROTO_NC_OPTOOL_CONNECT_BRIF_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 7 | Full: 0x0A07
+/// Department: Optool (0x0A) | Opcode: 7 | Full: 0x2807
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 7)]
@@ -159,7 +159,7 @@ public class PROTO_NC_OPTOOL_CONNECT_BRIF_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 40 | Full: 0x0A28
+/// Department: Optool (0x0A) | Opcode: 40 | Full: 0x2828
 /// sizeof = 297
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 40)]
@@ -194,7 +194,7 @@ public class PROTO_NC_OPTOOL_FIND_USER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 39 | Full: 0x0A27
+/// Department: Optool (0x0A) | Opcode: 39 | Full: 0x2827
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 39)]
@@ -214,7 +214,7 @@ public class PROTO_NC_OPTOOL_FIND_USER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 33 | Full: 0x0A21
+/// Department: Optool (0x0A) | Opcode: 33 | Full: 0x2821
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 33)]
@@ -234,7 +234,7 @@ public class PROTO_NC_OPTOOL_GUILD_CHANGE_MEMBER_GRADE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 32 | Full: 0x0A20
+/// Department: Optool (0x0A) | Opcode: 32 | Full: 0x2820
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 32)]
@@ -263,7 +263,7 @@ public class PROTO_NC_OPTOOL_GUILD_CHANGE_MEMBER_GRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 37 | Full: 0x0A25
+/// Department: Optool (0x0A) | Opcode: 37 | Full: 0x2825
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 37)]
@@ -283,7 +283,7 @@ public class PROTO_NC_OPTOOL_GUILD_DATA_CHANGE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 36 | Full: 0x0A24
+/// Department: Optool (0x0A) | Opcode: 36 | Full: 0x2824
 /// sizeof = 739
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 36)]
@@ -361,7 +361,7 @@ public class PROTO_NC_OPTOOL_GUILD_DATA_CHANGE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 44 | Full: 0x0A2C
+/// Department: Optool (0x0A) | Opcode: 44 | Full: 0x282C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 44)]
@@ -381,7 +381,7 @@ public class PROTO_NC_OPTOOL_GUILD_DISMISS_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 43 | Full: 0x0A2B
+/// Department: Optool (0x0A) | Opcode: 43 | Full: 0x282B
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 43)]
@@ -401,7 +401,7 @@ public class PROTO_NC_OPTOOL_GUILD_DISMISS_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 22 | Full: 0x0A16
+/// Department: Optool (0x0A) | Opcode: 22 | Full: 0x2816
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 22)]
@@ -421,7 +421,7 @@ public class PROTO_NC_OPTOOL_GUILD_TOURNAMENT_CHANGE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 21 | Full: 0x0A15
+/// Department: Optool (0x0A) | Opcode: 21 | Full: 0x2815
 /// sizeof = 688
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 21)]
@@ -476,7 +476,7 @@ public class PROTO_NC_OPTOOL_GUILD_TOURNAMENT_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 35 | Full: 0x0A23
+/// Department: Optool (0x0A) | Opcode: 35 | Full: 0x2823
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 35)]
@@ -496,7 +496,7 @@ public class PROTO_NC_OPTOOL_GUILD_TOURNAMENT_SCHEDULE_RESET_ACK : IFiestaPacket
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 34 | Full: 0x0A22
+/// Department: Optool (0x0A) | Opcode: 34 | Full: 0x2822
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 34)]
@@ -513,7 +513,7 @@ public class PROTO_NC_OPTOOL_GUILD_TOURNAMENT_SCHEDULE_RESET_REQ : IFiestaPacket
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 42 | Full: 0x0A2A
+/// Department: Optool (0x0A) | Opcode: 42 | Full: 0x282A
 /// sizeof = 297
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 42)]
@@ -548,7 +548,7 @@ public class PROTO_NC_OPTOOL_KICK_USER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 41 | Full: 0x0A29
+/// Department: Optool (0x0A) | Opcode: 41 | Full: 0x2829
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 41)]
@@ -568,7 +568,7 @@ public class PROTO_NC_OPTOOL_KICK_USER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 11 | Full: 0x0A0B
+/// Department: Optool (0x0A) | Opcode: 11 | Full: 0x280B
 /// sizeof = 377
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 11)]
@@ -588,7 +588,7 @@ public class PROTO_NC_OPTOOL_KQ_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 17 | Full: 0x0A11
+/// Department: Optool (0x0A) | Opcode: 17 | Full: 0x2811
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 17)]
@@ -608,7 +608,7 @@ public class PROTO_NC_OPTOOL_KQ_DELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 13 | Full: 0x0A0D
+/// Department: Optool (0x0A) | Opcode: 13 | Full: 0x280D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 13)]
@@ -637,7 +637,7 @@ public class PROTO_NC_OPTOOL_KQ_MAP_ALLOC_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 12 | Full: 0x0A0C
+/// Department: Optool (0x0A) | Opcode: 12 | Full: 0x280C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 12)]
@@ -654,7 +654,7 @@ public class PROTO_NC_OPTOOL_KQ_MAP_ALLOC_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 10 | Full: 0x0A0A
+/// Department: Optool (0x0A) | Opcode: 10 | Full: 0x280A
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 10)]
@@ -692,7 +692,7 @@ public class PROTO_NC_OPTOOL_KQ_SCHEDULE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 9 | Full: 0x0A09
+/// Department: Optool (0x0A) | Opcode: 9 | Full: 0x2809
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 9)]
@@ -709,7 +709,7 @@ public class PROTO_NC_OPTOOL_KQ_SCHEDULE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 19 | Full: 0x0A13
+/// Department: Optool (0x0A) | Opcode: 19 | Full: 0x2813
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 19)]
@@ -732,7 +732,7 @@ public class PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 18 | Full: 0x0A12
+/// Department: Optool (0x0A) | Opcode: 18 | Full: 0x2812
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 18)]
@@ -752,7 +752,7 @@ public class PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 20 | Full: 0x0A14
+/// Department: Optool (0x0A) | Opcode: 20 | Full: 0x2814
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 20)]
@@ -775,7 +775,7 @@ public class PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_SET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 25 | Full: 0x0A19
+/// Department: Optool (0x0A) | Opcode: 25 | Full: 0x2819
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 25)]
@@ -810,7 +810,7 @@ public class PROTO_NC_OPTOOL_LOGON_PROCESS_TIME_VIEW_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 6 | Full: 0x0A06
+/// Department: Optool (0x0A) | Opcode: 6 | Full: 0x2806
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 6)]
@@ -845,7 +845,7 @@ public class PROTO_NC_OPTOOL_MAP_USER_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 5 | Full: 0x0A05
+/// Department: Optool (0x0A) | Opcode: 5 | Full: 0x2805
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 5)]
@@ -865,7 +865,7 @@ public class PROTO_NC_OPTOOL_MAP_USER_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 15 | Full: 0x0A0F
+/// Department: Optool (0x0A) | Opcode: 15 | Full: 0x280F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 15)]
@@ -882,7 +882,7 @@ public class PROTO_NC_OPTOOL_REQ_CLIENT_NUM_OF_USER_LIMIT : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 2 | Full: 0x0A02
+/// Department: Optool (0x0A) | Opcode: 2 | Full: 0x2802
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 2)]
@@ -917,7 +917,7 @@ public class PROTO_NC_OPTOOL_S2SCONNECT_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 1 | Full: 0x0A01
+/// Department: Optool (0x0A) | Opcode: 1 | Full: 0x2801
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 1)]
@@ -937,7 +937,7 @@ public class PROTO_NC_OPTOOL_S2SCONNECT_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 14 | Full: 0x0A0E
+/// Department: Optool (0x0A) | Opcode: 14 | Full: 0x280E
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 14)]
@@ -957,7 +957,7 @@ public class PROTO_NC_OPTOOL_SET_CLIENT_NUM_OF_USER_LIMIT : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Optool (0x0A) | Opcode: 28 | Full: 0x0A1C
+/// Department: Optool (0x0A) | Opcode: 28 | Full: 0x281C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Optool, 28)]

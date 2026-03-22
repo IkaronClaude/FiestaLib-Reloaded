@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Promotion (0x28) | Opcode: 5 | Full: 0x2805
+/// Department: Promotion (0x28) | Opcode: 5 | Full: 0xA005
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Promotion, 5)]
@@ -44,7 +44,7 @@ public class PROTO_NC_PROMOTION_DB_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Promotion (0x28) | Opcode: 6 | Full: 0x2806
+/// Department: Promotion (0x28) | Opcode: 6 | Full: 0xA006
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Promotion, 6)]

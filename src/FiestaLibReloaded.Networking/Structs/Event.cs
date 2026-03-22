@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 4 | Full: 0x3404
+/// Department: Event (0x34) | Opcode: 4 | Full: 0xD004
 /// sizeof = 1365
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 4)]
@@ -28,7 +28,7 @@ public class PROTO_NC_EVENT_ADD_EVENT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 3 | Full: 0x3403
+/// Department: Event (0x34) | Opcode: 3 | Full: 0xD003
 /// sizeof = 1363
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 3)]
@@ -48,7 +48,7 @@ public class PROTO_NC_EVENT_ADD_EVENT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 11 | Full: 0x340B
+/// Department: Event (0x34) | Opcode: 11 | Full: 0xD00B
 /// sizeof = 1363
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 11)]
@@ -68,7 +68,7 @@ public class PROTO_NC_EVENT_ADD_UPDATE_EVENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 8 | Full: 0x3408
+/// Department: Event (0x34) | Opcode: 8 | Full: 0xD008
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 8)]
@@ -91,7 +91,7 @@ public class PROTO_NC_EVENT_DEL_EVENT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 12 | Full: 0x340C
+/// Department: Event (0x34) | Opcode: 12 | Full: 0xD00C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 12)]
@@ -111,7 +111,7 @@ public class PROTO_NC_EVENT_DEL_EVENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 7 | Full: 0x3407
+/// Department: Event (0x34) | Opcode: 7 | Full: 0xD007
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 7)]
@@ -131,7 +131,7 @@ public class PROTO_NC_EVENT_DEL_EVENT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 2 | Full: 0x3402
+/// Department: Event (0x34) | Opcode: 2 | Full: 0xD002
 /// sizeof = 1370
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 2)]
@@ -163,7 +163,7 @@ public class PROTO_NC_EVENT_GET_ALL_EVENT_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 1 | Full: 0x3401
+/// Department: Event (0x34) | Opcode: 1 | Full: 0xD001
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 1)]
@@ -180,7 +180,7 @@ public class PROTO_NC_EVENT_GET_ALL_EVENT_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 10 | Full: 0x340A
+/// Department: Event (0x34) | Opcode: 10 | Full: 0xD00A
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 10)]
@@ -203,7 +203,7 @@ public class PROTO_NC_EVENT_SET_ALL_READY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 9 | Full: 0x3409
+/// Department: Event (0x34) | Opcode: 9 | Full: 0xD009
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 9)]
@@ -226,7 +226,7 @@ public class PROTO_NC_EVENT_SET_ALL_READY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 6 | Full: 0x3406
+/// Department: Event (0x34) | Opcode: 6 | Full: 0xD006
 /// sizeof = 1365
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 6)]
@@ -249,7 +249,7 @@ public class PROTO_NC_EVENT_UPDATE_EVENT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Event (0x34) | Opcode: 5 | Full: 0x3405
+/// Department: Event (0x34) | Opcode: 5 | Full: 0xD005
 /// sizeof = 1363
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Event, 5)]

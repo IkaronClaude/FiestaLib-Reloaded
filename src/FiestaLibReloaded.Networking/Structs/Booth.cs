@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 15 | Full: 0x1A0F
+/// Department: Booth (0x1A) | Opcode: 15 | Full: 0x680F
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 15)]
@@ -28,7 +28,7 @@ public class PROTO_NC_BOOTH_BUYREFRESH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 9 | Full: 0x1A09
+/// Department: Booth (0x1A) | Opcode: 9 | Full: 0x6809
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 9)]
@@ -55,7 +55,7 @@ public class PROTO_NC_BOOTH_ENTRY_BUY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 7 | Full: 0x1A07
+/// Department: Booth (0x1A) | Opcode: 7 | Full: 0x6807
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 7)]
@@ -75,7 +75,7 @@ public class PROTO_NC_BOOTH_ENTRY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 8 | Full: 0x1A08
+/// Department: Booth (0x1A) | Opcode: 8 | Full: 0x6808
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 8)]
@@ -102,7 +102,7 @@ public class PROTO_NC_BOOTH_ENTRY_SELL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 13 | Full: 0x1A0D
+/// Department: Booth (0x1A) | Opcode: 13 | Full: 0x680D
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 13)]
@@ -128,7 +128,7 @@ public class PROTO_NC_BOOTH_ITEMTRADE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 1 | Full: 0x1A01
+/// Department: Booth (0x1A) | Opcode: 1 | Full: 0x6801
 /// sizeof = 31
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 1)]
@@ -152,7 +152,7 @@ public class PROTO_NC_BOOTH_OPEN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 10 | Full: 0x1A0A
+/// Department: Booth (0x1A) | Opcode: 10 | Full: 0x680A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 10)]
@@ -172,7 +172,7 @@ public class PROTO_NC_BOOTH_REFRESH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 23 | Full: 0x1A17
+/// Department: Booth (0x1A) | Opcode: 23 | Full: 0x6817
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 23)]
@@ -192,7 +192,7 @@ public class PROTO_NC_BOOTH_SEARCH_BOOTH_CLOSED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 22 | Full: 0x1A16
+/// Department: Booth (0x1A) | Opcode: 22 | Full: 0x6816
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 22)]
@@ -218,7 +218,7 @@ public class PROTO_NC_BOOTH_SEARCH_BOOTH_POSITION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 21 | Full: 0x1A15
+/// Department: Booth (0x1A) | Opcode: 21 | Full: 0x6815
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 21)]
@@ -241,7 +241,7 @@ public class PROTO_NC_BOOTH_SEARCH_BOOTH_POSITION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 20 | Full: 0x1A14
+/// Department: Booth (0x1A) | Opcode: 20 | Full: 0x6814
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 20)]
@@ -273,7 +273,7 @@ public class PROTO_NC_BOOTH_SEARCH_ITEM_LIST_CATEGORIZED_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 19 | Full: 0x1A13
+/// Department: Booth (0x1A) | Opcode: 19 | Full: 0x6813
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 19)]
@@ -297,7 +297,7 @@ public class PROTO_NC_BOOTH_SEARCH_ITEM_LIST_CATEGORIZED_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 6 | Full: 0x1A06
+/// Department: Booth (0x1A) | Opcode: 6 | Full: 0x6806
 /// sizeof = 45
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 6)]
@@ -320,7 +320,7 @@ public class PROTO_NC_BOOTH_SOMEONECLOSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 18 | Full: 0x1A12
+/// Department: Booth (0x1A) | Opcode: 18 | Full: 0x6812
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 18)]
@@ -343,7 +343,7 @@ public class PROTO_NC_BOOTH_SOMEONEINTERIORSTART_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Booth (0x1A) | Opcode: 3 | Full: 0x1A03
+/// Department: Booth (0x1A) | Opcode: 3 | Full: 0x6803
 /// sizeof = 45
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Booth, 3)]

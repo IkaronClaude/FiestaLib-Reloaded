@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Announce (0x19) | Opcode: 2 | Full: 0x1902
+/// Department: Announce (0x19) | Opcode: 2 | Full: 0x6402
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Announce, 2)]
@@ -25,7 +25,7 @@ public class PROTO_NC_ANNOUNCE_W2C_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Announce (0x19) | Opcode: 1 | Full: 0x1901
+/// Department: Announce (0x19) | Opcode: 1 | Full: 0x6401
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Announce, 1)]

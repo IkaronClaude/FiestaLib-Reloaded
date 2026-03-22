@@ -1,19 +1,19 @@
 namespace FiestaLibReloaded.Networking;
 
 /// <summary>
-/// Raw packet representation: department + command opcode + payload bytes.
+/// Raw packet representation: 6-bit department + 10-bit command opcode + payload bytes.
+/// Wire format: [length prefix] [opcode LE ushort] [payload].
 /// </summary>
 public class FiestaPacket
 {
-    public byte Department { get; }
-    public byte Command { get; }
-    public ushort Opcode => (ushort)((Department << 8) | Command);
+    public ushort Opcode { get; }
+    public byte Department => (byte)(Opcode >> 10);
+    public ushort Command => (ushort)(Opcode & 0x3FF);
     public ReadOnlyMemory<byte> Payload { get; }
 
-    public FiestaPacket(byte department, byte command, ReadOnlyMemory<byte> payload)
+    public FiestaPacket(ushort opcode, ReadOnlyMemory<byte> payload)
     {
-        Department = department;
-        Command = command;
+        Opcode = opcode;
         Payload = payload;
     }
 
@@ -23,10 +23,8 @@ public class FiestaPacket
     public static FiestaPacket Create<T>(T body) where T : IFiestaPacketBody
     {
         var opcode = PacketRegistry.GetOpcode<T>();
-        var dept = (byte)(opcode >> 8);
-        var cmd = (byte)(opcode & 0xFF);
         var payload = body.ToBytes();
-        return new FiestaPacket(dept, cmd, payload);
+        return new FiestaPacket(opcode, payload);
     }
 
     /// <summary>
@@ -41,7 +39,7 @@ public class FiestaPacket
     }
 
     /// <summary>
-    /// Serialize to wire format: [length prefix] [department] [command] [payload].
+    /// Serialize to wire format: [length prefix] [opcode LE ushort] [payload].
     /// </summary>
     public byte[] ToBytes()
     {
@@ -59,8 +57,9 @@ public class FiestaPacket
             ms.WriteByte((byte)(opcodeAndPayloadLen & 0xFF));
         }
 
-        ms.WriteByte(Department);
-        ms.WriteByte(Command);
+        // Opcode as little-endian ushort
+        ms.WriteByte((byte)(Opcode & 0xFF));
+        ms.WriteByte((byte)(Opcode >> 8));
         ms.Write(Payload.Span);
         return ms.ToArray();
     }

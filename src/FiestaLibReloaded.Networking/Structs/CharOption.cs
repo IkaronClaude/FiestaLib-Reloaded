@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 32 | Full: 0x1C20
+/// Department: CharOption (0x1C) | Opcode: 32 | Full: 0x7020
 /// sizeof = 67
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 32)]
@@ -31,7 +31,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_GAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 31 | Full: 0x1C1F
+/// Department: CharOption (0x1C) | Opcode: 31 | Full: 0x701F
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 31)]
@@ -54,7 +54,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_GAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 36 | Full: 0x1C24
+/// Department: CharOption (0x1C) | Opcode: 36 | Full: 0x7024
 /// sizeof = 311
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 36)]
@@ -80,7 +80,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_KEYMAPPING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 35 | Full: 0x1C23
+/// Department: CharOption (0x1C) | Opcode: 35 | Full: 0x7023
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 35)]
@@ -103,7 +103,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_KEYMAPPING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 24 | Full: 0x1C18
+/// Department: CharOption (0x1C) | Opcode: 24 | Full: 0x7018
 /// sizeof = 1027
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 24)]
@@ -129,7 +129,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SHORTCUTDATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 23 | Full: 0x1C17
+/// Department: CharOption (0x1C) | Opcode: 23 | Full: 0x7017
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 23)]
@@ -152,7 +152,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SHORTCUTDATA_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 26 | Full: 0x1C1A
+/// Department: CharOption (0x1C) | Opcode: 26 | Full: 0x701A
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 26)]
@@ -178,7 +178,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SHORTCUTSIZE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 25 | Full: 0x1C19
+/// Department: CharOption (0x1C) | Opcode: 25 | Full: 0x7019
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 25)]
@@ -201,7 +201,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SHORTCUTSIZE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 30 | Full: 0x1C1E
+/// Department: CharOption (0x1C) | Opcode: 30 | Full: 0x701E
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 30)]
@@ -227,7 +227,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SOUND_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 29 | Full: 0x1C1D
+/// Department: CharOption (0x1C) | Opcode: 29 | Full: 0x701D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 29)]
@@ -250,7 +250,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_SOUND_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 28 | Full: 0x1C1C
+/// Department: CharOption (0x1C) | Opcode: 28 | Full: 0x701C
 /// sizeof = 63
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 28)]
@@ -276,7 +276,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_VIDEO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 27 | Full: 0x1C1B
+/// Department: CharOption (0x1C) | Opcode: 27 | Full: 0x701B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 27)]
@@ -299,7 +299,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_VIDEO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 34 | Full: 0x1C22
+/// Department: CharOption (0x1C) | Opcode: 34 | Full: 0x7022
 /// sizeof = 395
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 34)]
@@ -325,7 +325,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_WINDOWPOS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 33 | Full: 0x1C21
+/// Department: CharOption (0x1C) | Opcode: 33 | Full: 0x7021
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 33)]
@@ -348,7 +348,7 @@ public class PROTO_NC_CHAR_OPTION_DB_GET_WINDOWPOS_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 41 | Full: 0x1C29
+/// Department: CharOption (0x1C) | Opcode: 41 | Full: 0x7029
 /// sizeof = 68
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 41)]
@@ -371,7 +371,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_GAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 43 | Full: 0x1C2B
+/// Department: CharOption (0x1C) | Opcode: 43 | Full: 0x702B
 /// sizeof = 312
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 43)]
@@ -394,7 +394,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_KEYMAPPING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 37 | Full: 0x1C25
+/// Department: CharOption (0x1C) | Opcode: 37 | Full: 0x7025
 /// sizeof = 1028
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 37)]
@@ -417,7 +417,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_SHORTCUTDATA_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 38 | Full: 0x1C26
+/// Department: CharOption (0x1C) | Opcode: 38 | Full: 0x7026
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 38)]
@@ -440,7 +440,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_SHORTCUTSIZE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 40 | Full: 0x1C28
+/// Department: CharOption (0x1C) | Opcode: 40 | Full: 0x7028
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 40)]
@@ -463,7 +463,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_SOUND_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 39 | Full: 0x1C27
+/// Department: CharOption (0x1C) | Opcode: 39 | Full: 0x7027
 /// sizeof = 64
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 39)]
@@ -486,7 +486,7 @@ public class PROTO_NC_CHAR_OPTION_DB_SET_VIDEO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 42 | Full: 0x1C2A
+/// Department: CharOption (0x1C) | Opcode: 42 | Full: 0x702A
 /// sizeof = 396
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 42)]
@@ -525,7 +525,7 @@ public class PROTO_NC_CHAR_OPTION_GAME : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 11 | Full: 0x1C0B
+/// Department: CharOption (0x1C) | Opcode: 11 | Full: 0x700B
 /// sizeof = 65
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 11)]
@@ -548,7 +548,7 @@ public class PROTO_NC_CHAR_OPTION_GET_GAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 10 | Full: 0x1C0A
+/// Department: CharOption (0x1C) | Opcode: 10 | Full: 0x700A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 10)]
@@ -565,7 +565,7 @@ public class PROTO_NC_CHAR_OPTION_GET_GAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 15 | Full: 0x1C0F
+/// Department: CharOption (0x1C) | Opcode: 15 | Full: 0x700F
 /// sizeof = 309
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 15)]
@@ -588,7 +588,7 @@ public class PROTO_NC_CHAR_OPTION_GET_KEYMAPPING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 14 | Full: 0x1C0E
+/// Department: CharOption (0x1C) | Opcode: 14 | Full: 0x700E
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 14)]
@@ -605,7 +605,7 @@ public class PROTO_NC_CHAR_OPTION_GET_KEYMAPPING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 3 | Full: 0x1C03
+/// Department: CharOption (0x1C) | Opcode: 3 | Full: 0x7003
 /// sizeof = 1025
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 3)]
@@ -628,7 +628,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SHORTCUTDATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 2 | Full: 0x1C02
+/// Department: CharOption (0x1C) | Opcode: 2 | Full: 0x7002
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 2)]
@@ -645,7 +645,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SHORTCUTDATA_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 5 | Full: 0x1C05
+/// Department: CharOption (0x1C) | Opcode: 5 | Full: 0x7005
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 5)]
@@ -668,7 +668,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SHORTCUTSIZE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 4 | Full: 0x1C04
+/// Department: CharOption (0x1C) | Opcode: 4 | Full: 0x7004
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 4)]
@@ -685,7 +685,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SHORTCUTSIZE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 9 | Full: 0x1C09
+/// Department: CharOption (0x1C) | Opcode: 9 | Full: 0x7009
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 9)]
@@ -708,7 +708,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SOUND_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 8 | Full: 0x1C08
+/// Department: CharOption (0x1C) | Opcode: 8 | Full: 0x7008
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 8)]
@@ -725,7 +725,7 @@ public class PROTO_NC_CHAR_OPTION_GET_SOUND_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 7 | Full: 0x1C07
+/// Department: CharOption (0x1C) | Opcode: 7 | Full: 0x7007
 /// sizeof = 61
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 7)]
@@ -748,7 +748,7 @@ public class PROTO_NC_CHAR_OPTION_GET_VIDEO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 6 | Full: 0x1C06
+/// Department: CharOption (0x1C) | Opcode: 6 | Full: 0x7006
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 6)]
@@ -765,7 +765,7 @@ public class PROTO_NC_CHAR_OPTION_GET_VIDEO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 13 | Full: 0x1C0D
+/// Department: CharOption (0x1C) | Opcode: 13 | Full: 0x700D
 /// sizeof = 393
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 13)]
@@ -788,7 +788,7 @@ public class PROTO_NC_CHAR_OPTION_GET_WINDOWPOS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 12 | Full: 0x1C0C
+/// Department: CharOption (0x1C) | Opcode: 12 | Full: 0x700C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 12)]
@@ -805,7 +805,7 @@ public class PROTO_NC_CHAR_OPTION_GET_WINDOWPOS_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 44 | Full: 0x1C2C
+/// Department: CharOption (0x1C) | Opcode: 44 | Full: 0x702C
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 44)]
@@ -826,7 +826,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_GET_DATA_TYPE_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 47 | Full: 0x1C2F
+/// Department: CharOption (0x1C) | Opcode: 47 | Full: 0x702F
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 47)]
@@ -849,7 +849,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_GET_GAMEOPTION_CMD : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 46 | Full: 0x1C2E
+/// Department: CharOption (0x1C) | Opcode: 46 | Full: 0x702E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 46)]
@@ -872,7 +872,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_GET_KEYMAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 45 | Full: 0x1C2D
+/// Department: CharOption (0x1C) | Opcode: 45 | Full: 0x702D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 45)]
@@ -895,7 +895,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_GET_SHORTCUTDATA_CMD : IFiestaPacke
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 90 | Full: 0x1C5A
+/// Department: CharOption (0x1C) | Opcode: 90 | Full: 0x705A
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 90)]
@@ -921,7 +921,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_INIT_GAMEOPTION_ACK : IFiestaPacket
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 89 | Full: 0x1C59
+/// Department: CharOption (0x1C) | Opcode: 89 | Full: 0x7059
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 89)]
@@ -941,7 +941,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_INIT_GAMEOPTION_REQ : IFiestaPacket
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 88 | Full: 0x1C58
+/// Department: CharOption (0x1C) | Opcode: 88 | Full: 0x7058
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 88)]
@@ -967,7 +967,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_INIT_KEYMAP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 87 | Full: 0x1C57
+/// Department: CharOption (0x1C) | Opcode: 87 | Full: 0x7057
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 87)]
@@ -987,7 +987,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_INIT_KEYMAP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 80 | Full: 0x1C50
+/// Department: CharOption (0x1C) | Opcode: 80 | Full: 0x7050
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 80)]
@@ -1010,7 +1010,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_GAMEOPTION_ACK : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 79 | Full: 0x1C4F
+/// Department: CharOption (0x1C) | Opcode: 79 | Full: 0x704F
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 79)]
@@ -1033,7 +1033,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_GAMEOPTION_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 78 | Full: 0x1C4E
+/// Department: CharOption (0x1C) | Opcode: 78 | Full: 0x704E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 78)]
@@ -1056,7 +1056,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_KEYMAP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 77 | Full: 0x1C4D
+/// Department: CharOption (0x1C) | Opcode: 77 | Full: 0x704D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 77)]
@@ -1079,7 +1079,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_KEYMAP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 76 | Full: 0x1C4C
+/// Department: CharOption (0x1C) | Opcode: 76 | Full: 0x704C
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 76)]
@@ -1102,7 +1102,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_SHORTCUTDATA_ACK : IFiestaPacke
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 75 | Full: 0x1C4B
+/// Department: CharOption (0x1C) | Opcode: 75 | Full: 0x704B
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 75)]
@@ -1125,7 +1125,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_DB_SET_SHORTCUTDATA_REQ : IFiestaPacke
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 52 | Full: 0x1C34
+/// Department: CharOption (0x1C) | Opcode: 52 | Full: 0x7034
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 52)]
@@ -1154,7 +1154,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_GET_GAMEOPTION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 51 | Full: 0x1C33
+/// Department: CharOption (0x1C) | Opcode: 51 | Full: 0x7033
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 51)]
@@ -1183,7 +1183,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_GET_KEYMAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 50 | Full: 0x1C32
+/// Department: CharOption (0x1C) | Opcode: 50 | Full: 0x7032
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 50)]
@@ -1212,7 +1212,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_GET_SHORTCUTDATA_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 70 | Full: 0x1C46
+/// Department: CharOption (0x1C) | Opcode: 70 | Full: 0x7046
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 70)]
@@ -1235,7 +1235,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_INIT_GAMEOPTION_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 69 | Full: 0x1C45
+/// Department: CharOption (0x1C) | Opcode: 69 | Full: 0x7045
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 69)]
@@ -1252,7 +1252,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_INIT_GAMEOPTION_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 68 | Full: 0x1C44
+/// Department: CharOption (0x1C) | Opcode: 68 | Full: 0x7044
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 68)]
@@ -1275,7 +1275,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_INIT_KEYMAP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 67 | Full: 0x1C43
+/// Department: CharOption (0x1C) | Opcode: 67 | Full: 0x7043
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 67)]
@@ -1292,7 +1292,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_INIT_KEYMAP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 60 | Full: 0x1C3C
+/// Department: CharOption (0x1C) | Opcode: 60 | Full: 0x703C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 60)]
@@ -1312,7 +1312,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_SET_GAMEOPTION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 59 | Full: 0x1C3B
+/// Department: CharOption (0x1C) | Opcode: 59 | Full: 0x703B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 59)]
@@ -1341,7 +1341,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_SET_GAMEOPTION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 58 | Full: 0x1C3A
+/// Department: CharOption (0x1C) | Opcode: 58 | Full: 0x703A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 58)]
@@ -1361,7 +1361,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_SET_KEYMAP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 57 | Full: 0x1C39
+/// Department: CharOption (0x1C) | Opcode: 57 | Full: 0x7039
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 57)]
@@ -1390,7 +1390,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_SET_KEYMAP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 56 | Full: 0x1C38
+/// Department: CharOption (0x1C) | Opcode: 56 | Full: 0x7038
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 56)]
@@ -1410,7 +1410,7 @@ public class PROTO_NC_CHAR_OPTION_IMPROVE_SET_SHORTCUTDATA_ACK : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 55 | Full: 0x1C37
+/// Department: CharOption (0x1C) | Opcode: 55 | Full: 0x7037
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 55)]
@@ -1455,7 +1455,7 @@ public class PROTO_NC_CHAR_OPTION_KEYMAPPING : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 96 | Full: 0x1C60
+/// Department: CharOption (0x1C) | Opcode: 96 | Full: 0x7060
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 96)]
@@ -1475,7 +1475,7 @@ public class PROTO_NC_CHAR_OPTION_LOGIN_BLOCKDATA_ERR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 20 | Full: 0x1C14
+/// Department: CharOption (0x1C) | Opcode: 20 | Full: 0x7014
 /// sizeof = 64
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 20)]
@@ -1495,7 +1495,7 @@ public class PROTO_NC_CHAR_OPTION_SET_GAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 22 | Full: 0x1C16
+/// Department: CharOption (0x1C) | Opcode: 22 | Full: 0x7016
 /// sizeof = 308
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 22)]
@@ -1515,7 +1515,7 @@ public class PROTO_NC_CHAR_OPTION_SET_KEYMAPPING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 16 | Full: 0x1C10
+/// Department: CharOption (0x1C) | Opcode: 16 | Full: 0x7010
 /// sizeof = 1024
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 16)]
@@ -1535,7 +1535,7 @@ public class PROTO_NC_CHAR_OPTION_SET_SHORTCUTDATA_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 17 | Full: 0x1C11
+/// Department: CharOption (0x1C) | Opcode: 17 | Full: 0x7011
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 17)]
@@ -1555,7 +1555,7 @@ public class PROTO_NC_CHAR_OPTION_SET_SHORTCUTSIZE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 19 | Full: 0x1C13
+/// Department: CharOption (0x1C) | Opcode: 19 | Full: 0x7013
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 19)]
@@ -1575,7 +1575,7 @@ public class PROTO_NC_CHAR_OPTION_SET_SOUND_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 18 | Full: 0x1C12
+/// Department: CharOption (0x1C) | Opcode: 18 | Full: 0x7012
 /// sizeof = 60
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 18)]
@@ -1595,7 +1595,7 @@ public class PROTO_NC_CHAR_OPTION_SET_VIDEO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: CharOption (0x1C) | Opcode: 21 | Full: 0x1C15
+/// Department: CharOption (0x1C) | Opcode: 21 | Full: 0x7015
 /// sizeof = 392
 /// </summary>
 [FiestaOpcode(ProtocolCommand.CharOption, 21)]

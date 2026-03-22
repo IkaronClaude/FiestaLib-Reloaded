@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 31 | Full: 0x021F
+/// Department: Misc (0x02) | Opcode: 31 | Full: 0x081F
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 31)]
@@ -43,7 +43,7 @@ public class PROTO_NC_MISC_CHAR_LOGOFF_STATISTICS : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 72 | Full: 0x0248
+/// Department: Misc (0x02) | Opcode: 72 | Full: 0x0848
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 72)]
@@ -63,7 +63,7 @@ public class PROTO_NC_MISC_CHAT_BLOCK_SPAMER_BLOCKTIME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 15 | Full: 0x020F
+/// Department: Misc (0x02) | Opcode: 15 | Full: 0x080F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 15)]
@@ -89,7 +89,7 @@ public class PROTO_NC_MISC_CLIENT_DEBUG_MSG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 64 | Full: 0x0240
+/// Department: Misc (0x02) | Opcode: 64 | Full: 0x0840
 /// sizeof = 64
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 64)]
@@ -139,7 +139,7 @@ public class PROTO_NC_MISC_CLIENT_LOADING_BUG_DETECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 10 | Full: 0x020A
+/// Department: Misc (0x02) | Opcode: 10 | Full: 0x080A
 /// sizeof = 131
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 10)]
@@ -167,7 +167,7 @@ public class PROTO_NC_MISC_CONNECTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 9 | Full: 0x0209
+/// Department: Misc (0x02) | Opcode: 9 | Full: 0x0809
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 9)]
@@ -184,7 +184,7 @@ public class PROTO_NC_MISC_CONNECTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 43 | Full: 0x022B
+/// Department: Misc (0x02) | Opcode: 43 | Full: 0x082B
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 43)]
@@ -207,7 +207,7 @@ public class PROTO_NC_MISC_CONNECTFROMWHERE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 48 | Full: 0x0230
+/// Department: Misc (0x02) | Opcode: 48 | Full: 0x0830
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 48)]
@@ -230,7 +230,7 @@ public class PROTO_NC_MISC_CONNECTFROMWHERE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 47 | Full: 0x022F
+/// Department: Misc (0x02) | Opcode: 47 | Full: 0x082F
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 47)]
@@ -253,7 +253,7 @@ public class PROTO_NC_MISC_CONNECTFROMWHERE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 42 | Full: 0x022A
+/// Department: Misc (0x02) | Opcode: 42 | Full: 0x082A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 42)]
@@ -276,7 +276,7 @@ public class PROTO_NC_MISC_CONNECTFROMWHERE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 50 | Full: 0x0232
+/// Department: Misc (0x02) | Opcode: 50 | Full: 0x0832
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 50)]
@@ -299,7 +299,7 @@ public class PROTO_NC_MISC_CS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 65 | Full: 0x0241
+/// Department: Misc (0x02) | Opcode: 65 | Full: 0x0841
 /// sizeof = 72
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 65)]
@@ -355,7 +355,7 @@ public class PROTO_NC_MISC_DB_CLIENT_LOADING_BUG_DETECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 11 | Full: 0x020B
+/// Department: Misc (0x02) | Opcode: 11 | Full: 0x080B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 11)]
@@ -378,7 +378,7 @@ public class PROTO_NC_MISC_DELIVER_WM_LOGIN_ACDB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 12 | Full: 0x020C
+/// Department: Misc (0x02) | Opcode: 12 | Full: 0x080C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 12)]
@@ -401,7 +401,7 @@ public class PROTO_NC_MISC_DELIVER_WM_LOGIN_ALDB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 57 | Full: 0x0239
+/// Department: Misc (0x02) | Opcode: 57 | Full: 0x0839
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 57)]
@@ -436,7 +436,7 @@ public class PROTO_NC_MISC_EVENT_DONE_MUNSANG_ACC2WM : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 56 | Full: 0x0238
+/// Department: Misc (0x02) | Opcode: 56 | Full: 0x0838
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 56)]
@@ -468,7 +468,7 @@ public class PROTO_NC_MISC_EVENT_DONE_MUNSANG_WM2ACC : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 58 | Full: 0x023A
+/// Department: Misc (0x02) | Opcode: 58 | Full: 0x083A
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 58)]
@@ -500,7 +500,7 @@ public class PROTO_NC_MISC_EVENT_DONE_MUNSANG_WM2Z : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 55 | Full: 0x0237
+/// Department: Misc (0x02) | Opcode: 55 | Full: 0x0837
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 55)]
@@ -529,7 +529,7 @@ public class PROTO_NC_MISC_EVENT_DONE_MUNSANG_Z2WM : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 32 | Full: 0x0220
+/// Department: Misc (0x02) | Opcode: 32 | Full: 0x0820
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 32)]
@@ -552,7 +552,7 @@ public class PROTO_NC_MISC_EVENT_HIT3_ADD_CASH : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 46 | Full: 0x022E
+/// Department: Misc (0x02) | Opcode: 46 | Full: 0x082E
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 46)]
@@ -575,7 +575,7 @@ public class PROTO_NC_MISC_EVENT_L20_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 45 | Full: 0x022D
+/// Department: Misc (0x02) | Opcode: 45 | Full: 0x082D
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 45)]
@@ -607,7 +607,7 @@ public class PROTO_NC_MISC_EVENT_L20_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 44 | Full: 0x022C
+/// Department: Misc (0x02) | Opcode: 44 | Full: 0x082C
 /// sizeof = 272
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 44)]
@@ -645,7 +645,7 @@ public class PROTO_NC_MISC_EVENT_L20_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 67 | Full: 0x0243
+/// Department: Misc (0x02) | Opcode: 67 | Full: 0x0843
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 67)]
@@ -668,7 +668,7 @@ public class PROTO_NC_MISC_EVENT_LONG_TIME_PLAY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 109 | Full: 0x026D
+/// Department: Misc (0x02) | Opcode: 109 | Full: 0x086D
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 109)]
@@ -688,7 +688,7 @@ public class PROTO_NC_MISC_EVENTNPC_STANDEND_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 107 | Full: 0x026B
+/// Department: Misc (0x02) | Opcode: 107 | Full: 0x086B
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 107)]
@@ -708,7 +708,7 @@ public class PROTO_NC_MISC_EVENTNPC_STANDEND_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 108 | Full: 0x026C
+/// Department: Misc (0x02) | Opcode: 108 | Full: 0x086C
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 108)]
@@ -728,7 +728,7 @@ public class PROTO_NC_MISC_EVENTNPC_STANDSTART_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 106 | Full: 0x026A
+/// Department: Misc (0x02) | Opcode: 106 | Full: 0x086A
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 106)]
@@ -748,7 +748,7 @@ public class PROTO_NC_MISC_EVENTNPC_STANDSTART_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 14 | Full: 0x020E
+/// Department: Misc (0x02) | Opcode: 14 | Full: 0x080E
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 14)]
@@ -774,7 +774,7 @@ public class PROTO_NC_MISC_GAMETIME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 69 | Full: 0x0245
+/// Department: Misc (0x02) | Opcode: 69 | Full: 0x0845
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 69)]
@@ -800,7 +800,7 @@ public class PROTO_NC_MISC_GET_CHAT_BLOCK_SPAM_FILTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 68 | Full: 0x0244
+/// Department: Misc (0x02) | Opcode: 68 | Full: 0x0844
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 68)]
@@ -832,7 +832,7 @@ public class PROTO_NC_MISC_GET_CHAT_BLOCK_SPAM_FILTER_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 61 | Full: 0x023D
+/// Department: Misc (0x02) | Opcode: 61 | Full: 0x083D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 61)]
@@ -852,7 +852,7 @@ public class PROTO_NC_MISC_GM_CHAT_COLOR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 52 | Full: 0x0234
+/// Department: Misc (0x02) | Opcode: 52 | Full: 0x0834
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 52)]
@@ -875,7 +875,7 @@ public class PROTO_NC_MISC_HACK_SCAN_STORE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 53 | Full: 0x0235
+/// Department: Misc (0x02) | Opcode: 53 | Full: 0x0835
 /// sizeof = 51
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 53)]
@@ -948,7 +948,7 @@ public class PROTO_NC_MISC_HEARTBEAT_REQ_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 111 | Full: 0x026F
+/// Department: Misc (0x02) | Opcode: 111 | Full: 0x086F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 111)]
@@ -977,7 +977,7 @@ public class PROTO_NC_MISC_ITEMSHOP_URL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 113 | Full: 0x0271
+/// Department: Misc (0x02) | Opcode: 113 | Full: 0x0871
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 113)]
@@ -1009,7 +1009,7 @@ public class PROTO_NC_MISC_ITEMSHOP_URL_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 112 | Full: 0x0270
+/// Department: Misc (0x02) | Opcode: 112 | Full: 0x0870
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 112)]
@@ -1032,7 +1032,7 @@ public class PROTO_NC_MISC_ITEMSHOP_URL_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 110 | Full: 0x026E
+/// Department: Misc (0x02) | Opcode: 110 | Full: 0x086E
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 110)]
@@ -1049,7 +1049,7 @@ public class PROTO_NC_MISC_ITEMSHOP_URL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 18 | Full: 0x0212
+/// Department: Misc (0x02) | Opcode: 18 | Full: 0x0812
 /// sizeof = 90
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 18)]
@@ -1108,7 +1108,7 @@ public class PROTO_NC_MISC_PINGTEST_CLIENT_ZONE_DB : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 19 | Full: 0x0213
+/// Department: Misc (0x02) | Opcode: 19 | Full: 0x0813
 /// sizeof = 130
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 19)]
@@ -1188,7 +1188,7 @@ public class PROTO_NC_MISC_PINGTEST_TOOL_WM_CLIENT_ZONE_DB : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 20 | Full: 0x0214
+/// Department: Misc (0x02) | Opcode: 20 | Full: 0x0814
 /// sizeof = 38
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 20)]
@@ -1235,7 +1235,7 @@ public class PROTO_NC_MISC_PINGTEST_TOOL_WM_DB : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 22 | Full: 0x0216
+/// Department: Misc (0x02) | Opcode: 22 | Full: 0x0816
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 22)]
@@ -1279,7 +1279,7 @@ public class PROTO_NC_MISC_PINGTEST_TOOL_WM_ZONE : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 21 | Full: 0x0215
+/// Department: Misc (0x02) | Opcode: 21 | Full: 0x0815
 /// sizeof = 58
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 21)]
@@ -1341,7 +1341,7 @@ public class PROTO_NC_MISC_PINGTEST_TOOL_WM_ZONE_DB : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 16 | Full: 0x0210
+/// Department: Misc (0x02) | Opcode: 16 | Full: 0x0810
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 16)]
@@ -1386,7 +1386,7 @@ public class PROTO_NC_MISC_RESTMINUTE_CMD_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 3 | Full: 0x0203
+/// Department: Misc (0x02) | Opcode: 3 | Full: 0x0803
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 3)]
@@ -1428,7 +1428,7 @@ public class PROTO_NC_MISC_S2SCONNECTION_RDY_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 2 | Full: 0x0202
+/// Department: Misc (0x02) | Opcode: 2 | Full: 0x0802
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 2)]
@@ -1485,7 +1485,7 @@ public class PROTO_NC_MISC_S2SCONNECTION_REQ_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 7 | Full: 0x0207
+/// Department: Misc (0x02) | Opcode: 7 | Full: 0x0807
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 7)]
@@ -1505,7 +1505,7 @@ public class PROTO_NC_MISC_SEED_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 73 | Full: 0x0249
+/// Department: Misc (0x02) | Opcode: 73 | Full: 0x0849
 /// sizeof = 37
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 73)]
@@ -1528,7 +1528,7 @@ public class PROTO_NC_MISC_SERVER_TIME_NOTIFY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 48 | Full: 0x0230
+/// Department: Misc (0x02) | Opcode: 48 | Full: 0x0830
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 48)]
@@ -1551,7 +1551,7 @@ public class PROTO_NC_MISC_SERVERPARAMETER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 70 | Full: 0x0246
+/// Department: Misc (0x02) | Opcode: 70 | Full: 0x0846
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 70)]
@@ -1577,7 +1577,7 @@ public class PROTO_NC_MISC_SET_CHAT_BLOCK_SPAM_FILTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 71 | Full: 0x0247
+/// Department: Misc (0x02) | Opcode: 71 | Full: 0x0847
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 71)]
@@ -1609,7 +1609,7 @@ public class PROTO_NC_MISC_SET_CHAT_BLOCK_SPAM_FILTER_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 98 | Full: 0x0262
+/// Department: Misc (0x02) | Opcode: 98 | Full: 0x0862
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 98)]
@@ -1632,7 +1632,7 @@ public class PROTO_NC_MISC_SPAMMER_CHAT_BAN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 97 | Full: 0x0261
+/// Department: Misc (0x02) | Opcode: 97 | Full: 0x0861
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 97)]
@@ -1652,7 +1652,7 @@ public class PROTO_NC_MISC_SPAMMER_CHAT_BAN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 103 | Full: 0x0267
+/// Department: Misc (0x02) | Opcode: 103 | Full: 0x0867
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 103)]
@@ -1672,7 +1672,7 @@ public class PROTO_NC_MISC_SPAMMER_RELEASE_CHAT_BAN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 105 | Full: 0x0269
+/// Department: Misc (0x02) | Opcode: 105 | Full: 0x0869
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 105)]
@@ -1701,7 +1701,7 @@ public class PROTO_NC_MISC_SPAMMER_RELEASE_CHAT_BAN_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 104 | Full: 0x0268
+/// Department: Misc (0x02) | Opcode: 104 | Full: 0x0868
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 104)]
@@ -1727,7 +1727,7 @@ public class PROTO_NC_MISC_SPAMMER_RELEASE_CHAT_BAN_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 102 | Full: 0x0266
+/// Department: Misc (0x02) | Opcode: 102 | Full: 0x0866
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 102)]
@@ -1750,7 +1750,7 @@ public class PROTO_NC_MISC_SPAMMER_RELEASE_CHAT_BAN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 96 | Full: 0x0260
+/// Department: Misc (0x02) | Opcode: 96 | Full: 0x0860
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 96)]
@@ -1770,7 +1770,7 @@ public class PROTO_NC_MISC_SPAMMER_REPORT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 95 | Full: 0x025F
+/// Department: Misc (0x02) | Opcode: 95 | Full: 0x085F
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 95)]
@@ -1790,7 +1790,7 @@ public class PROTO_NC_MISC_SPAMMER_REPORT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 100 | Full: 0x0264
+/// Department: Misc (0x02) | Opcode: 100 | Full: 0x0864
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 100)]
@@ -1819,7 +1819,7 @@ public class PROTO_NC_MISC_SPAMMER_SET_DB_CHAT_BAN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 99 | Full: 0x0263
+/// Department: Misc (0x02) | Opcode: 99 | Full: 0x0863
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 99)]
@@ -1845,7 +1845,7 @@ public class PROTO_NC_MISC_SPAMMER_SET_DB_CHAT_BAN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 101 | Full: 0x0265
+/// Department: Misc (0x02) | Opcode: 101 | Full: 0x0865
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 101)]
@@ -1868,7 +1868,7 @@ public class PROTO_NC_MISC_SPAMMER_ZONE_CHAT_BAN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 33 | Full: 0x0221
+/// Department: Misc (0x02) | Opcode: 33 | Full: 0x0821
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 33)]
@@ -1888,7 +1888,7 @@ public class PROTO_NC_MISC_TIMEFROMWORLD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 8 | Full: 0x0208
+/// Department: Misc (0x02) | Opcode: 8 | Full: 0x0808
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 8)]
@@ -1911,7 +1911,7 @@ public class PROTO_NC_MISC_USER_COUNT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 30 | Full: 0x021E
+/// Department: Misc (0x02) | Opcode: 30 | Full: 0x081E
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 30)]
@@ -1940,7 +1940,7 @@ public class PROTO_NC_MISC_WEB_DB_KEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 29 | Full: 0x021D
+/// Department: Misc (0x02) | Opcode: 29 | Full: 0x081D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 29)]
@@ -1963,7 +1963,7 @@ public class PROTO_NC_MISC_WEB_DB_KEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 28 | Full: 0x021C
+/// Department: Misc (0x02) | Opcode: 28 | Full: 0x081C
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 28)]
@@ -1986,7 +1986,7 @@ public class PROTO_NC_MISC_WEB_KEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 27 | Full: 0x021B
+/// Department: Misc (0x02) | Opcode: 27 | Full: 0x081B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 27)]
@@ -2003,7 +2003,7 @@ public class PROTO_NC_MISC_WEB_KEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 36 | Full: 0x0224
+/// Department: Misc (0x02) | Opcode: 36 | Full: 0x0824
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 36)]
@@ -2029,7 +2029,7 @@ public class PROTO_NC_MISC_WHSHANDLEFIX_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 37 | Full: 0x0225
+/// Department: Misc (0x02) | Opcode: 37 | Full: 0x0825
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 37)]
@@ -2058,7 +2058,7 @@ public class PROTO_NC_MISC_WHSHANDLEREPAIR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 39 | Full: 0x0227
+/// Department: Misc (0x02) | Opcode: 39 | Full: 0x0827
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 39)]
@@ -2081,7 +2081,7 @@ public class PROTO_NC_MISC_XTRAP2_CLIENT_DATA_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 40 | Full: 0x0228
+/// Department: Misc (0x02) | Opcode: 40 | Full: 0x0828
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 40)]
@@ -2098,7 +2098,7 @@ public class PROTO_NC_MISC_XTRAP2_OPTOOL_READ_CODEMAP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Misc (0x02) | Opcode: 17 | Full: 0x0211
+/// Department: Misc (0x02) | Opcode: 17 | Full: 0x0811
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Misc, 17)]

@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 1 | Full: 0x0501
+/// Department: Avatar (0x05) | Opcode: 1 | Full: 0x1401
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 1)]
@@ -31,7 +31,7 @@ public class PROTO_NC_AVATAR_CREATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 2 | Full: 0x0502
+/// Department: Avatar (0x05) | Opcode: 2 | Full: 0x1402
 /// sizeof = 33
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 2)]
@@ -85,7 +85,7 @@ public class PROTO_NC_AVATAR_CREATEDATA_REQ_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 3 | Full: 0x0503
+/// Department: Avatar (0x05) | Opcode: 3 | Full: 0x1403
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 3)]
@@ -108,7 +108,7 @@ public class PROTO_NC_AVATAR_CREATEDATAFAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 5 | Full: 0x0505
+/// Department: Avatar (0x05) | Opcode: 5 | Full: 0x1405
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 5)]
@@ -137,7 +137,7 @@ public class PROTO_NC_AVATAR_CREATEDATASUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 4 | Full: 0x0504
+/// Department: Avatar (0x05) | Opcode: 4 | Full: 0x1404
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 4)]
@@ -179,7 +179,7 @@ public class PROTO_NC_AVATAR_CREATEFAIL_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 6 | Full: 0x0506
+/// Department: Avatar (0x05) | Opcode: 6 | Full: 0x1406
 /// sizeof = 131
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 6)]
@@ -224,7 +224,7 @@ public class PROTO_NC_AVATAR_CREATESUCC_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 7 | Full: 0x0507
+/// Department: Avatar (0x05) | Opcode: 7 | Full: 0x1407
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 7)]
@@ -244,7 +244,7 @@ public class PROTO_NC_AVATAR_ERASE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 8 | Full: 0x0508
+/// Department: Avatar (0x05) | Opcode: 8 | Full: 0x1408
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 8)]
@@ -298,7 +298,7 @@ public class PROTO_NC_AVATAR_ERASEDATA_REQ_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 9 | Full: 0x0509
+/// Department: Avatar (0x05) | Opcode: 9 | Full: 0x1409
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 9)]
@@ -321,7 +321,7 @@ public class PROTO_NC_AVATAR_ERASEDATAFAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 11 | Full: 0x050B
+/// Department: Avatar (0x05) | Opcode: 11 | Full: 0x140B
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 11)]
@@ -353,7 +353,7 @@ public class PROTO_NC_AVATAR_ERASEDATASUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 10 | Full: 0x050A
+/// Department: Avatar (0x05) | Opcode: 10 | Full: 0x140A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 10)]
@@ -433,7 +433,7 @@ public class PROTO_NC_AVATAR_ERASESUC_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 20 | Full: 0x0514
+/// Department: Avatar (0x05) | Opcode: 20 | Full: 0x1414
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 20)]
@@ -468,7 +468,7 @@ public class PROTO_NC_AVATAR_GUILD_DATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 19 | Full: 0x0513
+/// Department: Avatar (0x05) | Opcode: 19 | Full: 0x1413
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 19)]
@@ -516,7 +516,7 @@ public class PROTO_NC_AVATAR_GUILD_DATA_REQ_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 22 | Full: 0x0516
+/// Department: Avatar (0x05) | Opcode: 22 | Full: 0x1416
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 22)]
@@ -560,7 +560,7 @@ public class PROTO_NC_AVATAR_GUILD_MEMBER_DATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 21 | Full: 0x0515
+/// Department: Avatar (0x05) | Opcode: 21 | Full: 0x1415
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 21)]
@@ -589,7 +589,7 @@ public class PROTO_NC_AVATAR_GUILD_MEMBER_DATA_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 16 | Full: 0x0510
+/// Department: Avatar (0x05) | Opcode: 16 | Full: 0x1410
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 16)]
@@ -615,7 +615,7 @@ public class PROTO_NC_AVATAR_RENAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 18 | Full: 0x0512
+/// Department: Avatar (0x05) | Opcode: 18 | Full: 0x1412
 /// sizeof = 29
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 18)]
@@ -647,7 +647,7 @@ public class PROTO_NC_AVATAR_RENAME_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 17 | Full: 0x0511
+/// Department: Avatar (0x05) | Opcode: 17 | Full: 0x1411
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 17)]
@@ -676,7 +676,7 @@ public class PROTO_NC_AVATAR_RENAME_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Avatar (0x05) | Opcode: 15 | Full: 0x050F
+/// Department: Avatar (0x05) | Opcode: 15 | Full: 0x140F
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Avatar, 15)]

@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 8 | Full: 0x1508
+/// Department: Friend (0x15) | Opcode: 8 | Full: 0x5408
 /// sizeof = 72
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 8)]
@@ -25,7 +25,7 @@ public class PROTO_NC_FRIEND_ADD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 24 | Full: 0x1518
+/// Department: Friend (0x15) | Opcode: 24 | Full: 0x5418
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 24)]
@@ -48,7 +48,7 @@ public class PROTO_NC_FRIEND_CLASS_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 19 | Full: 0x1513
+/// Department: Friend (0x15) | Opcode: 19 | Full: 0x5413
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 19)]
@@ -80,7 +80,7 @@ public class PROTO_NC_FRIEND_DB_DEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 18 | Full: 0x1512
+/// Department: Friend (0x15) | Opcode: 18 | Full: 0x5412
 /// sizeof = 46
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 18)]
@@ -109,7 +109,7 @@ public class PROTO_NC_FRIEND_DB_DEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 21 | Full: 0x1515
+/// Department: Friend (0x15) | Opcode: 21 | Full: 0x5415
 /// sizeof = 84
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 21)]
@@ -141,7 +141,7 @@ public class PROTO_NC_FRIEND_DB_GET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 20 | Full: 0x1514
+/// Department: Friend (0x15) | Opcode: 20 | Full: 0x5414
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 20)]
@@ -189,7 +189,7 @@ public class PROTO_NC_FRIEND_DB_POINT : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 28 | Full: 0x151C
+/// Department: Friend (0x15) | Opcode: 28 | Full: 0x541C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 28)]
@@ -218,7 +218,7 @@ public class PROTO_NC_FRIEND_DB_POINT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 17 | Full: 0x1511
+/// Department: Friend (0x15) | Opcode: 17 | Full: 0x5411
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 17)]
@@ -250,7 +250,7 @@ public class PROTO_NC_FRIEND_DB_SET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 16 | Full: 0x1510
+/// Department: Friend (0x15) | Opcode: 16 | Full: 0x5410
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 16)]
@@ -282,7 +282,7 @@ public class PROTO_NC_FRIEND_DB_SET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 6 | Full: 0x1506
+/// Department: Friend (0x15) | Opcode: 6 | Full: 0x5406
 /// sizeof = 42
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 6)]
@@ -308,7 +308,7 @@ public class PROTO_NC_FRIEND_DEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 12 | Full: 0x150C
+/// Department: Friend (0x15) | Opcode: 12 | Full: 0x540C
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 12)]
@@ -328,7 +328,7 @@ public class PROTO_NC_FRIEND_DEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 5 | Full: 0x1505
+/// Department: Friend (0x15) | Opcode: 5 | Full: 0x5405
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 5)]
@@ -351,7 +351,7 @@ public class PROTO_NC_FRIEND_DEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 32 | Full: 0x1520
+/// Department: Friend (0x15) | Opcode: 32 | Full: 0x5420
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 32)]
@@ -383,7 +383,7 @@ public class PROTO_NC_FRIEND_FIND_FRIENDS_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 37 | Full: 0x1525
+/// Department: Friend (0x15) | Opcode: 37 | Full: 0x5425
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 37)]
@@ -403,7 +403,7 @@ public class PROTO_NC_FRIEND_GET_DIFF_FRIEND_POINT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 15 | Full: 0x150F
+/// Department: Friend (0x15) | Opcode: 15 | Full: 0x540F
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 15)]
@@ -426,7 +426,7 @@ public class PROTO_NC_FRIEND_LEVEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 7 | Full: 0x1507
+/// Department: Friend (0x15) | Opcode: 7 | Full: 0x5407
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 7)]
@@ -455,7 +455,7 @@ public class PROTO_NC_FRIEND_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 9 | Full: 0x1509
+/// Department: Friend (0x15) | Opcode: 9 | Full: 0x5409
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 9)]
@@ -478,7 +478,7 @@ public class PROTO_NC_FRIEND_LOGIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 10 | Full: 0x150A
+/// Department: Friend (0x15) | Opcode: 10 | Full: 0x540A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 10)]
@@ -498,7 +498,7 @@ public class PROTO_NC_FRIEND_LOGOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 13 | Full: 0x150D
+/// Department: Friend (0x15) | Opcode: 13 | Full: 0x540D
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 13)]
@@ -521,7 +521,7 @@ public class PROTO_NC_FRIEND_MAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 14 | Full: 0x150E
+/// Department: Friend (0x15) | Opcode: 14 | Full: 0x540E
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 14)]
@@ -544,7 +544,7 @@ public class PROTO_NC_FRIEND_PARTY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 30 | Full: 0x151E
+/// Department: Friend (0x15) | Opcode: 30 | Full: 0x541E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 30)]
@@ -564,7 +564,7 @@ public class PROTO_NC_FRIEND_POINT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 11 | Full: 0x150B
+/// Department: Friend (0x15) | Opcode: 11 | Full: 0x540B
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 11)]
@@ -584,7 +584,7 @@ public class PROTO_NC_FRIEND_REFUSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 2 | Full: 0x1502
+/// Department: Friend (0x15) | Opcode: 2 | Full: 0x5402
 /// sizeof = 42
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 2)]
@@ -610,7 +610,7 @@ public class PROTO_NC_FRIEND_SET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 4 | Full: 0x1504
+/// Department: Friend (0x15) | Opcode: 4 | Full: 0x5404
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 4)]
@@ -636,7 +636,7 @@ public class PROTO_NC_FRIEND_SET_CONFIRM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 3 | Full: 0x1503
+/// Department: Friend (0x15) | Opcode: 3 | Full: 0x5403
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 3)]
@@ -659,7 +659,7 @@ public class PROTO_NC_FRIEND_SET_CONFIRM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 1 | Full: 0x1501
+/// Department: Friend (0x15) | Opcode: 1 | Full: 0x5401
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 1)]
@@ -682,7 +682,7 @@ public class PROTO_NC_FRIEND_SET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 36 | Full: 0x1524
+/// Department: Friend (0x15) | Opcode: 36 | Full: 0x5424
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 36)]
@@ -702,7 +702,7 @@ public class PROTO_NC_FRIEND_SOMEONE_GET_SPECIALITEM_WORLD_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 35 | Full: 0x1523
+/// Department: Friend (0x15) | Opcode: 35 | Full: 0x5423
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 35)]
@@ -722,7 +722,7 @@ public class PROTO_NC_FRIEND_SOMEONE_GET_SPECIALITEM_ZONE_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Friend (0x15) | Opcode: 34 | Full: 0x1522
+/// Department: Friend (0x15) | Opcode: 34 | Full: 0x5422
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Friend, 34)]

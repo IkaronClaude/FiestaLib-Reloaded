@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 2 | Full: 0x2902
+/// Department: InstanceDungeon (0x29) | Opcode: 2 | Full: 0xA402
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 2)]
@@ -31,7 +31,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_DELETE_DUNGEON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 1 | Full: 0x2901
+/// Department: InstanceDungeon (0x29) | Opcode: 1 | Full: 0xA401
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 1)]
@@ -54,7 +54,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_EMPTY_DUNGEON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 4 | Full: 0x2904
+/// Department: InstanceDungeon (0x29) | Opcode: 4 | Full: 0xA404
 /// sizeof = 70
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 4)]
@@ -89,7 +89,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_FIND_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 9 | Full: 0x2909
+/// Department: InstanceDungeon (0x29) | Opcode: 9 | Full: 0xA409
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 9)]
@@ -116,7 +116,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 11 | Full: 0x290B
+/// Department: InstanceDungeon (0x29) | Opcode: 11 | Full: 0xA40B
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 11)]
@@ -146,7 +146,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_ECHO_ACK : IFiestaPack
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 10 | Full: 0x290A
+/// Department: InstanceDungeon (0x29) | Opcode: 10 | Full: 0xA40A
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 10)]
@@ -179,7 +179,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_ECHO_REQ : IFiestaPack
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 8 | Full: 0x2908
+/// Department: InstanceDungeon (0x29) | Opcode: 8 | Full: 0xA408
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 8)]
@@ -215,7 +215,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 15 | Full: 0x290F
+/// Department: InstanceDungeon (0x29) | Opcode: 15 | Full: 0xA40F
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 15)]
@@ -245,7 +245,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 17 | Full: 0x2911
+/// Department: InstanceDungeon (0x29) | Opcode: 17 | Full: 0xA411
 /// sizeof = 25
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 17)]
@@ -278,7 +278,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_ACK : IFiestaPacke
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 16 | Full: 0x2910
+/// Department: InstanceDungeon (0x29) | Opcode: 16 | Full: 0xA410
 /// sizeof = 39
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 16)]
@@ -312,7 +312,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_REQ : IFiestaPacke
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 14 | Full: 0x290E
+/// Department: InstanceDungeon (0x29) | Opcode: 14 | Full: 0xA40E
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 14)]
@@ -349,7 +349,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 13 | Full: 0x290D
+/// Department: InstanceDungeon (0x29) | Opcode: 13 | Full: 0xA40D
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 13)]
@@ -370,7 +370,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_MENU_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 12 | Full: 0x290C
+/// Department: InstanceDungeon (0x29) | Opcode: 12 | Full: 0xA40C
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 12)]
@@ -397,7 +397,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_MENU_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 25 | Full: 0x2919
+/// Department: InstanceDungeon (0x29) | Opcode: 25 | Full: 0xA419
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 25)]
@@ -426,7 +426,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_MAP_REGIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 31 | Full: 0x291F
+/// Department: InstanceDungeon (0x29) | Opcode: 31 | Full: 0xA41F
 /// sizeof = 1972
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 31)]
@@ -506,7 +506,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 24 | Full: 0x2918
+/// Department: InstanceDungeon (0x29) | Opcode: 24 | Full: 0xA418
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 24)]
@@ -535,7 +535,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 32 | Full: 0x2920
+/// Department: InstanceDungeon (0x29) | Opcode: 32 | Full: 0xA420
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 32)]
@@ -567,7 +567,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_MYRANK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 37 | Full: 0x2925
+/// Department: InstanceDungeon (0x29) | Opcode: 37 | Full: 0xA425
 /// sizeof = 38
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 37)]
@@ -596,7 +596,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_NEW_RANK_MSG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 26 | Full: 0x291A
+/// Department: InstanceDungeon (0x29) | Opcode: 26 | Full: 0xA41A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 26)]
@@ -625,7 +625,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 18 | Full: 0x2912
+/// Department: InstanceDungeon (0x29) | Opcode: 18 | Full: 0xA412
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 18)]
@@ -663,7 +663,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_RESULT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 19 | Full: 0x2913
+/// Department: InstanceDungeon (0x29) | Opcode: 19 | Full: 0xA413
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 19)]
@@ -698,7 +698,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_SAVE_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 20 | Full: 0x2914
+/// Department: InstanceDungeon (0x29) | Opcode: 20 | Full: 0xA414
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 20)]
@@ -733,7 +733,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_SAVE_WORLD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 33 | Full: 0x2921
+/// Department: InstanceDungeon (0x29) | Opcode: 33 | Full: 0xA421
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 33)]
@@ -777,7 +777,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_DAMAGEDEALT_ACK : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 27 | Full: 0x291B
+/// Department: InstanceDungeon (0x29) | Opcode: 27 | Full: 0xA41B
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 27)]
@@ -797,7 +797,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_DAMAGEDEALT_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 34 | Full: 0x2922
+/// Department: InstanceDungeon (0x29) | Opcode: 34 | Full: 0xA422
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 34)]
@@ -841,7 +841,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_DAMAGETAKEN_ACK : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 28 | Full: 0x291C
+/// Department: InstanceDungeon (0x29) | Opcode: 28 | Full: 0xA41C
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 28)]
@@ -861,7 +861,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_DAMAGETAKEN_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 35 | Full: 0x2923
+/// Department: InstanceDungeon (0x29) | Opcode: 35 | Full: 0xA423
 /// sizeof = 19
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 35)]
@@ -905,7 +905,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_HEALINGDONE_ACK : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 29 | Full: 0x291D
+/// Department: InstanceDungeon (0x29) | Opcode: 29 | Full: 0xA41D
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 29)]
@@ -925,7 +925,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_HEALINGDONE_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 36 | Full: 0x2924
+/// Department: InstanceDungeon (0x29) | Opcode: 36 | Full: 0xA424
 /// sizeof = 62
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 36)]
@@ -999,7 +999,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_MYRANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 30 | Full: 0x291E
+/// Department: InstanceDungeon (0x29) | Opcode: 30 | Full: 0xA41E
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 30)]
@@ -1019,7 +1019,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_TAB_MYRANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 22 | Full: 0x2916
+/// Department: InstanceDungeon (0x29) | Opcode: 22 | Full: 0xA416
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 22)]
@@ -1051,7 +1051,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_UPDATE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 21 | Full: 0x2915
+/// Department: InstanceDungeon (0x29) | Opcode: 21 | Full: 0xA415
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 21)]
@@ -1083,7 +1083,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_RANK_UPDATE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: InstanceDungeon (0x29) | Opcode: 3 | Full: 0x2903
+/// Department: InstanceDungeon (0x29) | Opcode: 3 | Full: 0xA403
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.InstanceDungeon, 3)]

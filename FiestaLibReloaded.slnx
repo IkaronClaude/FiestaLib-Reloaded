@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/FiestaLibReloaded.Networking/FiestaLibReloaded.Networking.csproj" />
+    <Project Path="src/FiestaLibReloaded.Config/FiestaLibReloaded.Config.csproj" />
   </Folder>
 </Solution>

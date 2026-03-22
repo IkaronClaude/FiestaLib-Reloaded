@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 106 | Full: 0x266A
+/// Department: GuildAcademy (0x26) | Opcode: 106 | Full: 0x986A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 106)]
@@ -25,7 +25,7 @@ public class PROTO_NC_GUILD_ACADEMY_CHAT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 105 | Full: 0x2669
+/// Department: GuildAcademy (0x26) | Opcode: 105 | Full: 0x9869
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 105)]
@@ -51,7 +51,7 @@ public class PROTO_NC_GUILD_ACADEMY_CHAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 104 | Full: 0x2668
+/// Department: GuildAcademy (0x26) | Opcode: 104 | Full: 0x9868
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 104)]
@@ -77,7 +77,7 @@ public class PROTO_NC_GUILD_ACADEMY_CHAT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 70 | Full: 0x2646
+/// Department: GuildAcademy (0x26) | Opcode: 70 | Full: 0x9846
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 70)]
@@ -97,7 +97,7 @@ public class PROTO_NC_GUILD_ACADEMY_CLEAR_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 69 | Full: 0x2645
+/// Department: GuildAcademy (0x26) | Opcode: 69 | Full: 0x9845
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 69)]
@@ -114,7 +114,7 @@ public class PROTO_NC_GUILD_ACADEMY_CLEAR_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 66 | Full: 0x2642
+/// Department: GuildAcademy (0x26) | Opcode: 66 | Full: 0x9842
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 66)]
@@ -134,7 +134,7 @@ public class PROTO_NC_GUILD_ACADEMY_CLEAR_REWARD_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 65 | Full: 0x2641
+/// Department: GuildAcademy (0x26) | Opcode: 65 | Full: 0x9841
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 65)]
@@ -151,7 +151,7 @@ public class PROTO_NC_GUILD_ACADEMY_CLEAR_REWARD_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 108 | Full: 0x266C
+/// Department: GuildAcademy (0x26) | Opcode: 108 | Full: 0x986C
 /// sizeof = 61
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 108)]
@@ -207,7 +207,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_ACADEMY_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 107 | Full: 0x266B
+/// Department: GuildAcademy (0x26) | Opcode: 107 | Full: 0x986B
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 107)]
@@ -236,7 +236,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_ACADEMY_REWARD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 72 | Full: 0x2648
+/// Department: GuildAcademy (0x26) | Opcode: 72 | Full: 0x9848
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 72)]
@@ -259,7 +259,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_CLEAR_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 71 | Full: 0x2647
+/// Department: GuildAcademy (0x26) | Opcode: 71 | Full: 0x9847
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 71)]
@@ -282,7 +282,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_CLEAR_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 68 | Full: 0x2644
+/// Department: GuildAcademy (0x26) | Opcode: 68 | Full: 0x9844
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 68)]
@@ -305,7 +305,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_CLEAR_REWARD_MONEY_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 67 | Full: 0x2643
+/// Department: GuildAcademy (0x26) | Opcode: 67 | Full: 0x9843
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 67)]
@@ -328,7 +328,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_CLEAR_REWARD_MONEY_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 76 | Full: 0x264C
+/// Department: GuildAcademy (0x26) | Opcode: 76 | Full: 0x984C
 /// sizeof = 69
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 76)]
@@ -357,7 +357,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_GRADUATE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 75 | Full: 0x264B
+/// Department: GuildAcademy (0x26) | Opcode: 75 | Full: 0x984B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 75)]
@@ -380,7 +380,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_GRADUATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 80 | Full: 0x2650
+/// Department: GuildAcademy (0x26) | Opcode: 80 | Full: 0x9850
 /// sizeof = 53
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 80)]
@@ -409,7 +409,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_RANKING_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 79 | Full: 0x264F
+/// Department: GuildAcademy (0x26) | Opcode: 79 | Full: 0x984F
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 79)]
@@ -432,7 +432,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_RANKING_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 56 | Full: 0x2638
+/// Department: GuildAcademy (0x26) | Opcode: 56 | Full: 0x9838
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 56)]
@@ -467,7 +467,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 55 | Full: 0x2637
+/// Department: GuildAcademy (0x26) | Opcode: 55 | Full: 0x9837
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 55)]
@@ -490,7 +490,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 52 | Full: 0x2634
+/// Department: GuildAcademy (0x26) | Opcode: 52 | Full: 0x9834
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 52)]
@@ -525,7 +525,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_REWARD_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 51 | Full: 0x2633
+/// Department: GuildAcademy (0x26) | Opcode: 51 | Full: 0x9833
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 51)]
@@ -548,7 +548,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GET_REWARD_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 82 | Full: 0x2652
+/// Department: GuildAcademy (0x26) | Opcode: 82 | Full: 0x9852
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 82)]
@@ -574,7 +574,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GRADUATE_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 81 | Full: 0x2651
+/// Department: GuildAcademy (0x26) | Opcode: 81 | Full: 0x9851
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 81)]
@@ -609,7 +609,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_GRADUATE_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 85 | Full: 0x2655
+/// Department: GuildAcademy (0x26) | Opcode: 85 | Full: 0x9855
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 85)]
@@ -641,7 +641,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_LEVEL_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 84 | Full: 0x2654
+/// Department: GuildAcademy (0x26) | Opcode: 84 | Full: 0x9854
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 84)]
@@ -670,7 +670,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_LEVEL_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 16 | Full: 0x2610
+/// Department: GuildAcademy (0x26) | Opcode: 16 | Full: 0x9810
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 16)]
@@ -708,7 +708,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 48 | Full: 0x2630
+/// Department: GuildAcademy (0x26) | Opcode: 48 | Full: 0x9830
 /// sizeof = 33
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 48)]
@@ -743,7 +743,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_GUILD_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 47 | Full: 0x262F
+/// Department: GuildAcademy (0x26) | Opcode: 47 | Full: 0x982F
 /// sizeof = 51
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 47)]
@@ -778,7 +778,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_GUILD_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 21 | Full: 0x2615
+/// Department: GuildAcademy (0x26) | Opcode: 21 | Full: 0x9815
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 21)]
@@ -816,7 +816,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 20 | Full: 0x2614
+/// Department: GuildAcademy (0x26) | Opcode: 20 | Full: 0x9814
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 20)]
@@ -851,7 +851,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 30 | Full: 0x261E
+/// Department: GuildAcademy (0x26) | Opcode: 30 | Full: 0x981E
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 30)]
@@ -880,7 +880,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 29 | Full: 0x261D
+/// Department: GuildAcademy (0x26) | Opcode: 29 | Full: 0x981D
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 29)]
@@ -909,7 +909,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_LEAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 15 | Full: 0x260F
+/// Department: GuildAcademy (0x26) | Opcode: 15 | Full: 0x980F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 15)]
@@ -929,7 +929,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 26 | Full: 0x261A
+/// Department: GuildAcademy (0x26) | Opcode: 26 | Full: 0x981A
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 26)]
@@ -961,7 +961,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_VANISH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 25 | Full: 0x2619
+/// Department: GuildAcademy (0x26) | Opcode: 25 | Full: 0x9819
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 25)]
@@ -990,7 +990,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_MEMBER_VANISH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 40 | Full: 0x2628
+/// Department: GuildAcademy (0x26) | Opcode: 40 | Full: 0x9828
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 40)]
@@ -1028,7 +1028,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_NOTIFY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 39 | Full: 0x2627
+/// Department: GuildAcademy (0x26) | Opcode: 39 | Full: 0x9827
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 39)]
@@ -1060,7 +1060,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_NOTIFY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 88 | Full: 0x2658
+/// Department: GuildAcademy (0x26) | Opcode: 88 | Full: 0x9858
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 88)]
@@ -1080,7 +1080,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_RANK_BALANCE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 87 | Full: 0x2657
+/// Department: GuildAcademy (0x26) | Opcode: 87 | Full: 0x9857
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 87)]
@@ -1097,7 +1097,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_RANK_BALANCE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 130 | Full: 0x2682
+/// Department: GuildAcademy (0x26) | Opcode: 130 | Full: 0x9882
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 130)]
@@ -1129,7 +1129,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_REWARD_WANT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 93 | Full: 0x265D
+/// Department: GuildAcademy (0x26) | Opcode: 93 | Full: 0x985D
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 93)]
@@ -1164,7 +1164,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_MASTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 128 | Full: 0x2680
+/// Department: GuildAcademy (0x26) | Opcode: 128 | Full: 0x9880
 /// sizeof = 54
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 128)]
@@ -1199,7 +1199,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_MASTER_BY_LEAVE_ACK : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 127 | Full: 0x267F
+/// Department: GuildAcademy (0x26) | Opcode: 127 | Full: 0x987F
 /// sizeof = 52
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 127)]
@@ -1231,7 +1231,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_MASTER_BY_LEAVE_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 92 | Full: 0x265C
+/// Department: GuildAcademy (0x26) | Opcode: 92 | Full: 0x985C
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 92)]
@@ -1263,7 +1263,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_MASTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 64 | Full: 0x2640
+/// Department: GuildAcademy (0x26) | Opcode: 64 | Full: 0x9840
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 64)]
@@ -1286,7 +1286,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 63 | Full: 0x263F
+/// Department: GuildAcademy (0x26) | Opcode: 63 | Full: 0x983F
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 63)]
@@ -1321,7 +1321,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 60 | Full: 0x263C
+/// Department: GuildAcademy (0x26) | Opcode: 60 | Full: 0x983C
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 60)]
@@ -1344,7 +1344,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_REWARD_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 59 | Full: 0x263B
+/// Department: GuildAcademy (0x26) | Opcode: 59 | Full: 0x983B
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 59)]
@@ -1379,7 +1379,7 @@ public class PROTO_NC_GUILD_ACADEMY_DB_SET_REWARD_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 95 | Full: 0x265F
+/// Department: GuildAcademy (0x26) | Opcode: 95 | Full: 0x985F
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 95)]
@@ -1399,7 +1399,7 @@ public class PROTO_NC_GUILD_ACADEMY_DELETE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 94 | Full: 0x265E
+/// Department: GuildAcademy (0x26) | Opcode: 94 | Full: 0x985E
 /// sizeof = 57
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 94)]
@@ -1428,7 +1428,7 @@ public class PROTO_NC_GUILD_ACADEMY_DISMISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 74 | Full: 0x264A
+/// Department: GuildAcademy (0x26) | Opcode: 74 | Full: 0x984A
 /// sizeof = 67
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 74)]
@@ -1454,7 +1454,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_GRADUATE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 73 | Full: 0x2649
+/// Department: GuildAcademy (0x26) | Opcode: 73 | Full: 0x9849
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 73)]
@@ -1474,7 +1474,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_GRADUATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 78 | Full: 0x264E
+/// Department: GuildAcademy (0x26) | Opcode: 78 | Full: 0x984E
 /// sizeof = 51
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 78)]
@@ -1500,7 +1500,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_RANKING_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 77 | Full: 0x264D
+/// Department: GuildAcademy (0x26) | Opcode: 77 | Full: 0x984D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 77)]
@@ -1520,7 +1520,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_RANKING_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 54 | Full: 0x2636
+/// Department: GuildAcademy (0x26) | Opcode: 54 | Full: 0x9836
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 54)]
@@ -1552,7 +1552,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 53 | Full: 0x2635
+/// Department: GuildAcademy (0x26) | Opcode: 53 | Full: 0x9835
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 53)]
@@ -1569,7 +1569,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 50 | Full: 0x2632
+/// Department: GuildAcademy (0x26) | Opcode: 50 | Full: 0x9832
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 50)]
@@ -1601,7 +1601,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_REWARD_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 49 | Full: 0x2631
+/// Department: GuildAcademy (0x26) | Opcode: 49 | Full: 0x9831
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 49)]
@@ -1618,7 +1618,7 @@ public class PROTO_NC_GUILD_ACADEMY_GET_REWARD_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 146 | Full: 0x2692
+/// Department: GuildAcademy (0x26) | Opcode: 146 | Full: 0x9892
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 146)]
@@ -1659,7 +1659,7 @@ public class PROTO_NC_GUILD_ACADEMY_HISTORY_DB_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 145 | Full: 0x2691
+/// Department: GuildAcademy (0x26) | Opcode: 145 | Full: 0x9891
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 145)]
@@ -1682,7 +1682,7 @@ public class PROTO_NC_GUILD_ACADEMY_HISTORY_DB_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 144 | Full: 0x2690
+/// Department: GuildAcademy (0x26) | Opcode: 144 | Full: 0x9890
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 144)]
@@ -1720,7 +1720,7 @@ public class PROTO_NC_GUILD_ACADEMY_HISTORY_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 12 | Full: 0x260C
+/// Department: GuildAcademy (0x26) | Opcode: 12 | Full: 0x980C
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 12)]
@@ -1758,7 +1758,7 @@ public class PROTO_NC_GUILD_ACADEMY_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 11 | Full: 0x260B
+/// Department: GuildAcademy (0x26) | Opcode: 11 | Full: 0x980B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 11)]
@@ -1775,7 +1775,7 @@ public class PROTO_NC_GUILD_ACADEMY_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 32 | Full: 0x2620
+/// Department: GuildAcademy (0x26) | Opcode: 32 | Full: 0x9820
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 32)]
@@ -1795,7 +1795,7 @@ public class PROTO_NC_GUILD_ACADEMY_MASTER_TELEPORT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 31 | Full: 0x261F
+/// Department: GuildAcademy (0x26) | Opcode: 31 | Full: 0x981F
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 31)]
@@ -1815,7 +1815,7 @@ public class PROTO_NC_GUILD_ACADEMY_MASTER_TELEPORT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 34 | Full: 0x2622
+/// Department: GuildAcademy (0x26) | Opcode: 34 | Full: 0x9822
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 34)]
@@ -1835,7 +1835,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 139 | Full: 0x268B
+/// Department: GuildAcademy (0x26) | Opcode: 139 | Full: 0x988B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 139)]
@@ -1855,7 +1855,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_CANCEL_ACK : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 140 | Full: 0x268C
+/// Department: GuildAcademy (0x26) | Opcode: 140 | Full: 0x988C
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 140)]
@@ -1878,7 +1878,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_CANCEL_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 138 | Full: 0x268A
+/// Department: GuildAcademy (0x26) | Opcode: 138 | Full: 0x988A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 138)]
@@ -1898,7 +1898,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_CANCEL_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 35 | Full: 0x2623
+/// Department: GuildAcademy (0x26) | Opcode: 35 | Full: 0x9823
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 35)]
@@ -1921,7 +1921,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 33 | Full: 0x2621
+/// Department: GuildAcademy (0x26) | Opcode: 33 | Full: 0x9821
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 33)]
@@ -1941,7 +1941,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CHAT_BAN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 103 | Full: 0x2667
+/// Department: GuildAcademy (0x26) | Opcode: 103 | Full: 0x9867
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 103)]
@@ -1964,7 +1964,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_CLASS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 136 | Full: 0x2688
+/// Department: GuildAcademy (0x26) | Opcode: 136 | Full: 0x9888
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 136)]
@@ -1996,7 +1996,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_DB_CHAT_BAN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 142 | Full: 0x268E
+/// Department: GuildAcademy (0x26) | Opcode: 142 | Full: 0x988E
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 142)]
@@ -2025,7 +2025,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_DB_CHAT_BAN_CANCEL_ACK : IFiestaPacke
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 141 | Full: 0x268D
+/// Department: GuildAcademy (0x26) | Opcode: 141 | Full: 0x988D
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 141)]
@@ -2051,7 +2051,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_DB_CHAT_BAN_CANCEL_REQ : IFiestaPacke
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 135 | Full: 0x2687
+/// Department: GuildAcademy (0x26) | Opcode: 135 | Full: 0x9887
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 135)]
@@ -2080,7 +2080,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_DB_CHAT_BAN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 137 | Full: 0x2689
+/// Department: GuildAcademy (0x26) | Opcode: 137 | Full: 0x9889
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 137)]
@@ -2106,7 +2106,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_DB_SAVE_CHAT_BAN_TIME_CMD : IFiestaPa
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 42 | Full: 0x262A
+/// Department: GuildAcademy (0x26) | Opcode: 42 | Full: 0x982A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 42)]
@@ -2129,7 +2129,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_INVITE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 41 | Full: 0x2629
+/// Department: GuildAcademy (0x26) | Opcode: 41 | Full: 0x9829
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 41)]
@@ -2149,7 +2149,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_INVITE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 44 | Full: 0x262C
+/// Department: GuildAcademy (0x26) | Opcode: 44 | Full: 0x982C
 /// sizeof = 37
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 44)]
@@ -2175,7 +2175,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 46 | Full: 0x262E
+/// Department: GuildAcademy (0x26) | Opcode: 46 | Full: 0x982E
 /// sizeof = 130
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 46)]
@@ -2198,7 +2198,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 45 | Full: 0x262D
+/// Department: GuildAcademy (0x26) | Opcode: 45 | Full: 0x982D
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 45)]
@@ -2221,7 +2221,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_JOIN_ERR : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 43 | Full: 0x262B
+/// Department: GuildAcademy (0x26) | Opcode: 43 | Full: 0x982B
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 43)]
@@ -2244,7 +2244,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_GUILD_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 100 | Full: 0x2664
+/// Department: GuildAcademy (0x26) | Opcode: 100 | Full: 0x9864
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 100)]
@@ -2273,7 +2273,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_INTRO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 18 | Full: 0x2612
+/// Department: GuildAcademy (0x26) | Opcode: 18 | Full: 0x9812
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 18)]
@@ -2296,7 +2296,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 19 | Full: 0x2613
+/// Department: GuildAcademy (0x26) | Opcode: 19 | Full: 0x9813
 /// sizeof = 109
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 19)]
@@ -2316,7 +2316,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 17 | Full: 0x2611
+/// Department: GuildAcademy (0x26) | Opcode: 17 | Full: 0x9811
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 17)]
@@ -2336,7 +2336,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 28 | Full: 0x261C
+/// Department: GuildAcademy (0x26) | Opcode: 28 | Full: 0x981C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 28)]
@@ -2356,7 +2356,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 96 | Full: 0x2660
+/// Department: GuildAcademy (0x26) | Opcode: 96 | Full: 0x9860
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 96)]
@@ -2376,7 +2376,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 27 | Full: 0x261B
+/// Department: GuildAcademy (0x26) | Opcode: 27 | Full: 0x981B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 27)]
@@ -2393,7 +2393,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LEAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 102 | Full: 0x2666
+/// Department: GuildAcademy (0x26) | Opcode: 102 | Full: 0x9866
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 102)]
@@ -2416,7 +2416,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LEVEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 14 | Full: 0x260E
+/// Department: GuildAcademy (0x26) | Opcode: 14 | Full: 0x980E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 14)]
@@ -2451,7 +2451,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 13 | Full: 0x260D
+/// Department: GuildAcademy (0x26) | Opcode: 13 | Full: 0x980D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 13)]
@@ -2468,7 +2468,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 98 | Full: 0x2662
+/// Department: GuildAcademy (0x26) | Opcode: 98 | Full: 0x9862
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 98)]
@@ -2488,7 +2488,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LOGOFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 97 | Full: 0x2661
+/// Department: GuildAcademy (0x26) | Opcode: 97 | Full: 0x9861
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 97)]
@@ -2508,7 +2508,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_LOGON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 99 | Full: 0x2663
+/// Department: GuildAcademy (0x26) | Opcode: 99 | Full: 0x9863
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 99)]
@@ -2531,7 +2531,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_MAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 101 | Full: 0x2665
+/// Department: GuildAcademy (0x26) | Opcode: 101 | Full: 0x9865
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 101)]
@@ -2554,7 +2554,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_PARTY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 23 | Full: 0x2617
+/// Department: GuildAcademy (0x26) | Opcode: 23 | Full: 0x9817
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 23)]
@@ -2577,7 +2577,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_VANISH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 24 | Full: 0x2618
+/// Department: GuildAcademy (0x26) | Opcode: 24 | Full: 0x9818
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 24)]
@@ -2597,7 +2597,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_VANISH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 22 | Full: 0x2616
+/// Department: GuildAcademy (0x26) | Opcode: 22 | Full: 0x9816
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 22)]
@@ -2617,7 +2617,7 @@ public class PROTO_NC_GUILD_ACADEMY_MEMBER_VANISH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 10 | Full: 0x260A
+/// Department: GuildAcademy (0x26) | Opcode: 10 | Full: 0x980A
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 10)]
@@ -2646,7 +2646,7 @@ public class PROTO_NC_GUILD_ACADEMY_MY_ACADEMY_RANK_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 9 | Full: 0x2609
+/// Department: GuildAcademy (0x26) | Opcode: 9 | Full: 0x9809
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 9)]
@@ -2663,7 +2663,7 @@ public class PROTO_NC_GUILD_ACADEMY_MY_ACADEMY_RANK_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 8 | Full: 0x2608
+/// Department: GuildAcademy (0x26) | Opcode: 8 | Full: 0x9808
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 8)]
@@ -2692,7 +2692,7 @@ public class PROTO_NC_GUILD_ACADEMY_MY_GUILD_ACADEMY_INFO_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 7 | Full: 0x2607
+/// Department: GuildAcademy (0x26) | Opcode: 7 | Full: 0x9807
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 7)]
@@ -2709,7 +2709,7 @@ public class PROTO_NC_GUILD_ACADEMY_MY_GUILD_ACADEMY_INFO_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 37 | Full: 0x2625
+/// Department: GuildAcademy (0x26) | Opcode: 37 | Full: 0x9825
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 37)]
@@ -2729,7 +2729,7 @@ public class PROTO_NC_GUILD_ACADEMY_NOTIFY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 38 | Full: 0x2626
+/// Department: GuildAcademy (0x26) | Opcode: 38 | Full: 0x9826
 /// sizeof = 62
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 38)]
@@ -2764,7 +2764,7 @@ public class PROTO_NC_GUILD_ACADEMY_NOTIFY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 36 | Full: 0x2624
+/// Department: GuildAcademy (0x26) | Opcode: 36 | Full: 0x9824
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 36)]
@@ -2790,7 +2790,7 @@ public class PROTO_NC_GUILD_ACADEMY_NOTIFY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 111 | Full: 0x266F
+/// Department: GuildAcademy (0x26) | Opcode: 111 | Full: 0x986F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 111)]
@@ -2810,7 +2810,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_CLOSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 117 | Full: 0x2675
+/// Department: GuildAcademy (0x26) | Opcode: 117 | Full: 0x9875
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 117)]
@@ -2851,7 +2851,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 116 | Full: 0x2674
+/// Department: GuildAcademy (0x26) | Opcode: 116 | Full: 0x9874
 /// sizeof = 53
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 116)]
@@ -2901,7 +2901,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_RNG : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 110 | Full: 0x266E
+/// Department: GuildAcademy (0x26) | Opcode: 110 | Full: 0x986E
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 110)]
@@ -2936,7 +2936,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_OPEN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 109 | Full: 0x266D
+/// Department: GuildAcademy (0x26) | Opcode: 109 | Full: 0x986D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 109)]
@@ -2956,7 +2956,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_OPEN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 115 | Full: 0x2673
+/// Department: GuildAcademy (0x26) | Opcode: 115 | Full: 0x9873
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 115)]
@@ -2997,7 +2997,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_CMD : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 113 | Full: 0x2671
+/// Department: GuildAcademy (0x26) | Opcode: 113 | Full: 0x9871
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 113)]
@@ -3023,7 +3023,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_GRADE_ACK : IFiestaP
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 112 | Full: 0x2670
+/// Department: GuildAcademy (0x26) | Opcode: 112 | Full: 0x9870
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 112)]
@@ -3043,7 +3043,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_GRADE_REQ : IFiestaP
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 114 | Full: 0x2672
+/// Department: GuildAcademy (0x26) | Opcode: 114 | Full: 0x9872
 /// sizeof = 53
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 114)]
@@ -3093,7 +3093,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_RNG : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 131 | Full: 0x2683
+/// Department: GuildAcademy (0x26) | Opcode: 131 | Full: 0x9883
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 131)]
@@ -3119,7 +3119,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_WANT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 134 | Full: 0x2686
+/// Department: GuildAcademy (0x26) | Opcode: 134 | Full: 0x9886
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 134)]
@@ -3145,7 +3145,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARDSTORAGE_GRADE_INFO_CMD : IFiestaPacket
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 132 | Full: 0x2684
+/// Department: GuildAcademy (0x26) | Opcode: 132 | Full: 0x9884
 /// sizeof = 176
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 132)]
@@ -3186,7 +3186,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARDSTORAGE_ITEM_INFO_ZONE_RNG : IFiestaPa
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 133 | Full: 0x2685
+/// Department: GuildAcademy (0x26) | Opcode: 133 | Full: 0x9885
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 133)]
@@ -3230,7 +3230,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARDSTORAGE_REWARD_ZONE_RNG : IFiestaPacke
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 90 | Full: 0x265A
+/// Department: GuildAcademy (0x26) | Opcode: 90 | Full: 0x985A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 90)]
@@ -3250,7 +3250,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_MASTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 129 | Full: 0x2681
+/// Department: GuildAcademy (0x26) | Opcode: 129 | Full: 0x9881
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 129)]
@@ -3273,7 +3273,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_MASTER_BY_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 91 | Full: 0x265B
+/// Department: GuildAcademy (0x26) | Opcode: 91 | Full: 0x985B
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 91)]
@@ -3293,7 +3293,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_MASTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 89 | Full: 0x2659
+/// Department: GuildAcademy (0x26) | Opcode: 89 | Full: 0x9859
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 89)]
@@ -3313,7 +3313,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_MASTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 62 | Full: 0x263E
+/// Department: GuildAcademy (0x26) | Opcode: 62 | Full: 0x983E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 62)]
@@ -3333,7 +3333,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_REWARD_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 61 | Full: 0x263D
+/// Department: GuildAcademy (0x26) | Opcode: 61 | Full: 0x983D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 61)]
@@ -3362,7 +3362,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_REWARD_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 58 | Full: 0x263A
+/// Department: GuildAcademy (0x26) | Opcode: 58 | Full: 0x983A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 58)]
@@ -3382,7 +3382,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_REWARD_MONEY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 57 | Full: 0x2639
+/// Department: GuildAcademy (0x26) | Opcode: 57 | Full: 0x9839
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 57)]
@@ -3411,7 +3411,7 @@ public class PROTO_NC_GUILD_ACADEMY_SET_REWARD_MONEY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 2 | Full: 0x2602
+/// Department: GuildAcademy (0x26) | Opcode: 2 | Full: 0x9802
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 2)]
@@ -3446,7 +3446,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_ALL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 1 | Full: 0x2601
+/// Department: GuildAcademy (0x26) | Opcode: 1 | Full: 0x9801
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 1)]
@@ -3463,7 +3463,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_ALL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 4 | Full: 0x2604
+/// Department: GuildAcademy (0x26) | Opcode: 4 | Full: 0x9804
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 4)]
@@ -3489,7 +3489,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_GET_RANKING_LIST_ACK : IFiestaPacke
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 3 | Full: 0x2603
+/// Department: GuildAcademy (0x26) | Opcode: 3 | Full: 0x9803
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 3)]
@@ -3509,7 +3509,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_GET_RANKING_LIST_REQ : IFiestaPacke
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 6 | Full: 0x2606
+/// Department: GuildAcademy (0x26) | Opcode: 6 | Full: 0x9806
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 6)]
@@ -3529,7 +3529,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_RANK_BALANCE_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 5 | Full: 0x2605
+/// Department: GuildAcademy (0x26) | Opcode: 5 | Full: 0x9805
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 5)]
@@ -3546,7 +3546,7 @@ public class PROTO_NC_GUILD_ACADEMY_START_DB_RANK_BALANCE_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 126 | Full: 0x267E
+/// Department: GuildAcademy (0x26) | Opcode: 126 | Full: 0x987E
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 126)]
@@ -3569,7 +3569,7 @@ public class PROTO_NC_GUILD_ACADEMY_WAR_END_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 124 | Full: 0x267C
+/// Department: GuildAcademy (0x26) | Opcode: 124 | Full: 0x987C
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 124)]
@@ -3590,7 +3590,7 @@ public class PROTO_NC_GUILD_ACADEMY_WAR_INFO_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 125 | Full: 0x267D
+/// Department: GuildAcademy (0x26) | Opcode: 125 | Full: 0x987D
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 125)]
@@ -3613,7 +3613,7 @@ public class PROTO_NC_GUILD_ACADEMY_WAR_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 123 | Full: 0x267B
+/// Department: GuildAcademy (0x26) | Opcode: 123 | Full: 0x987B
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 123)]
@@ -3642,7 +3642,7 @@ public class PROTO_NC_GUILD_ACADEMY_ZONE_GUILD_ACADEMY_MASTER_BUFF_CMD : IFiesta
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 122 | Full: 0x267A
+/// Department: GuildAcademy (0x26) | Opcode: 122 | Full: 0x987A
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 122)]
@@ -3673,7 +3673,7 @@ public class PROTO_NC_GUILD_ACADEMY_ZONE_GUILD_BUFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 120 | Full: 0x2678
+/// Department: GuildAcademy (0x26) | Opcode: 120 | Full: 0x9878
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 120)]
@@ -3696,7 +3696,7 @@ public class PROTO_NC_GUILD_ACADEMY_ZONE_MASTER_TELEPORT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 121 | Full: 0x2679
+/// Department: GuildAcademy (0x26) | Opcode: 121 | Full: 0x9879
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 121)]
@@ -3719,7 +3719,7 @@ public class PROTO_NC_GUILD_ACADEMY_ZONE_MEMBER_GUILD_JOIN_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 118 | Full: 0x2676
+/// Department: GuildAcademy (0x26) | Opcode: 118 | Full: 0x9876
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 118)]
@@ -3742,7 +3742,7 @@ public class PROTO_NC_GUILD_ACADEMY_ZONE_MEMBER_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: GuildAcademy (0x26) | Opcode: 119 | Full: 0x2677
+/// Department: GuildAcademy (0x26) | Opcode: 119 | Full: 0x9877
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.GuildAcademy, 119)]

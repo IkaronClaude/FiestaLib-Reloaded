@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 23 | Full: 0x1317
+/// Department: Trade (0x13) | Opcode: 23 | Full: 0x4C17
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 23)]
@@ -25,7 +25,7 @@ public class PROTO_NC_TRADE_CENBOARDING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 19 | Full: 0x1313
+/// Department: Trade (0x13) | Opcode: 19 | Full: 0x4C13
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 19)]
@@ -45,7 +45,7 @@ public class PROTO_NC_TRADE_DOWNBOARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 17 | Full: 0x1311
+/// Department: Trade (0x13) | Opcode: 17 | Full: 0x4C11
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 17)]
@@ -65,7 +65,7 @@ public class PROTO_NC_TRADE_DOWNBOARD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 24 | Full: 0x1318
+/// Department: Trade (0x13) | Opcode: 24 | Full: 0x4C18
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 24)]
@@ -85,7 +85,7 @@ public class PROTO_NC_TRADE_OPPOSITCENBOARDING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 20 | Full: 0x1314
+/// Department: Trade (0x13) | Opcode: 20 | Full: 0x4C14
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 20)]
@@ -105,7 +105,7 @@ public class PROTO_NC_TRADE_OPPOSITDOWNBOARD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 16 | Full: 0x1310
+/// Department: Trade (0x13) | Opcode: 16 | Full: 0x4C10
 /// sizeof = 104
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 16)]
@@ -128,7 +128,7 @@ public class PROTO_NC_TRADE_OPPOSITUPBOARD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 2 | Full: 0x1302
+/// Department: Trade (0x13) | Opcode: 2 | Full: 0x4C02
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 2)]
@@ -148,7 +148,7 @@ public class PROTO_NC_TRADE_PROPOSE_ASK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 1 | Full: 0x1301
+/// Department: Trade (0x13) | Opcode: 1 | Full: 0x4C01
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 1)]
@@ -168,7 +168,7 @@ public class PROTO_NC_TRADE_PROPOSE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 9 | Full: 0x1309
+/// Department: Trade (0x13) | Opcode: 9 | Full: 0x4C09
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 9)]
@@ -188,7 +188,7 @@ public class PROTO_NC_TRADE_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 15 | Full: 0x130F
+/// Department: Trade (0x13) | Opcode: 15 | Full: 0x4C0F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 15)]
@@ -211,7 +211,7 @@ public class PROTO_NC_TRADE_UPBOARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Trade (0x13) | Opcode: 13 | Full: 0x130D
+/// Department: Trade (0x13) | Opcode: 13 | Full: 0x4C0D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Trade, 13)]

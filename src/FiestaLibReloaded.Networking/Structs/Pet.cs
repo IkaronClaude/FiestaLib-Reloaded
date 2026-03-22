@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 6 | Full: 0x3506
+/// Department: Pet (0x35) | Opcode: 6 | Full: 0xD406
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 6)]
@@ -28,7 +28,7 @@ public class PROTO_NC_PET_ASK_NEW_NAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 5 | Full: 0x3505
+/// Department: Pet (0x35) | Opcode: 5 | Full: 0xD405
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 5)]
@@ -54,7 +54,7 @@ public class PROTO_NC_PET_ASK_NEW_NAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 14 | Full: 0x350E
+/// Department: Pet (0x35) | Opcode: 14 | Full: 0xD40E
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 14)]
@@ -80,7 +80,7 @@ public class PROTO_NC_PET_CREATE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 13 | Full: 0x350D
+/// Department: Pet (0x35) | Opcode: 13 | Full: 0xD40D
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 13)]
@@ -112,7 +112,7 @@ public class PROTO_NC_PET_CREATE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 18 | Full: 0x3512
+/// Department: Pet (0x35) | Opcode: 18 | Full: 0xD412
 /// sizeof = 23
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 18)]
@@ -147,7 +147,7 @@ public class PROTO_NC_PET_LINK_RESUMMON_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 12 | Full: 0x350C
+/// Department: Pet (0x35) | Opcode: 12 | Full: 0xD40C
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 12)]
@@ -182,7 +182,7 @@ public class PROTO_NC_PET_LOAD_INFO_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 11 | Full: 0x350B
+/// Department: Pet (0x35) | Opcode: 11 | Full: 0xD40B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 11)]
@@ -205,7 +205,7 @@ public class PROTO_NC_PET_LOAD_INFO_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 8 | Full: 0x3508
+/// Department: Pet (0x35) | Opcode: 8 | Full: 0xD408
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 8)]
@@ -228,7 +228,7 @@ public class PROTO_NC_PET_SET_NAME_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 10 | Full: 0x350A
+/// Department: Pet (0x35) | Opcode: 10 | Full: 0xD40A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 10)]
@@ -251,7 +251,7 @@ public class PROTO_NC_PET_SET_NAME_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 9 | Full: 0x3509
+/// Department: Pet (0x35) | Opcode: 9 | Full: 0xD409
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 9)]
@@ -271,7 +271,7 @@ public class PROTO_NC_PET_SET_NAME_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 19 | Full: 0x3513
+/// Department: Pet (0x35) | Opcode: 19 | Full: 0xD413
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 19)]
@@ -294,7 +294,7 @@ public class PROTO_NC_PET_SET_NAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 4 | Full: 0x3504
+/// Department: Pet (0x35) | Opcode: 4 | Full: 0xD404
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 4)]
@@ -320,7 +320,7 @@ public class PROTO_NC_PET_SET_NAME_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 3 | Full: 0x3503
+/// Department: Pet (0x35) | Opcode: 3 | Full: 0xD403
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 3)]
@@ -346,7 +346,7 @@ public class PROTO_NC_PET_SET_NAME_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 7 | Full: 0x3507
+/// Department: Pet (0x35) | Opcode: 7 | Full: 0xD407
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 7)]
@@ -369,7 +369,7 @@ public class PROTO_NC_PET_SET_NAME_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 1 | Full: 0x3501
+/// Department: Pet (0x35) | Opcode: 1 | Full: 0xD401
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 1)]
@@ -398,7 +398,7 @@ public class PROTO_NC_PET_SET_TENDENCY_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Pet (0x35) | Opcode: 17 | Full: 0x3511
+/// Department: Pet (0x35) | Opcode: 17 | Full: 0xD411
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Pet, 17)]

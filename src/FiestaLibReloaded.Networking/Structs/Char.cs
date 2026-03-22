@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 12 | Full: 0x040C
+/// Department: Char (0x04) | Opcode: 12 | Full: 0x100C
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 12)]
@@ -37,7 +37,7 @@ public class PROTO_NC_CHAR_ABSTATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 198 | Full: 0x04C6
+/// Department: Char (0x04) | Opcode: 198 | Full: 0x10C6
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 198)]
@@ -57,7 +57,7 @@ public class PROTO_NC_CHAR_ADMIN_LEVEL_INFORM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 21 | Full: 0x0415
+/// Department: Char (0x04) | Opcode: 21 | Full: 0x1015
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 21)]
@@ -74,7 +74,7 @@ public class PROTO_NC_CHAR_ARENA_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 7 | Full: 0x0407
+/// Department: Char (0x04) | Opcode: 7 | Full: 0x1007
 /// sizeof = 105
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 7)]
@@ -154,7 +154,7 @@ public class PROTO_NC_CHAR_BASE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 52 | Full: 0x0434
+/// Department: Char (0x04) | Opcode: 52 | Full: 0x1034
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 52)]
@@ -183,7 +183,7 @@ public class PROTO_NC_CHAR_BASEPARAMCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 229 | Full: 0x04E5
+/// Department: Char (0x04) | Opcode: 229 | Full: 0x10E5
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 229)]
@@ -207,7 +207,7 @@ public class PROTO_NC_CHAR_CARDCOLLECT_BOOKMARK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 226 | Full: 0x04E2
+/// Department: Char (0x04) | Opcode: 226 | Full: 0x10E2
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 226)]
@@ -231,7 +231,7 @@ public class PROTO_NC_CHAR_CARDCOLLECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 232 | Full: 0x04E8
+/// Department: Char (0x04) | Opcode: 232 | Full: 0x10E8
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 232)]
@@ -260,7 +260,7 @@ public class PROTO_NC_CHAR_CARDCOLLECT_REWARD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 51 | Full: 0x0433
+/// Department: Char (0x04) | Opcode: 51 | Full: 0x1033
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 51)]
@@ -280,7 +280,7 @@ public class PROTO_NC_CHAR_CENCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 223 | Full: 0x04DF
+/// Department: Char (0x04) | Opcode: 223 | Full: 0x10DF
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 223)]
@@ -315,7 +315,7 @@ public class PROTO_NC_CHAR_CHANGEBYCONDITION_PARAM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 5 | Full: 0x0405
+/// Department: Char (0x04) | Opcode: 5 | Full: 0x1005
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 5)]
@@ -335,7 +335,7 @@ public class PROTO_NC_CHAR_CHARDATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 4 | Full: 0x0404
+/// Department: Char (0x04) | Opcode: 4 | Full: 0x1004
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 4)]
@@ -364,7 +364,7 @@ public class PROTO_NC_CHAR_CHARDATA_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 6 | Full: 0x0406
+/// Department: Char (0x04) | Opcode: 6 | Full: 0x1006
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 6)]
@@ -387,7 +387,7 @@ public class PROTO_NC_CHAR_CHARDATAFAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 27 | Full: 0x041B
+/// Department: Char (0x04) | Opcode: 27 | Full: 0x101B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 27)]
@@ -416,7 +416,7 @@ public class PROTO_NC_CHAR_CHARGEDBUFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 302 | Full: 0x052E
+/// Department: Char (0x04) | Opcode: 302 | Full: 0x112E
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 302)]
@@ -436,7 +436,7 @@ public class PROTO_NC_CHAR_CHARGEDBUFF_ERASE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 286 | Full: 0x051E
+/// Department: Char (0x04) | Opcode: 286 | Full: 0x111E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 286)]
@@ -462,7 +462,7 @@ public class PROTO_NC_CHAR_CHAT_COLOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 24 | Full: 0x0418
+/// Department: Char (0x04) | Opcode: 24 | Full: 0x1018
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 24)]
@@ -513,7 +513,7 @@ public class PROTO_NC_CHAR_CHESTINFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 87 | Full: 0x0457
+/// Department: Char (0x04) | Opcode: 87 | Full: 0x1057
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 87)]
@@ -536,7 +536,7 @@ public class PROTO_NC_CHAR_CLASSCHANGE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 88 | Full: 0x0458
+/// Department: Char (0x04) | Opcode: 88 | Full: 0x1058
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 88)]
@@ -562,7 +562,7 @@ public class PROTO_NC_CHAR_CLASSCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 86 | Full: 0x0456
+/// Department: Char (0x04) | Opcode: 86 | Full: 0x1056
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 86)]
@@ -588,7 +588,7 @@ public class PROTO_NC_CHAR_CLASSCHANGE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 189 | Full: 0x04BD
+/// Department: Char (0x04) | Opcode: 189 | Full: 0x10BD
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 189)]
@@ -611,7 +611,7 @@ public class PROTO_NC_CHAR_CLIENT_AUTO_PICK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 190 | Full: 0x04BE
+/// Department: Char (0x04) | Opcode: 190 | Full: 0x10BE
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 190)]
@@ -634,7 +634,7 @@ public class PROTO_NC_CHAR_CLIENT_AUTO_PICK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 188 | Full: 0x04BC
+/// Department: Char (0x04) | Opcode: 188 | Full: 0x10BC
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 188)]
@@ -654,7 +654,7 @@ public class PROTO_NC_CHAR_CLIENT_AUTO_PICK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 73 | Full: 0x0449
+/// Department: Char (0x04) | Opcode: 73 | Full: 0x1049
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 73)]
@@ -692,7 +692,7 @@ public class PROTO_NC_CHAR_CLIENT_CHARTITLE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 71 | Full: 0x0447
+/// Department: Char (0x04) | Opcode: 71 | Full: 0x1047
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 71)]
@@ -727,7 +727,7 @@ public class PROTO_NC_CHAR_CLIENT_ITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 61 | Full: 0x043D
+/// Department: Char (0x04) | Opcode: 61 | Full: 0x103D
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 61)]
@@ -756,7 +756,7 @@ public class PROTO_NC_CHAR_CLIENT_SKILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 220 | Full: 0x04DC
+/// Department: Char (0x04) | Opcode: 220 | Full: 0x10DC
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 220)]
@@ -798,7 +798,7 @@ public class PROTO_NC_CHAR_DB_AUTO_PICK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 219 | Full: 0x04DB
+/// Department: Char (0x04) | Opcode: 219 | Full: 0x10DB
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 219)]
@@ -840,7 +840,7 @@ public class PROTO_NC_CHAR_DB_REST_EXP_LAST_EXEC_TIME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 77 | Full: 0x044D
+/// Department: Char (0x04) | Opcode: 77 | Full: 0x104D
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 77)]
@@ -864,7 +864,7 @@ public class PROTO_NC_CHAR_DEADMENU_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 19 | Full: 0x0413
+/// Department: Char (0x04) | Opcode: 19 | Full: 0x1013
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 19)]
@@ -881,7 +881,7 @@ public class PROTO_NC_CHAR_EMBLEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 177 | Full: 0x04B1
+/// Department: Char (0x04) | Opcode: 177 | Full: 0x10B1
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 177)]
@@ -902,7 +902,7 @@ public class PROTO_NC_CHAR_EMPTY_INSTANCE_DUNGEON_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 245 | Full: 0x04F5
+/// Department: Char (0x04) | Opcode: 245 | Full: 0x10F5
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 245)]
@@ -922,7 +922,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_CHANGE_DAY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 240 | Full: 0x04F0
+/// Department: Char (0x04) | Opcode: 240 | Full: 0x10F0
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 240)]
@@ -939,7 +939,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_CHECK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 239 | Full: 0x04EF
+/// Department: Char (0x04) | Opcode: 239 | Full: 0x10EF
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 239)]
@@ -962,7 +962,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_CHECK_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 238 | Full: 0x04EE
+/// Department: Char (0x04) | Opcode: 238 | Full: 0x10EE
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 238)]
@@ -985,7 +985,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_CHECK_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 237 | Full: 0x04ED
+/// Department: Char (0x04) | Opcode: 237 | Full: 0x10ED
 /// sizeof = 66
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 237)]
@@ -1017,7 +1017,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_LIST_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 236 | Full: 0x04EC
+/// Department: Char (0x04) | Opcode: 236 | Full: 0x10EC
 /// sizeof = 1020
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 236)]
@@ -1060,7 +1060,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_LIST_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 235 | Full: 0x04EB
+/// Department: Char (0x04) | Opcode: 235 | Full: 0x10EB
 /// sizeof = 80
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 235)]
@@ -1089,7 +1089,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_LIST_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 242 | Full: 0x04F2
+/// Department: Char (0x04) | Opcode: 242 | Full: 0x10F2
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 242)]
@@ -1115,7 +1115,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 244 | Full: 0x04F4
+/// Department: Char (0x04) | Opcode: 244 | Full: 0x10F4
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 244)]
@@ -1144,7 +1144,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_REWARD_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 243 | Full: 0x04F3
+/// Department: Char (0x04) | Opcode: 243 | Full: 0x10F3
 /// sizeof = 114
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 243)]
@@ -1179,7 +1179,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_REWARD_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 241 | Full: 0x04F1
+/// Department: Char (0x04) | Opcode: 241 | Full: 0x10F1
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 241)]
@@ -1202,7 +1202,7 @@ public class PROTO_NC_CHAR_EVENT_ATTENDANCE_REWARD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 115 | Full: 0x0473
+/// Department: Char (0x04) | Opcode: 115 | Full: 0x1073
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 115)]
@@ -1228,7 +1228,7 @@ public class PROTO_NC_CHAR_EXP_CHANGED_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 111 | Full: 0x046F
+/// Department: Char (0x04) | Opcode: 111 | Full: 0x106F
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 111)]
@@ -1248,7 +1248,7 @@ public class PROTO_NC_CHAR_FAMECHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 112 | Full: 0x0470
+/// Department: Char (0x04) | Opcode: 112 | Full: 0x1070
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 112)]
@@ -1271,7 +1271,7 @@ public class PROTO_NC_CHAR_FAMESAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 210 | Full: 0x04D2
+/// Department: Char (0x04) | Opcode: 210 | Full: 0x10D2
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 210)]
@@ -1300,7 +1300,7 @@ public class PROTO_NC_CHAR_FREESTAT_SET_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 209 | Full: 0x04D1
+/// Department: Char (0x04) | Opcode: 209 | Full: 0x10D1
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 209)]
@@ -1333,7 +1333,7 @@ public class PROTO_NC_CHAR_FREESTAT_SET_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 16 | Full: 0x0410
+/// Department: Char (0x04) | Opcode: 16 | Full: 0x1010
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 16)]
@@ -1384,7 +1384,7 @@ public class PROTO_NC_CHAR_FRIEND_CMD_INFO : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 203 | Full: 0x04CB
+/// Department: Char (0x04) | Opcode: 203 | Full: 0x10CB
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 203)]
@@ -1407,7 +1407,7 @@ public class PROTO_NC_CHAR_GET_CHAT_BLOCK_SPAMER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 202 | Full: 0x04CA
+/// Department: Char (0x04) | Opcode: 202 | Full: 0x10CA
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 202)]
@@ -1433,7 +1433,7 @@ public class PROTO_NC_CHAR_GET_CHAT_BLOCK_SPAMER_DB_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 119 | Full: 0x0477
+/// Department: Char (0x04) | Opcode: 119 | Full: 0x1077
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 119)]
@@ -1465,7 +1465,7 @@ public class PROTO_NC_CHAR_GET_ITEMLIST_BY_TYPE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 154 | Full: 0x049A
+/// Department: Char (0x04) | Opcode: 154 | Full: 0x109A
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 154)]
@@ -1497,7 +1497,7 @@ public class PROTO_NC_CHAR_GET_ITEMLIST_BY_TYPE_NUM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 153 | Full: 0x0499
+/// Department: Char (0x04) | Opcode: 153 | Full: 0x1099
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 153)]
@@ -1532,7 +1532,7 @@ public class PROTO_NC_CHAR_GET_ITEMLIST_BY_TYPE_NUM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 118 | Full: 0x0476
+/// Department: Char (0x04) | Opcode: 118 | Full: 0x1076
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 118)]
@@ -1558,7 +1558,7 @@ public class PROTO_NC_CHAR_GET_ITEMLIST_BY_TYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 151 | Full: 0x0497
+/// Department: Char (0x04) | Opcode: 151 | Full: 0x1097
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 151)]
@@ -1590,7 +1590,7 @@ public class PROTO_NC_CHAR_GUILD_ACADEMY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 152 | Full: 0x0498
+/// Department: Char (0x04) | Opcode: 152 | Full: 0x1098
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 152)]
@@ -1610,7 +1610,7 @@ public class PROTO_NC_CHAR_GUILD_ACADEMY_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 18 | Full: 0x0412
+/// Department: Char (0x04) | Opcode: 18 | Full: 0x1012
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 18)]
@@ -1639,7 +1639,7 @@ public class PROTO_NC_CHAR_GUILD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 15 | Full: 0x040F
+/// Department: Char (0x04) | Opcode: 15 | Full: 0x100F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 15)]
@@ -1656,7 +1656,7 @@ public class PROTO_NC_CHAR_HOUSE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 23 | Full: 0x0417
+/// Department: Char (0x04) | Opcode: 23 | Full: 0x1017
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 23)]
@@ -1682,7 +1682,7 @@ public class PROTO_NC_CHAR_ITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 107 | Full: 0x046B
+/// Department: Char (0x04) | Opcode: 107 | Full: 0x106B
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 107)]
@@ -1708,7 +1708,7 @@ public class PROTO_NC_CHAR_KICKPLAYEROUT_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 26 | Full: 0x041A
+/// Department: Char (0x04) | Opcode: 26 | Full: 0x101A
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 26)]
@@ -1737,7 +1737,7 @@ public class PROTO_NC_CHAR_KQMAP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 116 | Full: 0x0474
+/// Department: Char (0x04) | Opcode: 116 | Full: 0x1074
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 116)]
@@ -1785,7 +1785,7 @@ public class PROTO_NC_CHAR_LINKFROM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 3 | Full: 0x0403
+/// Department: Char (0x04) | Opcode: 3 | Full: 0x1003
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 3)]
@@ -1808,7 +1808,7 @@ public class PROTO_NC_CHAR_LOGIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 54 | Full: 0x0436
+/// Department: Char (0x04) | Opcode: 54 | Full: 0x1036
 /// sizeof = 56
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 54)]
@@ -1840,7 +1840,7 @@ public class PROTO_NC_CHAR_LOGIN_DB : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 1 | Full: 0x0401
+/// Department: Char (0x04) | Opcode: 1 | Full: 0x1001
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 1)]
@@ -1860,7 +1860,7 @@ public class PROTO_NC_CHAR_LOGIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 2 | Full: 0x0402
+/// Department: Char (0x04) | Opcode: 2 | Full: 0x1002
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 2)]
@@ -1880,7 +1880,7 @@ public class PROTO_NC_CHAR_LOGINFAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 55 | Full: 0x0437
+/// Department: Char (0x04) | Opcode: 55 | Full: 0x1037
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 55)]
@@ -1934,7 +1934,7 @@ public class PROTO_NC_CHAR_MAPLOGIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 17 | Full: 0x0411
+/// Department: Char (0x04) | Opcode: 17 | Full: 0x1011
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 17)]
@@ -1951,7 +1951,7 @@ public class PROTO_NC_CHAR_MASPUP_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 212 | Full: 0x04D4
+/// Department: Char (0x04) | Opcode: 212 | Full: 0x10D4
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 212)]
@@ -1971,7 +1971,7 @@ public class PROTO_NC_CHAR_MYSTERYVAULT_UI_STATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 216 | Full: 0x04D8
+/// Department: Char (0x04) | Opcode: 216 | Full: 0x10D8
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 216)]
@@ -1994,7 +1994,7 @@ public class PROTO_NC_CHAR_NEWBIE_GUIDE_VIEW_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 218 | Full: 0x04DA
+/// Department: Char (0x04) | Opcode: 218 | Full: 0x10DA
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 218)]
@@ -2014,7 +2014,7 @@ public class PROTO_NC_CHAR_NEWBIE_GUIDE_VIEW_SET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 20 | Full: 0x0414
+/// Department: Char (0x04) | Opcode: 20 | Full: 0x1014
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 20)]
@@ -2031,7 +2031,7 @@ public class PROTO_NC_CHAR_PET_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 108 | Full: 0x046C
+/// Department: Char (0x04) | Opcode: 108 | Full: 0x106C
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 108)]
@@ -2054,7 +2054,7 @@ public class PROTO_NC_CHAR_PLAYERBANNED_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 174 | Full: 0x04AE
+/// Department: Char (0x04) | Opcode: 174 | Full: 0x10AE
 /// sizeof = 49
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 174)]
@@ -2089,7 +2089,7 @@ public class PROTO_NC_CHAR_PLAYERFOUND_BY_NORMAL_USER_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 105 | Full: 0x0469
+/// Department: Char (0x04) | Opcode: 105 | Full: 0x1069
 /// sizeof = 47
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 105)]
@@ -2118,7 +2118,7 @@ public class PROTO_NC_CHAR_PLAYERFOUND_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 173 | Full: 0x04AD
+/// Department: Char (0x04) | Opcode: 173 | Full: 0x10AD
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 173)]
@@ -2141,7 +2141,7 @@ public class PROTO_NC_CHAR_PLAYERSEARCH_BY_NORMAL_USER_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 104 | Full: 0x0468
+/// Department: Char (0x04) | Opcode: 104 | Full: 0x1068
 /// sizeof = 27
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 104)]
@@ -2164,7 +2164,7 @@ public class PROTO_NC_CHAR_PLAYERSEARCH_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 106 | Full: 0x046A
+/// Department: Char (0x04) | Opcode: 106 | Full: 0x106A
 /// sizeof = 47
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 106)]
@@ -2193,7 +2193,7 @@ public class PROTO_NC_CHAR_PLAYERSUMMON_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 175 | Full: 0x04AF
+/// Department: Char (0x04) | Opcode: 175 | Full: 0x10AF
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 175)]
@@ -2217,7 +2217,7 @@ public class PROTO_NC_CHAR_POLYMORPH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 89 | Full: 0x0459
+/// Department: Char (0x04) | Opcode: 89 | Full: 0x1059
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 89)]
@@ -2237,7 +2237,7 @@ public class PROTO_NC_CHAR_PROMOTE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 10 | Full: 0x040A
+/// Department: Char (0x04) | Opcode: 10 | Full: 0x100A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 10)]
@@ -2272,7 +2272,7 @@ public class PROTO_NC_CHAR_QUEST_DOING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 11 | Full: 0x040B
+/// Department: Char (0x04) | Opcode: 11 | Full: 0x100B
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 11)]
@@ -2313,7 +2313,7 @@ public class PROTO_NC_CHAR_QUEST_DONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 204 | Full: 0x04CC
+/// Department: Char (0x04) | Opcode: 204 | Full: 0x10CC
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 204)]
@@ -2342,7 +2342,7 @@ public class PROTO_NC_CHAR_QUEST_READ_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 213 | Full: 0x04D5
+/// Department: Char (0x04) | Opcode: 213 | Full: 0x10D5
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 213)]
@@ -2374,7 +2374,7 @@ public class PROTO_NC_CHAR_QUEST_REPEAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 76 | Full: 0x044C
+/// Department: Char (0x04) | Opcode: 76 | Full: 0x104C
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 76)]
@@ -2425,7 +2425,7 @@ public class PROTO_NC_CHAR_REGISTNUMBER_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 75 | Full: 0x044B
+/// Department: Char (0x04) | Opcode: 75 | Full: 0x104B
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 75)]
@@ -2445,7 +2445,7 @@ public class PROTO_NC_CHAR_REGISTNUMBER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 180 | Full: 0x04B4
+/// Department: Char (0x04) | Opcode: 180 | Full: 0x10B4
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 180)]
@@ -2471,7 +2471,7 @@ public class PROTO_NC_CHAR_REGNUM_VARIFICATION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 179 | Full: 0x04B3
+/// Department: Char (0x04) | Opcode: 179 | Full: 0x10B3
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 179)]
@@ -2497,7 +2497,7 @@ public class PROTO_NC_CHAR_REGNUM_VARIFICATION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 80 | Full: 0x0450
+/// Department: Char (0x04) | Opcode: 80 | Full: 0x1050
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 80)]
@@ -2523,7 +2523,7 @@ public class PROTO_NC_CHAR_REVIVEOTHER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 79 | Full: 0x044F
+/// Department: Char (0x04) | Opcode: 79 | Full: 0x104F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 79)]
@@ -2546,7 +2546,7 @@ public class PROTO_NC_CHAR_REVIVESAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 22 | Full: 0x0416
+/// Department: Char (0x04) | Opcode: 22 | Full: 0x1016
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 22)]
@@ -2563,7 +2563,7 @@ public class PROTO_NC_CHAR_SEAWAR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 304 | Full: 0x0530
+/// Department: Char (0x04) | Opcode: 304 | Full: 0x1130
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 304)]
@@ -2592,7 +2592,7 @@ public class PROTO_NC_CHAR_SELL_ITEM_INFO_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 121 | Full: 0x0479
+/// Department: Char (0x04) | Opcode: 121 | Full: 0x1079
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 121)]
@@ -2612,7 +2612,7 @@ public class PROTO_NC_CHAR_SET_STYLE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 123 | Full: 0x047B
+/// Department: Char (0x04) | Opcode: 123 | Full: 0x107B
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 123)]
@@ -2641,7 +2641,7 @@ public class PROTO_NC_CHAR_SET_STYLE_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 122 | Full: 0x047A
+/// Department: Char (0x04) | Opcode: 122 | Full: 0x107A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 122)]
@@ -2667,7 +2667,7 @@ public class PROTO_NC_CHAR_SET_STYLE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 125 | Full: 0x047D
+/// Department: Char (0x04) | Opcode: 125 | Full: 0x107D
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 125)]
@@ -2695,7 +2695,7 @@ public class PROTO_NC_CHAR_SET_STYLE_GET_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 127 | Full: 0x047F
+/// Department: Char (0x04) | Opcode: 127 | Full: 0x107F
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 127)]
@@ -2729,7 +2729,7 @@ public class PROTO_NC_CHAR_SET_STYLE_GET_INFO_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 126 | Full: 0x047E
+/// Department: Char (0x04) | Opcode: 126 | Full: 0x107E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 126)]
@@ -2752,7 +2752,7 @@ public class PROTO_NC_CHAR_SET_STYLE_GET_INFO_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 124 | Full: 0x047C
+/// Department: Char (0x04) | Opcode: 124 | Full: 0x107C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 124)]
@@ -2769,7 +2769,7 @@ public class PROTO_NC_CHAR_SET_STYLE_GET_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 120 | Full: 0x0478
+/// Department: Char (0x04) | Opcode: 120 | Full: 0x1078
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 120)]
@@ -2789,7 +2789,7 @@ public class PROTO_NC_CHAR_SET_STYLE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 210 | Full: 0x04D2
+/// Department: Char (0x04) | Opcode: 210 | Full: 0x10D2
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 210)]
@@ -2824,7 +2824,7 @@ public class PROTO_NC_CHAR_SINGLE_OPTION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 13 | Full: 0x040D
+/// Department: Char (0x04) | Opcode: 13 | Full: 0x100D
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 13)]
@@ -2862,7 +2862,7 @@ public class PROTO_NC_CHAR_SKILL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 14 | Full: 0x040E
+/// Department: Char (0x04) | Opcode: 14 | Full: 0x100E
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 14)]
@@ -2916,7 +2916,7 @@ public class PROTO_NC_CHAR_SKILLCLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 150 | Full: 0x0496
+/// Department: Char (0x04) | Opcode: 150 | Full: 0x1096
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 150)]
@@ -2939,7 +2939,7 @@ public class PROTO_NC_CHAR_SOMEONEGUILDACADEMYCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 110 | Full: 0x046E
+/// Department: Char (0x04) | Opcode: 110 | Full: 0x106E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 110)]
@@ -2962,7 +2962,7 @@ public class PROTO_NC_CHAR_SOMEONEGUILDCHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 90 | Full: 0x045A
+/// Department: Char (0x04) | Opcode: 90 | Full: 0x105A
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 90)]
@@ -2985,7 +2985,7 @@ public class PROTO_NC_CHAR_SOMEONEPROMOTE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 98 | Full: 0x0462
+/// Department: Char (0x04) | Opcode: 98 | Full: 0x1062
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 98)]
@@ -3005,7 +3005,7 @@ public class PROTO_NC_CHAR_STAT_DECPOINT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 102 | Full: 0x0466
+/// Department: Char (0x04) | Opcode: 102 | Full: 0x1066
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 102)]
@@ -3031,7 +3031,7 @@ public class PROTO_NC_CHAR_STAT_DECPOINTFAIL_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 101 | Full: 0x0465
+/// Department: Char (0x04) | Opcode: 101 | Full: 0x1065
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 101)]
@@ -3051,7 +3051,7 @@ public class PROTO_NC_CHAR_STAT_DECPOINTSUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 100 | Full: 0x0464
+/// Department: Char (0x04) | Opcode: 100 | Full: 0x1064
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 100)]
@@ -3077,7 +3077,7 @@ public class PROTO_NC_CHAR_STAT_DECPOINTSUC_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 92 | Full: 0x045C
+/// Department: Char (0x04) | Opcode: 92 | Full: 0x105C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 92)]
@@ -3097,7 +3097,7 @@ public class PROTO_NC_CHAR_STAT_INCPOINT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 96 | Full: 0x0460
+/// Department: Char (0x04) | Opcode: 96 | Full: 0x1060
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 96)]
@@ -3120,7 +3120,7 @@ public class PROTO_NC_CHAR_STAT_INCPOINTFAIL_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 95 | Full: 0x045F
+/// Department: Char (0x04) | Opcode: 95 | Full: 0x105F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 95)]
@@ -3140,7 +3140,7 @@ public class PROTO_NC_CHAR_STAT_INCPOINTSUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 94 | Full: 0x045E
+/// Department: Char (0x04) | Opcode: 94 | Full: 0x105E
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 94)]
@@ -3163,7 +3163,7 @@ public class PROTO_NC_CHAR_STAT_INCPOINTSUC_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 91 | Full: 0x045B
+/// Department: Char (0x04) | Opcode: 91 | Full: 0x105B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 91)]
@@ -3183,7 +3183,7 @@ public class PROTO_NC_CHAR_STAT_REMAINPOINT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 288 | Full: 0x0520
+/// Department: Char (0x04) | Opcode: 288 | Full: 0x1120
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 288)]
@@ -3204,7 +3204,7 @@ public class PROTO_NC_CHAR_SUPPORT_REWARD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 283 | Full: 0x051B
+/// Department: Char (0x04) | Opcode: 283 | Full: 0x111B
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 283)]
@@ -3227,7 +3227,7 @@ public class PROTO_NC_CHAR_TUTORIAL_FREESTAT_INIT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 282 | Full: 0x051A
+/// Department: Char (0x04) | Opcode: 282 | Full: 0x111A
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 282)]
@@ -3253,7 +3253,7 @@ public class PROTO_NC_CHAR_TUTORIAL_FREESTAT_INIT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 276 | Full: 0x0514
+/// Department: Char (0x04) | Opcode: 276 | Full: 0x1114
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 276)]
@@ -3276,7 +3276,7 @@ public class PROTO_NC_CHAR_TUTORIAL_INFO_WORLD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 277 | Full: 0x0515
+/// Department: Char (0x04) | Opcode: 277 | Full: 0x1115
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 277)]
@@ -3302,7 +3302,7 @@ public class PROTO_NC_CHAR_TUTORIAL_INFO_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 275 | Full: 0x0513
+/// Department: Char (0x04) | Opcode: 275 | Full: 0x1113
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 275)]
@@ -3331,7 +3331,7 @@ public class PROTO_NC_CHAR_TUTORIAL_MAKE_ITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 274 | Full: 0x0512
+/// Department: Char (0x04) | Opcode: 274 | Full: 0x1112
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 274)]
@@ -3363,7 +3363,7 @@ public class PROTO_NC_CHAR_TUTORIAL_MAKE_ITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 273 | Full: 0x0511
+/// Department: Char (0x04) | Opcode: 273 | Full: 0x1111
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 273)]
@@ -3383,7 +3383,7 @@ public class PROTO_NC_CHAR_TUTORIAL_POPUP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 272 | Full: 0x0510
+/// Department: Char (0x04) | Opcode: 272 | Full: 0x1110
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 272)]
@@ -3400,7 +3400,7 @@ public class PROTO_NC_CHAR_TUTORIAL_POPUP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 279 | Full: 0x0517
+/// Department: Char (0x04) | Opcode: 279 | Full: 0x1117
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 279)]
@@ -3420,7 +3420,7 @@ public class PROTO_NC_CHAR_TUTORIAL_STEP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 278 | Full: 0x0516
+/// Department: Char (0x04) | Opcode: 278 | Full: 0x1116
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 278)]
@@ -3440,7 +3440,7 @@ public class PROTO_NC_CHAR_TUTORIAL_STEP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 281 | Full: 0x0519
+/// Department: Char (0x04) | Opcode: 281 | Full: 0x1119
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 281)]
@@ -3463,7 +3463,7 @@ public class PROTO_NC_CHAR_TUTORIAL_STEP_SAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 284 | Full: 0x051C
+/// Department: Char (0x04) | Opcode: 284 | Full: 0x111C
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 284)]
@@ -3486,7 +3486,7 @@ public class PROTO_NC_CHAR_TUTORIAL_STEP_SAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 280 | Full: 0x0518
+/// Department: Char (0x04) | Opcode: 280 | Full: 0x1118
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 280)]
@@ -3512,7 +3512,7 @@ public class PROTO_NC_CHAR_TUTORIAL_STEP_SAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 298 | Full: 0x052A
+/// Department: Char (0x04) | Opcode: 298 | Full: 0x112A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 298)]
@@ -3529,7 +3529,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_CHARGED_ITEM_OFF_REQ : IFiestaPacketB
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 296 | Full: 0x0528
+/// Department: Char (0x04) | Opcode: 296 | Full: 0x1128
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 296)]
@@ -3551,7 +3551,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_CHARGED_ITEM_ON_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 291 | Full: 0x0523
+/// Department: Char (0x04) | Opcode: 291 | Full: 0x1123
 /// sizeof = 50
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 291)]
@@ -3571,7 +3571,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_INFO_CLIENT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 289 | Full: 0x0521
+/// Department: Char (0x04) | Opcode: 289 | Full: 0x1121
 /// sizeof = 56
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 289)]
@@ -3597,7 +3597,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_INFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 290 | Full: 0x0522
+/// Department: Char (0x04) | Opcode: 290 | Full: 0x1122
 /// sizeof = 56
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 290)]
@@ -3623,7 +3623,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_INFO_ZONE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 294 | Full: 0x0526
+/// Department: Char (0x04) | Opcode: 294 | Full: 0x1126
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 294)]
@@ -3640,7 +3640,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_NORMAL_ITEM_OFF_REQ : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 292 | Full: 0x0524
+/// Department: Char (0x04) | Opcode: 292 | Full: 0x1124
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 292)]
@@ -3662,7 +3662,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_NORMAL_ITEM_ON_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 301 | Full: 0x052D
+/// Department: Char (0x04) | Opcode: 301 | Full: 0x112D
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 301)]
@@ -3685,7 +3685,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_NOTICE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 300 | Full: 0x052C
+/// Department: Char (0x04) | Opcode: 300 | Full: 0x112C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 300)]
@@ -3708,7 +3708,7 @@ public class PROTO_NC_CHAR_USEITEM_MINIMON_USE_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 178 | Full: 0x04B2
+/// Department: Char (0x04) | Opcode: 178 | Full: 0x10B2
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 178)]
@@ -3728,7 +3728,7 @@ public class PROTO_NC_CHAR_WEDDING_CANCEL_WEDDING : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 144 | Full: 0x0490
+/// Department: Char (0x04) | Opcode: 144 | Full: 0x1090
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 144)]
@@ -3760,7 +3760,7 @@ public class PROTO_NC_CHAR_WEDDING_DIVORCE_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 143 | Full: 0x048F
+/// Department: Char (0x04) | Opcode: 143 | Full: 0x108F
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 143)]
@@ -3786,7 +3786,7 @@ public class PROTO_NC_CHAR_WEDDING_DIVORCE_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 141 | Full: 0x048D
+/// Department: Char (0x04) | Opcode: 141 | Full: 0x108D
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 141)]
@@ -3812,7 +3812,7 @@ public class PROTO_NC_CHAR_WEDDING_DIVORCE_DO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 148 | Full: 0x0494
+/// Department: Char (0x04) | Opcode: 148 | Full: 0x1094
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 148)]
@@ -3835,7 +3835,7 @@ public class PROTO_NC_CHAR_WEDDING_PARTNER_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 147 | Full: 0x0493
+/// Department: Char (0x04) | Opcode: 147 | Full: 0x1093
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 147)]
@@ -3858,7 +3858,7 @@ public class PROTO_NC_CHAR_WEDDING_PARTNER_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 149 | Full: 0x0495
+/// Department: Char (0x04) | Opcode: 149 | Full: 0x1095
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 149)]
@@ -3881,7 +3881,7 @@ public class PROTO_NC_CHAR_WEDDING_PARTNER_INFO_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 170 | Full: 0x04AA
+/// Department: Char (0x04) | Opcode: 170 | Full: 0x10AA
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 170)]
@@ -3919,7 +3919,7 @@ public class PROTO_NC_CHAR_WEDDING_PARTNER_SUMMON_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 132 | Full: 0x0484
+/// Department: Char (0x04) | Opcode: 132 | Full: 0x1084
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 132)]
@@ -3945,7 +3945,7 @@ public class PROTO_NC_CHAR_WEDDING_PROPOSE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 131 | Full: 0x0483
+/// Department: Char (0x04) | Opcode: 131 | Full: 0x1083
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 131)]
@@ -3968,7 +3968,7 @@ public class PROTO_NC_CHAR_WEDDING_PROPOSE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 171 | Full: 0x04AB
+/// Department: Char (0x04) | Opcode: 171 | Full: 0x10AB
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 171)]
@@ -3988,7 +3988,7 @@ public class PROTO_NC_CHAR_WEDDING_REFRESH_INFO_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 129 | Full: 0x0481
+/// Department: Char (0x04) | Opcode: 129 | Full: 0x1081
 /// sizeof = 43
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 129)]
@@ -4041,7 +4041,7 @@ public class PROTO_NC_CHAR_WEDDINGDATA_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 128 | Full: 0x0480
+/// Department: Char (0x04) | Opcode: 128 | Full: 0x1080
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 128)]
@@ -4061,7 +4061,7 @@ public class PROTO_NC_CHAR_WEDDINGDATA_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 193 | Full: 0x04C1
+/// Department: Char (0x04) | Opcode: 193 | Full: 0x10C1
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 193)]
@@ -4087,7 +4087,7 @@ public class PROTO_NC_CHAR_ZONE_AUTO_PICK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 29 | Full: 0x041D
+/// Department: Char (0x04) | Opcode: 29 | Full: 0x101D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 29)]
@@ -4132,7 +4132,7 @@ public class PROTO_NC_CHAR_ZONE_CHARDATA_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 28 | Full: 0x041C
+/// Department: Char (0x04) | Opcode: 28 | Full: 0x101C
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 28)]
@@ -4180,7 +4180,7 @@ public class PROTO_NC_CHAR_ZONE_CHARDATAFAIL_ACK_SEND : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 287 | Full: 0x051F
+/// Department: Char (0x04) | Opcode: 287 | Full: 0x111F
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 287)]
@@ -4209,7 +4209,7 @@ public class PROTO_NC_CHAR_ZONE_CHAT_COLOR_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Char (0x04) | Opcode: 41 | Full: 0x0429
+/// Department: Char (0x04) | Opcode: 41 | Full: 0x1029
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Char, 41)]

@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 16 | Full: 0x2410
+/// Department: Charged (0x24) | Opcode: 16 | Full: 0x9010
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 16)]
@@ -25,7 +25,7 @@ public class PROTO_NC_CHARGED_BOOTHSLOTSIZE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 4 | Full: 0x2404
+/// Department: Charged (0x24) | Opcode: 4 | Full: 0x9004
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 4)]
@@ -45,7 +45,7 @@ public class PROTO_NC_CHARGED_BUFFTERMINATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 11 | Full: 0x240B
+/// Department: Charged (0x24) | Opcode: 11 | Full: 0x900B
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 11)]
@@ -65,7 +65,7 @@ public class PROTO_NC_CHARGED_DELETEWEAPONTITLE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 2 | Full: 0x2402
+/// Department: Charged (0x24) | Opcode: 2 | Full: 0x9002
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 2)]
@@ -94,7 +94,7 @@ public class PROTO_NC_CHARGED_RESETBUFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 1 | Full: 0x2401
+/// Department: Charged (0x24) | Opcode: 1 | Full: 0x9001
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 1)]
@@ -126,7 +126,7 @@ public class PROTO_NC_CHARGED_SETBUFF_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 6 | Full: 0x2406
+/// Department: Charged (0x24) | Opcode: 6 | Full: 0x9006
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 6)]
@@ -161,7 +161,7 @@ public class PROTO_NC_CHARGED_SKILLEMPOW_INITIALIZE_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 9 | Full: 0x2409
+/// Department: Charged (0x24) | Opcode: 9 | Full: 0x9009
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 9)]
@@ -187,7 +187,7 @@ public class PROTO_NC_CHARGED_STAT_INITIALIZE_DB_FAIL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 7 | Full: 0x2407
+/// Department: Charged (0x24) | Opcode: 7 | Full: 0x9007
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 7)]
@@ -210,7 +210,7 @@ public class PROTO_NC_CHARGED_STAT_INITIALIZE_DB_SUC_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Charged (0x24) | Opcode: 12 | Full: 0x240C
+/// Department: Charged (0x24) | Opcode: 12 | Full: 0x900C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Charged, 12)]

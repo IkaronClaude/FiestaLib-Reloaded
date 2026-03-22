@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 2 | Full: 0x3202
+/// Department: Syslog (0x32) | Opcode: 2 | Full: 0xC802
 /// sizeof = 296
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 2)]
@@ -33,7 +33,7 @@ public class PROTO_NC_SYSLOG_ACCOUNT_LOGIN_FAILURE : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 1 | Full: 0x3201
+/// Department: Syslog (0x32) | Opcode: 1 | Full: 0xC801
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 1)]
@@ -59,7 +59,7 @@ public class PROTO_NC_SYSLOG_ACCOUNT_LOGIN_SUCCESS : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 3 | Full: 0x3203
+/// Department: Syslog (0x32) | Opcode: 3 | Full: 0xC803
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 3)]
@@ -82,7 +82,7 @@ public class PROTO_NC_SYSLOG_ACCOUNT_LOGOUT : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 4 | Full: 0x3204
+/// Department: Syslog (0x32) | Opcode: 4 | Full: 0xC804
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 4)]
@@ -108,7 +108,7 @@ public class PROTO_NC_SYSLOG_CHAR_CREATED : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 10 | Full: 0x320A
+/// Department: Syslog (0x32) | Opcode: 10 | Full: 0xC80A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 10)]
@@ -143,7 +143,7 @@ public class PROTO_NC_SYSLOG_CHAR_DEATH : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 5 | Full: 0x3205
+/// Department: Syslog (0x32) | Opcode: 5 | Full: 0xC805
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 5)]
@@ -169,7 +169,7 @@ public class PROTO_NC_SYSLOG_CHAR_DELETED : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 6 | Full: 0x3206
+/// Department: Syslog (0x32) | Opcode: 6 | Full: 0xC806
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 6)]
@@ -192,7 +192,7 @@ public class PROTO_NC_SYSLOG_CHAR_ENTER_GAME : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 7 | Full: 0x3207
+/// Department: Syslog (0x32) | Opcode: 7 | Full: 0xC807
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 7)]
@@ -218,7 +218,7 @@ public class PROTO_NC_SYSLOG_CHAR_LEAVE_GAME : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 8 | Full: 0x3208
+/// Department: Syslog (0x32) | Opcode: 8 | Full: 0xC808
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 8)]
@@ -244,7 +244,7 @@ public class PROTO_NC_SYSLOG_CHAR_LEVEL_UP : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 15 | Full: 0x320F
+/// Department: Syslog (0x32) | Opcode: 15 | Full: 0xC80F
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 15)]
@@ -276,7 +276,7 @@ public class PROTO_NC_SYSLOG_CHAR_QUEST_STARTED : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 11 | Full: 0x320B
+/// Department: Syslog (0x32) | Opcode: 11 | Full: 0xC80B
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 11)]
@@ -311,7 +311,7 @@ public class PROTO_NC_SYSLOG_CHAR_VICTORY : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 9 | Full: 0x3209
+/// Department: Syslog (0x32) | Opcode: 9 | Full: 0xC809
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 9)]
@@ -343,7 +343,7 @@ public class PROTO_NC_SYSLOG_CHAR_ZONE_TRANSITION : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Syslog (0x32) | Opcode: 17 | Full: 0x3211
+/// Department: Syslog (0x32) | Opcode: 17 | Full: 0xC811
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Syslog, 17)]

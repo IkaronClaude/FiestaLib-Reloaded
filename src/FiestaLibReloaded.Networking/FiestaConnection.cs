@@ -43,13 +43,12 @@ public class FiestaConnection : IDisposable
         ReadExact(frameData, 0, frameLen);
         _cipher.Transform(frameData);
 
-        var dept = frameData[0];
-        var cmd = frameData[1];
+        var opcode = (ushort)(frameData[0] | (frameData[1] << 8));
         var payload = new byte[frameLen - 2];
         if (payload.Length > 0)
             Buffer.BlockCopy(frameData, 2, payload, 0, payload.Length);
 
-        return new FiestaPacket(dept, cmd, payload);
+        return new FiestaPacket(opcode, payload);
     }
 
     /// <summary>
@@ -77,13 +76,12 @@ public class FiestaConnection : IDisposable
         await ReadExactAsync(frameData, ct);
         _cipher.Transform(frameData);
 
-        var dept = frameData[0];
-        var cmd = frameData[1];
+        var opcode = (ushort)(frameData[0] | (frameData[1] << 8));
         var payload = new byte[frameLen - 2];
         if (payload.Length > 0)
             Buffer.BlockCopy(frameData, 2, payload, 0, payload.Length);
 
-        return new FiestaPacket(dept, cmd, payload);
+        return new FiestaPacket(opcode, payload);
     }
 
     /// <summary>
@@ -145,10 +143,10 @@ public class FiestaConnection : IDisposable
             ms.WriteByte((byte)(opcodeAndPayloadLen & 0xFF));
         }
 
-        // Opcode + payload (cipher applied)
+        // Opcode (LE ushort) + payload (cipher applied)
         var frameData = new byte[opcodeAndPayloadLen];
-        frameData[0] = packet.Department;
-        frameData[1] = packet.Command;
+        frameData[0] = (byte)(packet.Opcode & 0xFF);
+        frameData[1] = (byte)(packet.Opcode >> 8);
         packet.Payload.Span.CopyTo(frameData.AsSpan(2));
         _cipher.Transform(frameData);
 

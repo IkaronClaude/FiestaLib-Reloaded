@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 64 | Full: 0x2C40
+/// Department: Raid (0x2C) | Opcode: 64 | Full: 0xB040
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 64)]
@@ -25,7 +25,7 @@ public class PROTO_NC_RAID_CHAT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 65 | Full: 0x2C41
+/// Department: Raid (0x2C) | Opcode: 65 | Full: 0xB041
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 65)]
@@ -54,7 +54,7 @@ public class PROTO_NC_RAID_CHAT_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 63 | Full: 0x2C3F
+/// Department: Raid (0x2C) | Opcode: 63 | Full: 0xB03F
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 63)]
@@ -80,7 +80,7 @@ public class PROTO_NC_RAID_CHAT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 54 | Full: 0x2C36
+/// Department: Raid (0x2C) | Opcode: 54 | Full: 0xB036
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 54)]
@@ -103,7 +103,7 @@ public class PROTO_NC_RAID_DEL_SUB_LEADER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 56 | Full: 0x2C38
+/// Department: Raid (0x2C) | Opcode: 56 | Full: 0xB038
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 56)]
@@ -135,7 +135,7 @@ public class PROTO_NC_RAID_DEL_SUB_LEADER_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 55 | Full: 0x2C37
+/// Department: Raid (0x2C) | Opcode: 55 | Full: 0xB037
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 55)]
@@ -155,7 +155,7 @@ public class PROTO_NC_RAID_DEL_SUB_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 53 | Full: 0x2C35
+/// Department: Raid (0x2C) | Opcode: 53 | Full: 0xB035
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 53)]
@@ -175,7 +175,7 @@ public class PROTO_NC_RAID_DEL_SUB_LEADER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 6 | Full: 0x2C06
+/// Department: Raid (0x2C) | Opcode: 6 | Full: 0xB006
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 6)]
@@ -192,7 +192,7 @@ public class PROTO_NC_RAID_DISMISS_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 13 | Full: 0x2C0D
+/// Department: Raid (0x2C) | Opcode: 13 | Full: 0xB00D
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 13)]
@@ -215,7 +215,7 @@ public class PROTO_NC_RAID_INVITATION_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 16 | Full: 0x2C10
+/// Department: Raid (0x2C) | Opcode: 16 | Full: 0xB010
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 16)]
@@ -235,7 +235,7 @@ public class PROTO_NC_RAID_INVITATION_ANSWER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 17 | Full: 0x2C11
+/// Department: Raid (0x2C) | Opcode: 17 | Full: 0xB011
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 17)]
@@ -258,7 +258,7 @@ public class PROTO_NC_RAID_INVITATION_ANSWER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 15 | Full: 0x2C0F
+/// Department: Raid (0x2C) | Opcode: 15 | Full: 0xB00F
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 15)]
@@ -281,7 +281,7 @@ public class PROTO_NC_RAID_INVITATION_ANSWER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 14 | Full: 0x2C0E
+/// Department: Raid (0x2C) | Opcode: 14 | Full: 0xB00E
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 14)]
@@ -301,7 +301,7 @@ public class PROTO_NC_RAID_INVITATION_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 12 | Full: 0x2C0C
+/// Department: Raid (0x2C) | Opcode: 12 | Full: 0xB00C
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 12)]
@@ -321,7 +321,7 @@ public class PROTO_NC_RAID_INVITATION_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 21 | Full: 0x2C15
+/// Department: Raid (0x2C) | Opcode: 21 | Full: 0xB015
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 21)]
@@ -341,7 +341,7 @@ public class PROTO_NC_RAID_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 22 | Full: 0x2C16
+/// Department: Raid (0x2C) | Opcode: 22 | Full: 0xB016
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 22)]
@@ -370,7 +370,7 @@ public class PROTO_NC_RAID_LEAVE_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 38 | Full: 0x2C26
+/// Department: Raid (0x2C) | Opcode: 38 | Full: 0xB026
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 38)]
@@ -410,7 +410,7 @@ public class PROTO_NC_RAID_LOGIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 30 | Full: 0x2C1E
+/// Department: Raid (0x2C) | Opcode: 30 | Full: 0xB01E
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 30)]
@@ -458,7 +458,7 @@ public class PROTO_NC_RAID_LOGOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 32 | Full: 0x2C20
+/// Department: Raid (0x2C) | Opcode: 32 | Full: 0xB020
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 32)]
@@ -487,7 +487,7 @@ public class PROTO_NC_RAID_LOGOUTINFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 9 | Full: 0x2C09
+/// Department: Raid (0x2C) | Opcode: 9 | Full: 0xB009
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 9)]
@@ -507,7 +507,7 @@ public class PROTO_NC_RAID_LOOTING_TYPE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 10 | Full: 0x2C0A
+/// Department: Raid (0x2C) | Opcode: 10 | Full: 0xB00A
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 10)]
@@ -530,7 +530,7 @@ public class PROTO_NC_RAID_LOOTING_TYPE_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 8 | Full: 0x2C08
+/// Department: Raid (0x2C) | Opcode: 8 | Full: 0xB008
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 8)]
@@ -553,7 +553,7 @@ public class PROTO_NC_RAID_LOOTING_TYPE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 2 | Full: 0x2C02
+/// Department: Raid (0x2C) | Opcode: 2 | Full: 0xB002
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 2)]
@@ -576,7 +576,7 @@ public class PROTO_NC_RAID_MAKE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 3 | Full: 0x2C03
+/// Department: Raid (0x2C) | Opcode: 3 | Full: 0xB003
 /// sizeof = 110
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 3)]
@@ -609,7 +609,7 @@ public class PROTO_NC_RAID_MAKE_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 1 | Full: 0x2C01
+/// Department: Raid (0x2C) | Opcode: 1 | Full: 0xB001
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 1)]
@@ -626,7 +626,7 @@ public class PROTO_NC_RAID_MAKE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 33 | Full: 0x2C21
+/// Department: Raid (0x2C) | Opcode: 33 | Full: 0xB021
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 33)]
@@ -646,7 +646,7 @@ public class PROTO_NC_RAID_MAPOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 18 | Full: 0x2C12
+/// Department: Raid (0x2C) | Opcode: 18 | Full: 0xB012
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 18)]
@@ -675,7 +675,7 @@ public class PROTO_NC_RAID_MEMBER_JOIN_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 5 | Full: 0x2C05
+/// Department: Raid (0x2C) | Opcode: 5 | Full: 0xB005
 /// sizeof = 542
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 5)]
@@ -715,7 +715,7 @@ public class PROTO_NC_RAID_MEMBER_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 35 | Full: 0x2C23
+/// Department: Raid (0x2C) | Opcode: 35 | Full: 0xB023
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 35)]
@@ -744,7 +744,7 @@ public class PROTO_NC_RAID_MEMBERCLASS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 34 | Full: 0x2C22
+/// Department: Raid (0x2C) | Opcode: 34 | Full: 0xB022
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 34)]
@@ -779,7 +779,7 @@ public class PROTO_NC_RAID_MEMBERINFORM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 44 | Full: 0x2C2C
+/// Department: Raid (0x2C) | Opcode: 44 | Full: 0xB02C
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 44)]
@@ -802,7 +802,7 @@ public class PROTO_NC_RAID_SET_LEADER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 46 | Full: 0x2C2E
+/// Department: Raid (0x2C) | Opcode: 46 | Full: 0xB02E
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 46)]
@@ -834,7 +834,7 @@ public class PROTO_NC_RAID_SET_LEADER_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 45 | Full: 0x2C2D
+/// Department: Raid (0x2C) | Opcode: 45 | Full: 0xB02D
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 45)]
@@ -854,7 +854,7 @@ public class PROTO_NC_RAID_SET_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 43 | Full: 0x2C2B
+/// Department: Raid (0x2C) | Opcode: 43 | Full: 0xB02B
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 43)]
@@ -874,7 +874,7 @@ public class PROTO_NC_RAID_SET_LEADER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 59 | Full: 0x2C3B
+/// Department: Raid (0x2C) | Opcode: 59 | Full: 0xB03B
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 59)]
@@ -897,7 +897,7 @@ public class PROTO_NC_RAID_SET_LOOTER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 61 | Full: 0x2C3D
+/// Department: Raid (0x2C) | Opcode: 61 | Full: 0xB03D
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 61)]
@@ -929,7 +929,7 @@ public class PROTO_NC_RAID_SET_LOOTER_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 60 | Full: 0x2C3C
+/// Department: Raid (0x2C) | Opcode: 60 | Full: 0xB03C
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 60)]
@@ -949,7 +949,7 @@ public class PROTO_NC_RAID_SET_LOOTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 58 | Full: 0x2C3A
+/// Department: Raid (0x2C) | Opcode: 58 | Full: 0xB03A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 58)]
@@ -969,7 +969,7 @@ public class PROTO_NC_RAID_SET_LOOTER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 49 | Full: 0x2C31
+/// Department: Raid (0x2C) | Opcode: 49 | Full: 0xB031
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 49)]
@@ -992,7 +992,7 @@ public class PROTO_NC_RAID_SET_SUB_LEADER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 51 | Full: 0x2C33
+/// Department: Raid (0x2C) | Opcode: 51 | Full: 0xB033
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 51)]
@@ -1024,7 +1024,7 @@ public class PROTO_NC_RAID_SET_SUB_LEADER_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 50 | Full: 0x2C32
+/// Department: Raid (0x2C) | Opcode: 50 | Full: 0xB032
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 50)]
@@ -1044,7 +1044,7 @@ public class PROTO_NC_RAID_SET_SUB_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 48 | Full: 0x2C30
+/// Department: Raid (0x2C) | Opcode: 48 | Full: 0xB030
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 48)]
@@ -1064,7 +1064,7 @@ public class PROTO_NC_RAID_SET_SUB_LEADER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 40 | Full: 0x2C28
+/// Department: Raid (0x2C) | Opcode: 40 | Full: 0xB028
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 40)]
@@ -1087,7 +1087,7 @@ public class PROTO_NC_RAID_SLOT_MOVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 41 | Full: 0x2C29
+/// Department: Raid (0x2C) | Opcode: 41 | Full: 0xB029
 /// sizeof = 228
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 41)]
@@ -1129,7 +1129,7 @@ public class PROTO_NC_RAID_SLOT_MOVE_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 39 | Full: 0x2C27
+/// Department: Raid (0x2C) | Opcode: 39 | Full: 0xB027
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 39)]
@@ -1158,7 +1158,7 @@ public class PROTO_NC_RAID_SLOT_MOVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 25 | Full: 0x2C19
+/// Department: Raid (0x2C) | Opcode: 25 | Full: 0xB019
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 25)]
@@ -1181,7 +1181,7 @@ public class PROTO_NC_RAID_VANISH_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 27 | Full: 0x2C1B
+/// Department: Raid (0x2C) | Opcode: 27 | Full: 0xB01B
 /// sizeof = 44
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 27)]
@@ -1213,7 +1213,7 @@ public class PROTO_NC_RAID_VANISH_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 26 | Full: 0x2C1A
+/// Department: Raid (0x2C) | Opcode: 26 | Full: 0xB01A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 26)]
@@ -1233,7 +1233,7 @@ public class PROTO_NC_RAID_VANISH_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 24 | Full: 0x2C18
+/// Department: Raid (0x2C) | Opcode: 24 | Full: 0xB018
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 24)]
@@ -1253,7 +1253,7 @@ public class PROTO_NC_RAID_VANISH_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 67 | Full: 0x2C43
+/// Department: Raid (0x2C) | Opcode: 67 | Full: 0xB043
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 67)]
@@ -1273,7 +1273,7 @@ public class PROTO_NC_RAID_WARNING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 68 | Full: 0x2C44
+/// Department: Raid (0x2C) | Opcode: 68 | Full: 0xB044
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 68)]
@@ -1302,7 +1302,7 @@ public class PROTO_NC_RAID_WARNING_BROAD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 66 | Full: 0x2C42
+/// Department: Raid (0x2C) | Opcode: 66 | Full: 0xB042
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 66)]
@@ -1328,7 +1328,7 @@ public class PROTO_NC_RAID_WARNING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 57 | Full: 0x2C39
+/// Department: Raid (0x2C) | Opcode: 57 | Full: 0xB039
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 57)]
@@ -1360,7 +1360,7 @@ public class PROTO_NC_RAID_ZONE_DEL_SUB_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 7 | Full: 0x2C07
+/// Department: Raid (0x2C) | Opcode: 7 | Full: 0xB007
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 7)]
@@ -1380,7 +1380,7 @@ public class PROTO_NC_RAID_ZONE_DISMISS_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 23 | Full: 0x2C17
+/// Department: Raid (0x2C) | Opcode: 23 | Full: 0xB017
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 23)]
@@ -1412,7 +1412,7 @@ public class PROTO_NC_RAID_ZONE_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 11 | Full: 0x2C0B
+/// Department: Raid (0x2C) | Opcode: 11 | Full: 0xB00B
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 11)]
@@ -1438,7 +1438,7 @@ public class PROTO_NC_RAID_ZONE_LOOTING_TYPE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 4 | Full: 0x2C04
+/// Department: Raid (0x2C) | Opcode: 4 | Full: 0xB004
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 4)]
@@ -1471,7 +1471,7 @@ public class PROTO_NC_RAID_ZONE_MAKE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 19 | Full: 0x2C13
+/// Department: Raid (0x2C) | Opcode: 19 | Full: 0xB013
 /// sizeof = 42
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 19)]
@@ -1506,7 +1506,7 @@ public class PROTO_NC_RAID_ZONE_MEMBER_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 47 | Full: 0x2C2F
+/// Department: Raid (0x2C) | Opcode: 47 | Full: 0xB02F
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 47)]
@@ -1538,7 +1538,7 @@ public class PROTO_NC_RAID_ZONE_SET_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 62 | Full: 0x2C3E
+/// Department: Raid (0x2C) | Opcode: 62 | Full: 0xB03E
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 62)]
@@ -1570,7 +1570,7 @@ public class PROTO_NC_RAID_ZONE_SET_LOOTER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 52 | Full: 0x2C34
+/// Department: Raid (0x2C) | Opcode: 52 | Full: 0xB034
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 52)]
@@ -1602,7 +1602,7 @@ public class PROTO_NC_RAID_ZONE_SET_SUB_LEADER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 42 | Full: 0x2C2A
+/// Department: Raid (0x2C) | Opcode: 42 | Full: 0xB02A
 /// sizeof = 50
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 42)]
@@ -1628,7 +1628,7 @@ public class PROTO_NC_RAID_ZONE_SLOT_MOVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Raid (0x2C) | Opcode: 28 | Full: 0x2C1C
+/// Department: Raid (0x2C) | Opcode: 28 | Full: 0xB01C
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Raid, 28)]

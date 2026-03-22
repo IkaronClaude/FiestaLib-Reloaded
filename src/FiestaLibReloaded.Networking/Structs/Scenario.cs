@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 13 | Full: 0x1B0D
+/// Department: Scenario (0x1B) | Opcode: 13 | Full: 0x6C0D
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 13)]
@@ -28,7 +28,7 @@ public class PROTO_NC_SCENARIO_ANIMATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 6 | Full: 0x1B06
+/// Department: Scenario (0x1B) | Opcode: 6 | Full: 0x6C06
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 6)]
@@ -48,7 +48,7 @@ public class PROTO_NC_SCENARIO_AREAENTRY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 5 | Full: 0x1B05
+/// Department: Scenario (0x1B) | Opcode: 5 | Full: 0x6C05
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 5)]
@@ -68,7 +68,7 @@ public class PROTO_NC_SCENARIO_AREAENTRY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 8 | Full: 0x1B08
+/// Department: Scenario (0x1B) | Opcode: 8 | Full: 0x6C08
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 8)]
@@ -88,7 +88,7 @@ public class PROTO_NC_SCENARIO_AREALEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 7 | Full: 0x1B07
+/// Department: Scenario (0x1B) | Opcode: 7 | Full: 0x6C07
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 7)]
@@ -108,7 +108,7 @@ public class PROTO_NC_SCENARIO_AREALEAVE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 16 | Full: 0x1B10
+/// Department: Scenario (0x1B) | Opcode: 16 | Full: 0x6C10
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 16)]
@@ -128,7 +128,7 @@ public class PROTO_NC_SCENARIO_BRIEFEFFECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 20 | Full: 0x1B14
+/// Department: Scenario (0x1B) | Opcode: 20 | Full: 0x6C14
 /// sizeof = 15
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 20)]
@@ -160,7 +160,7 @@ public class PROTO_NC_SCENARIO_CAMERA_MOVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 12 | Full: 0x1B0C
+/// Department: Scenario (0x1B) | Opcode: 12 | Full: 0x6C0C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 12)]
@@ -186,7 +186,7 @@ public class PROTO_NC_SCENARIO_CHATWIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 31 | Full: 0x1B1F
+/// Department: Scenario (0x1B) | Opcode: 31 | Full: 0x6C1F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 31)]
@@ -203,7 +203,7 @@ public class PROTO_NC_SCENARIO_DEL_DIRECTIONAL_ARROW_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 25 | Full: 0x1B19
+/// Department: Scenario (0x1B) | Opcode: 25 | Full: 0x6C19
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 25)]
@@ -231,7 +231,7 @@ public class PROTO_NC_SCENARIO_DIALOG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 30 | Full: 0x1B1E
+/// Department: Scenario (0x1B) | Opcode: 30 | Full: 0x6C1E
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 30)]
@@ -251,7 +251,7 @@ public class PROTO_NC_SCENARIO_DIRECTIONAL_ARROW_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 9 | Full: 0x1B09
+/// Department: Scenario (0x1B) | Opcode: 9 | Full: 0x6C09
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 9)]
@@ -274,7 +274,7 @@ public class PROTO_NC_SCENARIO_DOORSTATE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 29 | Full: 0x1B1D
+/// Department: Scenario (0x1B) | Opcode: 29 | Full: 0x6C1D
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 29)]
@@ -297,7 +297,7 @@ public class PROTO_NC_SCENARIO_EFFECT_TIMER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 14 | Full: 0x1B0E
+/// Department: Scenario (0x1B) | Opcode: 14 | Full: 0x6C0E
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 14)]
@@ -320,7 +320,7 @@ public class PROTO_NC_SCENARIO_FOG_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 28 | Full: 0x1B1C
+/// Department: Scenario (0x1B) | Opcode: 28 | Full: 0x6C1C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 28)]
@@ -340,7 +340,7 @@ public class PROTO_NC_SCENARIO_HIDE_OTHER_PLAYER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 10 | Full: 0x1B0A
+/// Department: Scenario (0x1B) | Opcode: 10 | Full: 0x6C0A
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 10)]
@@ -366,7 +366,7 @@ public class PROTO_NC_SCENARIO_LIGHT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 24 | Full: 0x1B18
+/// Department: Scenario (0x1B) | Opcode: 24 | Full: 0x6C18
 /// sizeof = 37
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 24)]
@@ -392,7 +392,7 @@ public class PROTO_NC_SCENARIO_MAP_OBJECT_CONTROL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 23 | Full: 0x1B17
+/// Department: Scenario (0x1B) | Opcode: 23 | Full: 0x6C17
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 23)]
@@ -413,7 +413,7 @@ public class PROTO_NC_SCENARIO_MAPMARK_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 18 | Full: 0x1B12
+/// Department: Scenario (0x1B) | Opcode: 18 | Full: 0x6C12
 /// sizeof = 17
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 18)]
@@ -435,7 +435,7 @@ public class PROTO_NC_SCENARIO_MESSAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 4 | Full: 0x1B04
+/// Department: Scenario (0x1B) | Opcode: 4 | Full: 0x6C04
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 4)]
@@ -455,7 +455,7 @@ public class PROTO_NC_SCENARIO_MESSAGENOTICE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 17 | Full: 0x1B11
+/// Department: Scenario (0x1B) | Opcode: 17 | Full: 0x6C11
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 17)]
@@ -480,7 +480,7 @@ public class PROTO_NC_SCENARIO_NPCCHAT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 11 | Full: 0x1B0B
+/// Department: Scenario (0x1B) | Opcode: 11 | Full: 0x6C0B
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 11)]
@@ -503,7 +503,7 @@ public class PROTO_NC_SCENARIO_OBJTYPECHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 32 | Full: 0x1B20
+/// Department: Scenario (0x1B) | Opcode: 32 | Full: 0x6C20
 /// sizeof = 1000
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 32)]
@@ -536,7 +536,7 @@ public class PROTO_NC_SCENARIO_RANKING_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 21 | Full: 0x1B15
+/// Department: Scenario (0x1B) | Opcode: 21 | Full: 0x6C15
 /// sizeof = 37
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 21)]
@@ -564,7 +564,7 @@ public class PROTO_NC_SCENARIO_SCRIPTMESSAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 27 | Full: 0x1B1B
+/// Department: Scenario (0x1B) | Opcode: 27 | Full: 0x6C1B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 27)]
@@ -587,7 +587,7 @@ public class PROTO_NC_SCENARIO_SYSTEM_MESSAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 22 | Full: 0x1B16
+/// Department: Scenario (0x1B) | Opcode: 22 | Full: 0x6C16
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 22)]
@@ -607,7 +607,7 @@ public class PROTO_NC_SCENARIO_TIMER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 34 | Full: 0x1B22
+/// Department: Scenario (0x1B) | Opcode: 34 | Full: 0x6C22
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 34)]
@@ -627,7 +627,7 @@ public class PROTO_NC_SCENARIO_TIMER_END_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 33 | Full: 0x1B21
+/// Department: Scenario (0x1B) | Opcode: 33 | Full: 0x6C21
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 33)]
@@ -644,7 +644,7 @@ public class PROTO_NC_SCENARIO_TIMER_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Scenario (0x1B) | Opcode: 26 | Full: 0x1B1A
+/// Department: Scenario (0x1B) | Opcode: 26 | Full: 0x6C1A
 /// sizeof = 13
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Scenario, 26)]

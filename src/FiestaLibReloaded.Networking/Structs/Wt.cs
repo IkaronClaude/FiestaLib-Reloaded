@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 3 | Full: 0x1703
+/// Department: Wt (0x17) | Opcode: 3 | Full: 0x5C03
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 3)]
@@ -28,7 +28,7 @@ public class PROTO_NC_WT_GRADE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 2 | Full: 0x1702
+/// Department: Wt (0x17) | Opcode: 2 | Full: 0x5C02
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 2)]
@@ -57,7 +57,7 @@ public class PROTO_NC_WT_LICENSE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 8 | Full: 0x1708
+/// Department: Wt (0x17) | Opcode: 8 | Full: 0x5C08
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 8)]
@@ -92,7 +92,7 @@ public class PROTO_NC_WT_LICENSE_CLR_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 7 | Full: 0x1707
+/// Department: Wt (0x17) | Opcode: 7 | Full: 0x5C07
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 7)]
@@ -136,7 +136,7 @@ public class PROTO_NC_WT_LICENSE_CLR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 1 | Full: 0x1701
+/// Department: Wt (0x17) | Opcode: 1 | Full: 0x5C01
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 1)]
@@ -165,7 +165,7 @@ public class PROTO_NC_WT_LICENSE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 6 | Full: 0x1706
+/// Department: Wt (0x17) | Opcode: 6 | Full: 0x5C06
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 6)]
@@ -194,7 +194,7 @@ public class PROTO_NC_WT_LICENSE_SET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 5 | Full: 0x1705
+/// Department: Wt (0x17) | Opcode: 5 | Full: 0x5C05
 /// sizeof = 54
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 5)]
@@ -235,7 +235,7 @@ public class PROTO_NC_WT_LICENSE_SET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 10 | Full: 0x170A
+/// Department: Wt (0x17) | Opcode: 10 | Full: 0x5C0A
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 10)]
@@ -267,7 +267,7 @@ public class PROTO_NC_WT_MOB_KILLCOUNT_SET_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 9 | Full: 0x1709
+/// Department: Wt (0x17) | Opcode: 9 | Full: 0x5C09
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 9)]
@@ -296,7 +296,7 @@ public class PROTO_NC_WT_MOB_KILLCOUNT_SET_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 13 | Full: 0x170D
+/// Department: Wt (0x17) | Opcode: 13 | Full: 0x5C0D
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 13)]
@@ -316,7 +316,7 @@ public class PROTO_NC_WT_MOBINC_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Wt (0x17) | Opcode: 12 | Full: 0x170C
+/// Department: Wt (0x17) | Opcode: 12 | Full: 0x5C0C
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Wt, 12)]

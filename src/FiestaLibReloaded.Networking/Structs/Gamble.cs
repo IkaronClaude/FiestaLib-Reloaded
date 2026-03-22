@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 15 | Full: 0x2F0F
+/// Department: Gamble (0x2F) | Opcode: 15 | Full: 0xBC0F
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 15)]
@@ -25,7 +25,7 @@ public class PROTO_NC_GAMBLE_COIN_BUY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 4 | Full: 0x2F04
+/// Department: Gamble (0x2F) | Opcode: 4 | Full: 0xBC04
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 4)]
@@ -45,7 +45,7 @@ public class PROTO_NC_GAMBLE_COIN_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 18 | Full: 0x2F12
+/// Department: Gamble (0x2F) | Opcode: 18 | Full: 0xBC12
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 18)]
@@ -71,7 +71,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_BUY_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 17 | Full: 0x2F11
+/// Department: Gamble (0x2F) | Opcode: 17 | Full: 0xBC11
 /// sizeof = 32
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 17)]
@@ -106,7 +106,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_BUY_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 22 | Full: 0x2F16
+/// Department: Gamble (0x2F) | Opcode: 22 | Full: 0xBC16
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 22)]
@@ -132,7 +132,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_SELL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 21 | Full: 0x2F15
+/// Department: Gamble (0x2F) | Opcode: 21 | Full: 0xBC15
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 21)]
@@ -161,7 +161,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_SELL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 26 | Full: 0x2F1A
+/// Department: Gamble (0x2F) | Opcode: 26 | Full: 0xBC1A
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 26)]
@@ -190,7 +190,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_USE_COINITEM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 25 | Full: 0x2F19
+/// Department: Gamble (0x2F) | Opcode: 25 | Full: 0xBC19
 /// sizeof = 24
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 25)]
@@ -219,7 +219,7 @@ public class PROTO_NC_GAMBLE_COIN_DB_USE_COINITEM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 27 | Full: 0x2F1B
+/// Department: Gamble (0x2F) | Opcode: 27 | Full: 0xBC1B
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 27)]
@@ -239,7 +239,7 @@ public class PROTO_NC_GAMBLE_COIN_USE_COINITEM_MESSAGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 13 | Full: 0x2F0D
+/// Department: Gamble (0x2F) | Opcode: 13 | Full: 0xBC0D
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 13)]
@@ -259,7 +259,7 @@ public class PROTO_NC_GAMBLE_COIN_VIPCARD_UI_OPEN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 110 | Full: 0x2F6E
+/// Department: Gamble (0x2F) | Opcode: 110 | Full: 0xBC6E
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 110)]
@@ -291,7 +291,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_ALL_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 107 | Full: 0x2F6B
+/// Department: Gamble (0x2F) | Opcode: 107 | Full: 0xBC6B
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 107)]
@@ -308,7 +308,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_ALL_RANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 128 | Full: 0x2F80
+/// Department: Gamble (0x2F) | Opcode: 128 | Full: 0xBC80
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 128)]
@@ -329,7 +329,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BET_START_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 114 | Full: 0x2F72
+/// Department: Gamble (0x2F) | Opcode: 114 | Full: 0xBC72
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 114)]
@@ -352,7 +352,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 117 | Full: 0x2F75
+/// Department: Gamble (0x2F) | Opcode: 117 | Full: 0xBC75
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 117)]
@@ -375,7 +375,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_CANCEL_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 118 | Full: 0x2F76
+/// Department: Gamble (0x2F) | Opcode: 118 | Full: 0xBC76
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 118)]
@@ -398,7 +398,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_CANCEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 116 | Full: 0x2F74
+/// Department: Gamble (0x2F) | Opcode: 116 | Full: 0xBC74
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 116)]
@@ -421,7 +421,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_CANCEL_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 115 | Full: 0x2F73
+/// Department: Gamble (0x2F) | Opcode: 115 | Full: 0xBC73
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 115)]
@@ -444,7 +444,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 113 | Full: 0x2F71
+/// Department: Gamble (0x2F) | Opcode: 113 | Full: 0xBC71
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 113)]
@@ -467,7 +467,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BETTING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 112 | Full: 0x2F70
+/// Department: Gamble (0x2F) | Opcode: 112 | Full: 0xBC70
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 112)]
@@ -499,7 +499,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_CURR_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 111 | Full: 0x2F6F
+/// Department: Gamble (0x2F) | Opcode: 111 | Full: 0xBC6F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 111)]
@@ -516,7 +516,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_CURR_RANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 109 | Full: 0x2F6D
+/// Department: Gamble (0x2F) | Opcode: 109 | Full: 0xBC6D
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 109)]
@@ -551,7 +551,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DB_ALL_RANK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 108 | Full: 0x2F6C
+/// Department: Gamble (0x2F) | Opcode: 108 | Full: 0xBC6C
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 108)]
@@ -571,7 +571,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DB_ALL_RANK_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 121 | Full: 0x2F79
+/// Department: Gamble (0x2F) | Opcode: 121 | Full: 0xBC79
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 121)]
@@ -609,7 +609,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DB_DICE_ROLL_RESULT_ACK : IFiestaPacket
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 122 | Full: 0x2F7A
+/// Department: Gamble (0x2F) | Opcode: 122 | Full: 0xBC7A
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 122)]
@@ -644,7 +644,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DB_DICE_ROLL_RESULT_LOG_CMD : IFiestaPa
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 120 | Full: 0x2F78
+/// Department: Gamble (0x2F) | Opcode: 120 | Full: 0xBC78
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 120)]
@@ -679,7 +679,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DB_DICE_ROLL_RESULT_REQ : IFiestaPacket
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 119 | Full: 0x2F77
+/// Department: Gamble (0x2F) | Opcode: 119 | Full: 0xBC77
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 119)]
@@ -699,7 +699,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DICE_ROLL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 123 | Full: 0x2F7B
+/// Department: Gamble (0x2F) | Opcode: 123 | Full: 0xBC7B
 /// sizeof = 5
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 123)]
@@ -722,7 +722,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DICE_ROLL_RESULT_CMD : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 124 | Full: 0x2F7C
+/// Department: Gamble (0x2F) | Opcode: 124 | Full: 0xBC7C
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 124)]
@@ -751,7 +751,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_DICE_ROLL_RESULT_EMOTION_CMD : IFiestaP
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 103 | Full: 0x2F67
+/// Department: Gamble (0x2F) | Opcode: 103 | Full: 0xBC67
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 103)]
@@ -783,7 +783,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_BETTING_INFO_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 101 | Full: 0x2F65
+/// Department: Gamble (0x2F) | Opcode: 101 | Full: 0xBC65
 /// sizeof = 50
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 101)]
@@ -837,7 +837,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 102 | Full: 0x2F66
+/// Department: Gamble (0x2F) | Opcode: 102 | Full: 0xBC66
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 102)]
@@ -857,7 +857,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_JOIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 100 | Full: 0x2F64
+/// Department: Gamble (0x2F) | Opcode: 100 | Full: 0xBC64
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 100)]
@@ -883,7 +883,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 105 | Full: 0x2F69
+/// Department: Gamble (0x2F) | Opcode: 105 | Full: 0xBC69
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 105)]
@@ -903,7 +903,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 106 | Full: 0x2F6A
+/// Department: Gamble (0x2F) | Opcode: 106 | Full: 0xBC6A
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 106)]
@@ -926,7 +926,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_LEAVE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 127 | Full: 0x2F7F
+/// Department: Gamble (0x2F) | Opcode: 127 | Full: 0xBC7F
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 127)]
@@ -955,7 +955,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_LARGE_AMOUNT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 129 | Full: 0x2F81
+/// Department: Gamble (0x2F) | Opcode: 129 | Full: 0xBC81
 /// sizeof = 7
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 129)]
@@ -981,7 +981,7 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_TIMER_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 28 | Full: 0x2F1C
+/// Department: Gamble (0x2F) | Opcode: 28 | Full: 0xBC1C
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 28)]
@@ -1004,7 +1004,7 @@ public class PROTO_NC_GAMBLE_ENTER_PLAYER_DIRECT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 5 | Full: 0x2F05
+/// Department: Gamble (0x2F) | Opcode: 5 | Full: 0xBC05
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 5)]
@@ -1024,7 +1024,7 @@ public class PROTO_NC_GAMBLE_EXCHANGECOIN_CHANGE_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 11 | Full: 0x2F0B
+/// Department: Gamble (0x2F) | Opcode: 11 | Full: 0xBC0B
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 11)]
@@ -1047,7 +1047,7 @@ public class PROTO_NC_GAMBLE_EXCHANGEDCOIN_DB_INFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 10 | Full: 0x2F0A
+/// Department: Gamble (0x2F) | Opcode: 10 | Full: 0xBC0A
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 10)]
@@ -1070,7 +1070,7 @@ public class PROTO_NC_GAMBLE_EXCHANGEDCOIN_DB_INFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 9 | Full: 0x2F09
+/// Department: Gamble (0x2F) | Opcode: 9 | Full: 0xBC09
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 9)]
@@ -1090,7 +1090,7 @@ public class PROTO_NC_GAMBLE_EXCHANGEDCOIN_INIT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 30 | Full: 0x2F1E
+/// Department: Gamble (0x2F) | Opcode: 30 | Full: 0xBC1E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 30)]
@@ -1113,7 +1113,7 @@ public class PROTO_NC_GAMBLE_PLAYERACT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 214 | Full: 0x2FD6
+/// Department: Gamble (0x2F) | Opcode: 214 | Full: 0xBCD6
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 214)]
@@ -1151,7 +1151,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_DB_GAMEINFO_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 213 | Full: 0x2FD5
+/// Department: Gamble (0x2F) | Opcode: 213 | Full: 0xBCD5
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 213)]
@@ -1172,7 +1172,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_DB_GAMEINFO_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 212 | Full: 0x2FD4
+/// Department: Gamble (0x2F) | Opcode: 212 | Full: 0xBCD4
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 212)]
@@ -1198,7 +1198,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_DB_RESULT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 211 | Full: 0x2FD3
+/// Department: Gamble (0x2F) | Opcode: 211 | Full: 0xBCD3
 /// sizeof = 36
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 211)]
@@ -1247,7 +1247,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_DB_RESULT_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 201 | Full: 0x2FC9
+/// Department: Gamble (0x2F) | Opcode: 201 | Full: 0xBCC9
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 201)]
@@ -1270,7 +1270,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_GAME_JOIN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 200 | Full: 0x2FC8
+/// Department: Gamble (0x2F) | Opcode: 200 | Full: 0xBCC8
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 200)]
@@ -1296,7 +1296,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_GAME_JOIN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 203 | Full: 0x2FCB
+/// Department: Gamble (0x2F) | Opcode: 203 | Full: 0xBCCB
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 203)]
@@ -1316,7 +1316,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_GAME_LEAVE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 216 | Full: 0x2FD8
+/// Department: Gamble (0x2F) | Opcode: 216 | Full: 0xBCD8
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 216)]
@@ -1337,7 +1337,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_JACKPOTINFO_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 218 | Full: 0x2FDA
+/// Department: Gamble (0x2F) | Opcode: 218 | Full: 0xBCDA
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 218)]
@@ -1366,7 +1366,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_JACKPOTRANKING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 221 | Full: 0x2FDD
+/// Department: Gamble (0x2F) | Opcode: 221 | Full: 0xBCDD
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 221)]
@@ -1389,7 +1389,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_SOMEONE_GET_JACKPOT_CMD : IFiestaPacket
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 205 | Full: 0x2FCD
+/// Department: Gamble (0x2F) | Opcode: 205 | Full: 0xBCCD
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 205)]
@@ -1409,7 +1409,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_START_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 204 | Full: 0x2FCC
+/// Department: Gamble (0x2F) | Opcode: 204 | Full: 0xBCCC
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 204)]
@@ -1429,7 +1429,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_START_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 207 | Full: 0x2FCF
+/// Department: Gamble (0x2F) | Opcode: 207 | Full: 0xBCCF
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 207)]
@@ -1452,7 +1452,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_STOPBUTTON_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 209 | Full: 0x2FD1
+/// Department: Gamble (0x2F) | Opcode: 209 | Full: 0xBCD1
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 209)]
@@ -1481,7 +1481,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_WHEELSTOP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 220 | Full: 0x2FDC
+/// Department: Gamble (0x2F) | Opcode: 220 | Full: 0xBCDC
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 220)]
@@ -1510,7 +1510,7 @@ public class PROTO_NC_GAMBLE_SLOTMACHINE_WINRANKING_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 24 | Full: 0x2F18
+/// Department: Gamble (0x2F) | Opcode: 24 | Full: 0xBC18
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 24)]
@@ -1537,7 +1537,7 @@ public class PROTO_NC_GAMBLE_TYPE_AND_WHERE_STAND_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 23 | Full: 0x2F17
+/// Department: Gamble (0x2F) | Opcode: 23 | Full: 0xBC17
 /// sizeof = 2
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 23)]
@@ -1557,7 +1557,7 @@ public class PROTO_NC_GAMBLE_TYPE_AND_WHERE_STAND_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 29 | Full: 0x2F1D
+/// Department: Gamble (0x2F) | Opcode: 29 | Full: 0xBC1D
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 29)]
@@ -1583,7 +1583,7 @@ public class PROTO_NC_GAMBLE_WORLD_PREVMAPNAME_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Gamble (0x2F) | Opcode: 1 | Full: 0x2F01
+/// Department: Gamble (0x2F) | Opcode: 1 | Full: 0xBC01
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Gamble, 1)]

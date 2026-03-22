@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 15 | Full: 0x310F
+/// Department: Collect (0x31) | Opcode: 15 | Full: 0xC40F
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 15)]
@@ -31,7 +31,7 @@ public class PROTO_NC_COLLECT_BOOKMARK_REGIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 14 | Full: 0x310E
+/// Department: Collect (0x31) | Opcode: 14 | Full: 0xC40E
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 14)]
@@ -63,7 +63,7 @@ public class PROTO_NC_COLLECT_BOOKMARK_REGIST_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 13 | Full: 0x310D
+/// Department: Collect (0x31) | Opcode: 13 | Full: 0xC40D
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 13)]
@@ -92,7 +92,7 @@ public class PROTO_NC_COLLECT_BOOKMARK_REGIST_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 12 | Full: 0x310C
+/// Department: Collect (0x31) | Opcode: 12 | Full: 0xC40C
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 12)]
@@ -115,7 +115,7 @@ public class PROTO_NC_COLLECT_BOOKMARK_REGIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 7 | Full: 0x3107
+/// Department: Collect (0x31) | Opcode: 7 | Full: 0xC407
 /// sizeof = 106
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 7)]
@@ -141,7 +141,7 @@ public class PROTO_NC_COLLECT_CARDOPEN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 11 | Full: 0x310B
+/// Department: Collect (0x31) | Opcode: 11 | Full: 0xC40B
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 11)]
@@ -173,7 +173,7 @@ public class PROTO_NC_COLLECT_CARDREGIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 8 | Full: 0x3108
+/// Department: Collect (0x31) | Opcode: 8 | Full: 0xC408
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 8)]
@@ -193,7 +193,7 @@ public class PROTO_NC_COLLECT_CARDREGIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 5 | Full: 0x3105
+/// Department: Collect (0x31) | Opcode: 5 | Full: 0xC405
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 5)]
@@ -219,7 +219,7 @@ public class PROTO_NC_COLLECT_PEEPING_COLLECT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 6 | Full: 0x3106
+/// Department: Collect (0x31) | Opcode: 6 | Full: 0xC406
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 6)]
@@ -245,7 +245,7 @@ public class PROTO_NC_COLLECT_PEEPING_COLLECT_BOOKMARK_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 3 | Full: 0x3103
+/// Department: Collect (0x31) | Opcode: 3 | Full: 0xC403
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 3)]
@@ -277,7 +277,7 @@ public class PROTO_NC_COLLECT_PEEPING_DB_COLLECT_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 4 | Full: 0x3104
+/// Department: Collect (0x31) | Opcode: 4 | Full: 0xC404
 /// sizeof = 34
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 4)]
@@ -309,7 +309,7 @@ public class PROTO_NC_COLLECT_PEEPING_DB_COLLECT_BOOKMARK_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 2 | Full: 0x3102
+/// Department: Collect (0x31) | Opcode: 2 | Full: 0xC402
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 2)]
@@ -335,7 +335,7 @@ public class PROTO_NC_COLLECT_PEEPING_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 1 | Full: 0x3101
+/// Department: Collect (0x31) | Opcode: 1 | Full: 0xC401
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 1)]
@@ -355,7 +355,7 @@ public class PROTO_NC_COLLECT_PEEPING_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 10 | Full: 0x310A
+/// Department: Collect (0x31) | Opcode: 10 | Full: 0xC40A
 /// sizeof = 18
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 10)]
@@ -384,7 +384,7 @@ public class PROTO_NC_COLLECT_REGIST_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 9 | Full: 0x3109
+/// Department: Collect (0x31) | Opcode: 9 | Full: 0xC409
 /// sizeof = 26
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 9)]
@@ -416,7 +416,7 @@ public class PROTO_NC_COLLECT_REGIST_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 19 | Full: 0x3113
+/// Department: Collect (0x31) | Opcode: 19 | Full: 0xC413
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 19)]
@@ -439,7 +439,7 @@ public class PROTO_NC_COLLECT_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 18 | Full: 0x3112
+/// Department: Collect (0x31) | Opcode: 18 | Full: 0xC412
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 18)]
@@ -468,7 +468,7 @@ public class PROTO_NC_COLLECT_REWARD_DB_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 17 | Full: 0x3111
+/// Department: Collect (0x31) | Opcode: 17 | Full: 0xC411
 /// sizeof = 119
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 17)]
@@ -497,7 +497,7 @@ public class PROTO_NC_COLLECT_REWARD_DB_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: Collect (0x31) | Opcode: 16 | Full: 0x3110
+/// Department: Collect (0x31) | Opcode: 16 | Full: 0xC410
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.Collect, 16)]

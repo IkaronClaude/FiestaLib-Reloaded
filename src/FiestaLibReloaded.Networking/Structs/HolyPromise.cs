@@ -5,7 +5,7 @@ using FiestaLibReloaded.Networking.Enums;
 namespace FiestaLibReloaded.Networking.Structs;
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 21 | Full: 0x2515
+/// Department: HolyPromise (0x25) | Opcode: 21 | Full: 0x9415
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 21)]
@@ -28,7 +28,7 @@ public class PROTO_NC_HOLY_PROMISE_ADD_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 54 | Full: 0x2536
+/// Department: HolyPromise (0x25) | Opcode: 54 | Full: 0x9436
 /// sizeof = 35
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 54)]
@@ -57,7 +57,7 @@ public class PROTO_NC_HOLY_PROMISE_CENTRANSFER_RNG : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 69 | Full: 0x2545
+/// Department: HolyPromise (0x25) | Opcode: 69 | Full: 0x9445
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 69)]
@@ -77,7 +77,7 @@ public class PROTO_NC_HOLY_PROMISE_CLIENT_GET_REMAIN_MONEY_CMD : IFiestaPacketBo
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 37 | Full: 0x2525
+/// Department: HolyPromise (0x25) | Opcode: 37 | Full: 0x9425
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 37)]
@@ -100,7 +100,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_CHAR_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 36 | Full: 0x2524
+/// Department: HolyPromise (0x25) | Opcode: 36 | Full: 0x9424
 /// sizeof = 4
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 36)]
@@ -120,7 +120,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_CHAR_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 35 | Full: 0x2523
+/// Department: HolyPromise (0x25) | Opcode: 35 | Full: 0x9423
 /// sizeof = 30
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 35)]
@@ -149,7 +149,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_DOWN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 34 | Full: 0x2522
+/// Department: HolyPromise (0x25) | Opcode: 34 | Full: 0x9422
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 34)]
@@ -175,7 +175,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_DOWN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 33 | Full: 0x2521
+/// Department: HolyPromise (0x25) | Opcode: 33 | Full: 0x9421
 /// sizeof = 11
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 33)]
@@ -204,7 +204,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 32 | Full: 0x2520
+/// Department: HolyPromise (0x25) | Opcode: 32 | Full: 0x9420
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 32)]
@@ -230,7 +230,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_DEL_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 63 | Full: 0x253F
+/// Department: HolyPromise (0x25) | Opcode: 63 | Full: 0x943F
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 63)]
@@ -256,7 +256,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_GET_CEN_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 62 | Full: 0x253E
+/// Department: HolyPromise (0x25) | Opcode: 62 | Full: 0x943E
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 62)]
@@ -276,7 +276,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_GET_CEN_REWARD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 41 | Full: 0x2529
+/// Department: HolyPromise (0x25) | Opcode: 41 | Full: 0x9429
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 41)]
@@ -314,7 +314,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_GET_MEMBER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 68 | Full: 0x2544
+/// Department: HolyPromise (0x25) | Opcode: 68 | Full: 0x9444
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 68)]
@@ -337,7 +337,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_GET_REMAIN_MONEY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 39 | Full: 0x2527
+/// Department: HolyPromise (0x25) | Opcode: 39 | Full: 0x9427
 /// sizeof = 48
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 39)]
@@ -363,7 +363,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_GET_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 43 | Full: 0x252B
+/// Department: HolyPromise (0x25) | Opcode: 43 | Full: 0x942B
 /// sizeof = 9
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 43)]
@@ -396,7 +396,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 42 | Full: 0x252A
+/// Department: HolyPromise (0x25) | Opcode: 42 | Full: 0x942A
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 42)]
@@ -422,7 +422,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_REWARD_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 45 | Full: 0x252D
+/// Department: HolyPromise (0x25) | Opcode: 45 | Full: 0x942D
 /// sizeof = 14
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 45)]
@@ -451,7 +451,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_SET_DATE_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 44 | Full: 0x252C
+/// Department: HolyPromise (0x25) | Opcode: 44 | Full: 0x942C
 /// sizeof = 12
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 44)]
@@ -477,7 +477,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_SET_DATE_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 31 | Full: 0x251F
+/// Department: HolyPromise (0x25) | Opcode: 31 | Full: 0x941F
 /// sizeof = 86
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 31)]
@@ -503,7 +503,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_SET_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 30 | Full: 0x251E
+/// Department: HolyPromise (0x25) | Opcode: 30 | Full: 0x941E
 /// sizeof = 84
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 30)]
@@ -526,7 +526,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_SET_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 67 | Full: 0x2543
+/// Department: HolyPromise (0x25) | Opcode: 67 | Full: 0x9443
 /// sizeof = 16
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 67)]
@@ -552,7 +552,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_WITHDRAW_CEN_REWARD_ACK : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 66 | Full: 0x2542
+/// Department: HolyPromise (0x25) | Opcode: 66 | Full: 0x9442
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 66)]
@@ -572,7 +572,7 @@ public class PROTO_NC_HOLY_PROMISE_DB_WITHDRAW_CEN_REWARD_REQ : IFiestaPacketBod
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 24 | Full: 0x2518
+/// Department: HolyPromise (0x25) | Opcode: 24 | Full: 0x9418
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 24)]
@@ -595,7 +595,7 @@ public class PROTO_NC_HOLY_PROMISE_DEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 11 | Full: 0x250B
+/// Department: HolyPromise (0x25) | Opcode: 11 | Full: 0x940B
 /// sizeof = 22
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 11)]
@@ -618,7 +618,7 @@ public class PROTO_NC_HOLY_PROMISE_DEL_DOWN_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 10 | Full: 0x250A
+/// Department: HolyPromise (0x25) | Opcode: 10 | Full: 0x940A
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 10)]
@@ -638,7 +638,7 @@ public class PROTO_NC_HOLY_PROMISE_DEL_DOWN_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 7 | Full: 0x2507
+/// Department: HolyPromise (0x25) | Opcode: 7 | Full: 0x9407
 /// sizeof = 3
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 7)]
@@ -661,7 +661,7 @@ public class PROTO_NC_HOLY_PROMISE_DEL_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 6 | Full: 0x2506
+/// Department: HolyPromise (0x25) | Opcode: 6 | Full: 0x9406
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 6)]
@@ -678,7 +678,7 @@ public class PROTO_NC_HOLY_PROMISE_DEL_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 61 | Full: 0x253D
+/// Department: HolyPromise (0x25) | Opcode: 61 | Full: 0x943D
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 61)]
@@ -701,7 +701,7 @@ public class PROTO_NC_HOLY_PROMISE_GET_CEN_REWARD_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 25 | Full: 0x2519
+/// Department: HolyPromise (0x25) | Opcode: 25 | Full: 0x9419
 /// sizeof = 21
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 25)]
@@ -724,7 +724,7 @@ public class PROTO_NC_HOLY_PROMISE_LEVEL_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 20 | Full: 0x2514
+/// Department: HolyPromise (0x25) | Opcode: 20 | Full: 0x9414
 /// sizeof = 29
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 20)]
@@ -759,7 +759,7 @@ public class PROTO_NC_HOLY_PROMISE_LIST_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 22 | Full: 0x2516
+/// Department: HolyPromise (0x25) | Opcode: 22 | Full: 0x9416
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 22)]
@@ -779,7 +779,7 @@ public class PROTO_NC_HOLY_PROMISE_LOGIN_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 23 | Full: 0x2517
+/// Department: HolyPromise (0x25) | Opcode: 23 | Full: 0x9417
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 23)]
@@ -799,7 +799,7 @@ public class PROTO_NC_HOLY_PROMISE_LOGOUT_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 50 | Full: 0x2532
+/// Department: HolyPromise (0x25) | Opcode: 50 | Full: 0x9432
 /// sizeof = 8
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 50)]
@@ -822,7 +822,7 @@ public class PROTO_NC_HOLY_PROMISE_MY_UP_ZONE : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 53 | Full: 0x2535
+/// Department: HolyPromise (0x25) | Opcode: 53 | Full: 0x9435
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 53)]
@@ -845,7 +845,7 @@ public class PROTO_NC_HOLY_PROMISE_MYUPPER_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 52 | Full: 0x2534
+/// Department: HolyPromise (0x25) | Opcode: 52 | Full: 0x9434
 /// sizeof = 6
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 52)]
@@ -865,7 +865,7 @@ public class PROTO_NC_HOLY_PROMISE_MYUPPER_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 26 | Full: 0x251A
+/// Department: HolyPromise (0x25) | Opcode: 26 | Full: 0x941A
 /// sizeof = 1
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 26)]
@@ -886,7 +886,7 @@ public class PROTO_NC_HOLY_PROMISE_REWARD_ITEM_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 27 | Full: 0x251B
+/// Department: HolyPromise (0x25) | Opcode: 27 | Full: 0x941B
 /// sizeof = 28
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 27)]
@@ -909,7 +909,7 @@ public class PROTO_NC_HOLY_PROMISE_REWARD_MONEY_CMD : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 2 | Full: 0x2502
+/// Department: HolyPromise (0x25) | Opcode: 2 | Full: 0x9402
 /// sizeof = 68
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 2)]
@@ -938,7 +938,7 @@ public class PROTO_NC_HOLY_PROMISE_SET_UP_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 5 | Full: 0x2505
+/// Department: HolyPromise (0x25) | Opcode: 5 | Full: 0x9405
 /// sizeof = 41
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 5)]
@@ -964,7 +964,7 @@ public class PROTO_NC_HOLY_PROMISE_SET_UP_CONFIRM_ACK : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 3 | Full: 0x2503
+/// Department: HolyPromise (0x25) | Opcode: 3 | Full: 0x9403
 /// sizeof = 20
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 3)]
@@ -984,7 +984,7 @@ public class PROTO_NC_HOLY_PROMISE_SET_UP_CONFIRM_ING : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 4 | Full: 0x2504
+/// Department: HolyPromise (0x25) | Opcode: 4 | Full: 0x9404
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 4)]
@@ -1007,7 +1007,7 @@ public class PROTO_NC_HOLY_PROMISE_SET_UP_CONFIRM_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 1 | Full: 0x2501
+/// Department: HolyPromise (0x25) | Opcode: 1 | Full: 0x9401
 /// sizeof = 40
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 1)]
@@ -1030,7 +1030,7 @@ public class PROTO_NC_HOLY_PROMISE_SET_UP_REQ : IFiestaPacketBody
 }
 
 /// <summary>
-/// Department: HolyPromise (0x25) | Opcode: 65 | Full: 0x2541
+/// Department: HolyPromise (0x25) | Opcode: 65 | Full: 0x9441
 /// sizeof = 10
 /// </summary>
 [FiestaOpcode(ProtocolCommand.HolyPromise, 65)]
