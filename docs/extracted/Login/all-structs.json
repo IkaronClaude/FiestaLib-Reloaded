@@ -1,0 +1,2242 @@
+{
+  "protocol_structs": {
+    "PROTO_NC_OPTOOL_CONNECT_BRIF_ACK": {
+      "Name": "PROTO_NC_OPTOOL_CONNECT_BRIF_ACK",
+      "SizeOf": 170,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "my_server_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "count",
+          "offset": 2,
+          "type": "unsigned short[2][2][21]",
+          "size": 168
+        }
+      ]
+    },
+    "PROTO_NC_MISC_USER_COUNT_CMD": {
+      "Name": "PROTO_NC_MISC_USER_COUNT_CMD",
+      "SizeOf": 4,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "NumOfUser",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "MaxOfUser",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_ACK": {
+      "Name": "PROTO_NC_USER_LOGIN_ACK",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "numofworld",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "worldinfo",
+          "offset": 1,
+          "type": "PROTO_NC_USER_LOGIN_ACK::WorldInfo[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_LIST_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_LIST_CMD",
+      "SizeOf": 3,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "handle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "count",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "infoList",
+          "offset": 3,
+          "type": "ABSTATE_INFORMATION[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_WORLDSELECT_ACK": {
+      "Name": "PROTO_NC_USER_WORLDSELECT_ACK",
+      "SizeOf": 83,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "worldstatus",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "ip",
+          "offset": 1,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "port",
+          "offset": 17,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "validate_new",
+          "offset": 19,
+          "type": "unsigned short[32]",
+          "size": 64
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_WEDDINGDATA_ACK": {
+      "Name": "PROTO_NC_CHAR_WEDDINGDATA_ACK",
+      "SizeOf": 43,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "header",
+          "offset": 0,
+          "type": "NETPACKETZONEHEADER",
+          "size": 6
+        },
+        {
+          "name": "Error",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "Status",
+          "offset": 8,
+          "type": "PROTO_NC_CHAR_WEDDINGDATA_ACK::\u003Cunnamed-type-Status\u003E",
+          "size": 1
+        },
+        {
+          "name": "When",
+          "offset": 9,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "SubWhen",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "ApplicationLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "DelayLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "DivorceLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "NewlyLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "Partner",
+          "offset": 17,
+          "type": "PROTO_NC_CHAR_WEDDINGDATA_ACK::\u003Cunnamed-type-Partner\u003E",
+          "size": 24
+        },
+        {
+          "name": "WeddingCount",
+          "offset": 41,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "RefusalCount",
+          "offset": 42,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_RDY_SEND": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_RDY_SEND",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_CONNECTCUT_CMD": {
+      "Name": "PROTO_NC_USER_CONNECTCUT_CMD",
+      "SizeOf": 2,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "reason",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_CONNECTCUT_CMD_SEND": {
+      "Name": "PROTO_NC_USER_CONNECTCUT_CMD_SEND",
+      "SizeOf": 5,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "cmd",
+          "offset": 3,
+          "type": "PROTO_NC_USER_CONNECTCUT_CMD",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_SEED_ACK": {
+      "Name": "PROTO_NC_MISC_SEED_ACK",
+      "SizeOf": 2,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "seed",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_HEARTBEAT_REQ_SEND": {
+      "Name": "PROTO_NC_MISC_HEARTBEAT_REQ_SEND",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_CREATE_OTP_REQ": {
+      "Name": "PROTO_NC_USER_CREATE_OTP_REQ",
+      "SizeOf": 266,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "hWM",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sUserID",
+          "offset": 6,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "nClientIP",
+          "offset": 262,
+          "type": "in_addr",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_MISC_DELIVER_WM_LOGIN_ACDB_CMD": {
+      "Name": "PROTO_NC_MISC_DELIVER_WM_LOGIN_ACDB_CMD",
+      "SizeOf": 2,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "packet_size",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "packet",
+          "offset": 2,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_WILLLOGIN_REQ": {
+      "Name": "PROTO_NC_USER_WILLLOGIN_REQ",
+      "SizeOf": 347,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "willlogin_worldno",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "usrregnum",
+          "offset": 3,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "userid",
+          "offset": 7,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "validate_new",
+          "offset": 263,
+          "type": "unsigned short[32]",
+          "size": 64
+        },
+        {
+          "name": "spawnapps",
+          "offset": 327,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_CREATE_OTP_ACK": {
+      "Name": "PROTO_NC_USER_CREATE_OTP_ACK",
+      "SizeOf": 36,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "nError",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "hWM",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sOTP",
+          "offset": 4,
+          "type": "Name8",
+          "size": 32
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_ACK": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_ACK",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "error",
+          "offset": 1,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_REQ": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_REQ",
+      "SizeOf": 7,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_to_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_id",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_world_num",
+          "offset": 3,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_zone_num",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "key",
+          "offset": 5,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_HEARTBEAT_ACK_SEND": {
+      "Name": "PROTO_NC_MISC_HEARTBEAT_ACK_SEND",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_DELIVER_WM_LOGIN_ALDB_CMD": {
+      "Name": "PROTO_NC_MISC_DELIVER_WM_LOGIN_ALDB_CMD",
+      "SizeOf": 2,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "packet_size",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "packet",
+          "offset": 2,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_WORLDSELECT_ACK_SEND": {
+      "Name": "PROTO_NC_USER_WORLDSELECT_ACK_SEND",
+      "SizeOf": 86,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "ack",
+          "offset": 3,
+          "type": "PROTO_NC_USER_WORLDSELECT_ACK",
+          "size": 83
+        }
+      ]
+    },
+    "PROTO_NC_USER_WILLLOGIN_ACK": {
+      "Name": "PROTO_NC_USER_WILLLOGIN_ACK",
+      "SizeOf": 348,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "will_login_req",
+          "offset": 0,
+          "type": "PROTO_NC_USER_WILLLOGIN_REQ",
+          "size": 347
+        },
+        {
+          "name": "ok",
+          "offset": 347,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_REQ": {
+      "Name": "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "nWorldNo",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_CONNECT_BRIF_REQ": {
+      "Name": "PROTO_NC_OPTOOL_CONNECT_BRIF_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_ACK": {
+      "Name": "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_ACK",
+      "SizeOf": 13,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "nWorldNo",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "RateTable",
+          "offset": 1,
+          "type": "LOGIN_USER_RATABLE",
+          "size": 12
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_OPTOOL_LOGIN_USER_RATABLE_GET_ACK\u003E",
+      "SizeOf": 16,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_OPTOOL_S2SCONNECT_LIST_ACK": {
+      "Name": "PROTO_NC_OPTOOL_S2SCONNECT_LIST_ACK",
+      "SizeOf": 4,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "my_server_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "num_of_connections",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "connection_info",
+          "offset": 4,
+          "type": "SERVER_CONN_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_CLOSE_SERVER_ACK": {
+      "Name": "PROTO_NC_OPTOOL_CLOSE_SERVER_ACK",
+      "SizeOf": 2,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "error",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_S2SCONNECT_LIST_REQ": {
+      "Name": "PROTO_NC_OPTOOL_S2SCONNECT_LIST_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_SET_CMD": {
+      "Name": "PROTO_NC_OPTOOL_LOGIN_USER_RATABLE_SET_CMD",
+      "SizeOf": 13,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "nWorldNo",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "RateTable",
+          "offset": 1,
+          "type": "LOGIN_USER_RATABLE",
+          "size": 12
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_LOGON_PROCESS_TIME_VIEW_ACK": {
+      "Name": "PROTO_NC_OPTOOL_LOGON_PROCESS_TIME_VIEW_ACK",
+      "SizeOf": 24,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "Connect_Count",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "Connect_Time",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "Login_Count",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "Login_Time",
+          "offset": 12,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "IPBlock_Count",
+          "offset": 16,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "IPBlock_Time",
+          "offset": 20,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_OPTOOL_LOGON_PROCESS_TIME_VIEW_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_OPTOOL_LOGON_PROCESS_TIME_VIEW_ACK\u003E",
+      "SizeOf": 27,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_LOGINFAIL_ACK": {
+      "Name": "PROTO_NC_USER_LOGINFAIL_ACK",
+      "SizeOf": 2,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "error",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGIN": {
+      "Name": "PROTO_NC_LOG_USER_LOGIN",
+      "SizeOf": 9,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "usrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "worldnum",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "ip",
+          "offset": 5,
+          "type": "unsigned char[4]",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_NETMARBLE_REQ": {
+      "Name": "PROTO_NC_USER_LOGIN_NETMARBLE_REQ",
+      "SizeOf": 2,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "CPCookieLength",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "CPCookie",
+          "offset": 2,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_KICKOFFFROMWORLD_CMD": {
+      "Name": "PROTO_NC_USER_KICKOFFFROMWORLD_CMD",
+      "SizeOf": 4,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "usrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_KICKOFFFROMWORLD_CMD_SEND": {
+      "Name": "PROTO_NC_USER_KICKOFFFROMWORLD_CMD_SEND",
+      "SizeOf": 13,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "netpacketzoneheader",
+          "offset": 3,
+          "type": "NETPACKETZONEHEADER",
+          "size": 6
+        },
+        {
+          "name": "cmd",
+          "offset": 9,
+          "type": "PROTO_NC_USER_KICKOFFFROMWORLD_CMD",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_PASSWORD_CHECK_REQ": {
+      "Name": "PROTO_NC_USER_US_PASSWORD_CHECK_REQ",
+      "SizeOf": 338,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "sUserName",
+          "offset": 2,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "sPassword",
+          "offset": 262,
+          "type": "char[36]",
+          "size": 36
+        },
+        {
+          "name": "sUserIP",
+          "offset": 298,
+          "type": "char[20]",
+          "size": 20
+        },
+        {
+          "name": "spawnapps",
+          "offset": 318,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_REQ": {
+      "Name": "PROTO_NC_USER_LOGIN_REQ",
+      "SizeOf": 272,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "user",
+          "offset": 0,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 256,
+          "type": "Name4",
+          "size": 16
+        }
+      ]
+    },
+    "PROTO_NC_USER_PASSWORD_CHECK_REQ": {
+      "Name": "PROTO_NC_USER_PASSWORD_CHECK_REQ",
+      "SizeOf": 274,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "user",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 258,
+          "type": "Name4",
+          "size": 16
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGIN_SEND": {
+      "Name": "PROTO_NC_LOG_USER_LOGIN_SEND",
+      "SizeOf": 12,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "log",
+          "offset": 3,
+          "type": "PROTO_NC_LOG_USER_LOGIN",
+          "size": 9
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_LOGIN_REQ": {
+      "Name": "PROTO_NC_USER_US_LOGIN_REQ",
+      "SizeOf": 316,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "sUserName",
+          "offset": 0,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "sPassword",
+          "offset": 260,
+          "type": "char[36]",
+          "size": 36
+        },
+        {
+          "name": "spawnapps",
+          "offset": 296,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_CLIENT_WRONGVERSION_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_CLIENT_WRONGVERSION_CHECK_ACK",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": []
+    },
+    "PROTO_NC_USER_WORLDSELECT_REQ": {
+      "Name": "PROTO_NC_USER_WORLDSELECT_REQ",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "worldno",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_DB": {
+      "Name": "PROTO_NC_USER_LOGIN_DB",
+      "SizeOf": 9,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "usrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "worldnum",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "ip",
+          "offset": 5,
+          "type": "unsigned char[4]",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_XTRAP_REQ": {
+      "Name": "PROTO_NC_USER_XTRAP_REQ",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "XTrapClientKeyLength",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "XTrapClientKey",
+          "offset": 1,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_WITH_OTP_REQ": {
+      "Name": "PROTO_NC_USER_LOGIN_WITH_OTP_REQ",
+      "SizeOf": 32,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "sOTP",
+          "offset": 0,
+          "type": "Name8",
+          "size": 32
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGINFAIL_ACK_SEND": {
+      "Name": "PROTO_NC_USER_LOGINFAIL_ACK_SEND",
+      "SizeOf": 5,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "ack",
+          "offset": 3,
+          "type": "PROTO_NC_USER_LOGINFAIL_ACK",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_OUTSPARK_REQ": {
+      "Name": "PROTO_NC_USER_LOGIN_OUTSPARK_REQ",
+      "SizeOf": 85,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LogonToken",
+          "offset": 0,
+          "type": "unsigned char[65]",
+          "size": 65
+        },
+        {
+          "name": "spawnapps",
+          "offset": 65,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_CLIENT_RIGHTVERSION_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_CLIENT_RIGHTVERSION_CHECK_ACK",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "XTrapServerKeyLength",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "XTrapServerKey",
+          "offset": 1,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_DB_SEND": {
+      "Name": "PROTO_NC_USER_LOGIN_DB_SEND",
+      "SizeOf": 12,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "db",
+          "offset": 3,
+          "type": "PROTO_NC_USER_LOGIN_DB",
+          "size": 9
+        }
+      ]
+    },
+    "PROTO_NC_USER_CLIENT_VERSION_CHECK_REQ": {
+      "Name": "PROTO_NC_USER_CLIENT_VERSION_CHECK_REQ",
+      "SizeOf": 64,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "sVersionKey",
+          "offset": 0,
+          "type": "char[64]",
+          "size": 64
+        }
+      ]
+    },
+    "PROTO_NC_USER_XTRAP_ACK": {
+      "Name": "PROTO_NC_USER_XTRAP_ACK",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "bSuccess",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_WORLD_STATUS_REQ": {
+      "Name": "PROTO_NC_USER_WORLD_STATUS_REQ",
+      "SizeOf": 1,
+      "department": "USER",
+      "fields": []
+    },
+    "PROTO_NC_USER_PASSWORD_CHECK_REQ_SEND": {
+      "Name": "PROTO_NC_USER_PASSWORD_CHECK_REQ_SEND",
+      "SizeOf": 277,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "req",
+          "offset": 3,
+          "type": "PROTO_NC_USER_PASSWORD_CHECK_REQ",
+          "size": 274
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGINFAIL": {
+      "Name": "PROTO_NC_LOG_USER_LOGINFAIL",
+      "SizeOf": 278,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "userid",
+          "offset": 0,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "userpassword",
+          "offset": 256,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "userip",
+          "offset": 272,
+          "type": "unsigned char[4]",
+          "size": 4
+        },
+        {
+          "name": "error",
+          "offset": 276,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGINFAIL_SEND": {
+      "Name": "PROTO_NC_LOG_USER_LOGINFAIL_SEND",
+      "SizeOf": 281,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "log",
+          "offset": 3,
+          "type": "PROTO_NC_LOG_USER_LOGINFAIL",
+          "size": 278
+        }
+      ]
+    },
+    "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+      "SizeOf": 287,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "id",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 258,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "usrregnum",
+          "offset": 274,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "authid",
+          "offset": 278,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "block",
+          "offset": 279,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "loginable",
+          "offset": 283,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+      "SizeOf": 353,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sUserName",
+          "offset": 8,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "sPassword",
+          "offset": 268,
+          "type": "char[36]",
+          "size": 36
+        },
+        {
+          "name": "sUserIP",
+          "offset": 304,
+          "type": "char[20]",
+          "size": 20
+        },
+        {
+          "name": "nAuthID",
+          "offset": 324,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nBlock",
+          "offset": 325,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "bLoginAble",
+          "offset": 329,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "spawnapps",
+          "offset": 333,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+      "SizeOf": 8,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_FAILURE": {
+      "Name": "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_FAILURE",
+      "SizeOf": 296,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserName",
+          "offset": 0,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "UserIP",
+          "offset": 260,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "spawnapps",
+          "offset": 276,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_GER_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_GER_IS_IP_BLOCK_ACK",
+      "SizeOf": 290,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+          "size": 287
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 287,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 289,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_US_IS_IP_BLOCK_ACK",
+      "SizeOf": 356,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+          "size": 353
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 353,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 355,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+      "SizeOf": 306,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sUserName",
+          "offset": 8,
+          "type": "char[24]",
+          "size": 24
+        },
+        {
+          "name": "sChannel",
+          "offset": 32,
+          "type": "char[254]",
+          "size": 254
+        },
+        {
+          "name": "sUserIP",
+          "offset": 286,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_TW_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_TW_IS_IP_BLOCK_ACK",
+      "SizeOf": 11,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+          "size": 8
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 8,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 10,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_REQ_SEND": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_REQ_SEND",
+      "SizeOf": 10,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        },
+        {
+          "name": "req",
+          "offset": 3,
+          "type": "PROTO_NC_MISC_S2SCONNECTION_REQ",
+          "size": 7
+        }
+      ]
+    },
+    "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_SUCCESS": {
+      "Name": "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_SUCCESS",
+      "SizeOf": 40,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "UserIP",
+          "offset": 4,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "spawnapps",
+          "offset": 20,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_IS_IP_BLOCK_ACK",
+      "SizeOf": 275,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_LOGIN_REQ",
+          "size": 272
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 272,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 274,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_JP_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_JP_IS_IP_BLOCK_ACK",
+      "SizeOf": 309,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+          "size": 306
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 306,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 308,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_CH_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_CH_PASSWORD_CHECK_ACK",
+      "SizeOf": 287,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "id",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 258,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "usrregnum",
+          "offset": 274,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "authid",
+          "offset": 278,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "block",
+          "offset": 279,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "loginable",
+          "offset": 283,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_GER_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_GER_IS_IP_BLOCK_REQ",
+      "SizeOf": 313,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+          "size": 287
+        },
+        {
+          "name": "nUserNo",
+          "offset": 287,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 291,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 293,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_TW_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_TW_IS_IP_BLOCK_REQ",
+      "SizeOf": 34,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+          "size": 8
+        },
+        {
+          "name": "nUserNo",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 12,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 14,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_TEENAGER_CMD": {
+      "Name": "PROTO_NC_USER_TEENAGER_CMD",
+      "SizeOf": 55,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "sUserKey",
+          "offset": 0,
+          "type": "unsigned char[50]",
+          "size": 50
+        },
+        {
+          "name": "nType",
+          "offset": 50,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nMinute",
+          "offset": 51,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_TEENAGER_ACK": {
+      "Name": "PROTO_NC_USER_TEENAGER_ACK",
+      "SizeOf": 313,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "sUserID",
+          "offset": 0,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "nHandle",
+          "offset": 256,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "Data",
+          "offset": 258,
+          "type": "PROTO_NC_USER_TEENAGER_CMD",
+          "size": 55
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_GER_IS_IP_BLOCK_REQ\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_GER_IS_IP_BLOCK_REQ\u003E",
+      "SizeOf": 316,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TW_IS_IP_BLOCK_REQ\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TW_IS_IP_BLOCK_REQ\u003E",
+      "SizeOf": 37,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_US_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_US_IS_IP_BLOCK_REQ",
+      "SizeOf": 379,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+          "size": 353
+        },
+        {
+          "name": "nUserNo",
+          "offset": 353,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 357,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 359,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_JP_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_JP_IS_IP_BLOCK_REQ",
+      "SizeOf": 332,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+          "size": 306
+        },
+        {
+          "name": "nUserNo",
+          "offset": 306,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 310,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 312,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_PASSWORD_CHECK_ACK",
+      "SizeOf": 287,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "id",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 258,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "usrregnum",
+          "offset": 274,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "authid",
+          "offset": 278,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "block",
+          "offset": 279,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "loginable",
+          "offset": 283,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TEENAGER_CMD\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TEENAGER_CMD\u003E",
+      "SizeOf": 58,
+      "department": "DATA",
+      "fields": []
+    }
+  },
+  "referenced_types": {
+    "ABSTATE_INFORMATION": {
+      "Name": "ABSTATE_INFORMATION",
+      "SizeOf": 12,
+      "fields": [
+        {
+          "name": "abstateID",
+          "offset": 0,
+          "type": "ABSTATEINDEX",
+          "size": 0
+        },
+        {
+          "name": "restKeeptime",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "strength",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "Name4": {
+      "Name": "Name4",
+      "SizeOf": 16,
+      "fields": [
+        {
+          "name": "n4_name",
+          "offset": 0,
+          "type": "unsigned char[16]",
+          "size": 16
+        },
+        {
+          "name": "n4_code",
+          "offset": 0,
+          "type": "unsigned long[4]",
+          "size": 16
+        }
+      ]
+    },
+    "NETPACKETZONEHEADER": {
+      "Name": "NETPACKETZONEHEADER",
+      "SizeOf": 6,
+      "fields": [
+        {
+          "name": "clienthandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "charregistnumber",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "ShineDateTime": {
+      "Name": "ShineDateTime",
+      "SizeOf": 4,
+      "fields": [
+        {
+          "name": "year",
+          "offset": 0,
+          "type": "unsigned long:8",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 8
+        },
+        {
+          "name": "month",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 8,
+          "bit_count": 5
+        },
+        {
+          "name": "date",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 13,
+          "bit_count": 6
+        },
+        {
+          "name": "hour",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 19,
+          "bit_count": 6
+        },
+        {
+          "name": "minute",
+          "offset": 0,
+          "type": "unsigned long:7",
+          "size": 0,
+          "bit_offset": 25,
+          "bit_count": 7
+        }
+      ]
+    },
+    "NETCOMMAND": {
+      "Name": "NETCOMMAND",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "protocol",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "str",
+          "offset": 0,
+          "type": "NETCOMMAND::\u003Cunnamed-type-str\u003E",
+          "size": 2
+        }
+      ]
+    },
+    "Name256Byte": {
+      "Name": "Name256Byte",
+      "SizeOf": 256,
+      "fields": [
+        {
+          "name": "n256_name",
+          "offset": 0,
+          "type": "unsigned char[256]",
+          "size": 256
+        },
+        {
+          "name": "n256_code",
+          "offset": 0,
+          "type": "unsigned __int64[32]",
+          "size": 256
+        }
+      ]
+    },
+    "in_addr": {
+      "Name": "in_addr",
+      "SizeOf": 4,
+      "fields": [
+        {
+          "name": "S_un",
+          "offset": 0,
+          "type": "in_addr::\u003Cunnamed-type-S_un\u003E",
+          "size": 4
+        }
+      ]
+    },
+    "NETPACKETHEADER": {
+      "Name": "NETPACKETHEADER",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "clienthandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "Name5": {
+      "Name": "Name5",
+      "SizeOf": 20,
+      "fields": [
+        {
+          "name": "n5_name",
+          "offset": 0,
+          "type": "unsigned char[20]",
+          "size": 20
+        },
+        {
+          "name": "n5_code",
+          "offset": 0,
+          "type": "unsigned long[5]",
+          "size": 20
+        }
+      ]
+    },
+    "Name8": {
+      "Name": "Name8",
+      "SizeOf": 32,
+      "fields": [
+        {
+          "name": "n8_name",
+          "offset": 0,
+          "type": "unsigned char[32]",
+          "size": 32
+        },
+        {
+          "name": "n8_code",
+          "offset": 0,
+          "type": "unsigned long[8]",
+          "size": 32
+        }
+      ]
+    },
+    "LOGIN_USER_RATABLE": {
+      "Name": "LOGIN_USER_RATABLE",
+      "SizeOf": 12,
+      "fields": [
+        {
+          "name": "nWMSUS_1",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWMSUS_2",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWMSUS_3",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWMSUS_4",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWMSUS_5",
+          "offset": 8,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWMSUS_FULL",
+          "offset": 10,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "SERVER_CONN_INFO": {
+      "Name": "SERVER_CONN_INFO",
+      "SizeOf": 7,
+      "fields": [
+        {
+          "name": "connect_server_world",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_server_zone",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_server_id",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_time",
+          "offset": 3,
+          "type": "SHINE_DATETIME",
+          "size": 4
+        }
+      ]
+    },
+    "SHINE_DATETIME": {
+      "Name": "SHINE_DATETIME",
+      "SizeOf": 4,
+      "fields": [
+        {
+          "name": "year",
+          "offset": 0,
+          "type": "unsigned long:4",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 4
+        },
+        {
+          "name": "month",
+          "offset": 0,
+          "type": "unsigned long:4",
+          "size": 0,
+          "bit_offset": 4,
+          "bit_count": 4
+        },
+        {
+          "name": "day",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 8,
+          "bit_count": 5
+        },
+        {
+          "name": "hour",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 13,
+          "bit_count": 5
+        },
+        {
+          "name": "min",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 18,
+          "bit_count": 6
+        },
+        {
+          "name": "sec",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 24,
+          "bit_count": 6
+        }
+      ]
+    }
+  }
+}

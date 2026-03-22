@@ -1,0 +1,3491 @@
+{
+  "protocol_structs": {
+    "PROTO_NC_CHAR_OPTION_SHORTCUTDATA": {
+      "Name": "PROTO_NC_CHAR_OPTION_SHORTCUTDATA",
+      "SizeOf": 1024,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[1024]",
+          "size": 1024
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_HOUSE_CMD": {
+      "Name": "PROTO_NC_CHAR_HOUSE_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_CHAR_MASPUP_CMD": {
+      "Name": "PROTO_NC_CHAR_MASPUP_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_MISC_ITEMSHOP_URL_DB_REQ": {
+      "Name": "PROTO_NC_MISC_ITEMSHOP_URL_DB_REQ",
+      "SizeOf": 8,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nCharNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_ITEMDB_CHARGED_LIST_ACK": {
+      "Name": "PROTO_NC_ITEMDB_CHARGED_LIST_ACK",
+      "SizeOf": 11,
+      "department": "ITEMDB",
+      "fields": [
+        {
+          "name": "packheader",
+          "offset": 0,
+          "type": "NETPACKETZONEHEADER",
+          "size": 6
+        },
+        {
+          "name": "ErrorCode",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nPartMark",
+          "offset": 8,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "NumOfChargedItem",
+          "offset": 9,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "ChargedItemInfoList",
+          "offset": 11,
+          "type": "PROTO_CHARGED_ITEM_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_MISC_ITEMSHOP_URL_DB_ACK": {
+      "Name": "PROTO_NC_MISC_ITEMSHOP_URL_DB_ACK",
+      "SizeOf": 8,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nCharNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nError",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nLen",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sURL",
+          "offset": 8,
+          "type": "char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_GUILD_TOURNAMENT_DB_REWARD_CREATE_REQ": {
+      "Name": "PROTO_NC_GUILD_TOURNAMENT_DB_REWARD_CREATE_REQ",
+      "SizeOf": 12,
+      "department": "GUILD",
+      "fields": [
+        {
+          "name": "nGTNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "OwnerGuildNum",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nItem",
+          "offset": 8,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "ItemOpt",
+          "offset": 12,
+          "type": "PROTO_NC_GUILD_TOURNAMENT_DB_REWARD_CREATE_REQ::ITEM_OPT[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_SOUND": {
+      "Name": "PROTO_NC_CHAR_OPTION_SOUND",
+      "SizeOf": 1,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[1]",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_EMBLEM_CMD": {
+      "Name": "PROTO_NC_CHAR_EMBLEM_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_CHAR_PET_CMD": {
+      "Name": "PROTO_NC_CHAR_PET_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_CHAR_GUILD_CMD": {
+      "Name": "PROTO_NC_CHAR_GUILD_CMD",
+      "SizeOf": 4,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "nGuildNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "Guild",
+          "offset": 4,
+          "type": "GUILD_CLIENT[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_ARENA_CMD": {
+      "Name": "PROTO_NC_CHAR_ARENA_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_CHAR_CHARGEDBUFF_CMD": {
+      "Name": "PROTO_NC_CHAR_CHARGEDBUFF_CMD",
+      "SizeOf": 2,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "NumOfChargedBuff",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "ChargedBuff",
+          "offset": 2,
+          "type": "PROTO_CHARGEDBUFF_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_QUEST_READ_CMD": {
+      "Name": "PROTO_NC_CHAR_QUEST_READ_CMD",
+      "SizeOf": 6,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nNumOfReadQuest",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "QuestReadIDArray",
+          "offset": 6,
+          "type": "unsigned short[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_BASE_CMD": {
+      "Name": "PROTO_NC_CHAR_BASE_CMD",
+      "SizeOf": 105,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "charid",
+          "offset": 4,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "slotno",
+          "offset": 24,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Level",
+          "offset": 25,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Experience",
+          "offset": 26,
+          "type": "unsigned __int64",
+          "size": 8
+        },
+        {
+          "name": "CurPwrStone",
+          "offset": 34,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "CurGrdStone",
+          "offset": 36,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "CurHPStone",
+          "offset": 38,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "CurSPStone",
+          "offset": 40,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "CurHP",
+          "offset": 42,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "CurSP",
+          "offset": 46,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "CurLP",
+          "offset": 50,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "fame",
+          "offset": 54,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "Cen",
+          "offset": 58,
+          "type": "unsigned __int64",
+          "size": 8
+        },
+        {
+          "name": "logininfo",
+          "offset": 66,
+          "type": "PROTO_NC_CHAR_BASE_CMD::LoginLocation",
+          "size": 21
+        },
+        {
+          "name": "statdistribute",
+          "offset": 87,
+          "type": "CHARSTATDISTSTR",
+          "size": 6
+        },
+        {
+          "name": "pkyellowtime",
+          "offset": 93,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "pkcount",
+          "offset": 94,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "prisonmin",
+          "offset": 98,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "adminlevel",
+          "offset": 100,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "flags",
+          "offset": 101,
+          "type": "PROTO_NC_CHAR_BASE_CMD::\u003Cunnamed-type-flags\u003E",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_SKILL_PASSIVE_CMD": {
+      "Name": "PROTO_NC_CHAR_SKILL_PASSIVE_CMD",
+      "SizeOf": 2,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "number",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "passive",
+          "offset": 2,
+          "type": "unsigned short[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_QUEST_DOING_CMD": {
+      "Name": "PROTO_NC_CHAR_QUEST_DOING_CMD",
+      "SizeOf": 6,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "bNeedClear",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nNumOfDoingQuest",
+          "offset": 5,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "QuestDoingArray",
+          "offset": 6,
+          "type": "PLAYER_QUEST_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_SHORTCUTSIZE": {
+      "Name": "PROTO_NC_CHAR_OPTION_SHORTCUTSIZE",
+      "SizeOf": 24,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[24]",
+          "size": 24
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_SINGLE_OPTION_CMD": {
+      "Name": "PROTO_NC_CHAR_SINGLE_OPTION_CMD",
+      "SizeOf": 15,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "resttime",
+          "offset": 4,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "autopick",
+          "offset": 8,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "mystery_vault",
+          "offset": 9,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nChatBan",
+          "offset": 10,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "bFirstJoin",
+          "offset": 14,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_SEAWAR_CMD": {
+      "Name": "PROTO_NC_CHAR_SEAWAR_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": []
+    },
+    "PROTO_NC_CHAR_NEWBIE_GUIDE_VIEW_LIST_CMD": {
+      "Name": "PROTO_NC_CHAR_NEWBIE_GUIDE_VIEW_LIST_CMD",
+      "SizeOf": 1,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "nGuideViewNum",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nGuideViewList",
+          "offset": 1,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_ABSTATE_CMD": {
+      "Name": "PROTO_NC_CHAR_ABSTATE_CMD",
+      "SizeOf": 6,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "number",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "abstate",
+          "offset": 6,
+          "type": "ABSTATEREADBLOCK[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAT_RESTRICT_DB_LIST_CMD": {
+      "Name": "PROTO_NC_CHAT_RESTRICT_DB_LIST_CMD",
+      "SizeOf": 2,
+      "department": "CHAT_RESTRICT",
+      "fields": [
+        {
+          "name": "nChatRestrictListCnt",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "ChatRestrictData",
+          "offset": 2,
+          "type": "PROTO_CHAT_RESTRICT_DB_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_LIST_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_ABSTATE_CHANGE_LIST_CMD",
+      "SizeOf": 3,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "handle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "count",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "infoList",
+          "offset": 3,
+          "type": "ABSTATE_INFORMATION[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHARSAVE_ITEMACTIONCOOLTIME_ACK": {
+      "Name": "PROTO_NC_CHARSAVE_ITEMACTIONCOOLTIME_ACK",
+      "SizeOf": 2,
+      "department": "CHARSAVE",
+      "fields": [
+        {
+          "name": "num",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "group",
+          "offset": 2,
+          "type": "ActionCooltime[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_WINDOWPOS": {
+      "Name": "PROTO_NC_CHAR_OPTION_WINDOWPOS",
+      "SizeOf": 392,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[392]",
+          "size": 392
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_CHESTINFO_CMD": {
+      "Name": "PROTO_NC_CHAR_CHESTINFO_CMD",
+      "SizeOf": 2,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "itemnum",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "location",
+          "offset": 2,
+          "type": "unsigned short[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_SKILL_CMD": {
+      "Name": "PROTO_NC_CHAR_SKILL_CMD",
+      "SizeOf": 9,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "PartMark",
+          "offset": 4,
+          "type": "PARTMARK",
+          "size": 1
+        },
+        {
+          "name": "nMaxNum",
+          "offset": 5,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "number",
+          "offset": 7,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "skill",
+          "offset": 9,
+          "type": "PROTO_SKILLREADBLOCK[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_QUEST_REPEAT_CMD": {
+      "Name": "PROTO_NC_CHAR_QUEST_REPEAT_CMD",
+      "SizeOf": 6,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "chrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nNumOfRepeatQuest",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "QuestRepeatArray",
+          "offset": 6,
+          "type": "PLAYER_QUEST_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_FRIEND_CMD": {
+      "Name": "PROTO_NC_CHAR_FRIEND_CMD",
+      "SizeOf": 2,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "numberoffriend",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "friend_array",
+          "offset": 2,
+          "type": "PROTO_NC_CHAR_FRIEND_CMD_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_VIDEO": {
+      "Name": "PROTO_NC_CHAR_OPTION_VIDEO",
+      "SizeOf": 60,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[60]",
+          "size": 60
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_GAME": {
+      "Name": "PROTO_NC_CHAR_OPTION_GAME",
+      "SizeOf": 64,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[64]",
+          "size": 64
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_OPTION_KEYMAPPING": {
+      "Name": "PROTO_NC_CHAR_OPTION_KEYMAPPING",
+      "SizeOf": 308,
+      "department": "CHAR_OPTION",
+      "fields": [
+        {
+          "name": "Data",
+          "offset": 0,
+          "type": "unsigned char[308]",
+          "size": 308
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_WEDDING_PARTNER_INFO_ACK": {
+      "Name": "PROTO_NC_CHAR_WEDDING_PARTNER_INFO_ACK",
+      "SizeOf": 14,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "header",
+          "offset": 0,
+          "type": "NETPACKETZONEHEADER",
+          "size": 6
+        },
+        {
+          "name": "PartnerInfo",
+          "offset": 6,
+          "type": "PROTO_NC_CHAR_WEDDING_PARTNER_INFO_ACK::\u003Cunnamed-type-PartnerInfo\u003E",
+          "size": 8
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_WEDDINGDATA_ACK": {
+      "Name": "PROTO_NC_CHAR_WEDDINGDATA_ACK",
+      "SizeOf": 43,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "header",
+          "offset": 0,
+          "type": "NETPACKETZONEHEADER",
+          "size": 6
+        },
+        {
+          "name": "Error",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "Status",
+          "offset": 8,
+          "type": "PROTO_NC_CHAR_WEDDINGDATA_ACK::\u003Cunnamed-type-Status\u003E",
+          "size": 1
+        },
+        {
+          "name": "When",
+          "offset": 9,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "SubWhen",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "ApplicationLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "DelayLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "DivorceLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "NewlyLimit",
+          "offset": 13,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "Partner",
+          "offset": 17,
+          "type": "PROTO_NC_CHAR_WEDDINGDATA_ACK::\u003Cunnamed-type-Partner\u003E",
+          "size": 24
+        },
+        {
+          "name": "WeddingCount",
+          "offset": 41,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "RefusalCount",
+          "offset": 42,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_CHAR_FRIEND_CMD_INFO": {
+      "Name": "PROTO_NC_CHAR_FRIEND_CMD_INFO",
+      "SizeOf": 25,
+      "department": "CHAR",
+      "fields": [
+        {
+          "name": "charno",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "charid",
+          "offset": 4,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "flag",
+          "offset": 24,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_MISC_CONNECTER_REQ": {
+      "Name": "PROTO_NC_MISC_CONNECTER_REQ",
+      "SizeOf": 1,
+      "department": "MISC",
+      "fields": []
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_RDY_SEND": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_RDY_SEND",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_CONNECT_BRIF_REQ": {
+      "Name": "PROTO_NC_OPTOOL_CONNECT_BRIF_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_S2SCONNECT_LIST_ACK": {
+      "Name": "PROTO_NC_OPTOOL_S2SCONNECT_LIST_ACK",
+      "SizeOf": 4,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "my_server_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "num_of_connections",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "connection_info",
+          "offset": 4,
+          "type": "SERVER_CONN_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_MAP_USER_LIST_ACK": {
+      "Name": "PROTO_NC_OPTOOL_MAP_USER_LIST_ACK",
+      "SizeOf": 4,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "my_server_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "num_of_list",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "user_info",
+          "offset": 4,
+          "type": "NC_OPTOOL_MAP_USER_LIST_INFO[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_ACK": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_ACK",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "error",
+          "offset": 1,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_S2SCONNECTION_REQ": {
+      "Name": "PROTO_NC_MISC_S2SCONNECTION_REQ",
+      "SizeOf": 7,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_to_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_id",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_world_num",
+          "offset": 3,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "server_from_zone_num",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "key",
+          "offset": 5,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_CLOSE_SERVER_ACK": {
+      "Name": "PROTO_NC_OPTOOL_CLOSE_SERVER_ACK",
+      "SizeOf": 2,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "error",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_HEARTBEAT_ACK_SEND": {
+      "Name": "PROTO_NC_MISC_HEARTBEAT_ACK_SEND",
+      "SizeOf": 3,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "size",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "netcmd",
+          "offset": 1,
+          "type": "NETCOMMAND",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_CONNECT_BRIF_ACK": {
+      "Name": "PROTO_NC_OPTOOL_CONNECT_BRIF_ACK",
+      "SizeOf": 170,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "my_server_id",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "count",
+          "offset": 2,
+          "type": "unsigned short[2][2][21]",
+          "size": 168
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_S2SCONNECT_LIST_REQ": {
+      "Name": "PROTO_NC_OPTOOL_S2SCONNECT_LIST_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_OPTOOL_MAP_USER_LIST_REQ": {
+      "Name": "PROTO_NC_OPTOOL_MAP_USER_LIST_REQ",
+      "SizeOf": 1,
+      "department": "OPTOOL",
+      "fields": [
+        {
+          "name": "echo_data",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+      "SizeOf": 287,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "id",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 258,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "usrregnum",
+          "offset": 274,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "authid",
+          "offset": 278,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "block",
+          "offset": 279,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "loginable",
+          "offset": 283,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_MISC_CHAR_LOGOFF_STATISTICS": {
+      "Name": "PROTO_NC_MISC_CHAR_LOGOFF_STATISTICS",
+      "SizeOf": 21,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "WorldNo",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "UserNo",
+          "offset": 1,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "CharNo",
+          "offset": 5,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "CharClass",
+          "offset": 9,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "CharLevel",
+          "offset": 10,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "CharGetExp",
+          "offset": 11,
+          "type": "unsigned __int64",
+          "size": 8
+        },
+        {
+          "name": "CharPlayMin",
+          "offset": 19,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_MISC_EVENT_L20_DB_ACK": {
+      "Name": "PROTO_NC_MISC_EVENT_L20_DB_ACK",
+      "SizeOf": 13,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nWMHandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nEventNo",
+          "offset": 6,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nCharNo",
+          "offset": 7,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nError",
+          "offset": 11,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_MISC_EVENT_L20_DB_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_MISC_EVENT_L20_DB_ACK\u003E",
+      "SizeOf": 16,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_MISC_EVENT_LONG_TIME_PLAY_CMD": {
+      "Name": "PROTO_NC_MISC_EVENT_LONG_TIME_PLAY_CMD",
+      "SizeOf": 6,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nUserNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nPlayTime",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_GER_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_GER_IS_IP_BLOCK_ACK",
+      "SizeOf": 290,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+          "size": 287
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 287,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 289,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_GER_IS_IP_BLOCK_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_GER_IS_IP_BLOCK_ACK\u003E",
+      "SizeOf": 293,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_US_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+      "SizeOf": 353,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sUserName",
+          "offset": 8,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "sPassword",
+          "offset": 268,
+          "type": "char[36]",
+          "size": 36
+        },
+        {
+          "name": "sUserIP",
+          "offset": 304,
+          "type": "char[20]",
+          "size": 20
+        },
+        {
+          "name": "nAuthID",
+          "offset": 324,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nBlock",
+          "offset": 325,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "bLoginAble",
+          "offset": 329,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "spawnapps",
+          "offset": 333,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGIN": {
+      "Name": "PROTO_NC_LOG_USER_LOGIN",
+      "SizeOf": 9,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "usrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "worldnum",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "ip",
+          "offset": 5,
+          "type": "unsigned char[4]",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_GET_ACK": {
+      "Name": "PROTO_NC_DATA_REPORT_GET_ACK",
+      "SizeOf": 137,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "hReporter",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "err",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nRegNumber",
+          "offset": 4,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "byReportResult",
+          "offset": 8,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "byRemark",
+          "offset": 9,
+          "type": "unsigned char[128]",
+          "size": 128
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_GET_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_GET_ACK\u003E",
+      "SizeOf": 140,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_IS_IP_BLOCK_ACK",
+      "SizeOf": 275,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_LOGIN_REQ",
+          "size": 272
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 272,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 274,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_IS_IP_BLOCK_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_IS_IP_BLOCK_ACK\u003E",
+      "SizeOf": 278,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_TW_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_TW_IS_IP_BLOCK_ACK",
+      "SizeOf": 11,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+          "size": 8
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 8,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 10,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TW_IS_IP_BLOCK_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_USER_TW_IS_IP_BLOCK_ACK\u003E",
+      "SizeOf": 14,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_GER_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_GER_IS_IP_BLOCK_REQ",
+      "SizeOf": 313,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_GER_PASSWORD_CHECK_ACK",
+          "size": 287
+        },
+        {
+          "name": "nUserNo",
+          "offset": 287,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 291,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 293,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+      "SizeOf": 8,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_MISC_CONNECTER_ACK": {
+      "Name": "PROTO_NC_MISC_CONNECTER_ACK",
+      "SizeOf": 131,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "worldno",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connectercount",
+          "offset": 1,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nEachClass",
+          "offset": 3,
+          "type": "unsigned short[64]",
+          "size": 128
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_CANCEL_ACK": {
+      "Name": "PROTO_NC_DATA_REPORT_CANCEL_ACK",
+      "SizeOf": 8,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "nRegNumber",
+          "offset": 0,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "hReporter",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "err",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_CANCEL_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_CANCEL_ACK\u003E",
+      "SizeOf": 11,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_SYSLOG_ACCOUNT_LOGOUT": {
+      "Name": "PROTO_NC_SYSLOG_ACCOUNT_LOGOUT",
+      "SizeOf": 8,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "LoginKeepTime",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGIN_REQ": {
+      "Name": "PROTO_NC_USER_LOGIN_REQ",
+      "SizeOf": 272,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "user",
+          "offset": 0,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "password",
+          "offset": 256,
+          "type": "Name4",
+          "size": 16
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_GET_REQ": {
+      "Name": "PROTO_NC_DATA_REPORT_GET_REQ",
+      "SizeOf": 7,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "hReporter",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "dwReporter",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nWorldNo",
+          "offset": 6,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_TW_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_TW_IS_IP_BLOCK_REQ",
+      "SizeOf": 34,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_TW_PASSWORD_CHECK_ACK",
+          "size": 8
+        },
+        {
+          "name": "nUserNo",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 12,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 14,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_FAILURE": {
+      "Name": "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_FAILURE",
+      "SizeOf": 296,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserName",
+          "offset": 0,
+          "type": "char[260]",
+          "size": 260
+        },
+        {
+          "name": "UserIP",
+          "offset": 260,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "spawnapps",
+          "offset": 276,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_ADD_ACK": {
+      "Name": "PROTO_NC_DATA_REPORT_ADD_ACK",
+      "SizeOf": 28,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "err",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "hReporter",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sHarmer",
+          "offset": 4,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "nRegNumber",
+          "offset": 24,
+          "type": "int",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_SYSLOG_SERVER_CCU": {
+      "Name": "PROTO_NC_SYSLOG_SERVER_CCU",
+      "SizeOf": 5,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserCount",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "WorldNo",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_US_IS_IP_BLOCK_ACK",
+      "SizeOf": 356,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+          "size": 353
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 353,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 355,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGOUT": {
+      "Name": "PROTO_NC_LOG_USER_LOGOUT",
+      "SizeOf": 9,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "usrregnum",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "worldnum",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "playmin",
+          "offset": 5,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "error",
+          "offset": 7,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_ADD_ACK\u003E": {
+      "Name": "PROTO_NC_DATA_SEND1\u003CPROTO_NC_DATA_REPORT_ADD_ACK\u003E",
+      "SizeOf": 31,
+      "department": "DATA",
+      "fields": []
+    },
+    "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK": {
+      "Name": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+      "SizeOf": 306,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "netpacketheader",
+          "offset": 0,
+          "type": "NETPACKETHEADER",
+          "size": 2
+        },
+        {
+          "name": "nError",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sUserName",
+          "offset": 8,
+          "type": "char[24]",
+          "size": 24
+        },
+        {
+          "name": "sChannel",
+          "offset": 32,
+          "type": "char[254]",
+          "size": 254
+        },
+        {
+          "name": "sUserIP",
+          "offset": 286,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_ADD_REQ": {
+      "Name": "PROTO_NC_DATA_REPORT_ADD_REQ",
+      "SizeOf": 2369,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "dwReporter",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "hReporter",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWorldNo",
+          "offset": 6,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "sReporterCharID",
+          "offset": 7,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "sHarmer",
+          "offset": 27,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "byReportType",
+          "offset": 47,
+          "type": "unsigned char[16]",
+          "size": 16
+        },
+        {
+          "name": "byReason",
+          "offset": 63,
+          "type": "unsigned char[256]",
+          "size": 256
+        },
+        {
+          "name": "nChatLogSize",
+          "offset": 319,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "byChatLog",
+          "offset": 321,
+          "type": "unsigned char[2048]",
+          "size": 2048
+        }
+      ]
+    },
+    "PROTO_NC_MISC_EVENT_L20_DB_REQ": {
+      "Name": "PROTO_NC_MISC_EVENT_L20_DB_REQ",
+      "SizeOf": 272,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nWMHandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserID",
+          "offset": 2,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "nUserNo",
+          "offset": 258,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nEventNo",
+          "offset": 262,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nWorldNo",
+          "offset": 263,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nCharNo",
+          "offset": 264,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nEventPoint",
+          "offset": 268,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_DATA_REPORT_CANCEL_REQ": {
+      "Name": "PROTO_NC_DATA_REPORT_CANCEL_REQ",
+      "SizeOf": 6,
+      "department": "DATA",
+      "fields": [
+        {
+          "name": "nRegNumber",
+          "offset": 0,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "hReporter",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_SUCCESS": {
+      "Name": "PROTO_NC_SYSLOG_ACCOUNT_LOGIN_SUCCESS",
+      "SizeOf": 40,
+      "department": "SYSLOG",
+      "fields": [
+        {
+          "name": "UserNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "UserIP",
+          "offset": 4,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "spawnapps",
+          "offset": 20,
+          "type": "Name5",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_US_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_US_IS_IP_BLOCK_REQ",
+      "SizeOf": 379,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_US_PASSWORD_CHECK_ACK",
+          "size": 353
+        },
+        {
+          "name": "nUserNo",
+          "offset": 353,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 357,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 359,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_JP_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_JP_IS_IP_BLOCK_REQ",
+      "SizeOf": 332,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+          "size": 306
+        },
+        {
+          "name": "nUserNo",
+          "offset": 306,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 310,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 312,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGOUT_LAST_DAY_ACK": {
+      "Name": "PROTO_NC_USER_LOGOUT_LAST_DAY_ACK",
+      "SizeOf": 10,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "nHandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "tLastSec",
+          "offset": 6,
+          "type": "long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_USER_IS_IP_BLOCK_REQ": {
+      "Name": "PROTO_NC_USER_IS_IP_BLOCK_REQ",
+      "SizeOf": 298,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_LOGIN_REQ",
+          "size": 272
+        },
+        {
+          "name": "nUserNo",
+          "offset": 272,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 276,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sUserIP",
+          "offset": 278,
+          "type": "char[20]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_NC_USER_LOGOUT_LAST_DAY_REQ": {
+      "Name": "PROTO_NC_USER_LOGOUT_LAST_DAY_REQ",
+      "SizeOf": 6,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "nHandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nUserNo",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_MISC_HACK_SCAN_STORE_CMD": {
+      "Name": "PROTO_NC_MISC_HACK_SCAN_STORE_CMD",
+      "SizeOf": 2,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nDescSize",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "sDesc",
+          "offset": 2,
+          "type": "unsigned char[0]",
+          "size": 0
+        }
+      ]
+    },
+    "PROTO_NC_MISC_HACK_SCAN_STORE_DB_CMD": {
+      "Name": "PROTO_NC_MISC_HACK_SCAN_STORE_DB_CMD",
+      "SizeOf": 51,
+      "department": "MISC",
+      "fields": [
+        {
+          "name": "nUserNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nWorldNo",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nCharNo",
+          "offset": 5,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sIP",
+          "offset": 9,
+          "type": "unsigned char[20]",
+          "size": 20
+        },
+        {
+          "name": "sCharID",
+          "offset": 29,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "ScanInfo",
+          "offset": 49,
+          "type": "PROTO_NC_MISC_HACK_SCAN_STORE_CMD",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_LOG_USER_LOGINFAIL": {
+      "Name": "PROTO_NC_LOG_USER_LOGINFAIL",
+      "SizeOf": 278,
+      "department": "LOG",
+      "fields": [
+        {
+          "name": "userid",
+          "offset": 0,
+          "type": "Name256Byte",
+          "size": 256
+        },
+        {
+          "name": "userpassword",
+          "offset": 256,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "userip",
+          "offset": 272,
+          "type": "unsigned char[4]",
+          "size": 4
+        },
+        {
+          "name": "error",
+          "offset": 276,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "PROTO_NC_USER_JP_IS_IP_BLOCK_ACK": {
+      "Name": "PROTO_NC_USER_JP_IS_IP_BLOCK_ACK",
+      "SizeOf": 309,
+      "department": "USER",
+      "fields": [
+        {
+          "name": "LoginData",
+          "offset": 0,
+          "type": "PROTO_NC_USER_JP_PASSWORD_CHECK_ACK",
+          "size": 306
+        },
+        {
+          "name": "nClientHandle",
+          "offset": 306,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "bUserIPBlock",
+          "offset": 308,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_ITEM_DROP_REQ": {
+      "Name": "PROTO_NC_ITEM_DROP_REQ",
+      "SizeOf": 14,
+      "department": "ITEM",
+      "fields": [
+        {
+          "name": "slot",
+          "offset": 0,
+          "type": "ITEM_INVEN",
+          "size": 2
+        },
+        {
+          "name": "lot",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "loc",
+          "offset": 6,
+          "type": "SHINE_XY_TYPE",
+          "size": 8
+        }
+      ]
+    },
+    "PROTO_NC_ITEM_BUY_REQ": {
+      "Name": "PROTO_NC_ITEM_BUY_REQ",
+      "SizeOf": 6,
+      "department": "ITEM",
+      "fields": [
+        {
+          "name": "itemid",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "lot",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_ITEM_SELL_REQ": {
+      "Name": "PROTO_NC_ITEM_SELL_REQ",
+      "SizeOf": 5,
+      "department": "ITEM",
+      "fields": [
+        {
+          "name": "slot",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "lot",
+          "offset": 1,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_CHANGEUPGRADE_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_CHANGEUPGRADE_CMD",
+      "SizeOf": 6,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "handle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "item",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "upgrade",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nSlotNum",
+          "offset": 5,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_CHANGEWEAPON_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_CHANGEWEAPON_CMD",
+      "SizeOf": 9,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "upgradeinfo",
+          "offset": 0,
+          "type": "PROTO_NC_BRIEFINFO_CHANGEUPGRADE_CMD",
+          "size": 6
+        },
+        {
+          "name": "currentmobid",
+          "offset": 6,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "currentkilllevel",
+          "offset": 8,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_UNEQUIP_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_UNEQUIP_CMD",
+      "SizeOf": 3,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "handle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "slot",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PROTO_NC_BRIEFINFO_CHANGEDECORATE_CMD": {
+      "Name": "PROTO_NC_BRIEFINFO_CHANGEDECORATE_CMD",
+      "SizeOf": 5,
+      "department": "BRIEFINFO",
+      "fields": [
+        {
+          "name": "handle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "item",
+          "offset": 2,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nSlotNum",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    }
+  },
+  "referenced_types": {
+    "NETPACKETZONEHEADER": {
+      "Name": "NETPACKETZONEHEADER",
+      "SizeOf": 6,
+      "fields": [
+        {
+          "name": "clienthandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "charregistnumber",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "PROTO_CHARGED_ITEM_INFO": {
+      "Name": "PROTO_CHARGED_ITEM_INFO",
+      "SizeOf": 16,
+      "fields": [
+        {
+          "name": "ItemOrderNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "ItemCode",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "ItemAmount",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "ItemRegisterDate",
+          "offset": 12,
+          "type": "ShineDateTime",
+          "size": 4
+        }
+      ]
+    },
+    "ShineDateTime": {
+      "Name": "ShineDateTime",
+      "SizeOf": 4,
+      "fields": [
+        {
+          "name": "year",
+          "offset": 0,
+          "type": "unsigned long:8",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 8
+        },
+        {
+          "name": "month",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 8,
+          "bit_count": 5
+        },
+        {
+          "name": "date",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 13,
+          "bit_count": 6
+        },
+        {
+          "name": "hour",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 19,
+          "bit_count": 6
+        },
+        {
+          "name": "minute",
+          "offset": 0,
+          "type": "unsigned long:7",
+          "size": 0,
+          "bit_offset": 25,
+          "bit_count": 7
+        }
+      ]
+    },
+    "GUILD_CLIENT": {
+      "Name": "GUILD_CLIENT",
+      "SizeOf": 1067,
+      "fields": [
+        {
+          "name": "nNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sName",
+          "offset": 4,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "nMoney",
+          "offset": 20,
+          "type": "unsigned __int64",
+          "size": 8
+        },
+        {
+          "name": "nType",
+          "offset": 28,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nGrade",
+          "offset": 29,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "nFame",
+          "offset": 30,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nStoneLevel",
+          "offset": 34,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nExp",
+          "offset": 36,
+          "type": "unsigned __int64",
+          "size": 8
+        },
+        {
+          "name": "dCreateDate",
+          "offset": 44,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "tm_dCreateDate",
+          "offset": 48,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "nNumMembers",
+          "offset": 84,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nMaxMembers",
+          "offset": 86,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "nWarStatus",
+          "offset": 88,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "dWarRequestDate",
+          "offset": 89,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "dWarStartDate",
+          "offset": 93,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "dWarEndDate",
+          "offset": 97,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "tm_dWarRequestDate",
+          "offset": 101,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "tm_dWarStartDate",
+          "offset": 137,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "tm_dWarEndDate",
+          "offset": 173,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "nWarEnemy",
+          "offset": 209,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sWarEnemyName",
+          "offset": 213,
+          "type": "Name4",
+          "size": 16
+        },
+        {
+          "name": "nWarEnemyGrade",
+          "offset": 229,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "MyScore",
+          "offset": 230,
+          "type": "SHINE_GUILD_SCORE",
+          "size": 42
+        },
+        {
+          "name": "EnemyScore",
+          "offset": 272,
+          "type": "SHINE_GUILD_SCORE",
+          "size": 42
+        },
+        {
+          "name": "nWarWinCount",
+          "offset": 314,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nWarLoseCount",
+          "offset": 318,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nWarDrawCount",
+          "offset": 322,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "nDismissStatus",
+          "offset": 326,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "dDismissDate",
+          "offset": 327,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "tm_dDismissDate",
+          "offset": 331,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "sIntro",
+          "offset": 367,
+          "type": "char[128]",
+          "size": 128
+        },
+        {
+          "name": "dNotifyDate",
+          "offset": 495,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "tm_dNotifyDate",
+          "offset": 499,
+          "type": "tm",
+          "size": 36
+        },
+        {
+          "name": "sNotifyCharID",
+          "offset": 535,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "sNotify",
+          "offset": 555,
+          "type": "char[512]",
+          "size": 512
+        }
+      ]
+    },
+    "Name4": {
+      "Name": "Name4",
+      "SizeOf": 16,
+      "fields": [
+        {
+          "name": "n4_name",
+          "offset": 0,
+          "type": "unsigned char[16]",
+          "size": 16
+        },
+        {
+          "name": "n4_code",
+          "offset": 0,
+          "type": "unsigned long[4]",
+          "size": 16
+        }
+      ]
+    },
+    "tm": {
+      "Name": "tm",
+      "SizeOf": 36,
+      "fields": [
+        {
+          "name": "tm_sec",
+          "offset": 0,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_min",
+          "offset": 4,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_hour",
+          "offset": 8,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_mday",
+          "offset": 12,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_mon",
+          "offset": 16,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_year",
+          "offset": 20,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_wday",
+          "offset": 24,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_yday",
+          "offset": 28,
+          "type": "int",
+          "size": 4
+        },
+        {
+          "name": "tm_isdst",
+          "offset": 32,
+          "type": "int",
+          "size": 4
+        }
+      ]
+    },
+    "SHINE_GUILD_SCORE": {
+      "Name": "SHINE_GUILD_SCORE",
+      "SizeOf": 42,
+      "fields": [
+        {
+          "name": "nKillCount",
+          "offset": 0,
+          "type": "unsigned short[7]",
+          "size": 14
+        },
+        {
+          "name": "nKillScore",
+          "offset": 14,
+          "type": "unsigned long[7]",
+          "size": 28
+        }
+      ]
+    },
+    "Name5": {
+      "Name": "Name5",
+      "SizeOf": 20,
+      "fields": [
+        {
+          "name": "n5_name",
+          "offset": 0,
+          "type": "unsigned char[20]",
+          "size": 20
+        },
+        {
+          "name": "n5_code",
+          "offset": 0,
+          "type": "unsigned long[5]",
+          "size": 20
+        }
+      ]
+    },
+    "PROTO_CHARGEDBUFF_INFO": {
+      "Name": "PROTO_CHARGEDBUFF_INFO",
+      "SizeOf": 14,
+      "fields": [
+        {
+          "name": "ChargedBuffKey",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "ChargedBuffID",
+          "offset": 4,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "UseTime",
+          "offset": 6,
+          "type": "ShineDateTime",
+          "size": 4
+        },
+        {
+          "name": "EndTime",
+          "offset": 10,
+          "type": "ShineDateTime",
+          "size": 4
+        }
+      ]
+    },
+    "CHARSTATDISTSTR": {
+      "Name": "CHARSTATDISTSTR",
+      "SizeOf": 6,
+      "fields": [
+        {
+          "name": "Strength",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Constitute",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Dexterity",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Intelligence",
+          "offset": 3,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "MentalPower",
+          "offset": 4,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "RedistributePoint",
+          "offset": 5,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "PLAYER_QUEST_INFO": {
+      "Name": "PLAYER_QUEST_INFO",
+      "SizeOf": 32,
+      "fields": [
+        {
+          "name": "ID",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "Status",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "Data",
+          "offset": 3,
+          "type": "PLAYER_QUEST_DATA",
+          "size": 29
+        }
+      ]
+    },
+    "PLAYER_QUEST_DATA": {
+      "Name": "PLAYER_QUEST_DATA",
+      "SizeOf": 29,
+      "fields": [
+        {
+          "name": "StartTime",
+          "offset": 0,
+          "type": "long long",
+          "size": 8
+        },
+        {
+          "name": "EndTime",
+          "offset": 8,
+          "type": "long long",
+          "size": 8
+        },
+        {
+          "name": "RepeatCount",
+          "offset": 16,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "ProgressStep",
+          "offset": 20,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "End_NPCMobCount",
+          "offset": 21,
+          "type": "unsigned char[5]",
+          "size": 5
+        },
+        {
+          "name": "End_Location",
+          "offset": 26,
+          "type": "unsigned char:1",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 1
+        },
+        {
+          "name": "End_Scenario",
+          "offset": 26,
+          "type": "unsigned char:1",
+          "size": 0,
+          "bit_offset": 1,
+          "bit_count": 1
+        },
+        {
+          "name": "End_RunningTimeSec",
+          "offset": 27,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "ABSTATEREADBLOCK": {
+      "Name": "ABSTATEREADBLOCK",
+      "SizeOf": 36,
+      "fields": [
+        {
+          "name": "abstateid",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "strength",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "pasttime",
+          "offset": 3,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "resttime",
+          "offset": 7,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "restcount",
+          "offset": 11,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "empower",
+          "offset": 13,
+          "type": "SKILL_EMPOWER",
+          "size": 2
+        },
+        {
+          "name": "CasterInfo",
+          "offset": 15,
+          "type": "ABSTATEREADBLOCK::\u003Cunnamed-type-CasterInfo\u003E",
+          "size": 5
+        },
+        {
+          "name": "setitem",
+          "offset": 20,
+          "type": "ABSTATEREADBLOCK::\u003Cunnamed-type-setitem\u003E[4]",
+          "size": 16
+        }
+      ]
+    },
+    "SKILL_EMPOWER": {
+      "Name": "SKILL_EMPOWER",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "damage",
+          "offset": 0,
+          "type": "unsigned short:4",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 4
+        },
+        {
+          "name": "sp",
+          "offset": 0,
+          "type": "unsigned short:4",
+          "size": 0,
+          "bit_offset": 4,
+          "bit_count": 4
+        },
+        {
+          "name": "keeptime",
+          "offset": 0,
+          "type": "unsigned short:4",
+          "size": 0,
+          "bit_offset": 8,
+          "bit_count": 4
+        },
+        {
+          "name": "cooltime",
+          "offset": 0,
+          "type": "unsigned short:4",
+          "size": 0,
+          "bit_offset": 12,
+          "bit_count": 4
+        }
+      ]
+    },
+    "PROTO_CHAT_RESTRICT_DB_INFO": {
+      "Name": "PROTO_CHAT_RESTRICT_DB_INFO",
+      "SizeOf": 26,
+      "fields": [
+        {
+          "name": "nCharNo",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "sCharID",
+          "offset": 4,
+          "type": "Name5",
+          "size": 20
+        },
+        {
+          "name": "bIsGM",
+          "offset": 24,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "bIsDeleted",
+          "offset": 25,
+          "type": "unsigned char",
+          "size": 1
+        }
+      ]
+    },
+    "ABSTATE_INFORMATION": {
+      "Name": "ABSTATE_INFORMATION",
+      "SizeOf": 12,
+      "fields": [
+        {
+          "name": "abstateID",
+          "offset": 0,
+          "type": "ABSTATEINDEX",
+          "size": 0
+        },
+        {
+          "name": "restKeeptime",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "strength",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "ActionCooltime": {
+      "Name": "ActionCooltime",
+      "SizeOf": 10,
+      "fields": [
+        {
+          "name": "actionID",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "expiredTime",
+          "offset": 2,
+          "type": "long long",
+          "size": 8
+        }
+      ]
+    },
+    "PARTMARK": {
+      "Name": "PARTMARK",
+      "SizeOf": 1,
+      "fields": [
+        {
+          "name": "bIsStart",
+          "offset": 0,
+          "type": "unsigned char:1",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 1
+        },
+        {
+          "name": "bIsEnd",
+          "offset": 0,
+          "type": "unsigned char:1",
+          "size": 0,
+          "bit_offset": 1,
+          "bit_count": 1
+        },
+        {
+          "name": "nOrder",
+          "offset": 0,
+          "type": "unsigned char:6",
+          "size": 0,
+          "bit_offset": 2,
+          "bit_count": 6
+        }
+      ]
+    },
+    "PROTO_SKILLREADBLOCK": {
+      "Name": "PROTO_SKILLREADBLOCK",
+      "SizeOf": 16,
+      "fields": [
+        {
+          "name": "savetime",
+          "offset": 0,
+          "type": "long",
+          "size": 4
+        },
+        {
+          "name": "skilldata",
+          "offset": 4,
+          "type": "PROTO_SKILLREADBLOCKCLIENT",
+          "size": 12
+        }
+      ]
+    },
+    "PROTO_SKILLREADBLOCKCLIENT": {
+      "Name": "PROTO_SKILLREADBLOCKCLIENT",
+      "SizeOf": 12,
+      "fields": [
+        {
+          "name": "skillid",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "cooltime",
+          "offset": 2,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "empow",
+          "offset": 6,
+          "type": "PROTO_SKILLREADBLOCKCLIENT::\u003Cunnamed-type-empow\u003E",
+          "size": 2
+        },
+        {
+          "name": "mastery",
+          "offset": 8,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    },
+    "NETCOMMAND": {
+      "Name": "NETCOMMAND",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "protocol",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "str",
+          "offset": 0,
+          "type": "NETCOMMAND::\u003Cunnamed-type-str\u003E",
+          "size": 2
+        }
+      ]
+    },
+    "SERVER_CONN_INFO": {
+      "Name": "SERVER_CONN_INFO",
+      "SizeOf": 7,
+      "fields": [
+        {
+          "name": "connect_server_world",
+          "offset": 0,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_server_zone",
+          "offset": 1,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_server_id",
+          "offset": 2,
+          "type": "unsigned char",
+          "size": 1
+        },
+        {
+          "name": "connect_time",
+          "offset": 3,
+          "type": "SHINE_DATETIME",
+          "size": 4
+        }
+      ]
+    },
+    "SHINE_DATETIME": {
+      "Name": "SHINE_DATETIME",
+      "SizeOf": 4,
+      "fields": [
+        {
+          "name": "year",
+          "offset": 0,
+          "type": "unsigned long:4",
+          "size": 0,
+          "bit_offset": 0,
+          "bit_count": 4
+        },
+        {
+          "name": "month",
+          "offset": 0,
+          "type": "unsigned long:4",
+          "size": 0,
+          "bit_offset": 4,
+          "bit_count": 4
+        },
+        {
+          "name": "day",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 8,
+          "bit_count": 5
+        },
+        {
+          "name": "hour",
+          "offset": 0,
+          "type": "unsigned long:5",
+          "size": 0,
+          "bit_offset": 13,
+          "bit_count": 5
+        },
+        {
+          "name": "min",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 18,
+          "bit_count": 6
+        },
+        {
+          "name": "sec",
+          "offset": 0,
+          "type": "unsigned long:6",
+          "size": 0,
+          "bit_offset": 24,
+          "bit_count": 6
+        }
+      ]
+    },
+    "NC_OPTOOL_MAP_USER_LIST_INFO": {
+      "Name": "NC_OPTOOL_MAP_USER_LIST_INFO",
+      "SizeOf": 16,
+      "fields": [
+        {
+          "name": "map_id",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "map_name",
+          "offset": 2,
+          "type": "Name3",
+          "size": 12
+        },
+        {
+          "name": "num_of_user",
+          "offset": 14,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "Name3": {
+      "Name": "Name3",
+      "SizeOf": 12,
+      "fields": [
+        {
+          "name": "n3_name",
+          "offset": 0,
+          "type": "unsigned char[12]",
+          "size": 12
+        },
+        {
+          "name": "n3_code",
+          "offset": 0,
+          "type": "unsigned long[3]",
+          "size": 12
+        }
+      ]
+    },
+    "NETPACKETHEADER": {
+      "Name": "NETPACKETHEADER",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "clienthandle",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        }
+      ]
+    },
+    "Name256Byte": {
+      "Name": "Name256Byte",
+      "SizeOf": 256,
+      "fields": [
+        {
+          "name": "n256_name",
+          "offset": 0,
+          "type": "unsigned char[256]",
+          "size": 256
+        },
+        {
+          "name": "n256_code",
+          "offset": 0,
+          "type": "unsigned __int64[32]",
+          "size": 256
+        }
+      ]
+    },
+    "ITEM_INVEN": {
+      "Name": "ITEM_INVEN",
+      "SizeOf": 2,
+      "fields": [
+        {
+          "name": "Inven",
+          "offset": 0,
+          "type": "unsigned short",
+          "size": 2
+        },
+        {
+          "name": "str",
+          "offset": 0,
+          "type": "ITEM_INVEN::\u003Cunnamed-type-str\u003E",
+          "size": 2
+        }
+      ]
+    },
+    "SHINE_XY_TYPE": {
+      "Name": "SHINE_XY_TYPE",
+      "SizeOf": 8,
+      "fields": [
+        {
+          "name": "x",
+          "offset": 0,
+          "type": "unsigned long",
+          "size": 4
+        },
+        {
+          "name": "y",
+          "offset": 4,
+          "type": "unsigned long",
+          "size": 4
+        }
+      ]
+    }
+  }
+}
