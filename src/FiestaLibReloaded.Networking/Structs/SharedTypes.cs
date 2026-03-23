@@ -2042,16 +2042,16 @@ public class GUILD_ZONE : IFiestaPacketBody
 /// <summary>sizeof = 4</summary>
 public class in_addr : IFiestaPacketBody
 {
-    // in_addr::<unnamed-type-S_un> S_un at offset 0 (unsupported type)
+    // <unnamed-tag> S_un at offset 0 (unsupported type)
 
     public void Read(BinaryReader reader)
     {
-        reader.ReadBytes(4); // skip in_addr::<unnamed-type-S_un> S_un
+        reader.ReadBytes(4); // skip <unnamed-tag> S_un
     }
 
     public void Write(BinaryWriter writer)
     {
-        writer.Write(new byte[4]); // skip in_addr::<unnamed-type-S_un> S_un
+        writer.Write(new byte[4]); // skip <unnamed-tag> S_un
     }
 }
 
