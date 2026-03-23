@@ -29,7 +29,8 @@ public static class ServerInfoParser
             if (!line.StartsWith("SERVER_INFO", StringComparison.OrdinalIgnoreCase))
                 continue;
 
-            // Strip "SERVER_INFO" prefix and parse CSV
+            // Strip inline comments (;) outside quotes, then strip "SERVER_INFO" prefix
+            line = StripInlineComment(line);
             var csv = line["SERVER_INFO".Length..].Trim();
             var parts = SplitCsv(csv);
 
@@ -84,6 +85,18 @@ public static class ServerInfoParser
             parts.Add(current.ToString().Trim());
 
         return parts;
+    }
+
+    private static string StripInlineComment(string line)
+    {
+        var inQuotes = false;
+        for (int i = 0; i < line.Length; i++)
+        {
+            if (line[i] == '"') inQuotes = !inQuotes;
+            else if (line[i] == ';' && !inQuotes)
+                return line[..i].TrimEnd();
+        }
+        return line;
     }
 
     private static string Unquote(string s)
