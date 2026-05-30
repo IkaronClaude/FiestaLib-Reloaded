@@ -21,7 +21,10 @@ public class FiestaConnection : IDisposable
     /// </summary>
     public FiestaPacket ReadPacket()
     {
-        // Read length prefix
+        // Read length prefix. Inline: 1 byte (1..255 inclusive). Extended:
+        // 0x00 followed by little-endian u16 (LO then HI). The reserved 0x00
+        // first byte is the extended marker; the LE u16 encodes the frame
+        // body length (opcode + payload), not including the prefix itself.
         var firstByte = ReadByteOrThrow();
         int frameLen;
         if (firstByte != 0x00)
@@ -30,8 +33,8 @@ public class FiestaConnection : IDisposable
         }
         else
         {
-            var hi = ReadByteOrThrow();
             var lo = ReadByteOrThrow();
+            var hi = ReadByteOrThrow();
             frameLen = (hi << 8) | lo;
         }
 
@@ -56,6 +59,8 @@ public class FiestaConnection : IDisposable
     /// </summary>
     public async ValueTask<FiestaPacket> ReadPacketAsync(CancellationToken ct = default)
     {
+        // See ReadPacket above for the framing contract — same little-endian
+        // extended encoding here.
         var firstByte = await ReadByteAsyncOrThrow(ct);
         int frameLen;
         if (firstByte != 0x00)
@@ -64,8 +69,8 @@ public class FiestaConnection : IDisposable
         }
         else
         {
-            var hi = await ReadByteAsyncOrThrow(ct);
             var lo = await ReadByteAsyncOrThrow(ct);
+            var hi = await ReadByteAsyncOrThrow(ct);
             frameLen = (hi << 8) | lo;
         }
 
@@ -131,16 +136,19 @@ public class FiestaConnection : IDisposable
 
         using var ms = new MemoryStream();
 
-        // Length prefix
-        if (opcodeAndPayloadLen < 255)
+        // Length prefix. 1..255 (inclusive) inline as 1 byte; >=256 goes
+        // extended: 0x00 followed by little-endian u16 (LO then HI). The
+        // length value is the frame body length (opcode + payload), not
+        // including the prefix.
+        if (opcodeAndPayloadLen <= 0xFF)
         {
             ms.WriteByte((byte)opcodeAndPayloadLen);
         }
         else
         {
             ms.WriteByte(0x00);
-            ms.WriteByte((byte)(opcodeAndPayloadLen >> 8));
             ms.WriteByte((byte)(opcodeAndPayloadLen & 0xFF));
+            ms.WriteByte((byte)(opcodeAndPayloadLen >> 8));
         }
 
         // Opcode (LE ushort) + payload (cipher applied)
