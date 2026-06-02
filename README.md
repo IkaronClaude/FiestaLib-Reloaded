@@ -2,7 +2,7 @@
 
 A modern **.NET library for the Fiesta Online network protocol** — wire framing,
 opcodes, typed packet bodies, dispatch, and the cipher abstraction. It's the
-protocol layer underneath [fiesta-proxy](https://github.com/IkaronClaude/fiesta-proxy),
+protocol layer underneath [ik-fiesta-proxy](https://github.com/IkaronClaude/ik-fiesta-proxy),
 and it's standalone enough to build any other Fiesta tooling (sniffers, bots,
 emulators, test clients) on top of.
 
