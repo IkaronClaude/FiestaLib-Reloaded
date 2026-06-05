@@ -2296,105 +2296,84 @@ public class MAPPOS : IFiestaPacketBody
 /// <summary>sizeof = 256</summary>
 public class Name256Byte : IFiestaPacketBody
 {
+    // Name256Byte is a C++ union: n256_name[256] and n256_code (ulong[32], also
+    // 256 bytes) are two views of the SAME 256 wire bytes -- not sequential
+    // fields. Only the name bytes are on the wire; the codegen wrongly emitted
+    // both (doubling sizeof and overrunning every packet that uses this type).
     public byte[] n256_name = new byte[256];
-    public ulong[] n256_code = new ulong[32];
 
     public void Read(BinaryReader reader)
     {
         n256_name = reader.ReadBytes(256);
-        for (int i = 0; i < 32; i++)
-            n256_code[i] = reader.ReadUInt64();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n256_name, 0, 256);
-        for (int i = 0; i < 32; i++)
-            writer.Write(n256_code[i]);
     }
 }
 
 /// <summary>sizeof = 12</summary>
 public class Name3 : IFiestaPacketBody
 {
-    public byte[] n3_name = new byte[12];
-    public uint[] n3_code = new uint[3];
+    public byte[] n3_name = new byte[12];  // union with code (uint[3]); 12 wire bytes
 
     public void Read(BinaryReader reader)
     {
         n3_name = reader.ReadBytes(12);
-        for (int i = 0; i < 3; i++)
-            n3_code[i] = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n3_name, 0, 12);
-        for (int i = 0; i < 3; i++)
-            writer.Write(n3_code[i]);
     }
 }
 
 /// <summary>sizeof = 16</summary>
 public class Name4 : IFiestaPacketBody
 {
-    public byte[] n4_name = new byte[16];
-    public uint[] n4_code = new uint[4];
+    public byte[] n4_name = new byte[16];  // union with code (uint[4]); 16 wire bytes
 
     public void Read(BinaryReader reader)
     {
         n4_name = reader.ReadBytes(16);
-        for (int i = 0; i < 4; i++)
-            n4_code[i] = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n4_name, 0, 16);
-        for (int i = 0; i < 4; i++)
-            writer.Write(n4_code[i]);
     }
 }
 
 /// <summary>sizeof = 20</summary>
 public class Name5 : IFiestaPacketBody
 {
-    public byte[] n5_name = new byte[20];
-    public uint[] n5_code = new uint[5];
+    public byte[] n5_name = new byte[20];  // union with code (uint[5]); 20 wire bytes
 
     public void Read(BinaryReader reader)
     {
         n5_name = reader.ReadBytes(20);
-        for (int i = 0; i < 5; i++)
-            n5_code[i] = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n5_name, 0, 20);
-        for (int i = 0; i < 5; i++)
-            writer.Write(n5_code[i]);
     }
 }
 
 /// <summary>sizeof = 32</summary>
 public class Name8 : IFiestaPacketBody
 {
-    public byte[] n8_name = new byte[32];
-    public uint[] n8_code = new uint[8];
+    public byte[] n8_name = new byte[32];  // union with code (uint[8]); 32 wire bytes
 
     public void Read(BinaryReader reader)
     {
         n8_name = reader.ReadBytes(32);
-        for (int i = 0; i < 8; i++)
-            n8_code[i] = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n8_name, 0, 32);
-        for (int i = 0; i < 8; i++)
-            writer.Write(n8_code[i]);
     }
 }
 
