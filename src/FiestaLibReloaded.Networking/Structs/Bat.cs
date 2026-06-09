@@ -56,11 +56,13 @@ public class PROTO_NC_BAT_ABSTATEINFORM_CMD : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before keeptime_millisec
         keeptime_millisec = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before keeptime_millisec
         writer.Write(keeptime_millisec);
     }
 }

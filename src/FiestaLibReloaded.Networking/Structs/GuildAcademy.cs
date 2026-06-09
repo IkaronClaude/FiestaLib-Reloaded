@@ -2833,7 +2833,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_CMD : IFiestaPacketBo
         item = reader.ReadUInt16();
         slot = reader.ReadByte();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
         storage_cen = reader.ReadUInt64();
     }
 
@@ -2845,7 +2845,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_CMD : IFiestaPacketBo
         writer.Write(item);
         writer.Write(slot);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
         writer.Write(storage_cen);
     }
 }
@@ -2880,7 +2880,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_RNG : IFiestaPacketBo
         charid.Read(reader);
         item = reader.ReadUInt16();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 37 (no wire bytes)
         storage_cen = reader.ReadUInt64();
     }
 
@@ -2895,7 +2895,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_DEPOSIT_RNG : IFiestaPacketBo
         charid.Write(writer);
         writer.Write(item);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 37 (no wire bytes)
         writer.Write(storage_cen);
     }
 }
@@ -2979,7 +2979,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_CMD : IFiestaPacketB
         item = reader.ReadUInt16();
         slot = reader.ReadByte();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
         storage_cen = reader.ReadUInt64();
     }
 
@@ -2991,7 +2991,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_CMD : IFiestaPacketB
         writer.Write(item);
         writer.Write(slot);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
         writer.Write(storage_cen);
     }
 }
@@ -3072,7 +3072,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_RNG : IFiestaPacketB
         charid.Read(reader);
         item = reader.ReadUInt16();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 37 (no wire bytes)
         storage_cen = reader.ReadUInt64();
     }
 
@@ -3087,7 +3087,7 @@ public class PROTO_NC_GUILD_ACADEMY_REWARD_STORAGE_WITHDRAW_RNG : IFiestaPacketB
         charid.Write(writer);
         writer.Write(item);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 37 (no wire bytes)
         writer.Write(storage_cen);
     }
 }

@@ -4014,10 +4014,10 @@ public class PROTO_NC_CHAR_WEDDINGDATA_ACK : IFiestaPacketBody
         reader.ReadBytes(1); // skip PROTO_NC_CHAR_WEDDINGDATA_ACK::<unnamed-type-Status> Status
         When.Read(reader);
         SubWhen.Read(reader);
-        ApplicationLimit.Read(reader);
-        DelayLimit.Read(reader);
-        DivorceLimit.Read(reader);
-        NewlyLimit.Read(reader);
+        // ApplicationLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // DelayLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // DivorceLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // NewlyLimit: union alias of an earlier field at offset 13 (no wire bytes)
         reader.ReadBytes(24); // skip PROTO_NC_CHAR_WEDDINGDATA_ACK::<unnamed-type-Partner> Partner
         WeddingCount = reader.ReadByte();
         RefusalCount = reader.ReadByte();
@@ -4030,10 +4030,10 @@ public class PROTO_NC_CHAR_WEDDINGDATA_ACK : IFiestaPacketBody
         writer.Write(new byte[1]); // skip PROTO_NC_CHAR_WEDDINGDATA_ACK::<unnamed-type-Status> Status
         When.Write(writer);
         SubWhen.Write(writer);
-        ApplicationLimit.Write(writer);
-        DelayLimit.Write(writer);
-        DivorceLimit.Write(writer);
-        NewlyLimit.Write(writer);
+        // ApplicationLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // DelayLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // DivorceLimit: union alias of an earlier field at offset 13 (no wire bytes)
+        // NewlyLimit: union alias of an earlier field at offset 13 (no wire bytes)
         writer.Write(new byte[24]); // skip PROTO_NC_CHAR_WEDDINGDATA_ACK::<unnamed-type-Partner> Partner
         writer.Write(WeddingCount);
         writer.Write(RefusalCount);

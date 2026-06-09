@@ -70,6 +70,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_FIND_RNG : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         Start.Read(reader);
+        reader.ReadBytes(4); // union/alignment padding before IDRegisterNumber
         IDRegisterNumber = reader.ReadUInt32();
         Argument.Read(reader);
         for (int i = 0; i < 33; i++)
@@ -80,6 +81,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_FIND_RNG : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         Start.Write(writer);
+        writer.Write(new byte[4]); // union/alignment padding before IDRegisterNumber
         writer.Write(IDRegisterNumber);
         Argument.Write(writer);
         for (int i = 0; i < 33; i++)
@@ -164,6 +166,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_ECHO_REQ : IFiestaPack
         nStartZoneNum = reader.ReadByte();
         nCharRegNum = reader.ReadUInt32();
         nInDunRegNum = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nNPCHandle
         nNPCHandle = reader.ReadUInt16();
         Argument.Read(reader);
     }
@@ -173,6 +176,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_ECHO_REQ : IFiestaPack
         writer.Write(nStartZoneNum);
         writer.Write(nCharRegNum);
         writer.Write(nInDunRegNum);
+        writer.Write(new byte[4]); // union/alignment padding before nNPCHandle
         writer.Write(nNPCHandle);
         Argument.Write(writer);
     }
@@ -199,6 +203,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_REQ : IFiestaPacketBod
         nDestZoneNum = reader.ReadByte();
         nCharRegNum = reader.ReadUInt32();
         nInDunRegNum = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nNPCHandle
         nNPCHandle = reader.ReadUInt16();
         Argument.Read(reader);
     }
@@ -209,6 +214,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_CHECK_REQ : IFiestaPacketBod
         writer.Write(nDestZoneNum);
         writer.Write(nCharRegNum);
         writer.Write(nInDunRegNum);
+        writer.Write(new byte[4]); // union/alignment padding before nNPCHandle
         writer.Write(nNPCHandle);
         Argument.Write(writer);
     }
@@ -232,6 +238,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ACK : IFiestaPacketBody
         nCharRegNum = reader.ReadUInt32();
         nNPCHandle = reader.ReadUInt16();
         nError = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before sMapName
         sMapName.Read(reader);
     }
 
@@ -240,6 +247,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ACK : IFiestaPacketBody
         writer.Write(nCharRegNum);
         writer.Write(nNPCHandle);
         writer.Write(nError);
+        writer.Write(new byte[4]); // union/alignment padding before sMapName
         sMapName.Write(writer);
     }
 }
@@ -264,6 +272,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_ACK : IFiestaPacke
         nCharRegNum = reader.ReadUInt32();
         nNPCHandle = reader.ReadUInt16();
         nError = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before sMapName
         sMapName.Read(reader);
     }
 
@@ -273,6 +282,7 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_ACK : IFiestaPacke
         writer.Write(nCharRegNum);
         writer.Write(nNPCHandle);
         writer.Write(nError);
+        writer.Write(new byte[4]); // union/alignment padding before sMapName
         sMapName.Write(writer);
     }
 }
@@ -297,8 +307,10 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_REQ : IFiestaPacke
         nStartZoneNum = reader.ReadByte();
         nCharRegNum = reader.ReadUInt32();
         nInDunRegNum = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nNPCHandle
         nNPCHandle = reader.ReadUInt16();
         Argument.Read(reader);
+        reader.ReadBytes(4); // union/alignment tail padding to sizeof 39
     }
 
     public void Write(BinaryWriter writer)
@@ -306,8 +318,10 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_ECHO_REQ : IFiestaPacke
         writer.Write(nStartZoneNum);
         writer.Write(nCharRegNum);
         writer.Write(nInDunRegNum);
+        writer.Write(new byte[4]); // union/alignment padding before nNPCHandle
         writer.Write(nNPCHandle);
         Argument.Write(writer);
+        writer.Write(new byte[4]); // union/alignment tail padding to sizeof 39
     }
 }
 
@@ -333,8 +347,10 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_REQ : IFiestaPacketBody
         nDestZoneNum = reader.ReadByte();
         nCharRegNum = reader.ReadUInt32();
         nInDunRegNum = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nNPCHandle
         nNPCHandle = reader.ReadUInt16();
         Argument.Read(reader);
+        reader.ReadBytes(4); // union/alignment tail padding to sizeof 40
     }
 
     public void Write(BinaryWriter writer)
@@ -343,8 +359,10 @@ public class PROTO_NC_INSTANCE_DUNGEON_LEVEL_SELECT_JOIN_REQ : IFiestaPacketBody
         writer.Write(nDestZoneNum);
         writer.Write(nCharRegNum);
         writer.Write(nInDunRegNum);
+        writer.Write(new byte[4]); // union/alignment padding before nNPCHandle
         writer.Write(nNPCHandle);
         Argument.Write(writer);
+        writer.Write(new byte[4]); // union/alignment tail padding to sizeof 40
     }
 }
 

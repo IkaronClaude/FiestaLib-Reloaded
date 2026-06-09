@@ -422,6 +422,65 @@ void WriteClassFile(string filePath, string ns, IEnumerable<(string name, int si
             }
         }
 
+        // --- Union / overlap-aware IO plan ---
+        // C++ unions surface in the PDB as multiple fields sharing one byte
+        // offset (SizeOf == the largest member, not the sum). The wire carries
+        // that region ONCE, so emitting a Read/Write per member over-reads the
+        // stream and corrupts every following field. Here we walk fields in
+        // offset order, pick ONE representative per overlapping region (prefer a
+        // real, largest member over an opaque/skipped one), and mark the other
+        // views as aliases: still declared, but no stream IO. Gaps and the tail
+        // are padded so the emitted IO always spans the full PDB SizeOf. Purely
+        // sequential structs trigger none of this and are emitted as before.
+        Func<ParsedField, int> Footprint = f =>
+            f.IsBitfield
+                ? (bitfieldBackingType.TryGetValue(f.Offset, out var bbt) && TypeSize.TryGetValue(bbt, out var bsz)
+                    ? bsz : (f.Size > 0 ? f.Size : 4))
+                : f.Size;
+        var doIO = new bool[fields.Count];
+        var prePad = new int[fields.Count];
+        bool hasVarArray = fields.Any(f => f.IsVarArray && !f.IsSkipped);
+        bool overlapDetected = false;
+        int ioCursor = 0;
+        {
+            int gi = 0;
+            while (gi < fields.Count)
+            {
+                int off = fields[gi].Offset;
+                int grpEnd = gi;
+                while (grpEnd < fields.Count && fields[grpEnd].Offset == off) grpEnd++;
+                if (grpEnd - gi > 1) overlapDetected = true;
+                if (off >= ioCursor)
+                {
+                    // representative: non-skipped beats skipped, then largest footprint, then earliest
+                    int rep = gi;
+                    for (int k = gi + 1; k < grpEnd; k++)
+                    {
+                        int repSkip = fields[rep].IsSkipped ? 1 : 0;
+                        int kSkip = fields[k].IsSkipped ? 1 : 0;
+                        if (kSkip < repSkip || (kSkip == repSkip && Footprint(fields[k]) > Footprint(fields[rep])))
+                            rep = k;
+                    }
+                    prePad[rep] = off - ioCursor;
+                    if (prePad[rep] > 0) overlapDetected = true;
+                    doIO[rep] = true;
+                    ioCursor = off + Footprint(fields[rep]);
+                }
+                else
+                {
+                    overlapDetected = true; // group nested inside an earlier member; fully aliased
+                }
+                gi = grpEnd;
+            }
+        }
+        int trailPad = (overlapDetected && !hasVarArray) ? Math.Max(0, sizeOf - ioCursor) : 0;
+        if (!overlapDetected)
+        {
+            // exact legacy behaviour for sequential structs: every field does IO, no padding
+            for (int z = 0; z < doIO.Length; z++) doIO[z] = true;
+            Array.Clear(prePad, 0, prePad.Length);
+        }
+
         // --- Emit class ---
         var hasOpcode = opcodes.TryGetValue(structName, out var opcodeInfo);
         if (hasOpcode)
@@ -525,27 +584,32 @@ void WriteClassFile(string filePath, string ns, IEnumerable<(string name, int si
         sb.AppendLine("    public void Read(BinaryReader reader)");
         sb.AppendLine("    {");
 
-        var emittedBfRead = new HashSet<int>();
         for (int i = 0; i < fields.Count; i++)
         {
             var f = fields[i];
+            if (prePad[i] > 0)
+                sb.AppendLine($"        reader.ReadBytes({prePad[i]}); // union/alignment padding before {f.Name}");
+
             if (f.IsSkipped)
             {
-                if (f.Size > 0)
+                if (doIO[i] && f.Size > 0)
                     sb.AppendLine($"        reader.ReadBytes({f.Size}); // skip {f.OrigType} {f.Name}");
                 continue;
             }
 
             var safeName = SafeId(f.Name);
 
+            if (!doIO[i])
+            {
+                sb.AppendLine($"        // {safeName}: union alias of an earlier field at offset {f.Offset} (no wire bytes)");
+                continue;
+            }
+
             if (f.IsBitfield)
             {
-                if (emittedBfRead.Add(f.Offset))
-                {
-                    var bt = bitfieldBackingType[f.Offset];
-                    if (ReadMethod.TryGetValue(bt, out var rm))
-                        sb.AppendLine($"        _bits_{f.Offset} = reader.{rm};");
-                }
+                var bt = bitfieldBackingType[f.Offset];
+                if (ReadMethod.TryGetValue(bt, out var rm))
+                    sb.AppendLine($"        _bits_{f.Offset} = reader.{rm};");
                 continue;
             }
 
@@ -632,6 +696,8 @@ void WriteClassFile(string filePath, string ns, IEnumerable<(string name, int si
             else
                 sb.AppendLine($"        // Cannot read {f.CsType} {safeName}");
         }
+        if (trailPad > 0)
+            sb.AppendLine($"        reader.ReadBytes({trailPad}); // union/alignment tail padding to sizeof {sizeOf}");
 
         sb.AppendLine("    }");
         sb.AppendLine();
@@ -640,25 +706,30 @@ void WriteClassFile(string filePath, string ns, IEnumerable<(string name, int si
         sb.AppendLine("    public void Write(BinaryWriter writer)");
         sb.AppendLine("    {");
 
-        var emittedBfWrite = new HashSet<int>();
         for (int i = 0; i < fields.Count; i++)
         {
             var f = fields[i];
+            if (prePad[i] > 0)
+                sb.AppendLine($"        writer.Write(new byte[{prePad[i]}]); // union/alignment padding before {f.Name}");
+
             if (f.IsSkipped)
             {
-                if (f.Size > 0)
+                if (doIO[i] && f.Size > 0)
                     sb.AppendLine($"        writer.Write(new byte[{f.Size}]); // skip {f.OrigType} {f.Name}");
                 continue;
             }
 
             var safeName = SafeId(f.Name);
 
+            if (!doIO[i])
+            {
+                sb.AppendLine($"        // {safeName}: union alias of an earlier field at offset {f.Offset} (no wire bytes)");
+                continue;
+            }
+
             if (f.IsBitfield)
             {
-                if (emittedBfWrite.Add(f.Offset))
-                {
-                    sb.AppendLine($"        writer.Write(_bits_{f.Offset});");
-                }
+                sb.AppendLine($"        writer.Write(_bits_{f.Offset});");
                 continue;
             }
 
@@ -725,6 +796,8 @@ void WriteClassFile(string filePath, string ns, IEnumerable<(string name, int si
             // Primitive
             sb.AppendLine($"        writer.Write({safeName});");
         }
+        if (trailPad > 0)
+            sb.AppendLine($"        writer.Write(new byte[{trailPad}]); // union/alignment tail padding to sizeof {sizeOf}");
 
         sb.AppendLine("    }");
 

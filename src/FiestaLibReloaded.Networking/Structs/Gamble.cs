@@ -319,11 +319,13 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_BET_START_CMD : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before CurrentRollingDice
         CurrentRollingDice.Read(reader);
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before CurrentRollingDice
         CurrentRollingDice.Write(writer);
     }
 }
@@ -809,6 +811,8 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_JOIN_ACK : IFiestaPacketBody
             DiceHistory[i] = new DiceTaiSaiInfo();
             DiceHistory[i].Read(reader);
         }
+        reader.ReadBytes(4); // union/alignment padding before bModeType
+        reader.ReadBytes(4); // union/alignment padding before nTimer
         nTimer = reader.ReadUInt16();
         nInterval = reader.ReadUInt32();
         nGetSysRate = reader.ReadUInt16();
@@ -825,6 +829,8 @@ public class PROTO_NC_GAMBLE_DICE_TAISAI_GAME_JOIN_ACK : IFiestaPacketBody
         writer.Write(nError);
         for (int i = 0; i < 7; i++)
             DiceHistory[i].Write(writer);
+        writer.Write(new byte[4]); // union/alignment padding before bModeType
+        writer.Write(new byte[4]); // union/alignment padding before nTimer
         writer.Write(nTimer);
         writer.Write(nInterval);
         writer.Write(nGetSysRate);
@@ -1525,6 +1531,7 @@ public class PROTO_NC_GAMBLE_TYPE_AND_WHERE_STAND_ACK : IFiestaPacketBody
     {
         nError = reader.ReadUInt16();
         nNpcHandle = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before nWhereStand
         nWhereStand = reader.ReadByte();
     }
 
@@ -1532,6 +1539,7 @@ public class PROTO_NC_GAMBLE_TYPE_AND_WHERE_STAND_ACK : IFiestaPacketBody
     {
         writer.Write(nError);
         writer.Write(nNpcHandle);
+        writer.Write(new byte[4]); // union/alignment padding before nWhereStand
         writer.Write(nWhereStand);
     }
 }

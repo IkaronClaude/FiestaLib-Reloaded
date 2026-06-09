@@ -31,12 +31,14 @@ public class ABSTATE_INFORMATION : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before restKeeptime
         restKeeptime = reader.ReadUInt32();
         strength = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before restKeeptime
         writer.Write(restKeeptime);
         writer.Write(strength);
     }
@@ -130,12 +132,14 @@ public class BettingInfo : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         nPlayerHnd = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before nMoney
         nMoney = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(nPlayerHnd);
+        writer.Write(new byte[4]); // union/alignment padding before nMoney
         writer.Write(nMoney);
     }
 }
@@ -522,12 +526,14 @@ public class CT_INFO : IFiestaPacketBody
     {
         Type = reader.ReadByte();
         _bits_1 = reader.ReadByte();
+        // ElementValue: union alias of an earlier field at offset 1 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(Type);
         writer.Write(_bits_1);
+        // ElementValue: union alias of an earlier field at offset 1 (no wire bytes)
     }
 }
 
@@ -608,6 +614,7 @@ public class DiceRollApplyResultLog : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         nPlayerNo = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nBettingMoney
         nBettingMoney = reader.ReadUInt32();
         nBattingRate = reader.ReadUInt16();
         bStatus = reader.ReadByte();
@@ -618,6 +625,7 @@ public class DiceRollApplyResultLog : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         writer.Write(nPlayerNo);
+        writer.Write(new byte[4]); // union/alignment padding before nBettingMoney
         writer.Write(nBettingMoney);
         writer.Write(nBattingRate);
         writer.Write(bStatus);
@@ -634,11 +642,13 @@ public class DiceTaiSaiBetting : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before nMoney
         nMoney = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before nMoney
         writer.Write(nMoney);
     }
 }
@@ -816,12 +826,14 @@ public class GDT_BettingInfo : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         nPlayerHnd = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before nMoney
         nMoney = reader.ReadUInt32();
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(nPlayerHnd);
+        writer.Write(new byte[4]); // union/alignment padding before nMoney
         writer.Write(nMoney);
     }
 }
@@ -884,6 +896,7 @@ public class GDT_DiceRollApplyResultLog : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         nPlayerNo = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nBettingMoney
         nBettingMoney = reader.ReadUInt32();
         nBattingRate = reader.ReadUInt16();
         bStatus = reader.ReadByte();
@@ -894,6 +907,7 @@ public class GDT_DiceRollApplyResultLog : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         writer.Write(nPlayerNo);
+        writer.Write(new byte[4]); // union/alignment padding before nBettingMoney
         writer.Write(nBettingMoney);
         writer.Write(nBattingRate);
         writer.Write(bStatus);
@@ -1395,11 +1409,13 @@ public class GUILD_ACADEMY_REWARD_ITEM_OPTION : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before nOptionData
         nOptionData = reader.ReadUInt64();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before nOptionData
         writer.Write(nOptionData);
     }
 }
@@ -1949,11 +1965,13 @@ public class GUILD_TOURNAMENT_LIST : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(5); // union/alignment padding before sGuildName
         sGuildName.Read(reader);
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[5]); // union/alignment padding before sGuildName
         sGuildName.Write(writer);
     }
 }
@@ -2064,13 +2082,11 @@ public class ITEM_INVEN : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         Inven = reader.ReadUInt16();
-        reader.ReadBytes(2); // skip ITEM_INVEN::<unnamed-type-str> str
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(Inven);
-        writer.Write(new byte[2]); // skip ITEM_INVEN::<unnamed-type-str> str
     }
 }
 
@@ -2296,84 +2312,95 @@ public class MAPPOS : IFiestaPacketBody
 /// <summary>sizeof = 256</summary>
 public class Name256Byte : IFiestaPacketBody
 {
-    // Name256Byte is a C++ union: n256_name[256] and n256_code (ulong[32], also
-    // 256 bytes) are two views of the SAME 256 wire bytes -- not sequential
-    // fields. Only the name bytes are on the wire; the codegen wrongly emitted
-    // both (doubling sizeof and overrunning every packet that uses this type).
     public byte[] n256_name = new byte[256];
+    public ulong[] n256_code = new ulong[32];
 
     public void Read(BinaryReader reader)
     {
         n256_name = reader.ReadBytes(256);
+        // n256_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n256_name, 0, 256);
+        // n256_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
 /// <summary>sizeof = 12</summary>
 public class Name3 : IFiestaPacketBody
 {
-    public byte[] n3_name = new byte[12];  // union with code (uint[3]); 12 wire bytes
+    public byte[] n3_name = new byte[12];
+    public uint[] n3_code = new uint[3];
 
     public void Read(BinaryReader reader)
     {
         n3_name = reader.ReadBytes(12);
+        // n3_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n3_name, 0, 12);
+        // n3_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
 /// <summary>sizeof = 16</summary>
 public class Name4 : IFiestaPacketBody
 {
-    public byte[] n4_name = new byte[16];  // union with code (uint[4]); 16 wire bytes
+    public byte[] n4_name = new byte[16];
+    public uint[] n4_code = new uint[4];
 
     public void Read(BinaryReader reader)
     {
         n4_name = reader.ReadBytes(16);
+        // n4_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n4_name, 0, 16);
+        // n4_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
 /// <summary>sizeof = 20</summary>
 public class Name5 : IFiestaPacketBody
 {
-    public byte[] n5_name = new byte[20];  // union with code (uint[5]); 20 wire bytes
+    public byte[] n5_name = new byte[20];
+    public uint[] n5_code = new uint[5];
 
     public void Read(BinaryReader reader)
     {
         n5_name = reader.ReadBytes(20);
+        // n5_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n5_name, 0, 20);
+        // n5_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
 /// <summary>sizeof = 32</summary>
 public class Name8 : IFiestaPacketBody
 {
-    public byte[] n8_name = new byte[32];  // union with code (uint[8]); 32 wire bytes
+    public byte[] n8_name = new byte[32];
+    public uint[] n8_code = new uint[8];
 
     public void Read(BinaryReader reader)
     {
         n8_name = reader.ReadBytes(32);
+        // n8_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(n8_name, 0, 32);
+        // n8_code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -2408,13 +2435,11 @@ public class NETCOMMAND : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         protocol = reader.ReadUInt16();
-        reader.ReadBytes(2); // skip NETCOMMAND::<unnamed-type-str> str
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(protocol);
-        writer.Write(new byte[2]); // skip NETCOMMAND::<unnamed-type-str> str
     }
 }
 
@@ -2462,15 +2487,13 @@ public class ORToken : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         ort_Name = reader.ReadBytes(20);
-        for (int i = 0; i < 5; i++)
-            ort_Code[i] = reader.ReadUInt32();
+        // ort_Code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(ort_Name, 0, 20);
-        for (int i = 0; i < 5; i++)
-            writer.Write(ort_Code[i]);
+        // ort_Code: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -2500,11 +2523,15 @@ public class PARTMARK : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadByte();
+        // bIsEnd: union alias of an earlier field at offset 0 (no wire bytes)
+        // nOrder: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // bIsEnd: union alias of an earlier field at offset 0 (no wire bytes)
+        // nOrder: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -2539,6 +2566,7 @@ public class PLAYER_QUEST_DATA : IFiestaPacketBody
         ProgressStep = reader.ReadByte();
         End_NPCMobCount = reader.ReadBytes(5);
         _bits_26 = reader.ReadByte();
+        // End_Scenario: union alias of an earlier field at offset 26 (no wire bytes)
         End_RunningTimeSec = reader.ReadUInt16();
     }
 
@@ -2550,6 +2578,7 @@ public class PLAYER_QUEST_DATA : IFiestaPacketBody
         writer.Write(ProgressStep);
         writer.Write(End_NPCMobCount, 0, 5);
         writer.Write(_bits_26);
+        // End_Scenario: union alias of an earlier field at offset 26 (no wire bytes)
         writer.Write(End_RunningTimeSec);
     }
 }
@@ -2689,6 +2718,8 @@ public class PROTO_AVATAR_SHAPE_INFO : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadByte();
+        // chrclass: union alias of an earlier field at offset 0 (no wire bytes)
+        // gender: union alias of an earlier field at offset 0 (no wire bytes)
         _bits_1 = reader.ReadByte();
         _bits_2 = reader.ReadByte();
         _bits_3 = reader.ReadByte();
@@ -2697,6 +2728,8 @@ public class PROTO_AVATAR_SHAPE_INFO : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // chrclass: union alias of an earlier field at offset 0 (no wire bytes)
+        // gender: union alias of an earlier field at offset 0 (no wire bytes)
         writer.Write(_bits_1);
         writer.Write(_bits_2);
         writer.Write(_bits_3);
@@ -3007,11 +3040,19 @@ public class PROTO_FRIEND_DATE : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -3109,11 +3150,19 @@ public class PROTO_HOLY_PROMISE_DATE : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -3152,6 +3201,7 @@ public class PROTO_HOLY_PROMISE_INFO_DB : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(26); // union/alignment padding before PromiseCharNo
         PromiseCharNo = reader.ReadUInt32();
         RegDate.Read(reader);
         RejoinableDate.Read(reader);
@@ -3160,6 +3210,7 @@ public class PROTO_HOLY_PROMISE_INFO_DB : IFiestaPacketBody
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[26]); // union/alignment padding before PromiseCharNo
         writer.Write(PromiseCharNo);
         RegDate.Write(writer);
         RejoinableDate.Write(writer);
@@ -3381,6 +3432,7 @@ public class PROTO_KQ_INFO : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(141); // union/alignment padding before NextStartMode
         NextStartMode = reader.ReadByte();
         NextStartDelayMin = reader.ReadUInt16();
         RepeatMode = reader.ReadByte();
@@ -3407,6 +3459,7 @@ public class PROTO_KQ_INFO : IFiestaPacketBody
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[141]); // union/alignment padding before NextStartMode
         writer.Write(NextStartMode);
         writer.Write(NextStartDelayMin);
         writer.Write(RepeatMode);
@@ -3740,11 +3793,13 @@ public class PROTO_TUTORIAL_INFO : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before nTutorialStep
         nTutorialStep = reader.ReadByte();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before nTutorialStep
         writer.Write(nTutorialStep);
     }
 }
@@ -3949,11 +4004,21 @@ public class SHINE_DATETIME : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
+        // min: union alias of an earlier field at offset 0 (no wire bytes)
+        // sec: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
+        // min: union alias of an earlier field at offset 0 (no wire bytes)
+        // sec: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4023,11 +4088,19 @@ public class SHINE_GUILD_ACADEMY_MEMBER_LOGON_INFO : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4103,11 +4176,19 @@ public class SHINE_GUILD_MEMBER_LOGON_INFO : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // year: union alias of an earlier field at offset 0 (no wire bytes)
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // day: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4256,6 +4337,7 @@ public class SHINE_INDUN_RANK : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         nCharRegNum = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nDamageDealt
         nDamageDealt = reader.ReadUInt64();
         nDamageTaken = reader.ReadUInt64();
         nHealingDone = reader.ReadUInt64();
@@ -4264,6 +4346,7 @@ public class SHINE_INDUN_RANK : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         writer.Write(nCharRegNum);
+        writer.Write(new byte[4]); // union/alignment padding before nDamageDealt
         writer.Write(nDamageDealt);
         writer.Write(nDamageTaken);
         writer.Write(nHealingDone);
@@ -4283,6 +4366,7 @@ public class SHINE_INDUN_RANK_CLIENT : IFiestaPacketBody
     {
         nCharID.Read(reader);
         nCharClass = reader.ReadByte();
+        reader.ReadBytes(3); // union/alignment padding before nDamageDealt
         nDamageDealt = reader.ReadUInt64();
         nDamageTaken = reader.ReadUInt64();
         nHealingDone = reader.ReadUInt64();
@@ -4292,6 +4376,7 @@ public class SHINE_INDUN_RANK_CLIENT : IFiestaPacketBody
     {
         nCharID.Write(writer);
         writer.Write(nCharClass);
+        writer.Write(new byte[3]); // union/alignment padding before nDamageDealt
         writer.Write(nDamageDealt);
         writer.Write(nDamageTaken);
         writer.Write(nHealingDone);
@@ -4309,6 +4394,7 @@ public class SHINE_INDUN_RANK_CLIENT_VALUE : IFiestaPacketBody
     {
         nCharID.Read(reader);
         nCharClass = reader.ReadByte();
+        reader.ReadBytes(3); // union/alignment padding before nValue
         nValue = reader.ReadUInt64();
     }
 
@@ -4316,6 +4402,7 @@ public class SHINE_INDUN_RANK_CLIENT_VALUE : IFiestaPacketBody
     {
         nCharID.Write(writer);
         writer.Write(nCharClass);
+        writer.Write(new byte[3]); // union/alignment padding before nValue
         writer.Write(nValue);
     }
 }
@@ -4341,6 +4428,7 @@ public class SHINE_INDUN_RANK_MYRANK : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         sIndunInfo.Read(reader);
+        reader.ReadBytes(3); // union/alignment padding before nPrevDamageDealt
         nPrevDamageDealt = reader.ReadUInt64();
         nPrevDamageTaken = reader.ReadUInt64();
         nPrevHealingDone = reader.ReadUInt64();
@@ -4354,11 +4442,13 @@ public class SHINE_INDUN_RANK_MYRANK : IFiestaPacketBody
         nCurrDamageDealtRank = reader.ReadUInt32();
         nCurrDamageTakenRank = reader.ReadUInt32();
         nCurrHealingDoneRank = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment tail padding to sizeof 96
     }
 
     public void Write(BinaryWriter writer)
     {
         sIndunInfo.Write(writer);
+        writer.Write(new byte[3]); // union/alignment padding before nPrevDamageDealt
         writer.Write(nPrevDamageDealt);
         writer.Write(nPrevDamageTaken);
         writer.Write(nPrevHealingDone);
@@ -4372,6 +4462,7 @@ public class SHINE_INDUN_RANK_MYRANK : IFiestaPacketBody
         writer.Write(nCurrDamageDealtRank);
         writer.Write(nCurrDamageTakenRank);
         writer.Write(nCurrHealingDoneRank);
+        writer.Write(new byte[4]); // union/alignment tail padding to sizeof 96
     }
 }
 
@@ -4386,6 +4477,7 @@ public class SHINE_INDUN_RANK_RANKING : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         clienthandle = reader.ReadUInt16();
+        reader.ReadBytes(2); // union/alignment padding before nDamageDealtRank
         nDamageDealtRank = reader.ReadUInt32();
         nDamageTakenRank = reader.ReadUInt32();
         nHealingDoneRank = reader.ReadUInt32();
@@ -4394,6 +4486,7 @@ public class SHINE_INDUN_RANK_RANKING : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         writer.Write(clienthandle);
+        writer.Write(new byte[2]); // union/alignment padding before nDamageDealtRank
         writer.Write(nDamageDealtRank);
         writer.Write(nDamageTakenRank);
         writer.Write(nHealingDoneRank);
@@ -4469,86 +4562,86 @@ public class SHINE_ITEM_ATTRIBUTE : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
-        blot.Read(reader);
-        wlot.Read(reader);
-        dlot.Read(reader);
-        qstitm.Read(reader);
-        amulet.Read(reader);
-        weapon.Read(reader);
-        armor.Read(reader);
-        shield.Read(reader);
-        boot.Read(reader);
-        furniture.Read(reader);
-        decorate.Read(reader);
-        skillscroll.Read(reader);
-        recallscroll.Read(reader);
+        // blot: union alias of an earlier field at offset 0 (no wire bytes)
+        // wlot: union alias of an earlier field at offset 0 (no wire bytes)
+        // dlot: union alias of an earlier field at offset 0 (no wire bytes)
+        // qstitm: union alias of an earlier field at offset 0 (no wire bytes)
+        // amulet: union alias of an earlier field at offset 0 (no wire bytes)
+        // weapon: union alias of an earlier field at offset 0 (no wire bytes)
+        // armor: union alias of an earlier field at offset 0 (no wire bytes)
+        // shield: union alias of an earlier field at offset 0 (no wire bytes)
+        // boot: union alias of an earlier field at offset 0 (no wire bytes)
+        // furniture: union alias of an earlier field at offset 0 (no wire bytes)
+        // decorate: union alias of an earlier field at offset 0 (no wire bytes)
+        // skillscroll: union alias of an earlier field at offset 0 (no wire bytes)
+        // recallscroll: union alias of an earlier field at offset 0 (no wire bytes)
         binditem.Read(reader);
-        upsource.Read(reader);
-        itemchest.Read(reader);
-        weapontitlelicence.Read(reader);
-        kingdomquest.Read(reader);
-        minihouseskin.Read(reader);
-        upgraderedgem.Read(reader);
-        upgradebluegem.Read(reader);
-        upgradegoldgem.Read(reader);
-        kqstep.Read(reader);
-        feed.Read(reader);
-        riding.Read(reader);
-        amount.Read(reader);
-        costumweapon.Read(reader);
-        costumshield.Read(reader);
-        actionitem.Read(reader);
-        Enchant.Read(reader);
-        GBCoin.Read(reader);
-        Capsule.Read(reader);
-        MobCard_Unident.Read(reader);
-        MobCard.Read(reader);
-        NoEffect.Read(reader);
-        ActiveSkill.Read(reader);
-        Pet.Read(reader);
-        Bracelet.Read(reader);
+        // upsource: union alias of an earlier field at offset 0 (no wire bytes)
+        // itemchest: union alias of an earlier field at offset 0 (no wire bytes)
+        // weapontitlelicence: union alias of an earlier field at offset 0 (no wire bytes)
+        // kingdomquest: union alias of an earlier field at offset 0 (no wire bytes)
+        // minihouseskin: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgraderedgem: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgradebluegem: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgradegoldgem: union alias of an earlier field at offset 0 (no wire bytes)
+        // kqstep: union alias of an earlier field at offset 0 (no wire bytes)
+        // feed: union alias of an earlier field at offset 0 (no wire bytes)
+        // riding: union alias of an earlier field at offset 0 (no wire bytes)
+        // amount: union alias of an earlier field at offset 0 (no wire bytes)
+        // costumweapon: union alias of an earlier field at offset 0 (no wire bytes)
+        // costumshield: union alias of an earlier field at offset 0 (no wire bytes)
+        // actionitem: union alias of an earlier field at offset 0 (no wire bytes)
+        // Enchant: union alias of an earlier field at offset 0 (no wire bytes)
+        // GBCoin: union alias of an earlier field at offset 0 (no wire bytes)
+        // Capsule: union alias of an earlier field at offset 0 (no wire bytes)
+        // MobCard_Unident: union alias of an earlier field at offset 0 (no wire bytes)
+        // MobCard: union alias of an earlier field at offset 0 (no wire bytes)
+        // NoEffect: union alias of an earlier field at offset 0 (no wire bytes)
+        // ActiveSkill: union alias of an earlier field at offset 0 (no wire bytes)
+        // Pet: union alias of an earlier field at offset 0 (no wire bytes)
+        // Bracelet: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
-        blot.Write(writer);
-        wlot.Write(writer);
-        dlot.Write(writer);
-        qstitm.Write(writer);
-        amulet.Write(writer);
-        weapon.Write(writer);
-        armor.Write(writer);
-        shield.Write(writer);
-        boot.Write(writer);
-        furniture.Write(writer);
-        decorate.Write(writer);
-        skillscroll.Write(writer);
-        recallscroll.Write(writer);
+        // blot: union alias of an earlier field at offset 0 (no wire bytes)
+        // wlot: union alias of an earlier field at offset 0 (no wire bytes)
+        // dlot: union alias of an earlier field at offset 0 (no wire bytes)
+        // qstitm: union alias of an earlier field at offset 0 (no wire bytes)
+        // amulet: union alias of an earlier field at offset 0 (no wire bytes)
+        // weapon: union alias of an earlier field at offset 0 (no wire bytes)
+        // armor: union alias of an earlier field at offset 0 (no wire bytes)
+        // shield: union alias of an earlier field at offset 0 (no wire bytes)
+        // boot: union alias of an earlier field at offset 0 (no wire bytes)
+        // furniture: union alias of an earlier field at offset 0 (no wire bytes)
+        // decorate: union alias of an earlier field at offset 0 (no wire bytes)
+        // skillscroll: union alias of an earlier field at offset 0 (no wire bytes)
+        // recallscroll: union alias of an earlier field at offset 0 (no wire bytes)
         binditem.Write(writer);
-        upsource.Write(writer);
-        itemchest.Write(writer);
-        weapontitlelicence.Write(writer);
-        kingdomquest.Write(writer);
-        minihouseskin.Write(writer);
-        upgraderedgem.Write(writer);
-        upgradebluegem.Write(writer);
-        upgradegoldgem.Write(writer);
-        kqstep.Write(writer);
-        feed.Write(writer);
-        riding.Write(writer);
-        amount.Write(writer);
-        costumweapon.Write(writer);
-        costumshield.Write(writer);
-        actionitem.Write(writer);
-        Enchant.Write(writer);
-        GBCoin.Write(writer);
-        Capsule.Write(writer);
-        MobCard_Unident.Write(writer);
-        MobCard.Write(writer);
-        NoEffect.Write(writer);
-        ActiveSkill.Write(writer);
-        Pet.Write(writer);
-        Bracelet.Write(writer);
+        // upsource: union alias of an earlier field at offset 0 (no wire bytes)
+        // itemchest: union alias of an earlier field at offset 0 (no wire bytes)
+        // weapontitlelicence: union alias of an earlier field at offset 0 (no wire bytes)
+        // kingdomquest: union alias of an earlier field at offset 0 (no wire bytes)
+        // minihouseskin: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgraderedgem: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgradebluegem: union alias of an earlier field at offset 0 (no wire bytes)
+        // upgradegoldgem: union alias of an earlier field at offset 0 (no wire bytes)
+        // kqstep: union alias of an earlier field at offset 0 (no wire bytes)
+        // feed: union alias of an earlier field at offset 0 (no wire bytes)
+        // riding: union alias of an earlier field at offset 0 (no wire bytes)
+        // amount: union alias of an earlier field at offset 0 (no wire bytes)
+        // costumweapon: union alias of an earlier field at offset 0 (no wire bytes)
+        // costumshield: union alias of an earlier field at offset 0 (no wire bytes)
+        // actionitem: union alias of an earlier field at offset 0 (no wire bytes)
+        // Enchant: union alias of an earlier field at offset 0 (no wire bytes)
+        // GBCoin: union alias of an earlier field at offset 0 (no wire bytes)
+        // Capsule: union alias of an earlier field at offset 0 (no wire bytes)
+        // MobCard_Unident: union alias of an earlier field at offset 0 (no wire bytes)
+        // MobCard: union alias of an earlier field at offset 0 (no wire bytes)
+        // NoEffect: union alias of an earlier field at offset 0 (no wire bytes)
+        // ActiveSkill: union alias of an earlier field at offset 0 (no wire bytes)
+        // Pet: union alias of an earlier field at offset 0 (no wire bytes)
+        // Bracelet: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4561,18 +4654,16 @@ public class SHINE_ITEM_REGISTNUMBER : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
-        reader.ReadBytes(8); // skip SHINE_ITEM_REGISTNUMBER::<unnamed-type-binary> binary
         for (int i = 0; i < 2; i++)
             dwrdkey[i] = reader.ReadUInt32();
-        key = reader.ReadUInt64();
+        // key: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
-        writer.Write(new byte[8]); // skip SHINE_ITEM_REGISTNUMBER::<unnamed-type-binary> binary
         for (int i = 0; i < 2; i++)
             writer.Write(dwrdkey[i]);
-        writer.Write(key);
+        // key: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4671,11 +4762,19 @@ public class ShineDateTime : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt32();
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // date: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
+        // minute: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // month: union alias of an earlier field at offset 0 (no wire bytes)
+        // date: union alias of an earlier field at offset 0 (no wire bytes)
+        // hour: union alias of an earlier field at offset 0 (no wire bytes)
+        // minute: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -4742,6 +4841,7 @@ public class ShineItemAttr_Amulet : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         deletetime.Read(reader);
+        reader.ReadBytes(4); // union/alignment padding before upgrade
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
@@ -4753,6 +4853,7 @@ public class ShineItemAttr_Amulet : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         deletetime.Write(writer);
+        writer.Write(new byte[4]); // union/alignment padding before upgrade
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
@@ -4778,6 +4879,7 @@ public class ShineItemAttr_Armor : IFiestaPacketBody
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
+        reader.ReadBytes(4); // union/alignment padding before deletetime
         deletetime.Read(reader);
         randomOptionChangedCount = reader.ReadByte();
         option.Read(reader);
@@ -4788,6 +4890,7 @@ public class ShineItemAttr_Armor : IFiestaPacketBody
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
+        writer.Write(new byte[4]); // union/alignment padding before deletetime
         deletetime.Write(writer);
         writer.Write(randomOptionChangedCount);
         option.Write(writer);
@@ -4829,6 +4932,7 @@ public class ShineItemAttr_Boot : IFiestaPacketBody
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
+        reader.ReadBytes(4); // union/alignment padding before deletetime
         deletetime.Read(reader);
         randomOptionChangedCount = reader.ReadByte();
         option.Read(reader);
@@ -4839,6 +4943,7 @@ public class ShineItemAttr_Boot : IFiestaPacketBody
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
+        writer.Write(new byte[4]); // union/alignment padding before deletetime
         deletetime.Write(writer);
         writer.Write(randomOptionChangedCount);
         option.Write(writer);
@@ -4859,6 +4964,7 @@ public class ShineItemAttr_Bracelet : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         deletetime.Read(reader);
+        reader.ReadBytes(4); // union/alignment padding before upgrade
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
@@ -4869,6 +4975,7 @@ public class ShineItemAttr_Bracelet : IFiestaPacketBody
     public void Write(BinaryWriter writer)
     {
         deletetime.Write(writer);
+        writer.Write(new byte[4]); // union/alignment padding before upgrade
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
@@ -5257,6 +5364,7 @@ public class ShineItemAttr_Riding : IFiestaPacketBody
         hungrypoint = reader.ReadUInt16();
         deletetime.Read(reader);
         reader.ReadBytes(2); // skip ShineItemAttr_Riding::<unnamed-type-bitflag> bitflag
+        reader.ReadBytes(4); // union/alignment padding before nHP
         nHP = reader.ReadUInt32();
         nGrade = reader.ReadByte();
         nRareFailCount = reader.ReadUInt16();
@@ -5267,6 +5375,7 @@ public class ShineItemAttr_Riding : IFiestaPacketBody
         writer.Write(hungrypoint);
         deletetime.Write(writer);
         writer.Write(new byte[2]); // skip ShineItemAttr_Riding::<unnamed-type-bitflag> bitflag
+        writer.Write(new byte[4]); // union/alignment padding before nHP
         writer.Write(nHP);
         writer.Write(nGrade);
         writer.Write(nRareFailCount);
@@ -5289,6 +5398,7 @@ public class ShineItemAttr_Shield : IFiestaPacketBody
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
+        reader.ReadBytes(4); // union/alignment padding before deletetime
         deletetime.Read(reader);
         randomOptionChangedCount = reader.ReadByte();
         option.Read(reader);
@@ -5299,6 +5409,7 @@ public class ShineItemAttr_Shield : IFiestaPacketBody
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
+        writer.Write(new byte[4]); // union/alignment padding before deletetime
         deletetime.Write(writer);
         writer.Write(randomOptionChangedCount);
         option.Write(writer);
@@ -5392,6 +5503,7 @@ public class ShineItemAttr_Weapon : IFiestaPacketBody
         upgrade = reader.ReadByte();
         strengthen = reader.ReadByte();
         upgradefailcount = reader.ReadByte();
+        reader.ReadBytes(4); // union/alignment padding before mobkills
         reader.ReadBytes(18); // skip ShineItemAttr_Weapon::<unnamed-type-mobkills>[3] mobkills
         CharacterTitleMobID = reader.ReadUInt16();
         for (int i = 0; i < 21; i++)
@@ -5409,6 +5521,7 @@ public class ShineItemAttr_Weapon : IFiestaPacketBody
         writer.Write(upgrade);
         writer.Write(strengthen);
         writer.Write(upgradefailcount);
+        writer.Write(new byte[4]); // union/alignment padding before mobkills
         writer.Write(new byte[18]); // skip ShineItemAttr_Weapon::<unnamed-type-mobkills>[3] mobkills
         writer.Write(CharacterTitleMobID);
         for (int i = 0; i < 21; i++)
@@ -5505,11 +5618,17 @@ public class SKILL_EMPOWER : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadUInt16();
+        // sp: union alias of an earlier field at offset 0 (no wire bytes)
+        // keeptime: union alias of an earlier field at offset 0 (no wire bytes)
+        // cooltime: union alias of an earlier field at offset 0 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // sp: union alias of an earlier field at offset 0 (no wire bytes)
+        // keeptime: union alias of an earlier field at offset 0 (no wire bytes)
+        // cooltime: union alias of an earlier field at offset 0 (no wire bytes)
     }
 }
 
@@ -5572,17 +5691,25 @@ public class SLOTMACHINE_BettingLine : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadByte();
+        // _456: union alias of an earlier field at offset 0 (no wire bytes)
         _bits_1 = reader.ReadByte();
+        // _741: union alias of an earlier field at offset 1 (no wire bytes)
         _bits_2 = reader.ReadByte();
+        // _963: union alias of an earlier field at offset 2 (no wire bytes)
         _bits_3 = reader.ReadByte();
+        // _951: union alias of an earlier field at offset 3 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // _456: union alias of an earlier field at offset 0 (no wire bytes)
         writer.Write(_bits_1);
+        // _741: union alias of an earlier field at offset 1 (no wire bytes)
         writer.Write(_bits_2);
+        // _963: union alias of an earlier field at offset 2 (no wire bytes)
         writer.Write(_bits_3);
+        // _951: union alias of an earlier field at offset 3 (no wire bytes)
     }
 }
 
@@ -5696,13 +5823,31 @@ public class SLOTMACHINE_WinState : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         _bits_0 = reader.ReadByte();
+        // _456: union alias of an earlier field at offset 0 (no wire bytes)
+        // _123: union alias of an earlier field at offset 0 (no wire bytes)
+        // _741: union alias of an earlier field at offset 0 (no wire bytes)
+        // _852: union alias of an earlier field at offset 0 (no wire bytes)
+        // _963: union alias of an earlier field at offset 0 (no wire bytes)
+        // _753: union alias of an earlier field at offset 0 (no wire bytes)
+        // _951: union alias of an earlier field at offset 0 (no wire bytes)
         _bits_1 = reader.ReadByte();
+        // bonus: union alias of an earlier field at offset 1 (no wire bytes)
+        // jackpot: union alias of an earlier field at offset 1 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
     {
         writer.Write(_bits_0);
+        // _456: union alias of an earlier field at offset 0 (no wire bytes)
+        // _123: union alias of an earlier field at offset 0 (no wire bytes)
+        // _741: union alias of an earlier field at offset 0 (no wire bytes)
+        // _852: union alias of an earlier field at offset 0 (no wire bytes)
+        // _963: union alias of an earlier field at offset 0 (no wire bytes)
+        // _753: union alias of an earlier field at offset 0 (no wire bytes)
+        // _951: union alias of an earlier field at offset 0 (no wire bytes)
         writer.Write(_bits_1);
+        // bonus: union alias of an earlier field at offset 1 (no wire bytes)
+        // jackpot: union alias of an earlier field at offset 1 (no wire bytes)
     }
 }
 
@@ -5750,12 +5895,14 @@ public class STRUCT_QSC : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before IsPigeonStartType
         IsPigeonStartType = reader.ReadByte();
         reader.ReadBytes(96); // skip STRUCT_QSC::<unnamed-type-Data> Data
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before IsPigeonStartType
         writer.Write(IsPigeonStartType);
         writer.Write(new byte[96]); // skip STRUCT_QSC::<unnamed-type-Data> Data
     }

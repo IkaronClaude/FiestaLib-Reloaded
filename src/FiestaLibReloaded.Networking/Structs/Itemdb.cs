@@ -92,6 +92,7 @@ public class PROTO_NC_ITEMDB_BOOTHTRADE_ACK : IFiestaPacketBody
         headerBuyer.Read(reader);
         boothlockindexSeller = reader.ReadUInt16();
         boothlockindexBuyer = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before nItemKey
         nItemKey.Read(reader);
         nLotTraded = reader.ReadUInt16();
         err = reader.ReadUInt16();
@@ -103,6 +104,7 @@ public class PROTO_NC_ITEMDB_BOOTHTRADE_ACK : IFiestaPacketBody
         headerBuyer.Write(writer);
         writer.Write(boothlockindexSeller);
         writer.Write(boothlockindexBuyer);
+        writer.Write(new byte[4]); // union/alignment padding before nItemKey
         nItemKey.Write(writer);
         writer.Write(nLotTraded);
         writer.Write(err);
@@ -821,6 +823,7 @@ public class PROTO_NC_ITEMDB_CHAT_COLOR_CHANGE_ACK : IFiestaPacketBody
         nCharRegNum = reader.ReadUInt32();
         nItemKey.Read(reader);
         nItemID = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before nChangeColor
         nChangeColor = reader.ReadByte();
     }
 
@@ -831,6 +834,7 @@ public class PROTO_NC_ITEMDB_CHAT_COLOR_CHANGE_ACK : IFiestaPacketBody
         writer.Write(nCharRegNum);
         nItemKey.Write(writer);
         writer.Write(nItemID);
+        writer.Write(new byte[4]); // union/alignment padding before nChangeColor
         writer.Write(nChangeColor);
     }
 }
@@ -857,6 +861,7 @@ public class PROTO_NC_ITEMDB_CHAT_COLOR_CHANGE_REQ : IFiestaPacketBody
         nItemKey.Read(reader);
         nItemID = reader.ReadUInt16();
         nItemLot = reader.ReadUInt32();
+        reader.ReadBytes(4); // union/alignment padding before nChangeColor
         nChangeColor = reader.ReadByte();
     }
 
@@ -867,6 +872,7 @@ public class PROTO_NC_ITEMDB_CHAT_COLOR_CHANGE_REQ : IFiestaPacketBody
         nItemKey.Write(writer);
         writer.Write(nItemID);
         writer.Write(nItemLot);
+        writer.Write(new byte[4]); // union/alignment padding before nChangeColor
         writer.Write(nChangeColor);
     }
 }
@@ -1641,6 +1647,7 @@ public class PROTO_NC_ITEMDB_EQUIP_REQ : IFiestaPacketBody
     {
         relocA.Read(reader);
         relocA_ItemID = reader.ReadUInt16();
+        reader.ReadBytes(4); // union/alignment padding before relocB
         relocB.Read(reader);
         lockindex = reader.ReadUInt16();
         unequipnum = reader.ReadByte();
@@ -1650,6 +1657,7 @@ public class PROTO_NC_ITEMDB_EQUIP_REQ : IFiestaPacketBody
     {
         relocA.Write(writer);
         writer.Write(relocA_ItemID);
+        writer.Write(new byte[4]); // union/alignment padding before relocB
         relocB.Write(writer);
         writer.Write(lockindex);
         writer.Write(unequipnum);

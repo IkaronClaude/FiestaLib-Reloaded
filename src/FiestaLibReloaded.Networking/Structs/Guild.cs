@@ -3172,7 +3172,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_CMD : IFiestaPacketBody
         item = reader.ReadUInt16();
         slot = reader.ReadByte();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
@@ -3183,7 +3183,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_CMD : IFiestaPacketBody
         writer.Write(item);
         writer.Write(slot);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 25 (no wire bytes)
     }
 }
 
@@ -3214,7 +3214,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_RNG : IFiestaPacketBody
         charid.Read(reader);
         item = reader.ReadUInt16();
         lot = reader.ReadUInt64();
-        cen = reader.ReadUInt64();
+        // cen: union alias of an earlier field at offset 36 (no wire bytes)
     }
 
     public void Write(BinaryWriter writer)
@@ -3227,7 +3227,7 @@ public class PROTO_NC_GUILD_STORAGEWITHDRAW_RNG : IFiestaPacketBody
         charid.Write(writer);
         writer.Write(item);
         writer.Write(lot);
-        writer.Write(cen);
+        // cen: union alias of an earlier field at offset 36 (no wire bytes)
     }
 }
 
@@ -4502,12 +4502,14 @@ public class PROTO_NC_GUILD_TOURNAMENT_NOTIFY_CMD : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before nRanking
         nRanking = reader.ReadByte();
         sGuildName.Read(reader);
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before nRanking
         writer.Write(nRanking);
         sGuildName.Write(writer);
     }

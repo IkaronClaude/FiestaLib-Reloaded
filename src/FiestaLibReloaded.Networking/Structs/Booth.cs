@@ -285,12 +285,14 @@ public class PROTO_NC_BOOTH_SEARCH_ITEM_LIST_CATEGORIZED_REQ : IFiestaPacketBody
 
     public void Read(BinaryReader reader)
     {
+        reader.ReadBytes(4); // union/alignment padding before bReqOnlyMyClass
         bReqOnlyMyClass = reader.ReadByte();
         bIsOpeningReq = reader.ReadByte();
     }
 
     public void Write(BinaryWriter writer)
     {
+        writer.Write(new byte[4]); // union/alignment padding before bReqOnlyMyClass
         writer.Write(bReqOnlyMyClass);
         writer.Write(bIsOpeningReq);
     }
