@@ -41,7 +41,7 @@ public class PROTO_NC_RAID_CHAT_BROAD_CMD : IFiestaPacketBody
         itemLinkDataCount = reader.ReadByte();
         sTalkerCharID.Read(reader);
         nChatLen = reader.ReadByte();
-        sChat = reader.ReadBytes(itemLinkDataCount);
+        sChat = reader.ReadBytes(nChatLen);
     }
 
     public void Write(BinaryWriter writer)
@@ -68,7 +68,7 @@ public class PROTO_NC_RAID_CHAT_REQ : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         nChatLen = reader.ReadByte();
-        sChat = reader.ReadBytes(itemLinkDataCount);
+        sChat = reader.ReadBytes(nChatLen);
     }
 
     public void Write(BinaryWriter writer)
@@ -1289,7 +1289,7 @@ public class PROTO_NC_RAID_WARNING_BROAD_CMD : IFiestaPacketBody
         itemLinkDataCount = reader.ReadByte();
         sTalkerCharID.Read(reader);
         nChatLen = reader.ReadByte();
-        sChat = reader.ReadBytes(itemLinkDataCount);
+        sChat = reader.ReadBytes(nChatLen);
     }
 
     public void Write(BinaryWriter writer)
@@ -1316,7 +1316,7 @@ public class PROTO_NC_RAID_WARNING_REQ : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         nChatLen = reader.ReadByte();
-        sChat = reader.ReadBytes(itemLinkDataCount);
+        sChat = reader.ReadBytes(nChatLen);
     }
 
     public void Write(BinaryWriter writer)

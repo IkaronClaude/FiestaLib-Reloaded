@@ -4695,7 +4695,7 @@ public class SHINE_ITEM_VAR_STRUCT : IFiestaPacketBody
     public void Read(BinaryReader reader)
     {
         itemid = reader.ReadUInt16();
-        itemattr = reader.ReadBytes(itemid);
+        // TODO: itemattr is variable-length but count field not detected
     }
 
     public void Write(BinaryWriter writer)

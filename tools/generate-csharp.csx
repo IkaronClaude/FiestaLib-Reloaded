@@ -347,7 +347,10 @@ List<ParsedField> AnalyzeFields(JsonElement fields)
 // Find count field for a variable-length array
 string FindCountField(List<ParsedField> fields, int varArrayIndex)
 {
-    // Search backwards for a numeric field
+    // Search backwards for a numeric field with a length-like name. Note "len"
+    // must be matched explicitly: chat bodies are {itemLinkDataCount, len, content}
+    // where the TEXT length is `len`, but a plain "count" match would wrongly grab
+    // itemLinkDataCount (which counts trailing item-link blobs, not the text).
     for (int i = varArrayIndex - 1; i >= 0; i--)
     {
         var f = fields[i];
@@ -356,16 +359,22 @@ string FindCountField(List<ParsedField> fields, int varArrayIndex)
 
         var nameLC = f.Name.ToLowerInvariant();
         if (nameLC.Contains("num") || nameLC.Contains("count") || nameLC.Contains("cnt") ||
-            nameLC.Contains("size") || nameLC.Contains("length"))
+            nameLC.Contains("size") || nameLC.Contains("length") ||
+            nameLC == "len" || nameLC.EndsWith("len"))
             return SafeId(f.Name);
     }
-    // Fallback: use the field immediately before (must be scalar)
+    // Fallback: the scalar immediately before — but only if it plausibly is a
+    // count. An id/handle/value field (e.g. SHINE_ITEM_VAR_STRUCT's `itemid`) is
+    // NOT a length; treating it as one reads `itemid` bytes and corrupts the stream.
     for (int i = varArrayIndex - 1; i >= 0; i--)
     {
         var f = fields[i];
         if (f.IsSkipped || f.IsBitfield || f.IsArray) continue;
-        if (IsPrimitive(f.CsType))
-            return SafeId(f.Name);
+        if (!IsPrimitive(f.CsType)) continue;
+        var nameLC = f.Name.ToLowerInvariant();
+        if (nameLC.Contains("id") || nameLC.Contains("handle") || nameLC.Contains("hnd"))
+            return null;
+        return SafeId(f.Name);
     }
     return null;
 }

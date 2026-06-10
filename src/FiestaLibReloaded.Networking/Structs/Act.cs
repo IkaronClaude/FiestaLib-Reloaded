@@ -175,7 +175,7 @@ public class PROTO_NC_ACT_CHAT_REQ : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -658,7 +658,7 @@ public class PROTO_NC_ACT_PARTYCHAT_REQ : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -916,7 +916,7 @@ public class PROTO_NC_ACT_SCRIPT_MSG_CMD : IFiestaPacketBody
         nHandle = reader.ReadUInt16();
         sScriptMsgIndex = reader.ReadBytes(32);
         nlen = reader.ReadBytes(5);
-        sContent = reader.ReadBytes(nHandle);
+        // TODO: sContent is variable-length but count field not detected
     }
 
     public void Write(BinaryWriter writer)
@@ -945,7 +945,7 @@ public class PROTO_NC_ACT_SCRIPT_MSG_WORLD_CMD : IFiestaPacketBody
         nHandle = reader.ReadUInt16();
         sScriptMsgIndex = reader.ReadBytes(32);
         nlen = reader.ReadBytes(5);
-        sContent = reader.ReadBytes(nHandle);
+        // TODO: sContent is variable-length but count field not detected
     }
 
     public void Write(BinaryWriter writer)
@@ -998,7 +998,7 @@ public class PROTO_NC_ACT_SHOUT_CMD : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -1094,7 +1094,7 @@ public class PROTO_NC_ACT_SOMEONECHAT_CMD : IFiestaPacketBody
         reader.ReadBytes(1); // skip PROTO_NC_ACT_SOMEONECHAT_CMD::<unnamed-type-flag> flag
         nChatFontColorID = reader.ReadByte();
         nChatBalloonColorID = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -1433,7 +1433,7 @@ public class PROTO_NC_ACT_SOMEONESHOUT_CMD : IFiestaPacketBody
         reader.ReadBytes(20); // skip PROTO_NC_ACT_SOMEONESHOUT_CMD::<unnamed-type-speaker> speaker
         reader.ReadBytes(1); // skip PROTO_NC_ACT_SOMEONESHOUT_CMD::<unnamed-type-flag> flag
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -1514,7 +1514,7 @@ public class PROTO_NC_ACT_SOMEONEWHISPER_CMD : IFiestaPacketBody
         talker.Read(reader);
         reader.ReadBytes(1); // skip PROTO_NC_ACT_SOMEONEWHISPER_CMD::<unnamed-type-flag> flag
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -1812,7 +1812,7 @@ public class PROTO_NC_ACT_WHISPER_REQ : IFiestaPacketBody
         itemLinkDataCount = reader.ReadByte();
         receiver.Read(reader);
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
@@ -1864,7 +1864,7 @@ public class PROTO_NC_ACT_WHISPERSUCCESS_ACK : IFiestaPacketBody
         itemLinkDataCount = reader.ReadByte();
         receiver.Read(reader);
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)

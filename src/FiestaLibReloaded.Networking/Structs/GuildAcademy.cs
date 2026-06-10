@@ -65,7 +65,7 @@ public class PROTO_NC_GUILD_ACADEMY_CHAT_REQ : IFiestaPacketBody
     {
         itemLinkDataCount = reader.ReadByte();
         len = reader.ReadByte();
-        content = reader.ReadBytes(itemLinkDataCount);
+        content = reader.ReadBytes(len);
     }
 
     public void Write(BinaryWriter writer)
